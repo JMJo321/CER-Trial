@@ -1,0 +1,26 @@
+# 1. Files related to Project Management
+# 1.1. System Files
+.DS_Store
+
+# 1.2. App-related Files
+# 1.2.1. Pycharm
+.idea
+
+
+# 2. Datasets
+# ## Note: Data files will be stored in Dropbox.
+**/*.zip
+**/*.dta
+**/*.RData
+**/*.parquet
+
+# 2.1. To exclude raw datasets
+# 2.1.1. CER datasets
+**/01_Raw-Data/02_Use/CER/38_CER Electricity_Gas
+# 2.1.2. Met-Eireann datasets
+**/01_Raw-Data/01_Original/Met-Eireann
+**/01_Raw-Data/02_Use/Met-Eireann/Hourly-Data/*.csv
+**/01_Raw-Data/02_Use/Met-Eireann/Hourly-Data/*.xlsx
+
+# 3. Scripts
+# (Not Applicable)
