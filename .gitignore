@@ -16,11 +16,12 @@
 
 # 2.1. To exclude raw datasets
 # 2.1.1. CER datasets
-**/01_Raw-Data/02_Use/CER/38_CER Electricity_Gas
+**/01_Raw-Data/02_Use/CER
 # 2.1.2. Met-Eireann datasets
 **/01_Raw-Data/01_Original/Met-Eireann
-**/01_Raw-Data/02_Use/Met-Eireann/Hourly-Data/*.csv
-**/01_Raw-Data/02_Use/Met-Eireann/Hourly-Data/*.xlsx
+**/01_Raw-Data/02_Use/Met-Eireann/**/*.csv
+**/01_Raw-Data/02_Use/Met-Eireann/**/*.txt
+**/01_Raw-Data/02_Use/Met-Eireann/**/*.xlsx
 
 # 3. Scripts
 # (Not Applicable)
