@@ -6,7 +6,7 @@
 # # : A-01-01A
 # #
 # > Purpose of the script(s)
-# # : To make figure(s) for motivation
+# # : To make scatter figure(s) for motivation
 
 # ------------------------------------------------------------------------------
 # Load required libraries
@@ -65,7 +65,7 @@ dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
 # ------- Create Object(s) -------
 # # 1. Create a DT that includes rate-period-level consumption
 # # 1.1. Make objects that will be use to aggregate data
-cols_by_sum <- c(
+cols_by_sum_by.rate.period <- c(
   "id", "group",
   "period", "month_in.factor", "date", "rate.period",
   "is_after.ending.daylight.saving.time.in.oct", "is_last.five.days.of.year",
@@ -76,10 +76,18 @@ cols_by_sum <- c(
   # The variable just above is for making figures. This variable has a unique
   # value within a day.
 )
-cols_by_mean_by.rate.period <- cols_by_sum[-1]
+cols_by_mean_by.rate.period <- cols_by_sum_by.rate.period[-1]
+cols_by_sum_daily <-
+  cols_by_sum_by.rate.period[
+    cols_by_sum_by.rate.period %in% c(
+      "id", "group", "period", "month_in.factor", "date",
+      "is_after.ending.daylight.saving.time.in.oct",
+      "is_last.five.days.of.year", "mean.temp_all_f"
+    )
+  ]
 cols_by_mean_daily <-
-  cols_by_sum[
-    cols_by_sum %in% c(
+  cols_by_sum_by.rate.period[
+    cols_by_sum_by.rate.period %in% c(
       "group", "period", "month_in.factor", "date", "mean.temp_all_f"
     )
   ]
@@ -90,7 +98,7 @@ dt_avg.kwh_daily <- dt_for.reg[ # Aggregate data
   # is_in.sample_incl.control_base.only.second.half == TRUE,
   is_in.sample_incl.control_case1.only.second.half == TRUE,
   lapply(.SD, sum, na.rm = TRUE), .SDcols = "kwh",
-  by = cols_by_sum
+  by = cols_by_sum_daily
 ][ # Compute average househole electricity consumption
   ,
   lapply(.SD, mean, na.rm = TRUE), .SDcols = "kwh",
@@ -103,7 +111,7 @@ dt_avg.kwh_daily <- dt_for.reg[ # Aggregate data
 dt_avg.kwh_by.rate.period <- dt_for.reg[ # Aggregate data
   is_in.sample_incl.control_case1.only.second.half == TRUE,
   lapply(.SD, sum, na.rm = TRUE), .SDcols = "kwh",
-  by = cols_by_sum
+  by = cols_by_sum_by.rate.period
 ][ # Compute average househole electricity consumption
   ,
   lapply(.SD, mean, na.rm = TRUE), .SDcols = "kwh",
