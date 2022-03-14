@@ -125,6 +125,7 @@ dt_avg.kwh_by.rate.period[, kwh_per.hour := kwh / length_rate.period]
 # ------- Create object(s) for plot options -------
 # # 1. Set common plot options
 plot.options <- list(
+  scale_y_continuous(labels = scales::comma),
   theme_linedraw(),
   theme(
     strip.text = element_text(face = "bold"),
@@ -144,6 +145,9 @@ label_group <- c("Control Group", "Treatment Group")
 names(label_group) <- str_replace(label_group, " Group", "")
 label_period <- c("Baseline Period", "Treatment Period")
 names(label_period) <- str_replace(label_period, " Period", "")
+label_rate.period <-
+  c("Rate Period: Night", "Rate Period: Day", "Rate Period: Peak")
+names(label_rate.period) <- str_replace(label_rate.period, "Rate Period: ", "")
 
 
 # ------- Create ggplot object(s) -------
@@ -188,7 +192,6 @@ plot_daily.consumption_facetted.by.group <-
       size = 1.5
     ) +
     facet_grid(. ~ group, labeller = labeller(group = label_group)) +
-    scale_y_continuous(labels = scales::comma) +
     scale_color_manual(
       values = col.pal_custom[c(1, 2)],
       labels = c("Baseline Period", "Treatment Period")
@@ -212,14 +215,12 @@ plot_daily.consumption_facetted.by.group <-
 
 # # 1.2. A plot facetted by `period`
 plot_daily.consumption_facetted.by.period <-
-  ggplot(data = dt_avg.kwh_daily[month_in.factor %in% 7:12]) +
+  ggplot(data = dt_avg.kwh_daily) +
     geom_vline(
       xintercept = 60, color = "black", alpha = 0.2, linetype = "dashed"
     ) +
     geom_smooth(
-      data = dt_avg.kwh_daily[
-        month_in.factor %in% 7:12 & group == "Treatment"
-      ],
+      data = dt_avg.kwh_daily[group == "Treatment"],
       aes(
         x = mean.temp_all_f, y = kwh,
         color = group, linetype = group
@@ -250,7 +251,6 @@ plot_daily.consumption_facetted.by.period <-
       size = 1.5
     ) +
     facet_grid(. ~ period, labeller = labeller(period = label_period)) +
-    scale_y_continuous(labels = scales::comma) +
     scale_color_manual(
       values = col.pal_custom[c(1, 2)],
       labels = c("Control Group", "Treatment Group")
@@ -274,52 +274,90 @@ plot_daily.consumption_facetted.by.period <-
 
 
 # # 2. Average hourly household electricity consumption across temperatures,
-# #    facetting based on `period` and `group`
-plot_hourly.consumption <-
+# #    facetting based on `period`/`group` and `rate.period`
+# # 2.1. A plot facetted by `group` and `rate.period`
+plot_hourly.consumption_facetted.by.group.and.rate.period <-
   ggplot() +
     geom_vline(
       xintercept = 60, color = "black", alpha = 0.2, linetype = "dashed"
     ) +
     geom_smooth(
-      data = dt_avg.kwh_by.rate.period[
-        month_in.factor %in% 7:12 &
-          is_after.ending.daylight.saving.time.in.oct == FALSE &
-          is_last.five.days.of.year == FALSE &
-          rate.period %in% c("Night", "Day")
-      ],
-      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      data = dt_avg.kwh_by.rate.period[rate.period %in% c("Night", "Day")],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = period),
       method = "lm", formula = y ~ splines::bs(x, degree = 2),
-      color = "black", lwd = 0.6, alpha = 0
+      color = "black", lwd = 0.6, alpha = 0.15
     ) +
     geom_smooth(
-      data = dt_avg.kwh_by.rate.period[
-        month_in.factor %in% 7:10 &
-          is_after.ending.daylight.saving.time.in.oct == FALSE &
-          is_last.five.days.of.year == FALSE &
-          rate.period == "Peak"
-      ],
-      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      data = dt_avg.kwh_by.rate.period[rate.period == "Peak"],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = period),
       method = "lm", formula = y ~ splines::bs(x, degree = 2),
-      color = "black", lwd = 0.6, alpha = 0
+      color = "black", lwd = 0.6, alpha = 0.15
     ) +
     geom_smooth(
-      data = dt_avg.kwh_by.rate.period[
-        month_in.factor %in% 11:12 &
-          is_after.ending.daylight.saving.time.in.oct == FALSE &
-          is_last.five.days.of.year == FALSE &
-          rate.period == "Peak"
-      ],
-      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      data = dt_avg.kwh_by.rate.period[rate.period == "Peak"],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = period),
       method = "lm", formula = y ~ splines::bs(x, degree = 2),
-      color = "black", lwd = 0.6, alpha = 0
+      color = "black", lwd = 0.6, alpha = 0.15
     ) +
     geom_point(
-      data = dt_avg.kwh_by.rate.period[
-        month_in.factor %in% 7:12 &
-          is_after.ending.daylight.saving.time.in.oct == FALSE &
-          is_last.five.days.of.year == FALSE
-      ]
-      ,
+      data = dt_avg.kwh_by.rate.period,
+      aes(
+        x = mean.temp_all_f, y = kwh_per.hour,
+        color = month_in.factor, shape = period
+      ),
+      color = "black", size = 1.7, alpha = 0.5
+    ) +
+    geom_point(
+      data = dt_avg.kwh_by.rate.period,
+      aes(
+        x = mean.temp_all_f, y = kwh_per.hour,
+        color = month_in.factor, shape = period
+      ),
+      size = 1.3, alpha = 0.8
+    ) +
+    facet_grid(
+      rate.period ~ group,
+      labeller = labeller(rate.period = label_rate.period, group = label_group)
+    ) +
+    scale_color_brewer(palette = "Spectral", direction = -1) +
+    scale_linetype_manual(values = c("dotdash", "solid")) +
+    labs(
+      x = TeX(r'(Temperature $ (\degree F)$)'),
+      y = "Average Hourly Consumption  (kWh per Hour)",
+      color = "Month of Year",
+      shape = "Periods",
+      linetype = "Periods"
+    ) +
+    plot.options +
+    theme(legend.key.size = unit(0.8, "cm")) +
+    guides(color = guide_legend(nrow = 1))
+
+# # 2.2. A plot facetted by `period` and `rate.period`
+plot_hourly.consumption_facetted.by.period.and.rate.period <-
+  ggplot() +
+    geom_vline(
+      xintercept = 60, color = "black", alpha = 0.15, linetype = "dashed"
+    ) +
+    geom_smooth(
+      data = dt_avg.kwh_by.rate.period[rate.period %in% c("Night", "Day")],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      method = "lm", formula = y ~ splines::bs(x, degree = 2),
+      color = "black", lwd = 0.6, alpha = 0.15
+    ) +
+    geom_smooth(
+      data = dt_avg.kwh_by.rate.period[rate.period == "Peak"],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      method = "lm", formula = y ~ splines::bs(x, degree = 2),
+      color = "black", lwd = 0.6, alpha = 0.15
+    ) +
+    geom_smooth(
+      data = dt_avg.kwh_by.rate.period[rate.period == "Peak"],
+      aes(x = mean.temp_all_f, y = kwh_per.hour, linetype = group),
+      method = "lm", formula = y ~ splines::bs(x, degree = 2),
+      color = "black", lwd = 0.6, alpha = 0.15
+    ) +
+    geom_point(
+      data = dt_avg.kwh_by.rate.period,
       aes(
         x = mean.temp_all_f, y = kwh_per.hour,
         color = month_in.factor, shape = group
@@ -327,23 +365,23 @@ plot_hourly.consumption <-
       color = "black", size = 1.7, alpha = 0.5
     ) +
     geom_point(
-      data = dt_avg.kwh_by.rate.period[
-        month_in.factor %in% 7:12 &
-          is_after.ending.daylight.saving.time.in.oct == FALSE &
-          is_last.five.days.of.year == FALSE
-      ],
+      data = dt_avg.kwh_by.rate.period,
       aes(
         x = mean.temp_all_f, y = kwh_per.hour,
         color = month_in.factor, shape = group
       ),
       size = 1.3, alpha = 0.8
     ) +
-    facet_grid(rate.period ~ period) +
+    facet_grid(
+      rate.period ~ period,
+      labeller =
+        labeller(rate.period = label_rate.period, period = label_period)
+    ) +
     scale_color_brewer(palette = "Spectral", direction = -1) +
     scale_linetype_manual(values = c("dotdash", "solid")) +
     labs(
       x = TeX(r'(Temperature $ (\degree F)$)'),
-      y = "Average Hourly Consumption  (kWh per Hour)\n",
+      y = "Average Hourly Consumption  (kWh per Hour)",
       color = "Month of Year",
       shape = "Groups",
       linetype = "Groups"
@@ -357,6 +395,7 @@ plot_hourly.consumption <-
 # Export output
 # ------------------------------------------------------------------------------
 # ------- Export ggplot object(s) in PNG format -------
+# # 1. Figure(s) for daily consumption
 export_figure.in.png(
   plot_daily.consumption_facetted.by.group,
   paste(
@@ -364,7 +403,7 @@ export_figure.in.png(
     "Figure_For-Motivation_Daily-Consumption-Facetted-by-Group.png",
     sep = "/"
   ),
-  width_numeric = 50, height_numeric = 20
+  width_numeric = 50, height_numeric = 20, dpi_int = 700
 )
 export_figure.in.png(
   plot_daily.consumption_facetted.by.period,
@@ -373,14 +412,30 @@ export_figure.in.png(
     "Figure_For-Motivation_Daily-Consumption-Facetted-by-Period.png",
     sep = "/"
   ),
-  width_numeric = 40, height_numeric = 15
+  width_numeric = 50, height_numeric = 20, dpi_int = 700
 )
+# # 2. Figure(s) for hourly consumption
 export_figure.in.png(
-  plot_hourly.consumption,
+  plot_hourly.consumption_facetted.by.group.and.rate.period,
   paste(
     PATH_OUTPUT_FIGURE,
-    "Figure_For-Motivation_Hourly-Consumption-by-Rate-Period.png",
+    paste0(
+      "Figure_For-Motivation_",
+      "Hourly-Consumption-Facetted-by-Group-and-Rate-Period.png"
+    ),
     sep = "/"
   ),
-  width_numeric = 40, height_numeric = 22
+  width_numeric = 50, height_numeric = 25, dpi_int = 700
+)
+export_figure.in.png(
+  plot_hourly.consumption_facetted.by.period.and.rate.period,
+  paste(
+    PATH_OUTPUT_FIGURE,
+    paste0(
+      "Figure_For-Motivation_",
+      "Hourly-Consumption-Facetted-by-Period-and-Rate-Period.png"
+    ),
+    sep = "/"
+  ),
+  width_numeric = 50, height_numeric = 25, dpi_int = 700
 )
