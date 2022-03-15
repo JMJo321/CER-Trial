@@ -141,6 +141,7 @@ help_create.ggplot.obj <- function (
     theme_linedraw(),
     theme(
       strip.text = element_text(face = "bold"),
+      axis.title.x = element_text(margin = margin(t = 10)),
       axis.title.y = element_text(margin = margin(r = 12)),
       legend.position = "bottom"
     )
@@ -181,18 +182,13 @@ help_create.ggplot.obj <- function (
         labels = c("Baseline Period", "Treatment Period")
       ) +
       labs(
-        x = "",
+        x = TeX(r'(Temperature $ (\degree F)$)'),
         y = "Average Daily Consumption  (kWh/Day)",
         color = "",
         shape = "",
         subtitle = "Panel A: Household Average Daily Electricity Consumption"
       ) +
-      plot.options +
-      theme(
-        axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank()
-      )
+      plot.options
   # ## Create a ggplot object incl. plot for differences in household average
   # ## daily consumption
   plot_diff.in.kwh <-
@@ -228,8 +224,7 @@ help_create.ggplot.obj <- function (
         shape = "",
         subtitle = "Panel B: Differences in Household Average Daily Consumption"
       ) +
-      plot.options +
-      theme(axis.title.x = element_text(margin = margin(t = 10)))
+      plot.options
   # ## Combine the two ggplot objects
   plot <- grid.arrange(plot_avg.kwh, plot_diff.in.kwh)
 
