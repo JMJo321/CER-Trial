@@ -5,6 +5,8 @@
 # 1.2. App-related Files
 # 1.2.1. Pycharm
 .idea
+# 1.2.2. RStudio
+.Rhistory
 
 
 # 2. Datasets
