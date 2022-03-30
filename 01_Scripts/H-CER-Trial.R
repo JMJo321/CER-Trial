@@ -41,6 +41,8 @@ PATH_DATA_RAW_ORIGINAL <- paste(PATH_DATA_RAW, "01_Original", sep = "/")
 PATH_DATA_RAW_USE <- paste(PATH_DATA_RAW, "02_Use", sep = "/")
 PATH_DATA_INTERMEDIATE <- paste(PATH_DATA, "02_Intermediate-Data", sep = "/")
 PATH_DATA_ANALYSIS <- paste(PATH_DATA, "03_For-Analysis", sep = "/")
+PATH_DATA_ANALYSIS_REG.RESULTS <-
+  paste(PATH_DATA_ANALYSIS, "Regression-Results", sep = "/")
 # # 1.2.2. For specific datasets
 # # 1.2.2.1. For CER data
 PATH_DATA_INTERMEDIATE_CER <- paste(PATH_DATA_INTERMEDIATE, "CER", sep = "/")
@@ -255,6 +257,108 @@ list_stations <- list(
 # ------------------------------------------------------------------------------
 # Define function(s)
 # ------------------------------------------------------------------------------
+# ------- Function(s) related to regression analysis -------
+# # 1. Function(s) for generating formula(s)
+# # 1.1. For `felm` function
+get_formula_felm <- function (
+  dep.var,
+  indep.vars_covariates,
+    indep.vars_fes,
+    indep.vars_ivs,
+    indep.vars_clustered.ses
+) {
+  indep.vars <- paste(
+    indep.vars_covariates,
+    indep.vars_fes,
+    indep.vars_ivs,
+    indep.vars_clustered.ses,
+    sep = " | "
+  )
+  formula_in.str <- paste(dep.var, indep.vars, sep = " ~ ")
+  return (formula(formula_in.str))
+}
+
+
+# # 2. Function(s) for creating subsetting condition(s) in string
+# # 2.1. For half-hourly ATEs
+get_subsetting.condition.in.str_ate_half.hourly <- function (case_in.vector) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half"
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
+
+# # 2.2.  For hourly ATEs
+get_subsetting.condition.in.str_ate_hourly.in.peak <- function (
+  case_in.vector
+) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half",
+  # ##    `rate.period` = "Night", "Day", or "Peak",
+  # ##    `tariff` = "A", "B", "C", or "D"
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    paste0("alloc_r_tariff %in% c('", case_in.vector[4], "', 'E')"),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
+
+
+# # 3. Extract estimates
+# # 3.1. From a `felm` object
+get_estimates_from.felm <- function (
+  felm.object,
+  level = 0.95, # The confidence level to use for the confidence interval
+  fe = FALSE, # Logical indicating whether or not to include estimates of FEs
+  se.type = "robust" # One of "default", "iid", "robust", or "cluster"
+) {
+  dt_estimates <-
+    broom::tidy( # Refer to the document for broom::tidy.felm
+      felm.object,
+      conf.int = TRUE, conf.level = level,
+      fe = fe,
+      se.type = se.type
+    ) %>%
+      data.table::setDT(.)
+  return (dt_estimates)
+}
+
+
 # ------- Functions for miscellaneous tasks -------
 # # 1. To export a ggplot object in PNG format
 export_figure.in.png <- function (
