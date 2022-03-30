@@ -1,0 +1,39 @@
+\begin{table}[!htbp]
+% Add the title
+\caption{(...)}
+\centering
+% Determine font size
+\small
+% The number of "c" is equal to the number of columns. And determine the width
+% of each column.
+\begin{tabular}{@{\extracolsep{20pt}}lcccc}
+\\[-5.5ex]
+\hline \hline
+\\[-3.0ex]
+% Add the label of the dependent variable. And the number must be the same with
+% the number of columns.
+& \multicolumn{4}{c}{(...)} \\
+\\[-3.0ex]
+% The range must be "2-(The number of columns + 1)"
+\cline{2-5}
+\\[-3.0ex]
+&  &  &  &  \\
+\\[-4.0ex]
+ & (1) & (2) & (3) & (4) \\
+\\[-3.0ex]
+\hline
+\\[-2.0ex]
+&  &  &  &  \\
+\hline
+\\[-2.0ex]
+&  &  &  &  \\
+\\[-2.0ex]
+\hline \hline
+\\[-4.5ex]
+\end{tabular}
+\begin{tablenotes}
+    \small
+    \textit{Note}: (...)  % Add a note.
+\end{tablenotes}
+\label{Table:}  % Add the label
+\end{table}
