@@ -1,0 +1,27 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Average Treatment Effects in the Peak Rate Period} 
+  \label{Table:Average-Treatment-Effects-in-the-Peak-Rate-Period} 
+\small 
+\begin{tabular}{@{\extracolsep{20pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{Dependent Variable} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+ & Tariff A & Tariff B & Tariff C & Tariff D \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.136$^{***}$ & $-$0.168$^{***}$ & $-$0.161$^{***}$ & $-$0.210$^{***}$ \\ 
+  & (0.015) & (0.023) & (0.015) & (0.023) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes \\ 
+FEs: Month of Year & Yes & Yes & Yes & Yes \\ 
+Observations & 1,771,600 & 1,147,240 & 1,795,680 & 1,155,840 \\ 
+Adjusted R$^{2}$ & 0.360 & 0.376 & 0.362 & 0.360 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
