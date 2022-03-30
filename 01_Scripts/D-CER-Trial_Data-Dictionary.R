@@ -1,6 +1,6 @@
 # < Description > *
 # > Script Group Indicator Number and Name
-# # : D
+# # : D, Data Dictionary
 # #
 # > Script Number(s)
 # # : D-CER-Trial
