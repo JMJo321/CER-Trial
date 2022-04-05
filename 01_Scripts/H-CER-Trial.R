@@ -307,7 +307,7 @@ get_subsetting.condition.in.str_ate_half.hourly <- function (case_in.vector) {
 }
 
 # # 2.2.  For hourly ATEs
-get_subsetting.condition.in.str_ate_hourly.in.peak <- function (
+get_subsetting.condition.in.str_ate_hourly.in.peak.by.rate.period <- function (
   case_in.vector
 ) {
   # ## Note:
@@ -338,6 +338,65 @@ get_subsetting.condition.in.str_ate_hourly.in.peak <- function (
   return (condition_in.str)
 }
 
+# # 2.3. For breaking down hourly ATEs in the peak rate period
+get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak <-
+  function (case_in.vector) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half",
+  # ##    `rate.period` = "Night", "Day", or "Peak"
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
+
+# # 2.4. For breaking down hourly ATEs in the peak rate period, by tariff
+get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.tariff <-
+  function (case_in.vector) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half",
+  # ##    `rate.period` = "Night", "Day", or "Peak",
+  # ##    `tariff` = "A", "B", "C", or "D"
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    paste0("alloc_r_tariff %in% c('", case_in.vector[4], "', 'E')"),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
 
 # # 3. Extract estimates
 # # 3.1. From a `felm` object
