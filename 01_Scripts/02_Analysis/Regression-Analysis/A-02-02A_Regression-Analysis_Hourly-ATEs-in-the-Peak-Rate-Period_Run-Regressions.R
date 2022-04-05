@@ -66,7 +66,9 @@ DIR_TO.SAVE_REG.RESULTS <-
 # # 1. Function(s) for running regression(s)
 get_reg.results <- function (data_in.DT, formula, case_in.vector) {
   subsetting.condition <-
-    get_subsetting.condition.in.str_ate_hourly.in.peak(case_in.vector)
+    get_subsetting.condition.in.str_ate_hourly.in.peak.by.rate.period(
+      case_in.vector
+    )
   reg.results <- felm(
     data = data_in.DT[eval(parse(text = subsetting.condition))],
     formula = formula
