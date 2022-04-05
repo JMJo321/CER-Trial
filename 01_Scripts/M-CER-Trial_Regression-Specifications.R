@@ -110,3 +110,103 @@ model_ate_hourly.in.peak_iw.dw.m <- get_formula_felm(
   indep.vars_ivs = indep.vars_ivs_ate_hourly.in.peak,
   indep.vars_clustered.ses = indep.vars_clustered.ses_ate_hourly.in.peak
 )
+
+
+# ------------------------------------------------------------------------------
+# Define Regression Specification(s) to breakdown hourly ATEs in the peak
+# rate period
+# ------------------------------------------------------------------------------
+# ------- Define econometric models:                               -------
+# ------- Breakdown of Hourly ATEs in the peak rate period, Linear -------
+# # 1. Define dependent and independent variables commonly used
+# # 1.1. Dependent variable
+dep.var_breakdown.of.ate_hourly.in.peak <- "kwh_per.hour"
+
+# # 1.2. Independent variables
+# # 1.2.1. Covariate(s)
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak <- paste(
+  "hdd_all_60f",
+  "is_treated_r",
+  "treatment_by_hdd",
+  "is_treatment.period",
+  "treatment.period_by_hdd",
+  "is_treatment.and.post",
+  "treatment.and.post_by_hdd",
+  sep = " + "
+)
+# ## Note:
+# ## The last three variables must be created before running regressions.
+# # 1.2.2. Fixed effect(s)
+# (Defined in each econometric model.)
+# # 1.2.3. Instrument variable(s)
+indep.vars_ivs_breakdown.of.ate_hourly.in.peak <- "0"
+# # 1.2.4. Clustered standard error(s)
+indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak <-
+  "id_in.factor + day_in.factor"
+
+
+# # 2. Econometric models to breakdown hourly ATEs in the peak rate period
+model_breakdown.of.ate_hourly.in.peak_dw.mw <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak,
+  indep.vars_fes = paste(
+    "day.of.week.and.30min.interval_in.factor",
+    "month.and.30min.interval_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
+
+
+# ------- Define econometric models:                                  -------
+# ------- Breakdown of Hourly ATEs in the peak rate period, Quadratic -------
+# # 1. Define dependent and independent variables commonly used
+# # 1.1. Dependent variable
+# (Same as the linear model)
+
+# # 1.2. Independent variables
+# # 1.2.1. Covariate(s)
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_quadratic <- paste(
+  "hdd_all_60f",
+  "is_treated_r",
+  "treatment_by_hdd",
+  "treatment_by_hdd2",
+  "is_treatment.period",
+  "treatment.period_by_hdd",
+  "treatment.period_by_hdd2",
+  "is_treatment.and.post",
+  "treatment.and.post_by_hdd",
+  "treatment.and.post_by_hdd2",
+  sep = " + "
+)
+# ## Note:
+# ## The last three variables must be created before running regressions.
+# # 1.2.2. Fixed effect(s)
+# (Defined in each econometric model.)
+# # 1.2.3. Instrument variable(s)
+# (Same as the linear model)
+# # 1.2.4. Clustered standard error(s)
+# (Same as the linear model)
+
+
+# # 2. Econometric models to breakdown hourly ATEs in the peak rate period
+model_breakdown.of.ate_hourly.in.peak_quadratic_dw.mw <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_quadratic,
+  indep.vars_fes = paste(
+    "day.of.week.and.30min.interval_in.factor",
+    "month.and.30min.interval_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
