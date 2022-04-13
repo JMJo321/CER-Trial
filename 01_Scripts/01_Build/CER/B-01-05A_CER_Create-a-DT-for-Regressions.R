@@ -319,6 +319,7 @@ dt_for.reg[
     paste(id, day.of.week, rate.period_detail_level1, sep = "-")
   )
 ]
+dt_for.reg[, id.and.day_in.factor := factor(paste(id, day, sep = "-"))]
 dt_for.reg[
   ,
   day.of.week.and.30min.interval_in.factor := factor(
@@ -595,6 +596,7 @@ cols_reorder <- c(
   "id.and.30min.interval_in.factor", "id.and.day.of.week_in.factor",
   "id.and.rate.period.level1_in.factor",
   "id.and.day.of.week.and.rate.period.level1_in.factor",
+  "id.and.day_in.factor",
   "day.of.week.and.hour.interval_in.factor",
   "day.of.week.and.30min.interval_in.factor",
   "day.of.week.and.rate.period.level1_in.factor",

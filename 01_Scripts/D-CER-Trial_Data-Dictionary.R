@@ -85,6 +85,7 @@ labels_cer <- list(
   id.and.day.of.week.and.rate.period.level1_in.factor = "FEs: Meter ID by Day of Week by Level-1 Rate Period (in Factor Data Type)",
   id.and.hour.interval_in.factor = "FEs: Meter ID by 1-Hour Interval (in Factor Data Type)",
   id.and.rate.period.level1_in.factor = "FEs: Meter ID by Level-1 Rate Period (in Factor Data Type)",
+  id.and.day_infactor = "FEs: Meter ID by Day (in Factor Data Type)",
   interval_30min = "30-Minute Interval",
   interval_30min_in.factor = "FEs: 30-Minute Interval (in Factor Data Type)",
   interval_hour = "1-Hour Interval",
