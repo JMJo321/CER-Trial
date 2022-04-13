@@ -1,0 +1,5203 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 3374
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 290.605 360 -93.956 re
+f
+BT
+/F4 1 Tf
+8.5 0 0 8.5 66.9448 273.73 Tm
+0 0 0 1 k
+/GS3 gs
+-0.0059 Tc
+0 Tw
+(Abstract: )Tj
+/F3 1 Tf
+3.8815 0 TD
+-0.0316 Tw
+[(Ireland)55.1(s National Renewable Ener)18(gy )55.2(Action plan addresses how it will meet its environmental)-5.7( )]TJ
+-3.8815 -1.2353 TD
+0 Tc
+-0.0353 Tw
+[(commitments. One element of the strategy is the use and promotion of micro renewable ener)18.1(gy systems )]TJ
+T*
+-0.0084 Tc
+-0.0291 Tw
+[(\(micro-RES\). )18.1(This paper profiles households that have adopted micro-RES and examines whether micro-)]TJ
+T*
+0.01 Tc
+0.0616 Tw
+[(RES installations have resulted in a reduction in ener)18.1(gy consumption based on data from the Irish)10( )]TJ
+T*
+-0.0055 Tc
+-0.032 Tw
+[(Household Budget Survey)65(. Results indicate that the presence of micro-RES does not result in a reduction)-5.4( )]TJ
+T*
+0 Tc
+0.0317 Tw
+[(of electricity use, rather the opposite. Furthermore, our findings indicate that some revision of ener)18.1(gy )]TJ
+T*
+0 Tw
+[(policy is needed, as the presence of micro-RES does not result in a decrease in total ener)18.1(gy use. )]TJ
+11 0 0 11 393.9333 210.73 Tm
+( )Tj
+-28.6353 -1.1818 TD
+( )Tj
+0 -0.5455 TD
+( )Tj
+0 -1.1818 TD
+( )Tj
+T*
+( )Tj
+/F1 1 Tf
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+10.4323 -1.1818 TD
+0.222 Tw
+(I INTRODUCTION )Tj
+-12.0686 -1.1818 TD
+0 Tw
+( )Tj
+28.402 0 0 28.402 60.9448 113.73 Tm
+(T)Tj
+/F3 1 Tf
+11 0 0 11 78.1948 126.73 Tm
+0 0 0 1 k
+/GS3 gs
+0.034 Tw
+[(he Irish government has stated its commitment to a low carbon ener)18.1(gy future )]TJ
+T*
+-0.0224 Tw
+[(as part of its plan to support the wide scale deployment of renewable ener)18.1(gy in )]TJ
+14.0455 -6.3939 TD
+0 Tw
+(265)Tj
+/F2 1 Tf
+9 0 0 9 60.9448 622.8654 Tm
+[(The Economic and Social Review)74(, V)37(ol. 50, No. 2, Summer 2019, pp. 265-280 )]TJ
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 617.909 m
+420.945 617.909 l
+S
+BT
+/F1 1 Tf
+14 0 0 14 60.9448 545.5946 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+[(Household Energy Consumption: A Study of Micr)18(o )]TJ
+0 -1.2857 TD
+[(Renewable Energy Systems in Ir)18(eland)]TJ
+11 0 0 11 60.9448 479.7051 Tm
+(Michael Chesser  )Tj
+/F2 1 Tf
+10 0 0 10 60.9448 466.7051 Tm
+0 0 0 1 k
+/GS3 gs
+[(T)92(echnological University Dublin )]TJ
+0 -0.9 TD
+( )Tj
+/F1 1 Tf
+11 0 0 11 60.9448 439.7051 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+(Jim Hanly  )Tj
+/F2 1 Tf
+10 0 0 10 60.9448 426.7051 Tm
+0 0 0 1 k
+/GS3 gs
+[(T)92(echnological University Dublin )]TJ
+T*
+( )Tj
+/F1 1 Tf
+11 0 0 11 60.9448 399.7051 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+(Damien Cassells  )Tj
+/F2 1 Tf
+10 0 0 10 60.9448 386.7051 Tm
+0 0 0 1 k
+/GS3 gs
+[(T)92(echnological University Dublin  )]TJ
+T*
+( )Tj
+/F1 1 Tf
+11 0 0 11 60.9448 359.7051 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+(Nikolaos Apergis  )Tj
+/F2 1 Tf
+10 0 0 10 60.9448 346.7051 Tm
+0 0 0 1 k
+/GS3 gs
+(University of Piraeus )Tj
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 316.879 m
+420.945 316.879 l
+S
+BT
+/F4 1 Tf
+8.5 0 0 8.5 60.9448 88.7292 Tm
+/GS3 gs
+(Acknowledgements: )Tj
+/F3 1 Tf
+8.2387 0 TD
+-0.0084 Tw
+[(Financial support was provided by Fiosraigh Scholarship Programme awarded by )18(TU )]TJ
+-8.2387 -1.2353 TD
+0 Tw
+[(Dublin. )18.1(The authors are solely responsible for the content and the views expressed. )]TJ
+0 -0.7059 TD
+( )Tj
+0 -1.2353 TD
+(Corresponding author: michael.chesser@mydit.ie)Tj
+ET
+Q
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+12 0 obj
+<<
+/Length 5269
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F3 1 Tf
+11 0 0 11 60.9449 594.7354 Tm
+0 0 0 1 k
+/GS3 gs
+0 Tc
+0.0166 Tw
+[(the residential sector)55.2(. )18.1(T)69.8(owards this end, several micro renewable ener)18.1(gy systems)]TJ
+8.8003 0 0 7.7 416.5721 598.3653 Tm
+0 Tw
+(1)Tj
+11 0 0 11 420.9457 594.7354 Tm
+( )Tj
+-32.7273 -1.1818 TD
+0.0032 Tc
+0.0593 Tw
+[(\(micro-RES\) and ener)18.1(gy ef)18.1(ficiency schemes have operated in Ireland. Currently )]TJ
+T*
+0 Tc
+0.0427 Tw
+[(there is the Solar PV)18.1( Grant of)18.1(fered by Sustainable Ener)18.1(gy )55.2(Association of Ireland )]TJ
+T*
+0.0256 Tw
+[(\(SEAI\) that of)18.1(fers a grant of up to  3,800 for solar PV)18.1( panels and battery storage )]TJ
+T*
+0.0068 Tc
+0.0557 Tw
+[(systems. )18.1(There is also a Solar )18.1(Thermal Grant with a value up to  1,200 \(SEAI,)6.8( )]TJ
+T*
+0 Tc
+0 Tw
+(2017\).  )Tj
+1.6364 -1.1818 TD
+0.0061 Tc
+0.0564 Tw
+[(Households which integrate micro-RES could allow themselves to generate)6.1( )]TJ
+-1.6364 -1.1818 TD
+0 Tc
+0.0066 Tw
+[(their own ener)18.1(gy thus reducing ener)18.1(gy demand, which in turn reduces the amount )]TJ
+T*
+-0.0335 Tw
+[(of new generation that needs to be built, resulting in lower costs to consumers. )18.1(The )]TJ
+T*
+-0.0041 Tc
+-0.0334 Tw
+[(promotion of micro-RES in Ireland could help it reach its ener)18.1(gy policy goals while )]TJ
+T*
+0.01 Tc
+0.0726 Tw
+[(also contributing to its future ener)18.1(gy demand. For example )55.2(Allen )]TJ
+/F4 1 Tf
+27.5466 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.1321 0 TD
+[( \(2008\))10( )]TJ
+-29.6787 -1.1818 TD
+0 Tc
+0.0042 Tw
+(references a study where it was predicted that electrical micro-RES could provide )Tj
+T*
+0 Tw
+[(30 to 40 per cent of the UK)55.2(s electricity needs by 2050.)]TJ
+8.8003 0 0 7.7 304.735 442.3653 Tm
+(2)Tj
+11 0 0 11 309.112 438.7353 Tm
+( )Tj
+-20.9243 -1.1818 TD
+0.0252 Tw
+[(T)69.8(o)0( support policymakers)74.2( decisions about how to reduce ener)18.1(gy use and CO)]TJ
+8.8003 0 0 7.7 416.5717 420.7303 Tm
+0 Tw
+(2)Tj
+11 0 0 11 420.9454 424.3603 Tm
+( )Tj
+-32.7273 -1.0568 TD
+0.01 Tc
+0.1152 Tw
+[(emissions from the housing sector through the promotion of micro-RES, it is)9.9( )]TJ
+0 -1.1818 TD
+0 Tc
+-0.016 Tw
+(essential to know the profile of the average household that is currently adopting it. )Tj
+T*
+0.0031 Tw
+(Also, it is worth investigating whether the adoption of micro-RES is successful in )Tj
+T*
+0.01 Tc
+0.1403 Tw
+[(reducing domestic ener)18.1(gy consumption. )18.1(This paper addresses these issues by)10( )]TJ
+T*
+0.0976 Tw
+[(examining what the common household characteristics are among adopters of)10( )]TJ
+T*
+0 Tc
+-0.0202 Tw
+[(micro-RES using a Logit regression model. )18.1(W)80.1(e)0( also consider whether the growing )]TJ
+T*
+-0.007 Tc
+-0.0305 Tw
+[(number of micro-RES installations has had an impact on ener)18.1(gy consumption levels)-7.1( )]TJ
+T*
+0 Tc
+-0.0196 Tw
+(for residential households in Ireland. Our results can inform the next generation of )Tj
+T*
+-0.0011 Tc
+-0.0364 Tw
+(policy formulation and planning, particularly with regard to micro-RES in the Irish )Tj
+T*
+0 Tc
+-0.0078 Tw
+[(ener)18.1(gy landscape. )18(This study is significant for two reasons; firstly)65(, no study)65(, to the )]TJ
+T*
+0.0181 Tw
+(best of our knowledge, has yet to investigate how the growth of micro generation )Tj
+T*
+0.0374 Tw
+[(has impacted on residential ener)18.1(gy consumption. Secondly)65(, according to Jones )]TJ
+/F4 1 Tf
+32.0056 0 TD
+0 Tw
+(et )Tj
+-32.0056 -1.1818 TD
+(al.)Tj
+/F3 1 Tf
+1.0278 0 TD
+0.052 Tw
+[( \(2015\) there is a shortage of studies which investigate the ef)18.1(fects of the three )]TJ
+-1.0278 -1.1818 TD
+0 Tw
+[(main factors on residential ener)18.1(gy demand in countries outside the US and UK.  )]TJ
+1.6364 -1.1818 TD
+0.0142 Tw
+(The rest of the paper is structured as follows; Section II reviews the literature )Tj
+-1.6364 -1.1818 TD
+-0.0302 Tw
+[(that examines the significant and insignificant factors impacting residential ener)18.1(gy )]TJ
+T*
+-0.0261 Tw
+(demand/consumption. Section III describes the data and the econometric methods. )Tj
+T*
+0.01 Tc
+0.1848 Tw
+[(Our empirical findings are presented in Section IV)128.9(. )18.1(These findings are then)10( )]TJ
+T*
+0 Tc
+0 Tw
+[(discussed in the conclusion together with policy implications in Section )18.1(V)128.9(.)0(  )]TJ
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+[(266)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/TT2 1 Tf
+6.8003 0 0 5.95 60.9609 104.1467 Tm
+(1)Tj
+/TT1 1 Tf
+8.5 0 0 8.5 64.7107 101.3417 Tm
+<0260>Tj
+/F3 1 Tf
+0.2778 0 TD
+-0.0019 Tc
+-0.0356 Tw
+[(There are many dif)18.1(ferent types of micro-RES available to the residential sector; photovoltaic \(PV\) panels, )]TJ
+-0.7209 -1.2353 TD
+0 Tc
+-0.0196 Tw
+(micro wind turbines, solar thermal water heaters, wood pellet boilers, geothermal heat pumps or combined )Tj
+T*
+0 Tw
+(heat and power \(CHP\) units. )Tj
+6.8003 0 0 5.95 60.9609 72.6467 Tm
+(2)Tj
+8.5 0 0 8.5 64.4299 69.8417 Tm
+0.01 Tc
+0.0771 Tw
+[()10(The UK and Ireland share a similar climate; it would stand to reason that Ireland could reach these)9.9( )]TJ
+-0.41 -1.2353 TD
+0 Tc
+0 Tw
+(percentages as well. )Tj
+ET
+Q
+endstream
+endobj
+13 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+/TT1 15 0 R
+/TT2 16 0 R
+>>
+/ExtGState <<
+/GS3 9 0 R
+>>
+>>
+endobj
+18 0 obj
+<<
+/Length 5027
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F1 1 Tf
+11 0 0 11 177.9312 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+0 Tc
+0.222 Tw
+[(II LITERA)74(TURE )222(REVIEW )]TJ
+/F3 1 Tf
+0 0 0 1 k
+/GS3 gs
+-10.6351 -1.1818 TD
+0 Tw
+( )Tj
+T*
+0.0003 Tc
+0.0622 Tw
+(This study is concerned first with investigating what are the common household )Tj
+T*
+0 Tc
+-0.0311 Tw
+(characteristics that have led to the adoption of micro-RES; and second whether the )Tj
+T*
+0.0097 Tw
+[(presence of micro-RES is a determinant of residential household ener)18.1(gy use. )55.2(As a )]TJ
+T*
+0.007 Tw
+(result of this, the literature review will be presented in two parts; adoption of new )Tj
+T*
+0 Tw
+[(ener)18.1(gy sources and the determinants of residential ener)18.1(gy consumption.  )]TJ
+1.6364 -1.1818 TD
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 490.5083 Tm
+[(2.1 Adoption of New Energy Sour)18(ces in the Residential Sector  )]TJ
+/F3 1 Tf
+11 0 0 11 60.9448 477.5083 Tm
+-0.0029 Tw
+(There is a number of studies that examine the decision process for the adoption of )Tj
+T*
+0.0008 Tc
+0.0617 Tw
+[(a new ener)18.1(gy source in the home. )55.2(A)55.2( study by Islam \(2014\) investigated whether )]TJ
+T*
+0.01 Tc
+0.0558 Tw
+[(Canadian households prefer the attributes of the new technology)65(, solar PV)18.1( and)10.1( )]TJ
+T*
+0.0097 Tc
+0.0528 Tw
+[(whether they are going to adopt it. Results show that younger households with)9.6( )]TJ
+T*
+0 Tc
+0.0222 Tw
+(higher technology awareness who are not as concerned with cost, are more likely )Tj
+T*
+-0.0202 Tw
+[(to be in the early solar PV)18.1( adoption rates. Mills and Schleich \(2009\) found that the )]TJ
+T*
+-0.0349 Tw
+(adoption of solar thermal in Germany is higher in newer houses and in houses with )Tj
+T*
+0.0393 Tw
+[(more modern heating systems. )18.1(While Michelsen and Madlener \(2016\) found that )]TJ
+T*
+-0.0085 Tc
+-0.029 Tw
+[(knowledge, house size, rural households and threats resulted in households adopting)-8.6( )]TJ
+T*
+0.01 Tc
+0.1209 Tw
+[(renewable heating systems. )18.1(V)110.9(ariables that inhibited adoption were house age,)10.1( )]TJ
+T*
+0 Tc
+0.0057 Tw
+(comfort, status quo and homeowner with a university degree. Sopha )Tj
+/F4 1 Tf
+27.5505 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.0052 0 TD
+[( \(2010\), )]TJ
+-29.5556 -1.1818 TD
+0.01 Tc
+0.2702 Tw
+[(using Norwegian data, found that households with younger occupants and)10( )]TJ
+T*
+0.0059 Tc
+0.0566 Tw
+[(occupants with higher education levels were more likely to adopt heat pump or)5.9( )]TJ
+T*
+0 Tc
+0 Tw
+(wood pellet as their future heating systems.  )Tj
+1.6364 -1.1818 TD
+0.0607 Tw
+[(Studies on the adoption of renewable ener)18.1(gy at household level in Ireland is )]TJ
+-1.6364 -1.1818 TD
+0.0005 Tw
+[(limited, however there have been studies on Irish households)74.2( decisions regarding )]TJ
+T*
+0.0155 Tw
+[(the adoption of dif)18.1(ferent fuel sources and the adoption determinants of household )]TJ
+T*
+0.0006 Tc
+0.0619 Tw
+[(appliances that improve ener)18.1(gy ef)18.1(ficiency)65(. )55.2(A)55.2( study by McCoy and Curtis \(2018\) )]TJ
+T*
+0.0073 Tc
+0.0552 Tw
+[(investigated the determinants of natural gas in the Irish residential sector)55.2(. )18.1(They)7.3( )]TJ
+T*
+0 Tc
+-0.022 Tw
+(found that socio-economic factors \(SEF\) such as lower levels of education and out )Tj
+T*
+0.0179 Tw
+[(of work households had lower rates of connections to gas lines. )55.1(Another study by )]TJ
+T*
+-0.0163 Tw
+[(Leahy and L)55.2(yons \(2010\) examined the determinants of appliance ownership in the )]TJ
+T*
+-0.0221 Tw
+[(residential sector using the Irish Household Budget Survey \(HBS\). )18.1(They modelled )]TJ
+T*
+-0.0014 Tc
+-0.0361 Tw
+[(access to several appliances including double glazed windows. )18.1(The authors)74.2( results )]TJ
+T*
+0.01 Tc
+0.2634 Tw
+[(were estimated using a Logit regression with findings showing that urban)10.1( )]TJ
+T*
+0 Tc
+0.0012 Tw
+[(households are more likely to have double glazing than rural households. )55.2(Another )]TJ
+T*
+-0.0038 Tc
+-0.0337 Tw
+(result of interest is the correlation with household disposable income which implies )Tj
+T*
+0 Tc
+0 Tw
+(that, as income increases, so does the probability of having double glazing.  )Tj
+1.6364 -1.1818 TD
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 100.5082 Tm
+(2.2 Determinants of Residential Energy Consumption  )Tj
+/F3 1 Tf
+11 0 0 11 60.9448 87.8083 Tm
+0.0442 Tw
+(This subsection of the literature review presents studies that investigate the main )Tj
+0 -1.1545 TD
+-0.0119 Tw
+[(determinants of residential ener)18.1(gy consumption using econometric analysis with a )]TJ
+T*
+0.0078 Tw
+(focus firstly on global studies, followed by Irish studies on the main determinants )Tj
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+0 Tw
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(267)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+19 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Length 6626
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F3 1 Tf
+11 0 0 11 60.9449 594.7246 Tm
+0 0 0 1 k
+/GS3 gs
+0.01 Tc
+0.0846 Tw
+[(of residential ener)18.1(gy)65(. Jones, )]TJ
+/F4 1 Tf
+11.9966 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.1442 0 TD
+[( \(2015\) compiled a comprehensive literature)10( )]TJ
+-14.1408 -1.1545 TD
+0.0089 Tc
+0.0536 Tw
+(review of studies examining the variables that either have a significant or non-)Tj
+T*
+0.0006 Tc
+0.0619 Tw
+[(significant ef)18.1(fect on residential ener)18.1(gy demand/consumption \(see )18.1(T)69.9(able 1\). )18.1(They )]TJ
+T*
+0.01 Tc
+0.1969 Tw
+(broke down the variables into three groups; socio-economic factors \(SEF\),)Tj
+8.8003 0 0 7.7 416.5721 560.2546 Tm
+0 Tc
+0 Tw
+(3)Tj
+11 0 0 11 420.9459 556.6246 Tm
+( )Tj
+-32.7274 -1.1545 TD
+0.0006 Tc
+0.0619 Tw
+(dwelling factors \(DF\))Tj
+8.8003 0 0 7.7 157.7685 547.5546 Tm
+0 Tc
+0 Tw
+(4)Tj
+11 0 0 11 162.1497 543.9246 Tm
+0.0006 Tc
+0.0619 Tw
+[( and appliance factors \(AF\).)]TJ
+8.8003 0 0 7.7 288.1628 547.5546 Tm
+0 Tc
+0 Tw
+(5)Tj
+11 0 0 11 292.5403 543.9246 Tm
+0.0006 Tc
+0.0619 Tw
+[( )18.1(The study found that, in the )]TJ
+-21.0541 -1.1545 TD
+0 Tc
+0.0276 Tw
+[(literature reviewed, 62 variables influence residential ener)18.1(gy consumption. )18.1(These )]TJ
+T*
+0 Tw
+(include 13 socio-economic, 12 dwelling and 37 appliance factors. )Tj
+1.6364 -1.1545 TD
+0.0082 Tc
+0.0543 Tw
+[(However there are mixed results in the global literature with regards to the)8.3( )]TJ
+-1.6364 -1.1545 TD
+0.01 Tc
+0.2322 Tw
+[(direction of the relationship between these variables and residential ener)18.1(gy)10.1( )]TJ
+T*
+0.0053 Tc
+0.0572 Tw
+[(consumption. Reviewing the variable household with children)74.2( from the socio-)]TJ
+T*
+0 Tc
+0.0152 Tw
+(economic factors group, it was found to vary across the literature. Several studies )Tj
+T*
+0.0018 Tw
+[(found that it had a positive ef)18.1(fect on household ener)18.1(gy consumption; McLoughlin )]TJ
+/F4 1 Tf
+T*
+-0.0102 Tw
+(et al.)Tj
+/F3 1 Tf
+1.9893 0 TD
+[( \(2012\) and )18.1(W)40.1(iesmann )]TJ
+/F4 1 Tf
+9.2872 0 TD
+(et al. )Tj
+/F3 1 Tf
+2.229 0 TD
+[(\(201)37.1(1\). Meanwhile Bartiaux and Gram-Hanssen )]TJ
+-13.5055 -1.1545 TD
+0.01 Tc
+0.0552 Tw
+(\(2005\) and Gram-Hanssen )Tj
+/F4 1 Tf
+11.2635 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.1147 0 TD
+[( \(2004\) found a negative ef)18.1(fect. )18.1(The following)10( )]TJ
+-13.3783 -1.1545 TD
+0 Tc
+0 Tw
+[(studies found no ef)18.1(fect; Bedir )]TJ
+/F4 1 Tf
+12.1177 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9995 0 TD
+( \(2013\) and Cramer )Tj
+/F4 1 Tf
+8.1084 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9995 0 TD
+( \(1985\). )Tj
+-22.5887 -1.1545 TD
+0.01 Tc
+0.0811 Tw
+[(There is also a debate on the direction of the relationship between several)10.1( )]TJ
+-1.6364 -1.1545 TD
+0 Tc
+-0.0123 Tw
+[(dwelling factors and ener)18.1(gy consumption. For example, Brounen )]TJ
+/F4 1 Tf
+26.1549 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9872 0 TD
+[( \(2012\) and )]TJ
+-28.1421 -1.1545 TD
+0.0004 Tw
+[(Leahy and L)55.2(yons \(2010\) find a positive ef)18.1(fect with regards to the age of dwelling. )]TJ
+T*
+0.0098 Tw
+[(A)55.2( negative ef)18.1(fect was found by Baker and R)40.1(ylatt \(2008\) and Chong \(2012\), while )]TJ
+T*
+0 Tw
+[(T)69.8(so and )37.1(Y)100.1(au \(2007\) found no ef)18.1(fect. )]TJ
+1.6364 -1.1545 TD
+0.0074 Tc
+0.0551 Tw
+[(Finally)64.9(, the literature on appliance factors again shows mixed findings. For)7.4( )]TJ
+-1.6364 -1.1545 TD
+0.0035 Tc
+0.059 Tw
+(example, looking at the relationship between the presence of tumble dryers in a )Tj
+T*
+0.0003 Tc
+0.0622 Tw
+[(home and ener)18(gy consumption, a positive ef)18(fect was found by Mcloughlin )]TJ
+/F4 1 Tf
+30.6643 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.0633 0 TD
+0 Tc
+0 Tw
+( )Tj
+-32.7276 -1.1545 TD
+(\(2012\) while Carter )Tj
+/F4 1 Tf
+8.1362 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9995 0 TD
+[( \(2012\) found no ef)18.1(fect. )]TJ
+-8.4994 -1.1545 TD
+0.01 Tc
+0.391 Tw
+[(The following subsection details three Irish studies investigating the)10( )]TJ
+-1.6364 -1.1545 TD
+-0.0037 Tc
+-0.0338 Tw
+[(determinants of residential ener)18.1(gy consumption. )18.1(The first study is Leahy and L)55.2(yons )]TJ
+T*
+0 Tc
+-0.0134 Tw
+[(\(2010\), which examined the determinants of ener)18.1(gy use first by electricity use and )]TJ
+T*
+-0.008 Tc
+-0.0295 Tw
+[(then all other ener)18.1(gy use. )18.1(Their study used ordinary least squares regression analysis)-8( )]TJ
+T*
+0.01 Tc
+0.1883 Tw
+[(on the 2004/2005 Irish Household Budget Survey)65(. )18.1(Their ener)18.1(gy use models)10( )]TJ
+T*
+0 Tc
+-0.0028 Tw
+[(included variables from SEF)80.1(, DF and )55.1(AF)80.1(. McLoughlin )]TJ
+/F4 1 Tf
+21.9825 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9968 0 TD
+-0.0001 Tc
+[( \(2012\), dif)18(fered from )]TJ
+-23.9792 -1.1545 TD
+0.01 Tc
+0.126 Tw
+[(Leahy and L)55.2(yons \(2010\) by using four dif)18.1(ferent parameters as the dependent)10( )]TJ
+T*
+0 Tc
+-0.004 Tw
+(variable; total electricity consumption, maximum demand, load factor and time of )Tj
+T*
+0.0062 Tc
+0.0563 Tw
+(use. McLoughlin )Tj
+/F4 1 Tf
+7.2941 0 TD
+(et al. )Tj
+/F3 1 Tf
+2.4055 0 TD
+[(\(2012\) used a multiple linear regression on each model,)6.3( )]TJ
+-9.6996 -1.1545 TD
+0.0022 Tc
+0.0603 Tw
+[(using a sample of 3,941 Irish households. )18.1(Their models included variables from )]TJ
+T*
+0 Tc
+0.0259 Tw
+[(SEF)80.1(, DF and )55.2(AF)80.1(. Lastly Harold )]TJ
+/F4 1 Tf
+12.9401 0 TD
+(et al.)Tj
+/F3 1 Tf
+2.0254 0 TD
+[( \(2015\) investigates the daily residential gas )]TJ
+-14.9655 -1.1545 TD
+0.01 Tc
+0.1757 Tw
+[(demand by employing random ef)18.1(fects estimator on a panel dataset of 1,181)10( )]TJ
+T*
+0 Tc
+-0.0088 Tw
+[(households)74.2( smart meter data. )18(Their daily residential gas demand models included )]TJ
+T*
+0 Tw
+[(variables from SEF)80.1(, DF and weather variables. )]TJ
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+[(268)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/TT2 1 Tf
+6.8003 0 0 5.95 60.9609 105.4777 Tm
+(3)Tj
+/TT1 1 Tf
+0.5562 0 TD
+<0260>Tj
+/F3 1 Tf
+8.5 0 0 8.5 66.6161 102.6727 Tm
+0.048 Tw
+(Includes variables such as; number of occupants, education level of head of household, income, tenure )Tj
+-0.6672 -1.2353 TD
+0 Tw
+(type, age of head of household, etc.  )Tj
+6.8003 0 0 5.95 60.9609 84.4777 Tm
+(4)Tj
+8.5 0 0 8.5 64.3449 81.6727 Tm
+-0.0172 Tw
+(Includes variables such as; type of dwelling, year of construction, size of dwelling, number of bedrooms, )Tj
+-0.4 -1.2353 TD
+0 Tw
+(double glazing windows etc.  )Tj
+6.8003 0 0 5.95 60.9609 63.4777 Tm
+(5)Tj
+8.5 0 0 8.5 64.3449 60.6727 Tm
+(Includes variables such as; total number of appliances, power demand appliances, etc.)Tj
+ET
+Q
+endstream
+endobj
+22 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+/TT1 15 0 R
+/TT2 16 0 R
+>>
+/ExtGState <<
+/GS3 9 0 R
+>>
+>>
+endobj
+24 0 obj
+<<
+/Length 6375
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 585.911 360 -235.649 re
+f
+BT
+/F1 1 Tf
+10 0 0 10 173.3597 595.2223 Tm
+0 0 0 1 k
+/GS3 gs
+0 Tc
+0 Tw
+[(T)111(able 1: Summary of Studies )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+0 J 0 j 2 w 10 M []0 d
+/GS2 gs
+60.945 586.848 m
+420.945 586.848 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 590.2223 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 66.9448 574.2223 Tm
+[(  )-168.5(                                                                                                      Independent variable  )]TJ
+0.2366 -1.2 TD
+(                                                                                                                   studied )Tj
+35.1634 -0.4 TD
+(                         )Tj
+-9.5 -0.4 TD
+(………………………………………………… )Tj
+-25.9 -1.2 TD
+[(Study)-59.9(                                                                               Country)-227.6(    SEF)-189.3(       DF)-172.1(      AF )]TJ
+ET
+0 0 0 1 K
+0.5 w 
+60.945 536.814 m
+420.945 536.814 l
+S
+BT
+/F3 1 Tf
+10 0 0 10 60.9448 539.2223 Tm
+( )Tj
+0.6 -1.2 TD
+[(Larsen and Nesbakken )-241.1(                                \(2004\))-17(       Norway)-33.9(       X)-244.5(          X)-169(        X )]TJ
+T*
+[(Leahy and L)55.2(yons )-211.4(                                         \(2010\))-17(       Ireland)-173.6(        X)-244.5(          X)-169(        X )]TJ
+T*
+[(W)40.1(iesmann, )55.2(Azevedo, Ferrao and )-60(                 \(201)37.1(1\))-54.1(       Portugal)-116.5(      X)-244.5(          X)-169(        X )]TJ
+T*
+(Fernandez)Tj
+/F4 1 Tf
+5.1645 0 TD
+[( )-184.1(                                                )]TJ
+/F3 1 Tf
+12.4341 0 TD
+( )Tj
+-17.5986 -1.2 TD
+[(McLoughlin, Duf)18.1(fy and Conlon )-90.3(                  \(2012\))-17(       Ireland)-173.6(        X)-244.5(          X)-169(        X )]TJ
+T*
+[(Bartusch, Odlare, )18.1(W)80.1(allin and )18.1(W)80.1(ester )-22.9(           \(2012\))-17(       Sweden)-89.1(       X)-244.5(          X)-30.1(            )]TJ
+T*
+[(Zhou and )18.1(T)69.8(eng)-77.1(                                              \(2013\))-17(       China)-116.5(          X)-244.5(          X)-169(        X )]TJ
+T*
+[(Belaid )-238.2(                                                          \(2016\))-17(       France)-34.4(         X)-244.5(          X)-169(        X )]TJ
+T*
+[(Huebner)40.1(, Shipworth, Hamilton, Chalabi )-141.1(     \(2016\))-17(       England)-172.6(      X)-244.5(          X)-169(        X )]TJ
+T*
+[(and Oreszczyn )-185(                                          )]TJ
+T*
+[(Iwafune and )37.1(Y)100.1(agita )-100.5(                                      \(2016\))-17(       Japan)-228.3(          X)-244.5(          X)-169(        X )]TJ
+T*
+[(Matsumoto )-42.9(                                                   \(2016\))-17(       Japan)-228.3(          X)-244.5(          X)-169(        X )]TJ
+T*
+[(W)80.1(allis, Nachreiner and Matthies )-183.5(                 \(2016\))-17(       German )-34.4(      X)-244.5(          X)-169(        X )]TJ
+T*
+[(Copiello and Gabrielli )-156.2(                                 \(2017\))-17(       Italy)-172.6(            X)-244.5(          X)-30.1(            )]TJ
+T*
+[(Harold, Cullinan and L)55.2(yons)-238.7(                         \(2017\))-17(       Ireland)-173.6(        X)-244.5(          X )-30.1(          )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 350.848 m
+420.945 350.848 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 354.2223 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 60.9448 338.2223 Tm
+[(Sour)37.1(ce: )]TJ
+/F3 1 Tf
+3.3228 0 TD
+(Jones )Tj
+/F4 1 Tf
+2.4722 0 TD
+(et al.)Tj
+/F3 1 Tf
+1.9995 0 TD
+( \(2015\).)Tj
+/F4 1 Tf
+3.166 0 TD
+( )Tj
+/F3 1 Tf
+11 0 0 11 78.9448 325.2223 Tm
+( )Tj
+0 -1.1818 TD
+-0.0069 Tw
+[(Common independent variables that had impact on ener)18.1(gy use across all three )]TJ
+-1.6364 -1.1818 TD
+0.028 Tw
+[(studies were as follows. )18(The dwelling factor; the number of rooms had a positive )]TJ
+T*
+-0.0097 Tw
+[(impact on ener)18.1(gy use. Similar results were found for socio-economic factors, with )]TJ
+T*
+0.0001 Tc
+0.0624 Tw
+[(households with a lower income or from a lower social group using less ener)18.1(gy)65(. )]TJ
+T*
+0.01 Tc
+0.1279 Tw
+[(Also, a household where the head of the household attained a lower level of)10( )]TJ
+T*
+0 Tc
+0.0162 Tw
+[(education was found to use less ener)18.1(gy)65(. )55.2(Appliance factors such as the presence of )]TJ
+T*
+0 Tw
+[(a tumble dryer and a dishwasher both result in more ener)18.1(gy usage.  )]TJ
+1.6364 -1.1818 TD
+0.01 Tc
+0.0714 Tw
+[(After reviewing the literature, the direction of the relationship of the main)10.1( )]TJ
+-1.6364 -1.1818 TD
+0.0039 Tc
+0.0586 Tw
+[(determinants of household ener)18(gy consumption/demand in global studies is still )]TJ
+T*
+0 Tc
+0.0063 Tw
+[(open to debate, whereas for Ireland the evidence is much clearer)55.2(. Generally urban )]TJ
+T*
+0.01 Tc
+0.0595 Tw
+[(privately owned households use more ener)18.1(gy as compared with rented or rural)10.1( )]TJ
+T*
+-0.0032 Tc
+-0.0343 Tw
+[(households. )55.2(A)55.2( head of a household who has attained a lower level of education uses )]TJ
+T*
+0.0038 Tc
+0.0587 Tw
+[(less ener)18(gy than those with third-level degrees. )55.2(Also newly constructed housing )]TJ
+T*
+-0.0014 Tc
+-0.0361 Tw
+[(units and apartments use less ener)18(gy)64.9(. However)40(, none of the Irish studies)]TJ
+8.8003 0 0 7.7 371.5906 146.8523 Tm
+0 Tc
+0 Tw
+(6)Tj
+11 0 0 11 375.9516 143.2223 Tm
+-0.0012 Tc
+-0.0363 Tw
+[( examined )]TJ
+-28.637 -1.1818 TD
+0.01 Tc
+0.1617 Tw
+[(whether the presence of a micro-RES would reduce ener)18.1(gy usage, and what)10.1( )]TJ
+T*
+0 Tc
+0 Tw
+(household determinants result in ownership of a micro-RES. )Tj
+1.6364 -1.1818 TD
+( )Tj
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(269)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/F3 1 Tf
+6.8003 0 0 5.95 60.9749 73.8782 Tm
+(6)Tj
+8.5 0 0 8.5 64.3161 71.0732 Tm
+-0.0033 Tc
+-0.0342 Tw
+[(Leahy and L)55.3(yons \(2010\) included the variable renewable source for water heating only and no other forms )]TJ
+-0.3966 -1.2353 TD
+0 Tc
+0 Tw
+(of renewable used for electricity whereas this study accounts for both. )Tj
+ET
+Q
+endstream
+endobj
+25 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 5855
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F1 1 Tf
+11 0 0 11 189.3219 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+0 Tc
+0.222 Tw
+(III METHODOLOGY )Tj
+/F3 1 Tf
+0 0 0 1 k
+/GS3 gs
+-11.6706 -1.1818 TD
+0 Tw
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9449 568.5083 Tm
+0.222 Tw
+(3.1 Data)Tj
+/F3 1 Tf
+11 0 0 11 102.2549 568.5083 Tm
+0 Tw
+( )Tj
+-3.7555 -1.1818 TD
+-0.0153 Tw
+(This paper uses anonymised microdata collected from the Irish Household Budget )Tj
+T*
+0.0399 Tw
+(Survey \(HBS\) 2010.)Tj
+8.8003 0 0 7.7 151.9799 546.1383 Tm
+0 Tw
+(7)Tj
+11 0 0 11 156.3614 542.5083 Tm
+0.0399 Tw
+[( )18(The HBS is a survey of a representative random sample of )]TJ
+-8.6742 -1.1818 TD
+0.0081 Tc
+0.0544 Tw
+[(all private households in Ireland. Surveys have been carried out periodically in)8.2( )]TJ
+T*
+0 Tc
+-0.0273 Tw
+[(Ireland since 1951 and generally every five years since 1994. )18.1(The 2009-2010 HBS )]TJ
+T*
+-0.01 Tc
+-0.0275 Tw
+[(was undertaken between the months of )55.2(August 2009 to September 2010 and covered)-10( )]TJ
+T*
+0 Tc
+0 Tw
+(5,891 households. )Tj
+1.6364 -1.1818 TD
+0.0081 Tc
+0.0544 Tw
+[(The following socio-economic variables were included in our study arising)8.1( )]TJ
+-1.6364 -1.1818 TD
+0.01 Tc
+0.1209 Tw
+[(from the literature reviewed: number of persons living in household; average)10( )]TJ
+T*
+0.0057 Tc
+0.0568 Tw
+[(weekly disposable household income; family composition \(whether a home has)5.7( )]TJ
+T*
+0 Tc
+-0.0212 Tw
+(children or not\); highest completed level of education of chief economic supporter )Tj
+T*
+0.008 Tw
+(\(CES\); and household tenure \(owned or rented\). Dwelling characteristic variables )Tj
+T*
+0.0139 Tw
+(are as follows; year accommodation was built, number of bedrooms, and location )Tj
+T*
+0.0023 Tc
+0.0602 Tw
+[(of house \(urban or rural\). )55.2(Appliance variables include; dishwasher)40(, tumble dyer)40(, )]TJ
+T*
+0 Tc
+0 Tw
+[(fridge-freezer)40(, microwave, games console, and number of televisions. )]TJ
+1.6364 -1.1818 TD
+-0.0104 Tw
+(The HBS questionnaire survey does not ask what type of micro-RES has been )Tj
+-1.6364 -1.1818 TD
+-0.0038 Tc
+-0.0337 Tw
+[(installed in the dwelling outright. However)40.1(, through several ener)18.1(gy questions asked )]TJ
+T*
+0 Tc
+0.0452 Tw
+(in the survey about the dwelling, a dummy variable was constructed to represent )Tj
+T*
+-0.0031 Tc
+-0.0344 Tw
+[(households with a micro-RES installed. )18.1(These ener)18.1(gy questions included what type )]TJ
+T*
+0 Tc
+-0.0102 Tw
+(of central heating system is used for space heating in the winter)Tj
+8.8003 0 0 7.7 339.2299 325.1383 Tm
+0 Tw
+(8)Tj
+11 0 0 11 343.6058 321.5083 Tm
+-0.0102 Tw
+[( where renewable )]TJ
+-25.6964 -1.1818 TD
+0.005 Tc
+0.0575 Tw
+[(source is a selectable answer)55.1(. )18.1(The other question relates to the method of water)5.1( )]TJ
+T*
+0 Tc
+-0.0276 Tw
+[(heating in the winter)40(, where source is a selectable answer)55.2(. If a household answered )]TJ
+T*
+-0.0193 Tw
+(renewable for any of these questions it was given the value of 1 under our variable )Tj
+T*
+0 Tw
+(micro-RES and conversely a value of zero when it is not.  )Tj
+1.6364 -1.1818 TD
+0.0147 Tw
+[(As noted by Leahy and L)55.2(yons \(2010\) the HBS does not do enough to address )]TJ
+-1.6364 -1.1818 TD
+0.0052 Tc
+0.0573 Tw
+[(every aspect of household ener)18.1(gy use. It lacks extensive information on several)5.2( )]TJ
+T*
+0.0014 Tc
+0.0611 Tw
+[(issues especially ener)18.1(gy ef)18.1(ficiency of dwellings and the frequency of appliances )]TJ
+T*
+0.01 Tc
+0.2639 Tw
+[(and heating usage. However)40(, the HBS does report on the average weekly)10.1( )]TJ
+T*
+0.0052 Tc
+0.0573 Tw
+[(expenditure on ener)18(gy by fuel; namely electricity expense, natural gas expense,)5.2( )]TJ
+T*
+-0.0004 Tc
+-0.0371 Tw
+(liquid fuel expense, solid fuel expense and total weekly expense on all fuels. Using )Tj
+T*
+0.01 Tc
+0.0768 Tw
+[(the same method as Leahy and L)55.2(yons \(2010\), in order to evaluate the average)10( )]TJ
+T*
+0 Tc
+0.0196 Tw
+[(household ener)18.1(gy use by total fuel use and only electricity)65(, the following formula )]TJ
+T*
+0.0095 Tc
+0.053 Tw
+[(was employed. )18.1(The estimated ener)18(gy use from electricity measured in kilowatt)9.5( )]TJ
+T*
+0 Tc
+0 Tw
+(hours was constructed using the following equation; )Tj
+1.6364 -1.1818 TD
+( )Tj
+-1.6364 -1.1818 TD
+[(   )-220.2(                     )]TJ
+/F6 1 Tf
+6.2202 0 TD
+(elecuse)Tj
+8.8003 0 0 7.7 161.759 109.8782 Tm
+(i)Tj
+/F7 1 Tf
+11 0 0 11 164.1866 113.5082 Tm
+( = \()Tj
+/F6 1 Tf
+1.397 0 TD
+[(e)15(xpenditure)]TJ
+8.8003 0 0 7.7 231.3404 109.8782 Tm
+(i)Tj
+0.028 0.9429 TD
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 245.734 113.5082 Tm
+(/)Tj
+/F6 1 Tf
+0.278 0 TD
+(price)Tj
+8.8003 0 0 7.7 271.4191 117.1383 Tm
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 285.5652 113.5082 Tm
+(\)\()Tj
+/F6 1 Tf
+0.666 0 TD
+(kWh)Tj
+8.8003 0 0 7.7 312.4613 117.1383 Tm
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 326.6061 113.5082 Tm
+(/)Tj
+/F6 1 Tf
+0.278 0 TD
+(q)Tj
+8.8003 0 0 7.7 335.1881 117.1383 Tm
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 349.3321 113.5082 Tm
+(\))Tj
+/F3 1 Tf
+0.3442 0 TD
+(                    \(1\) )Tj
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+[(270)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/F3 1 Tf
+6.8003 0 0 5.95 60.9609 94.8766 Tm
+(7)Tj
+8.5 0 0 8.5 64.3449 92.0716 Tm
+-0.0313 Tw
+(This household survey being a number of years old is nevertheless the most up to date available in micro-)Tj
+-0.4 -1.2353 TD
+0.0041 Tc
+0.0584 Tw
+[(RES installations. )18.1(While a newer study was published in 2016, it did not contain the necessary data on )]TJ
+T*
+0 Tc
+0 Tw
+[(micro-RES as the relevant question was dropped from the survey)65(.  )]TJ
+6.8003 0 0 5.95 60.9609 63.3766 Tm
+(8)Tj
+8.5 0 0 8.5 64.3449 60.5716 Tm
+[(The survey does not address the same question for any season other than winter)55.2(.)]TJ
+ET
+Q
+endstream
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F5 14 0 R
+/F6 29 0 R
+/F7 30 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+32 0 obj
+<<
+/Length 6138
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F3 1 Tf
+11 0 0 11 60.9448 593.5623 Tm
+0 0 0 1 k
+/GS3 gs
+0.01 Tc
+0 Tw
+(where )Tj
+/F6 1 Tf
+2.9573 0 TD
+[(e)15(xpenditure)]TJ
+8.8003 0 0 7.7 146.4839 589.9323 Tm
+0 Tc
+(i)Tj
+0.0405 0.9429 TD
+0.0125 Tc
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 161.4162 593.5623 Tm
+0 Tc
+( )Tj
+/F3 1 Tf
+0.4644 0 TD
+0.01 Tc
+0.2044 Tw
+(is the average weekly expenditure by household )Tj
+/F4 1 Tf
+21.3669 0 TD
+0 Tc
+0 Tw
+(i)Tj
+/F3 1 Tf
+0.2878 0 TD
+0.01 Tc
+0.2044 Tw
+[( on)10( )]TJ
+-31.2529 -1.1818 TD
+0 Tc
+0 Tw
+[(electricity)65(. )]TJ
+/F6 1 Tf
+4.4595 0 TD
+(Price)Tj
+8.8003 0 0 7.7 133.8581 584.1923 Tm
+(elec )Tj
+/F3 1 Tf
+11 0 0 11 150.431 580.5623 Tm
+0.0269 Tw
+(is the average unit price of electricity for the period in which )Tj
+-8.1351 -1.1818 TD
+0.003 Tc
+0.0595 Tw
+(the household was interviewed. Price data were obtained from SEAI \(Appendix )Tj
+T*
+0.01 Tc
+0.0846 Tw
+(A\).  )Tj
+/F6 1 Tf
+2.0244 0 TD
+0 Tw
+(kWh)Tj
+8.8003 0 0 7.7 103.1215 558.1923 Tm
+0.0125 Tc
+(elec)Tj
+/F7 1 Tf
+11 0 0 11 117.6984 554.5623 Tm
+0 Tc
+(/)Tj
+/F6 1 Tf
+0.288 0 TD
+(q)Tj
+8.8003 0 0 7.7 126.5084 558.1923 Tm
+0.0125 Tc
+(elec )Tj
+/F3 1 Tf
+11 0 0 11 144.1171 554.5623 Tm
+0.01 Tc
+0.0846 Tw
+[(is the kw/h of electricity per unit and is known as the gross)10( )]TJ
+-7.5611 -1.1818 TD
+0 Tc
+0.0554 Tw
+[(calorific value; for electricity this is 1. Similarly)65(, for each form of the remaining )]TJ
+T*
+0.0066 Tc
+0.0559 Tw
+[(fuels \(natural gas, liquid heating oil and solid fuel\) the corresponding value for)6.7( )]TJ
+T*
+0 Tc
+0 Tw
+(average weekly expenditure, price data and gross calorific value are input. )Tj
+T*
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 489.5623 Tm
+[(3.2 )-222(Micr)18(o-Res Ownership Model )]TJ
+/F3 1 Tf
+11 0 0 11 60.9448 476.5623 Tm
+0.0357 Tw
+(The objective of the first part of this paper is to establish a profile of the average )Tj
+T*
+0.0565 Tw
+(house that adopts micro-RES and we constructed a Logit model for this purpose )Tj
+T*
+-0.0093 Tc
+-0.0282 Tw
+[(\(Braun, 2010\). )18.1(W)80.1(e)0( use a step-wise depletion method of variables in order to estimate)-9.4( )]TJ
+T*
+0 Tc
+0.0495 Tw
+(a leaner model which omits explanatory variables that are not significant \(Leahy )Tj
+T*
+-0.0225 Tw
+[(and L)55.2(yons, 2010\). )18.1(This model included many of the socio-economic, dwelling and )]TJ
+T*
+0.01 Tc
+0.0878 Tw
+[(appliance variables set out by the literature that are significant in determining)10.1( )]TJ
+T*
+0 Tc
+0 Tw
+[(household ener)18.1(gy use. )]TJ
+T*
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 372.5622 Tm
+[(3.3 )-222(Energy Consumption Model  )]TJ
+/F3 1 Tf
+11 0 0 11 60.9448 359.5622 Tm
+0.0032 Tw
+(The second part of the analysis into micro-RES investigates whether it has had an )Tj
+T*
+-0.0095 Tc
+-0.028 Tw
+[(impact on the average weekly household ener)18.1(gy use by fuel type. )55.2(A)55.2( log-linear model)-9.6( )]TJ
+T*
+0 Tc
+0.0547 Tw
+[(based on ordinary least squares \(OLS\) method will be used. )18.1(T)69.8(wo models will be )]TJ
+T*
+(used, one with the dependent variable being total fuel use and the other with the )Tj
+T*
+0.0284 Tw
+[(dependent variable being electricity use. )18(The models can be formulated using the )]TJ
+T*
+0 Tw
+(following Equation \(2\); )Tj
+T*
+( )Tj
+T*
+[(  )-169(                                       )]TJ
+/F6 1 Tf
+10.4191 0 TD
+[(lnere)15(gyuse)]TJ
+/F7 1 Tf
+4.317 0 TD
+( = )Tj
+/F8 1 Tf
+1.064 0 TD
+(b)Tj
+/F7 1 Tf
+8.8003 0 0 7.7 240.4567 264.9322 Tm
+(0)Tj
+11 0 0 11 244.8215 268.5622 Tm
+( + )Tj
+/F8 1 Tf
+13 0 0 13 256.5255 267.5623 Tm
+(S)Tj
+/F6 1 Tf
+8.8003 0 0 7.7 264.8945 264.9322 Tm
+(i)Tj
+/F8 1 Tf
+11 0 0 11 268.9548 268.5622 Tm
+(b)Tj
+/F6 1 Tf
+8.8003 0 0 7.7 274.6671 264.9322 Tm
+(i)Tj
+11 0 0 11 278.1772 268.5622 Tm
+(X)Tj
+8.8003 0 0 7.7 284.9347 264.9322 Tm
+(i)Tj
+/F7 1 Tf
+11 0 0 11 287.3446 268.5622 Tm
+( + )Tj
+/F8 1 Tf
+1.064 0 TD
+(e)Tj
+/F6 1 Tf
+8.8003 0 0 7.7 303.9257 264.9322 Tm
+(i)Tj
+/F3 1 Tf
+11 0 0 11 306.3686 268.5622 Tm
+(                                     \(2\) )Tj
+-22.3113 -1.1818 TD
+( )Tj
+T*
+0.01 Tc
+(where )Tj
+/F4 1 Tf
+2.8803 0 TD
+[(ener)37.1(gyuse)]TJ
+/F3 1 Tf
+4.1066 0 TD
+0.1274 Tw
+[( indicates the average ener)18.1(gy use by fuel type, )]TJ
+/F4 1 Tf
+20.3233 0 TD
+0 Tc
+0 Tw
+(X)Tj
+/F3 1 Tf
+0.6208 0 TD
+0.01 Tc
+0.1274 Tw
+[( is a list of)10( )]TJ
+-27.9311 -1.1818 TD
+0 Tc
+-0.0006 Tw
+(predicator variables and )Tj
+/F8 1 Tf
+9.8546 0 TD
+0 Tw
+(e)Tj
+/F6 1 Tf
+8.8003 0 0 7.7 174.2184 225.9322 Tm
+(i)Tj
+11 0 0 11 176.6316 229.5622 Tm
+( )Tj
+/F3 1 Tf
+0.2494 0 TD
+-0.0006 Tw
+[(is the unobserved error term. )55.2(Again, previous literature )]TJ
+-10.7664 -1.1818 TD
+0.01 Tc
+0.1801 Tw
+[(directed the choosing of variables used for modelling household ener)18.1(gy use)10( )]TJ
+T*
+0 Tc
+0.05 Tw
+(\(Druckman and Jackson, 2008; McLoughlin )Tj
+/F4 1 Tf
+18.1912 0 TD
+(et al)Tj
+/F3 1 Tf
+1.7996 0 TD
+[(., 2012; )18(W)40.1(iesmann )]TJ
+/F4 1 Tf
+7.8963 0 TD
+(et al)Tj
+/F3 1 Tf
+1.7996 0 TD
+[(., 201)37.1(1; )]TJ
+-29.6866 -1.1818 TD
+0 Tw
+[(Zhou and )18.1(T)69.8(eng, 2013\).  )]TJ
+T*
+( )Tj
+T*
+( )Tj
+/F1 1 Tf
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+13.4001 -1.1818 TD
+0.222 Tw
+[(IV RESUL)111(TS )222( )]TJ
+/F3 1 Tf
+0 0 0 1 k
+/GS3 gs
+-13.4001 -1.1818 TD
+0 Tw
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 125.5622 Tm
+0.222 Tw
+[(4.1 Logit )222(Model )]TJ
+/F3 1 Tf
+11 0 0 11 60.9448 112.5622 Tm
+0.01 Tc
+0.2138 Tw
+[(Results from the Logit model are presented in )18.1(T)69.8(able 2. Results reveal that)10.1( )]TJ
+T*
+0 Tc
+0.0291 Tw
+(households with higher weekly disposable income are more likely to have access )Tj
+T*
+0.01 Tc
+0.187 Tw
+[(to micro-RES. )18(This is not surprising since micro-RES installations are very)10( )]TJ
+T*
+0 Tc
+0.0568 Tw
+(expensive and support schemes are not as favourable in comparison to other EU )Tj
+T*
+0.0012 Tw
+(countries, which results in longer payback period for Irish customers. Households )Tj
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+0 Tw
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(271)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+33 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+/F6 29 0 R
+/F7 30 0 R
+/F8 34 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+36 0 obj
+<<
+/Length 5450
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 248.51 360 -188.983 re
+f
+BT
+/F3 1 Tf
+11 0 0 11 60.9449 594.7354 Tm
+0 0 0 1 k
+/GS3 gs
+0.0038 Tc
+0.0587 Tw
+(in urban areas are less likely to avail of micro-RES than their rural counterpart. )Tj
+0 -1.1818 TD
+0 Tc
+0.0406 Tw
+(This may be a result the density of houses in urban areas and restrictive building )Tj
+T*
+0.0239 Tw
+(regulations for some types of micro-RES, particularly micro wind turbines. If the )Tj
+T*
+0.0032 Tw
+(household is owned by the occupant they are more likely to have micro-RES than )Tj
+T*
+0.0589 Tw
+[(those who rent their property)65(. It stands to reason that an owner)20(-occupier is more )]TJ
+T*
+0 Tw
+[(willing to invest in the property than a renter)55.2(. )]TJ
+1.6364 -1.1818 TD
+0.0623 Tw
+(The level of education acquired by the chief economic supporter \(CES\) also )Tj
+-1.6364 -1.1818 TD
+-0.0082 Tc
+-0.0293 Tw
+[(plays a role in whether a household is likely to adopt micro-RES. Households where)-8.2( )]TJ
+T*
+0.0004 Tc
+0.0621 Tw
+(the CES has only acquired a primary school level of education or has no formal )Tj
+T*
+0.0015 Tc
+0.061 Tw
+(education are less likely than those CES in the reference category who acquired )Tj
+T*
+0.001 Tc
+0.0615 Tw
+(education at a third-level institution to have adopted micro-RES. If the CES has )Tj
+T*
+-0.0028 Tc
+-0.0347 Tw
+(attained an education at third-level institution it would be understandable that, first, )Tj
+T*
+0 Tc
+0.0229 Tw
+[(they would have a career where they earned a lar)18.1(ger salary in relation to the CES )]TJ
+T*
+0.0269 Tw
+(of the other categories, which would result in a greater ability to purchase micro-)Tj
+T*
+-0.0226 Tw
+(RES. Second, if the CES attained an education at a third-level institution they may )Tj
+T*
+0 Tw
+(have a greater awareness of environmental issues and the benefits of micro-RES.  )Tj
+1.6364 -1.1818 TD
+0.01 Tc
+0.1716 Tw
+[(The results from the house construction year categorical variable are all)10.1( )]TJ
+-1.6364 -1.1818 TD
+0 Tc
+-0.0096 Tw
+(statistically significant, bar houses constructed pre-1918, and have a negative sign )Tj
+T*
+0.01 Tc
+0.1199 Tw
+[(in relation to the reference category of houses built in the period 2006-2010.)10( )]TJ
+T*
+-0.0001 Tc
+-0.0374 Tw
+(Inferring for example that for the variable 1918-1945, houses built during this time )Tj
+T*
+0 Tc
+0.015 Tw
+(are less likely than those houses built between 2006-2010 to have adopted micro-)Tj
+T*
+-0.0087 Tc
+-0.0288 Tw
+[(RES. It should also be noted that the size of the coef)18.1(ficient does not increase linearly)-8.8( )]TJ
+T*
+-0.007 Tc
+-0.0305 Tw
+[(in the house construction year variables. )18.1(W)80.1(e)0( attribute this to higher installation costs)-7( )]TJ
+T*
+0 Tc
+0 Tw
+(when retrofitting an older house with micro-RES. )Tj
+1.6364 -1.1818 TD
+( )Tj
+/F1 1 Tf
+10 0 0 10 77.8198 269.7353 Tm
+[(T)111(able 2: Logit Regr)18(ession Results for the Determinants of Micr)18(o-RES )]TJ
+4.2315 -1.3 TD
+[(Installation \(Results ar)18(e Pr)18(esented as Odds Ratios\) )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+0 J 0 j 2 w 10 M []0 d
+/GS2 gs
+60.945 248.361 m
+420.945 248.361 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 251.7353 Tm
+/GS3 gs
+( )Tj
+0 -1.4545 TD
+( )Tj
+10 0 0 10 71.7942 235.7353 Tm
+(                                                                                                                       Coef. )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 230.327 m
+420.945 230.327 l
+S
+BT
+/F3 1 Tf
+10 0 0 10 60.9449 232.7353 Tm
+( )Tj
+0.6 -1.2 TD
+[(Log of Household Disposable Income )-244.3(                                                        0.4836** )]TJ
+T*
+[(Number of People)-132(                                                                                         0.0018 )]TJ
+T*
+[(Urban and Rural Household Location )-161.7(                                                       …1.0766*** )]TJ
+T*
+[(Ownership or Rental Household)-48.9(                                                                   2.0533*** )]TJ
+T*
+[(Household with Children)-103.1(                                                                              0.4893** )]TJ
+0 -0.6 TD
+( )Tj
+/F4 1 Tf
+0 -1.2 TD
+[(Education Status of CES)-102.7(                                                                                   )]TJ
+/F3 1 Tf
+T*
+[(Primary School, No Formal Education, Other)-22.1(                                            …1.0794** )]TJ
+T*
+[(Secondary School )-215(                                                                                      …0.4701** )]TJ
+T*
+(Higher Institute                                                                                               \(R.C.\) )Tj
+0 -0.6 TD
+( )Tj
+/F4 1 Tf
+0 -1.2 TD
+[(House Construction Y)91.8(ear )-138.3(                                                                                 )]TJ
+/F3 1 Tf
+T*
+[(Pre-1918)-47.5(                                                                                                      …0.5795 )]TJ
+T*
+[(1918-1945)-130.5(                                                                                                   …1.1769** )]TJ
+T*
+[(1946-1960)-130.5(                                                                                                   …1.8636** )]TJ
+/F5 1 Tf
+-0.6 55.7416 TD
+[(272)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+60.945 615.118 m
+420.945 615.118 l
+60.945 59.527 m
+420.945 59.527 l
+S
+Q
+endstream
+endobj
+37 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+39 0 obj
+<<
+/Length 5897
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 573.688 360 -142.822 re
+f
+BT
+/F1 1 Tf
+10 0 0 10 77.8196 595.2223 Tm
+0 0 0 1 k
+/GS3 gs
+0 Tc
+0 Tw
+[(T)111(able 2: Logit Regr)18(ession Results for the Determinants of Micr)18(o-RES )]TJ
+2.2035 -1.303 TD
+[(Installation \(Results ar)18(e Pr)18(esented as Odds Ratios\) \(Contd.\) )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+0 J 0 j 2 w 10 M []0 d
+/GS2 gs
+60.945 573.788 m
+420.945 573.788 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 577.1622 Tm
+/GS3 gs
+( )Tj
+0 -1.4573 TD
+( )Tj
+10 0 0 10 71.794 561.1322 Tm
+(                                                                                                                       Coef. )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 555.694 m
+420.945 555.694 l
+S
+BT
+/F3 1 Tf
+10 0 0 10 60.9448 558.1022 Tm
+( )Tj
+0.6 -1.203 TD
+[(1961-1970)-130.5(                                                                                                   …1.2947** )]TJ
+T*
+[(1971-1980)-130.5(                                                                                                   …1.3410*** )]TJ
+T*
+[(1981-1990)-130.5(                                                                                                   …2.5067*** )]TJ
+T*
+[(1991-2000)-130.5(                                                                                                   …0.9924*** )]TJ
+T*
+[(2001-2005)-130.5(                                                                                                   …1.3800*** )]TJ
+T*
+[(2006-2010 )-221.2(                                                                                                     \(R.C.\) )]TJ
+T*
+[(Number of Bedrooms)-242.8(                                                                                   0.315*** )]TJ
+T*
+[(Constant)-157.8(                                                                                                      …8.7955*** )]TJ
+T*
+[(No of Observations)-97.2(                                                                                         5,818 )]TJ
+T*
+(R)Tj
+8.0003 0 0 7 73.645 441.1021 Tm
+[(2)-57.9(                                                                                                                              )]TJ
+32.0579 0 TD
+(                 )Tj
+10 0 0 10 364.0799 437.8021 Tm
+(0.172 )Tj
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 429.398 m
+420.945 429.398 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 432.7721 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 60.9448 416.7421 Tm
+[(Sour)37.1(ce:)]TJ
+/F3 1 Tf
+3.0728 0 TD
+-0.0552 Tw
+[( Authors)74.2( )-55.2(analysis. )]TJ
+/F4 1 Tf
+-3.0728 -1.203 TD
+0.01 Tc
+0 Tw
+(Notes: )Tj
+/F3 1 Tf
+3.0666 0 TD
+0.1357 Tw
+[(* significant at the 10 per cent level, ** Significant at the 5 per cent level,)10(  )]TJ
+-3.0666 -1.203 TD
+0 Tc
+0 Tw
+[(*** Significant at the 1 per cent level, R.C. Reference Category)65(. )]TJ
+11 0 0 11 66.9448 379.652 Tm
+( )Tj
+/F1 1 Tf
+10 0 0 10 60.9448 366.622 Tm
+[(4.2 OLS Regr)18(ession )]TJ
+/F3 1 Tf
+11 0 0 11 60.9448 353.592 Tm
+-0.0354 Tw
+[(Ener)18.1(gy use was modelled by total fuel use \(Model 1\) and electricity use \(Model 2\). )]TJ
+0 -1.1846 TD
+0.0502 Tw
+(As well as our main variable of interest, micro-RES, we studied the influence of )Tj
+T*
+-0.0004 Tc
+-0.0371 Tw
+(several household characteristics; socio-economic, dwelling and appliance factors. )Tj
+T*
+0 Tc
+0.0213 Tw
+[(The dependent variable was ener)18.1(gy use which was broken down into further sub-)]TJ
+T*
+-0.0326 Tw
+(categories of electricity use, natural gas use, liquid fuel use, solid fuel use and total )Tj
+T*
+-0.0134 Tw
+[(fuel use. Using ordinary least squares \(OLS\), the estimated regression coef)18.1(ficients )]TJ
+T*
+0 Tw
+[(are presented in )18.1(T)69.8(able 3. )]TJ
+1.6364 -1.1845 TD
+-0.0062 Tc
+-0.0313 Tw
+[(First, the presence of micro-RES was only statistically significant for electricity)-6.1( )]TJ
+-1.6364 -1.1845 TD
+0 Tc
+-0.0333 Tw
+(use, where the presence of micro-RES resulted in more electricity use compared to )Tj
+T*
+0.0365 Tw
+[(households without micro-RES. )18.1(The cause of this may be a result of the rebound )]TJ
+T*
+-0.0155 Tw
+[(ef)18.1(fect where improved ener)18.1(gy ef)18.1(ficiency gives rise to a reduction in ener)18.1(gy prices; )]TJ
+T*
+0.0432 Tw
+[(however lower prices will increase ener)18.1(gy consumption to some extent \(W)80.1(ang )]TJ
+/F4 1 Tf
+32.0057 0 TD
+0 Tw
+(et )Tj
+-32.0057 -1.1845 TD
+(al.)Tj
+/F3 1 Tf
+1.0278 0 TD
+0.0029 Tw
+[( 2014\). More specifically)65(, this may be the income ef)18.1(fect as a result of the direct )]TJ
+-1.0278 -1.1845 TD
+0 Tw
+[(rebound ef)18.1(fect;  )]TJ
+1.6364 -0.8209 TD
+( )Tj
+0 -1.1845 TD
+0.01 Tc
+0.0858 Tw
+[(when improvement in ener)18.1(gy ef)18.1(ficiency reduces the cost of a particular)10.1( )]TJ
+T*
+0 Tc
+-0.0208 Tw
+(goods or services, consumers need to spend less to get the same outcome as )Tj
+T*
+0.0325 Tw
+[(before. )18.1(Thus an increase in real income allows to achieve higher utility by )]TJ
+T*
+-0.028 Tw
+[(increasing consumption of the same goods or services, including the ener)18.1(gy )]TJ
+T*
+0 Tw
+[(service \(Labidi and )55.2(Abdessalem, 2018, p. 1)37.1(1\). )-2675.6( )]TJ
+/F9 1 Tf
+0 -0.8209 TD
+( )Tj
+/F3 1 Tf
+-1.6364 -1.1845 TD
+-0.01 Tc
+-0.0275 Tw
+[(Results across the socio-economic variables were in line with the previous literature.)-10.1( )]TJ
+T*
+0 Tc
+-0.0143 Tw
+[(A)55.2( lar)18.1(ger number of people living in a household results in greater ener)18.1(gy use, both )]TJ
+T*
+0.0067 Tc
+0.0558 Tw
+[(for total overall fuel as well as for electricity use. )55.2(As expected a higher weekly)6.7( )]TJ
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+0 Tc
+0 Tw
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(273)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+40 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+/F9 41 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+43 0 obj
+<<
+/Length 6649
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 575.433 360 -474.855 re
+f
+BT
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+0 0 0 1 k
+/GS3 gs
+0 Tc
+0 Tw
+[(274)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/F1 1 Tf
+10 0 0 10 75.9598 595.2223 Tm
+[(T)111(able 3: OLS Regr)18(ession Results for the Determinants of T)111(otal Overall )]TJ
+9.8145 -1.2 TD
+(Fuel Use and Electricity Use )Tj
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 574.848 m
+420.945 574.848 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 578.2223 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 66.9449 562.2223 Tm
+[( )-16.6(                                                                                          Model 1 )-207.8(             Model 2  )]TJ
+0.2151 -1.2 TD
+[(                                                                                     T)91.8(otal Fuel Use)-73.8(    Electricity Use )]TJ
+-0.2151 -1.2 TD
+[( )-99.6(                                                                                            Coef.)-123.9(                   Coef. )]TJ
+ET
+0 0 0 1 K
+0.5 w 
+60.945 532.814 m
+420.945 532.814 l
+S
+BT
+10 0 0 10 60.9449 535.2223 Tm
+( )Tj
+/F3 1 Tf
+0.6 -1.2 TD
+[(Renewable Ener)18.1(gy System )-237.6(                                             …0.021)-241.7(                  0.202*** )]TJ
+T*
+[(Number of People in Home)-191.2(                                               0.057***)-241.7(            0.1)37.1(13*** )]TJ
+T*
+[(Log of Household Disposable Income )-25.2(                              0.082***)-241.7(            0.063*** )]TJ
+T*
+[(Urban and Rural Household Location )-192.7(                            …0.048)-241.7(                …0.043 )]TJ
+T*
+[(Ownership or Rental Household)-79.9(                                        0.104)-241.7(                …0.014 )]TJ
+T*
+[(Household )18.1(W)40.1(ith or )18.1(W)40.1(ithout Children)-168.3(                                0.098***)-241.7(            0.058* )]TJ
+0 -0.6 TD
+( )Tj
+/F4 1 Tf
+0 -1.2 TD
+[(Education Status of CES)-125.4(                                                                                   )]TJ
+/F3 1 Tf
+T*
+[(Primary School, No Formal Education, Other)-53.1(                 \(R.C\))-241.7(                  …0.122** )]TJ
+T*
+[(Secondary School )-245.9(                                                           …0.007)-241.7(                  0.001 )]TJ
+T*
+[(Higher Institute )-190.3(                                                               …0.030)-241.7(                \(R.C.\) )]TJ
+0 -0.6 TD
+( )Tj
+/F4 1 Tf
+0 -1.2 TD
+[(House Construction Y)91.8(ear )-161(                                                                                 )]TJ
+/F3 1 Tf
+T*
+[(Pre-1918)-78.4(                                                                             0.094*)-241.7(                0.012 )]TJ
+T*
+[(1918-1945)-161.5(                                                                          0.242***)-241.7(          …0.087 )]TJ
+T*
+[(1946-1960)-161.5(                                                                          0.274***)-241.7(          …0.133 )]TJ
+T*
+[(1961-1970)-161.5(                                                                          0.148*)-241.7(              …0.159* )]TJ
+T*
+[(1971-1980)-161.5(                                                                          0.162**)-241.7(            …0.026 )]TJ
+T*
+[(1981-1990)-161.5(                                                                          0.139)-241.7(                …0.058 )]TJ
+T*
+[(1991-2000)-78.4(                                                                         -0.021)-241.7(                …0.04 )]TJ
+T*
+[(2001-2005)-161.5(                                                                        …0.016)-241.7(                …0.053 )]TJ
+T*
+[(2006-2010 )-161.5(                                                                       \(R.C\))-241.7(                  \(R.C.\) )]TJ
+T*
+[(Number of Bedrooms)-23.8(                                                         0.129***)-241.7(            0.061*** )]TJ
+0 -0.6 TD
+( )Tj
+/F4 1 Tf
+0 -1.2 TD
+[(Appliances )-42.8(                                                                                                        )]TJ
+/F3 1 Tf
+T*
+[(Dishwasher)-23.3(                                                                         0.1)37.1(15***)-28.8(             0.172*** )]TJ
+T*
+[(T)35.2(umble dryer)-59.4(                                                                      0.008)-241.7(                  0.04** )]TJ
+T*
+[(Fridge-freezer)-26.2(                                                                     0.063**)-241.7(            …0.017 )]TJ
+T*
+[(Microwave)-190.7(                                                                         0.085*)-241.7(                0.027 )]TJ
+T*
+[(Console)-216.6(                                                                              0.040)-241.7(                  0.056** )]TJ
+T*
+[(Number of )18.1(TVs)-180.5(                                                                  0.044***)-241.7(            0.030*** )]TJ
+T*
+[(Constant)-188.8(                                                                             4.419***)-241.7(            3.049*** )]TJ
+T*
+[(Inverse Mills Ratio)-23.3(                                                           …0.052)-241.7(                  0.137 )]TJ
+T*
+(R)Tj
+8.0003 0 0 7 73.6311 148.5223 Tm
+[(2)-159.1(                                                                                                             )]TJ
+10 0 0 10 296.8897 145.2223 Tm
+[(0.184)-241.7(                  0.210 )]TJ
+-22.7583 -1.2 TD
+(                                                                                                                          )Tj
+-0.2362 -1.2 TD
+[(F-stat)-216.6(                                                                                53.97***)-241.7(            50.83*** )]TJ
+T*
+[(No of Observations)-211.9(                                                             5,759)-12.5(                   4,607 )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 100.848 m
+420.945 100.848 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 104.2223 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 60.9449 88.2223 Tm
+[(Sour)37.1(ce:)]TJ
+/F3 1 Tf
+3.5728 0 TD
+[(Authors)74.2( analysis. )]TJ
+/F4 1 Tf
+-3.5728 -1.2 TD
+0.01 Tc
+(Notes:)Tj
+/F3 1 Tf
+2.6708 0 TD
+0.142 Tw
+[( )10(*)0( significant at the 10 per cent level, ** Significant at the 5 per cent level,)10(  )]TJ
+-2.6708 -1.2 TD
+0 Tc
+0 Tw
+[(*** Significant at the 1 per cent level, R.C. Reference Category)65(. )]TJ
+ET
+Q
+endstream
+endobj
+44 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+46 0 obj
+<<
+/Length 4773
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F3 1 Tf
+11 0 0 11 60.9448 594.7354 Tm
+0 0 0 1 k
+/GS3 gs
+0.0084 Tc
+0.0541 Tw
+[(disposable income results in an increased ener)18.1(gy use for total overall fuels and)8.4( )]TJ
+0 -1.1818 TD
+-0.0014 Tc
+-0.0361 Tw
+[(electricity use. )55.2(A)55.2( household with children uses more ener)18(gy overall, and electricity)64.9(, )]TJ
+T*
+-0.0078 Tc
+-0.0297 Tw
+[(when compared to a household without children. In terms of education, it was found)-7.8( )]TJ
+T*
+0.0051 Tc
+0.0574 Tw
+[(to only be significant in the case of electricity use where a CES with a primary)5.1( )]TJ
+T*
+0 Tc
+0 Tw
+[(school education or no formal education uses less than the reference category)65(.  )]TJ
+1.6364 -1.1818 TD
+-0.0061 Tc
+-0.0314 Tw
+[(Results from the dwelling factors show that having an extra bedroom in a house)-6.1( )]TJ
+-1.6364 -1.1818 TD
+0 Tc
+0.0621 Tw
+(will increase total overall fuel as well as electricity use which is in line with the )Tj
+T*
+-0.0003 Tc
+-0.0372 Tw
+(literature. When investigating the variable year of house construction the reference )Tj
+T*
+0.01 Tc
+0.1436 Tw
+[(category varies across each model. In general, the more recently constructed)10.1( )]TJ
+T*
+0 Tc
+0 Tw
+[(households use less ener)18.1(gy than that of the reference categories.  )]TJ
+1.6364 -1.1818 TD
+0.01 Tw
+[(T)69.8(o)0( summarise, the results strongly support the finding that newer built homes )]TJ
+-1.6364 -1.1818 TD
+0.01 Tc
+0.1113 Tw
+[(use less fuel than older homes, indicating that Irish policy to increase ener)18.1(gy)10.1( )]TJ
+T*
+0.0005 Tc
+0.062 Tw
+[(ef)18(ficiency in the residential sector through greater ef)18(ficiency standards is having )]TJ
+T*
+0 Tc
+0 Tw
+(its desired impact.  )Tj
+1.6364 -1.1818 TD
+-0.0087 Tc
+-0.0288 Tw
+[(Results from appliance factors af)18(fecting ener)18(gy use in a household varied across)-8.7( )]TJ
+-1.6364 -1.1818 TD
+0.01 Tc
+0.1107 Tw
+[(all the models. Households that had access to a dishwasher were found to be)10.1(  )]TJ
+T*
+0 Tc
+0.0115 Tw
+(statistically significant in terms of increasing total overall fuel and electricity use. )Tj
+T*
+0.0546 Tw
+(Households that had access to a tumble dryer were found to use more electricity )Tj
+T*
+0.01 Tc
+0.2045 Tw
+[(while, in terms of solid fuel use, households with a tumble dryer use less.)10( )]TJ
+T*
+0.1572 Tw
+[(Households that had access to a fridge-freezer were found to be statistically)10.1( )]TJ
+T*
+0 Tc
+-0.0336 Tw
+(significant in terms of increasing total overall fuel and natural gas use. Households )Tj
+T*
+0.0046 Tw
+[(that had a lar)18.1(ger number of televisions were found to be statistically significant in )]TJ
+T*
+0 Tw
+[(terms of increasing total overall fuel, electricity)65(, natural gas and liquid fuel use.  )]TJ
+1.6364 -1.1818 TD
+-0.0059 Tw
+(The results of our study support the finding that households that have adopted )Tj
+-1.6364 -1.1818 TD
+-0.0035 Tc
+-0.034 Tw
+(micro-RES are more likely to be wealthier households, taking advantage of support )Tj
+T*
+0 Tc
+-0.0207 Tw
+(schemes designed to financially incentivise households that are tentative about the )Tj
+T*
+-0.0244 Tw
+[(decision whether or not to adopt micro-RES. )55.2(As these schemes are funded through )]TJ
+T*
+-0.0058 Tw
+[(consumer ener)18.1(gy bills, this may relatively disadvantage poorer households. Given )]TJ
+T*
+0.0367 Tw
+(our findings that the presence of micro-RES does not result in a decrease in total )Tj
+T*
+-0.0143 Tw
+[(ener)18.1(gy use in the home, we suggest that this element of Irish ener)18.1(gy policy around )]TJ
+T*
+0.0384 Tw
+[(residential sector needs to be re-evaluated. )18.1(While the promotion of micro-RES is )]TJ
+T*
+-0.0064 Tc
+-0.0311 Tw
+[(an essential element as part of our ener)18.1(gy policy goals, there is also a need to inform)-6.4( )]TJ
+T*
+0.01 Tc
+0.0561 Tw
+[(adopters to change their behaviour as usual approach to address the rebound)10.1( )]TJ
+T*
+0 Tc
+0 Tw
+[(ef)18.1(fect.  )]TJ
+1.6364 -1.1818 TD
+-0.0081 Tc
+-0.0294 Tw
+[(The inverse Mills ratio variable was included in the regression to test for sample)-8.1( )]TJ
+-1.6364 -1.1818 TD
+-0.0005 Tc
+-0.037 Tw
+(selection bias. In both models … total fuel use and electricity use … the inverse Mills )Tj
+T*
+0.01 Tc
+0.1854 Tw
+[(ratio variable was statistically insignificant meaning that there is no sample)10.1( )]TJ
+T*
+0 Tc
+0 Tw
+(selection bias \(Heckman, 1979\).  )Tj
+1.6364 -1.1818 TD
+( )Tj
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(275)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+47 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F2 5 0 R
+/F3 6 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS3 9 0 R
+>>
+>>
+endobj
+51 0 obj
+<<
+/Length 4711
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F1 1 Tf
+11 0 0 11 197.3409 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+0 Tc
+0.222 Tw
+(V CONCLUSION )Tj
+/F3 1 Tf
+0 0 0 1 k
+/GS3 gs
+-12.3996 -1.1818 TD
+0 Tw
+( )Tj
+T*
+-0.004 Tc
+-0.0335 Tw
+(Micro-RES, properly supported, could have the potential to significantly contribute )Tj
+T*
+0 Tc
+0.0055 Tw
+[(towards Ireland)55.2(s climate change goals. Governments worldwide have recognised )]TJ
+T*
+0.01 Tc
+0.1533 Tw
+[(this by implementing strategies to stimulate the growth of micro-RES at the)10.1( )]TJ
+T*
+0 Tc
+0.0072 Tw
+(residential level. In Ireland, electrical micro-RES growth has been relatively slow )Tj
+T*
+-0.0091 Tc
+-0.0284 Tw
+[(which may be partially attributable to inef)18.1(fective governmental support mechanisms)-9.1( )]TJ
+T*
+0 Tc
+0 Tw
+(as compared with other countries.  )Tj
+1.6364 -1.1818 TD
+-0.0001 Tw
+[(In this paper)40(, we investigated firstly the determinants of household ownership )]TJ
+-1.6364 -1.1818 TD
+-0.0044 Tc
+-0.0331 Tw
+(of a micro-RES using a Logit regression and secondly whether the presence of such )Tj
+T*
+0.0046 Tc
+0.0579 Tw
+[(would result in a decrease in ener)17.9(gy demand by using an ordinary least squares )]TJ
+T*
+-0.0023 Tc
+-0.0352 Tw
+[(regression. )55.2(Analysis was carried out on the Irish Household Budget Survey dataset.  )]TJ
+1.6364 -1.1818 TD
+-0.0091 Tc
+-0.0284 Tw
+[(Although there are some financial incentives provided to Irish residents to adopt)-9.1( )]TJ
+-1.6364 -1.1818 TD
+0 Tc
+0.0406 Tw
+(micro-RES, it would seem that these schemes are mainly availed of by wealthier )Tj
+T*
+-0.0259 Tw
+[(households. )55.2(As results attained from our Logit model show)65(, the average household )]TJ
+T*
+0.0133 Tw
+[(that is most likely to adopt micro-RES is a lar)18.1(ge)]TJ
+8.8003 0 0 7.7 273.7997 403.1383 Tm
+0 Tw
+(9)Tj
+11 0 0 11 278.1775 399.5083 Tm
+0.0133 Tw
+[( house that has been constructed )]TJ
+-19.7484 -1.1818 TD
+0.0034 Tc
+0.0591 Tw
+[(recently and is owner)20(-occupied. )18.1(The owner is most likely to be highly educated )]TJ
+T*
+0 Tc
+-0.032 Tw
+[(and is wealthy)65(. )18.1(The results would suggest that the households adopting micro-RES )]TJ
+T*
+-0.0027 Tw
+(and availing of the support schemes are the ones that need them the least and that, )Tj
+T*
+0.0033 Tc
+0.0592 Tw
+[(for many)64.8(, installing a micro-RES is still a luxury purchase in Ireland. However)39.9(, )]TJ
+T*
+0 Tc
+0.0608 Tw
+[(some of Ireland)55.2(s ener)18.1(gy policies seem to be working; improvements in housing )]TJ
+T*
+0.0062 Tc
+0.0563 Tw
+[(ener)18(gy ef)18(ficiency standards has resulted in newly constructed houses using less)6.2( )]TJ
+T*
+0 Tc
+0 Tw
+[(ener)18.1(gy than older houses. )]TJ
+1.6364 -1.1818 TD
+-0.0359 Tw
+[(The second part of this study was to find the determinants of household ener)18.1(gy )]TJ
+-1.6364 -1.1818 TD
+-0.0072 Tc
+-0.0303 Tw
+[(use and whether micro-RES has had an impact on reducing ener)18.1(gy use. It was found)-7.3( )]TJ
+T*
+0 Tc
+0.0072 Tw
+[(that the determinants of household ener)18.1(gy consumption were in line with those of )]TJ
+T*
+-0.0005 Tw
+[(previous literature. Surprisingly)65(, it was found that the presence of micro-RES was )]TJ
+T*
+0.0094 Tc
+0.0531 Tw
+[(only statistically significant in the electricity use model, where the presence of)9.3( )]TJ
+T*
+0 Tc
+0 Tw
+(micro-RES increased electricity use.  )Tj
+1.6364 -1.1818 TD
+0.0242 Tw
+[(Ireland is one of eight EU Member States with a renewable ener)18.1(gy share that )]TJ
+-1.6364 -1.1818 TD
+0.0053 Tc
+0.0572 Tw
+(was below the anticipated trajectories as laid out in the NREAPs.)Tj
+8.8003 0 0 7.7 357.9239 208.1383 Tm
+0 Tc
+0 Tw
+(10)Tj
+11 0 0 11 366.6993 204.5082 Tm
+0.0053 Tc
+0.0266 Tw
+[( While )-30.6(Irish)5.3( )]TJ
+-27.7959 -1.1818 TD
+0.01 Tc
+0.1797 Tw
+[(ener)18.1(gy policy papers continue to address the importance of Irish citizens in)10.1( )]TJ
+T*
+0.083 Tw
+[(combatting climate change and meeting their environmental goals through the)10( )]TJ
+T*
+0 Tc
+0.0279 Tw
+[(promotion of ener)18.1(gy saving appliances and micro-RES, results from this analysis )]TJ
+T*
+0 Tw
+(would suggest that these policies need adjustment \(EEA, 2017\).)Tj
+/F9 1 Tf
+25.5503 0 TD
+( )Tj
+/F3 1 Tf
+-23.9139 -1.1818 TD
+( )Tj
+T*
+( )Tj
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+[(276)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+BT
+/F3 1 Tf
+6.8003 0 0 5.95 60.9609 73.0063 Tm
+(9)Tj
+8.5 0 0 8.5 64.3449 70.2013 Tm
+[(Lar)18.1(ge number of bedrooms. )]TJ
+6.8003 0 0 5.95 60.9609 62.5063 Tm
+(10)Tj
+8.5 0 0 8.5 67.7449 59.7013 Tm
+[(National Renewable Ener)18.1(gy )55.2(Action Plan \(2015\). )]TJ
+ET
+Q
+endstream
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F5 14 0 R
+/F9 41 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+54 0 obj
+<<
+/Length 7597
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F1 1 Tf
+11 0 0 11 212.7647 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+/GS2 gs
+0 Tc
+0 Tw
+(REFERENCES  )Tj
+/F3 1 Tf
+0 0 0 1 k
+/GS3 gs
+-12.1654 -1.209 TD
+( )Tj
+9 0 0 9 60.9448 569.9109 Tm
+0.0558 Tw
+[(Allen, S. R., G. P)110.9(.)0( Hammond and M. C. McManus, 2008. Prospects for and Barriers to Domestic )]TJ
+2 -1.2554 TD
+0.01 Tc
+0.3568 Tw
+[(Micro-Generation: )55.2(A)55.2( United Kingdom perspective, )]TJ
+/F4 1 Tf
+23.3798 0 TD
+[(Applied Ener)37.1(gy)]TJ
+/F3 1 Tf
+6.7078 0 TD
+[(, )18(V)128.9(ol. 85, No. 6,)10(  )]TJ
+-30.0876 -1.2554 TD
+0 Tc
+0 Tw
+(pp. 528-544. )Tj
+-2 -1.2554 TD
+0.0041 Tc
+0.0584 Tw
+[(Baker)40(, K. J. and R. M. R)40(ylatt, 2008. Improving the Prediction of UK Domestic Ener)18(gy-Demand )]TJ
+2 -1.2554 TD
+0 Tc
+-0.0552 Tw
+[(Using Annual )-55.2(Consumption-Data, )]TJ
+/F4 1 Tf
+14.332 0 TD
+0 Tw
+[(Applied Ener)37.1(gy)]TJ
+/F3 1 Tf
+6.2109 0 TD
+[(, )18.1(V)128.9(ol. 85, No. 6, pp. 475-482. )]TJ
+-22.543 -1.2554 TD
+-0.0216 Tw
+[(Bartiaux, F)80.1(.)0( and K. Gram-Hanssen, 2005. Socio-political Factors Influencing Household Electricity )]TJ
+2 -1.2554 TD
+0.0108 Tw
+[(Consumption: )55.2(A)55.2( Comparison Between Denmark and Belgium, Paper presented at the ECEEE )]TJ
+T*
+0 Tw
+[(2005 Summer Study)65(, European Council for an Ener)18.1(gy Ef)18.1(ficient Economy)65(. )]TJ
+-2 -1.2554 TD
+-0.0037 Tc
+-0.0338 Tw
+[(Bartusch, C., M. Odlare, F)80.1(.)0( )18.1(W)80.1(allin and L. )18.1(W)80.1(ester)40.1(, 2012. Exploring )18.1(V)110.9(ariance In Residential Electricity )]TJ
+2 -1.2554 TD
+0.01 Tc
+0.3105 Tw
+(Consumption: Household Features and Building Properties, )Tj
+/F4 1 Tf
+27.0245 0 TD
+[(Applied Ener)37.1(gy)]TJ
+/F3 1 Tf
+6.6615 0 TD
+0.2925 Tw
+[(, V)128.9(ol. )-18(92,)10( )-18.1( )]TJ
+-33.686 -1.2554 TD
+0 Tc
+0 Tw
+(pp. 637-643. )Tj
+-2 -1.2554 TD
+0.01 Tc
+0.0869 Tw
+[(Bedir)40(, M., E. Hasselaar and L. Itard, 2013. Determinants of Electricity Consumption in Dutch)10.1( )]TJ
+2 -1.2554 TD
+0 Tc
+0 Tw
+(Dwellings, )Tj
+/F4 1 Tf
+5.0547 0 TD
+[(Ener)37.1(gy and Buildings)]TJ
+/F3 1 Tf
+8.6841 0 TD
+[(, )18.1(V)128.9(ol. 58, pp. 194-207. )]TJ
+-15.7388 -1.2554 TD
+-0.0081 Tc
+-0.0294 Tw
+[(Belaid, F)80(., 2016. Understanding the Spectrum of Domestic Ener)18(gy Consumption: Empirical Evidence)-8.1( )]TJ
+2 -1.2554 TD
+0 Tc
+0 Tw
+(from France, )Tj
+/F4 1 Tf
+5.8584 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 92, pp. 220-233. )]TJ
+-13.5132 -1.2554 TD
+0.0149 Tw
+[(Braun, F)80.1(.)0( G., 2010. Determinants of Households)74.2( Space Heating )18(T)69.8(ype: )55.1(A)55.2( Discrete Choice )55.1(Analysis )]TJ
+2 -1.2554 TD
+0 Tw
+(For German Households, )Tj
+/F4 1 Tf
+10.7759 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 38, No. 10, pp. 5493-5503. )]TJ
+-18.4307 -1.2554 TD
+-0.0041 Tc
+-0.0334 Tw
+[(Brounen, D., N. Kok and J. M. Quigley)64.9(, 2012. Residential Ener)18(gy Use and Conservation: Economics )]TJ
+2 -1.2554 TD
+0 Tc
+0 Tw
+(and Demographics, )Tj
+/F4 1 Tf
+8.4692 0 TD
+[(Eur)37.1(opean Economic Review)]TJ
+/F3 1 Tf
+11.2925 0 TD
+[(, )18.1(V)128.9(ol. 56, No. 5, pp. 931-945. )]TJ
+-21.7617 -1.2554 TD
+-0.0018 Tc
+-0.0357 Tw
+[(Carter)40(, )55.2(A., R. Craigwell and )18.1(W)91.8(.)0( Moore, 2012. Price Reform and Household Demand for Electricity, )]TJ
+/F4 1 Tf
+2 -1.2554 TD
+0 Tc
+0 Tw
+(Journal of Policy Modeling)Tj
+/F3 1 Tf
+11.0254 0 TD
+[(, )18.1(V)128.9(ol. 34, No. 2, pp. 242-252. )]TJ
+-13.0254 -1.2554 TD
+0.0077 Tc
+0.0548 Tw
+[(Chong, H., 2012. Building )18.1(V)60.1(intage and Electricity Use: Old Homes Use Less Electricity in Hot)7.5( )]TJ
+2 -1.2554 TD
+0 Tc
+0 Tw
+[(W)80.1(eather, )]TJ
+/F4 1 Tf
+4.25 0 TD
+[(Eur)37.1(opean Economic Review)]TJ
+/F3 1 Tf
+11.2925 0 TD
+[(, )18.1(V)128.9(ol. 56, No. 5, pp. 906-930. )]TJ
+-17.5425 -1.2554 TD
+-0.0353 Tw
+[(Copiello, S. and L. Gabrielli, 2017. Analysis of Building Ener)18.1(gy Consumption )18.1(Through Panel Data: )]TJ
+2 -1.2554 TD
+0 Tw
+(The Role Played by the Economic Drivers, )Tj
+/F4 1 Tf
+17.8838 0 TD
+[(Ener)37.1(gy and Buildings)]TJ
+/F3 1 Tf
+8.6841 0 TD
+[(, )18.1(V)128.9(ol. 145, pp. 130-143. )]TJ
+-28.5679 -1.2554 TD
+0.0587 Tw
+[(Cramer)40.1(, J. C., N. Miller)40.1(, P)110.9(.)0( Craig, B. M. Hackett, )18.1(T)74.2(.)0( M. Dietz, E. L. )18.1(V)60.1(ine )]TJ
+/F4 1 Tf
+30.1286 0 TD
+(et al)Tj
+/F3 1 Tf
+1.8082 0 TD
+(., 1985. Social and )Tj
+-29.9368 -1.2554 TD
+-0.0047 Tc
+-0.0328 Tw
+[(Engineering Determinants and )18.1(Their Equity Implications in Residential Electricity Use, )]TJ
+/F4 1 Tf
+34.9825 0 TD
+-0.0035 Tc
+0 Tw
+[(Ener)38.3(gy)56.4(, )]TJ
+/F3 1 Tf
+-34.9825 -1.2554 TD
+0 Tc
+[(V)128.9(ol. 10, No. 12, pp. 1283-1291. )]TJ
+-2 -1.2554 TD
+0.01 Tc
+0.2277 Tw
+[(Druckman, )55.2(A. and )18.1(T)74.2(.)0( Jackson, 2008. Household Ener)18.1(gy Consumption in the UK: )55.2(A)55.2( Highly)9.9( )]TJ
+2 -1.2554 TD
+0 Tc
+0.0361 Tw
+(Geographically and Socio-Economically Disaggregated Model, )Tj
+/F4 1 Tf
+25.8394 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6909 0 TD
+[(, )18(V)128.9(ol. 36, No. 8,  )]TJ
+-31.5303 -1.2554 TD
+0 Tw
+(pp. 3177-3192. )Tj
+-2 -1.2554 TD
+0.0609 Tw
+(EEA, 2017. )Tj
+/F4 1 Tf
+5.0656 0 TD
+[(T)55.2(r)37.1(ends and Pr)37.1(ojections in Eur)37.1(ope 2017. T)55.2(racking Pr)37.1(ogr)37.1(ess T)91.8(owar)37.1(ds Eur)37.1(ope)128.9(s Climate )]TJ
+-3.0656 -1.2554 TD
+0.01 Tc
+0.7253 Tw
+[(and Ener)37.1(gy T)91.8(a)0(r)37.1(gets )]TJ
+/F3 1 Tf
+10.3937 0 TD
+[(Luxembour)18.1(g, https://www)65(.eea.europa.eu/publications/trends-and-)]TJ
+-10.3937 -1.2554 TD
+0 Tc
+0 Tw
+[(projections-in-europe-2017: Publications Of)18.1(fice of the European Union. )]TJ
+-2 -1.2554 TD
+0.0387 Tw
+[(Gram-Hanssen, K., C. Kofod and K. Petersen, 2004. Dif)18.1(ferent Everyday Lives: Dif)18.1(ferent Patterns )]TJ
+2 -1.2554 TD
+0.0121 Tw
+[(of Electricity Use. Paper presented at the )55.1(ACEEE 2004 Summer Study)65(, )55.1(American Council for )]TJ
+T*
+0 Tw
+[(an Ener)18.1(gy Ef)18.1(ficient Economy)65(. )]TJ
+-2 -1.2554 TD
+0.0593 Tw
+[(Harold, J., J. Cullinan and S. L)55.2(yons, 2017. The Income Elasticity of Household Ener)18.1(gy Demand:  )]TJ
+2 -1.2554 TD
+0 Tw
+[(A)55.2( Quantile Regression )55.2(Analysis, )]TJ
+/F4 1 Tf
+13.6929 0 TD
+(Applied Economics)Tj
+/F3 1 Tf
+7.748 0 TD
+(, pp. 1-9. )Tj
+-23.4409 -1.2554 TD
+-0.0041 Tc
+-0.0334 Tw
+[(Harold, J., S. L)55.2(yons and J. Cullinan, 2015. The Determinants of Residential Gas Demand in Ireland, )]TJ
+/F4 1 Tf
+2 -1.2554 TD
+0 Tc
+0 Tw
+[(Ener)37.1(gy Economics)]TJ
+/F3 1 Tf
+7.4883 0 TD
+[(, )18.1(V)128.9(ol. 51, pp. 475-483. )]TJ
+-9.4883 -1.2554 TD
+0.01 Tc
+0.073 Tw
+(Heckman, J. J., 1979. Sample Selection Bias as a Specification Error, )Tj
+/F4 1 Tf
+30.4317 0 TD
+0 Tw
+(Econometrica)Tj
+/F3 1 Tf
+5.7294 0 TD
+0.073 Tw
+[(, )18.1(V)128.9(ol. 47,)10(  )]TJ
+-34.1611 -1.2554 TD
+0 Tc
+0 Tw
+(No. 1, pp. 153-161. )Tj
+-2 -1.2554 TD
+0.01 Tc
+0.1675 Tw
+[(Huebner)40(, G., D. Shipworth, I. Hamilton, Z. Chalabi and )18(T)74.2(.)0( Oreszczyn, 2016. Understanding)10( )]TJ
+2 -1.2554 TD
+-0.0077 Tc
+-0.0298 Tw
+[(Electricity Consumption: )55.2(A)55.2( Comparative Contribution of Building Factors, Socio-Demographics,)-7.9( )]TJ
+T*
+0 Tc
+0 Tw
+[(Appliances, Behaviours and )55.2(Attitudes, )]TJ
+/F4 1 Tf
+16.0522 0 TD
+[(Applied Ener)37.1(gy)]TJ
+/F3 1 Tf
+6.2109 0 TD
+[(, )18.1(V)128.9(ol. 177, pp. 692-702.)]TJ
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(277)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+55 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+57 0 obj
+<<
+/Length 7109
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F3 1 Tf
+9 0 0 9 60.9449 596.122 Tm
+0 0 0 1 k
+/GS3 gs
+0.0061 Tc
+0.0564 Tw
+[(Islam, )18.1(T)74.2(., 2014. Household Level Innovation Dif)18.1(fusion Model of Photo-V)128.9(oltaic \(Pv\) Solar Cells)6( )]TJ
+2 -1.2222 TD
+0 Tc
+0 Tw
+[(From Stated Preference Data, Ener)18.1(gy Policy)65(, )18.1(V)128.9(ol. 65, pp. 340-350. )]TJ
+-2 -1.2222 TD
+0.01 Tc
+0.0549 Tw
+[(Iwafune, )37.1(Y)128.9(.)0( and )37.1(Y)128.9(.)0( )37.1(Y)100.1(agita, 2016. High-resolution Determinant )55.1(Analysis of Japanese Residential)10( )]TJ
+2 -1.2222 TD
+-0.0073 Tc
+-0.0302 Tw
+[(Electricity Consumption Using Home Ener)18.1(gy Management System Data, )]TJ
+/F4 1 Tf
+29.2726 0 TD
+[(Ener)37.1(gy and Buildings)]TJ
+/F3 1 Tf
+8.4776 0 TD
+0 Tc
+0 Tw
+(, )Tj
+-37.7502 -1.2222 TD
+[(V)128.9(ol. 1)37.1(16, pp. 274-284. )]TJ
+-2 -1.2222 TD
+0.01 Tc
+0.0617 Tw
+[(Jones, R. )18(V)128.9(., )55.1(A. Fuertes and K. J. Lomas, 2015. The Socio-Economic, Dwelling and )55.1(Appliance)10( )]TJ
+2 -1.2222 TD
+0.0554 Tw
+[(Related Factors )55.2(Af)18.1(fecting Electricity Consumption in Domestic Buildings, )]TJ
+/F4 1 Tf
+31.6875 0 TD
+[(Renewable and)10( )]TJ
+-31.6875 -1.2222 TD
+0 Tc
+0 Tw
+[(Sustainable Ener)37.1(gy Reviews)]TJ
+/F3 1 Tf
+11.2935 0 TD
+[(, )18.1(V)128.9(ol. 43, pp. 901-917. )]TJ
+-13.2935 -1.2222 TD
+0.059 Tw
+[(Labidi, E. and )18.1(T)74.2(.)0( )55.2(Abdessalem, 2018. An Econometric )55.2(Analysis of the Household Direct Rebound )]TJ
+2 -1.2222 TD
+0 Tw
+[(Ef)18.1(fects fFor Electricity Consumption in )18.1(T)35.2(unisia, )]TJ
+/F4 1 Tf
+20.0078 0 TD
+[(Ener)37.1(gy Strategy Reviews)]TJ
+/F3 1 Tf
+9.9595 0 TD
+[(, )18.1(V)128.9(ol. 19, pp. 7-18. )]TJ
+-31.9673 -1.2222 TD
+-0.0012 Tc
+-0.0363 Tw
+[(Larsen, B. M. and R. Nesbakken, 2004. Household Electricity End-Use Consumption: Results From )]TJ
+2 -1.2222 TD
+0 Tc
+0 Tw
+(Econometric and Engineering Models, )Tj
+/F4 1 Tf
+16.1338 0 TD
+[(Ener)37.1(gy Economics)]TJ
+/F3 1 Tf
+7.4883 0 TD
+[(, )18.1(V)128.9(ol. 26, No. 2, pp. 179-200. )]TJ
+-25.6221 -1.2222 TD
+0.0022 Tc
+0.0603 Tw
+[(Leahy)64.9(, E. and S. L)55.2(yons, 2010. Ener)18.1(gy Use and )55.2(Appliance Ownership in Ireland, )]TJ
+/F4 1 Tf
+34.0065 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.7439 0 TD
+0 Tc
+0 Tw
+(, )Tj
+-37.7504 -1.2222 TD
+[(V)128.9(ol. 38, No. 8, pp. 4265-4279. )]TJ
+-2 -1.2222 TD
+0.0093 Tc
+0.0532 Tw
+[(Matsumoto, S., 2016. How Do Household Characteristics )55.2(Af)18.1(fect )55.2(Appliance Usage? )55.2(Application)9.3(  )]TJ
+2 -1.2222 TD
+0.01 Tc
+0.1857 Tw
+[(of Conditional Demand )55.1(Analysis )18(T)69.8(o)0( Japanese Household Data, )]TJ
+/F4 1 Tf
+27.965 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.9706 0 TD
+[(, )18(V)128.9(ol. 94,)10(  )]TJ
+-33.9356 -1.2222 TD
+0 Tc
+0 Tw
+(pp. 214-223. )Tj
+-2 -1.2222 TD
+0.0004 Tc
+0.0621 Tw
+[(McCoy)64.9(, D. and J. Curtis, 2018. Exploring the Spatial and )18.1(T)69.8(emporal Determinants of Gas Central )]TJ
+2 -1.2222 TD
+0 Tc
+-0.0552 Tw
+(Heating Adoption, )Tj
+/F4 1 Tf
+8.082 0 TD
+0 Tw
+[(Resour)37.1(ce and Ener)37.1(gy Economics, V)110.9(ol. )]TJ
+/F3 1 Tf
+15.4497 0 TD
+(52, pp. 64-86. )Tj
+-25.5317 -1.2222 TD
+0.0043 Tw
+[(McLoughlin, F)80.1(., )55.1(A. Duf)18.1(fy and M. Conlon, 2012. Characterising Domestic Electricity Consumption )]TJ
+2 -1.2222 TD
+0.036 Tw
+[(Patterns By Dwelling and Occupant Socio-Economic )18(V)110.9(ariables: )55.1(An Irish Case Study, )]TJ
+/F4 1 Tf
+35.1495 0 TD
+0 Tw
+[(Ener)37.1(gy )]TJ
+-35.1495 -1.2222 TD
+(and Buildings)Tj
+/F3 1 Tf
+5.5835 0 TD
+[(, )18.1(V)128.9(ol. 48, pp. 240-248. )]TJ
+-7.5835 -1.2222 TD
+-0.0088 Tw
+[(Michelsen, C. C. and R. Madlener)40.1(, 2016. Switching From Fossil Fuel to Renewables in Residential )]TJ
+2 -1.2222 TD
+-0.0169 Tw
+[(Heating Systems: )55.2(An Empirical Study of Homeowners)74.2( Decisions in Germany, )]TJ
+/F4 1 Tf
+32.1122 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6379 0 TD
+0 Tw
+(, )Tj
+-37.7501 -1.2222 TD
+[(V)128.9(ol. 89, pp. 95-105. )]TJ
+-2 -1.2222 TD
+0.0113 Tw
+[(Mills, B. F)80.1(.)0( and J. Schleich, 2009. Profits or Preferences? )55.1(Assessing )18(The )55.1(Adoption oOf Residential )]TJ
+2 -1.2222 TD
+-0.0181 Tw
+[(Solar Thermal T)69.8(echnologies, )]TJ
+/F4 1 Tf
+12.2231 0 TD
+0 Tw
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 37, No. 10, pp. 4145-4154. )]TJ
+-19.8779 -1.2222 TD
+[(SEAI, 2017. Home Grants. Retrieved 12/10/2018, 2018)-1725.1( )]TJ
+T*
+0.01 Tc
+0.0641 Tw
+[(Sopha, B. M., C. )55.2(A. Klockner)40(, G. Skjevrak and E. G. Hertwich, 2010. Norwegian Households)84.2( )]TJ
+2 -1.2222 TD
+0.0085 Tc
+0.054 Tw
+[(Perception of )18.1(W)80.1(ood Pellet Stove Compared to )55.2(Air)20(-to-Air Heat Pump and Electric Heating,)8.5( )]TJ
+/F4 1 Tf
+T*
+0 Tc
+0 Tw
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 38, No. 7, pp. 3744-3754. )]TJ
+-7.6548 -1.2222 TD
+0.0428 Tw
+[(T)69.8(so, G. K. F)80.1(.)0( and K. K. )18.1(W)91.8(.)0( )37.1(Y)100.1(au, 2007. Predicting Electricity Ener)18.1(gy Consumption: )55.2(A)55.2( Comparison  )]TJ
+2 -1.2222 TD
+0.01 Tc
+0.2461 Tw
+[(of Regression )55.2(Analysis, Decision )18.1(T)35.2(ree and Neural Networks, )]TJ
+/F4 1 Tf
+27.62 0 TD
+0 Tw
+[(Ener)37.1(gy)]TJ
+/F3 1 Tf
+2.9106 0 TD
+0.2461 Tw
+[(, )18.1(V)128.9(ol. 32, No. 9,)10(  )]TJ
+-30.5306 -1.2222 TD
+0 Tc
+0 Tw
+(pp. 1761-1768. )Tj
+-2 -1.2222 TD
+0.01 Tc
+0.1696 Tw
+[(W)80.1(allis, H., M. Nachreiner and E. Matthies, 2016. Adolescents and Electricity Consumption;)10( )]TJ
+2 -1.2222 TD
+0.3566 Tw
+[(Investigating Sociodemographic, Economic, and Behavioural Influences on Electricity)10( )]TJ
+T*
+0 Tc
+0 Tw
+(Consumption in Households, )Tj
+/F4 1 Tf
+12.3335 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 94, pp. 224-234. )]TJ
+-19.9883 -1.2222 TD
+-0.0036 Tc
+-0.0339 Tw
+[(W)80.1(ang, Z. H., M. L. Lu and J. C. )18.1(W)80.1(ang, 2014. Direct Rebound Ef)18.1(fect on Urban Residential Electricity )]TJ
+2 -1.2222 TD
+0.01 Tc
+0.1032 Tw
+[(Use: )55.1(An Empirical Study in China, )]TJ
+/F4 1 Tf
+15.6068 0 TD
+[(Renewable and Sustainable Ener)37.1(gy Reviews)]TJ
+/F3 1 Tf
+18.4938 0 TD
+[(, )18(V)128.9(ol. 30,)10(  )]TJ
+-34.1006 -1.2222 TD
+0 Tc
+0 Tw
+(pp. 124-132. )Tj
+-2 -1.2222 TD
+0.01 Tc
+0.2288 Tw
+[(W)40.1(iesmann, D., I. L. )55.1(Azevedo, P)110.9(.)0( Ferrao and J. E. Fernandez, 201)37.1(1. Residential Electricity)10( )]TJ
+2 -1.2222 TD
+0 Tc
+0.0072 Tw
+[(Consumption in Portugal: Findings fFrom )18.1(T)69.8(op-Down and Bottom-Up Models, )]TJ
+/F4 1 Tf
+32.1433 0 TD
+[(Ener)37.1(gy Policy)55.2(,)]TJ
+/F3 1 Tf
+5.8568 0 TD
+0 Tw
+( )Tj
+-38.0001 -1.2222 TD
+[(V)128.9(ol. 39, No. 5, pp. 2772-2779. )]TJ
+-2 -1.2222 TD
+-0.0099 Tw
+[(Zhou, S. J. and F)80.1(.)0( )18.1(T)69.8(eng, 2013. Estimation of Urban Residential Electricity Demand in  China Using )]TJ
+2 -1.2222 TD
+0 Tw
+(Household Survey Data, )Tj
+/F4 1 Tf
+10.4976 0 TD
+[(Ener)37.1(gy Policy)]TJ
+/F3 1 Tf
+5.6548 0 TD
+[(, )18.1(V)128.9(ol. 61, pp. 394-402. )]TJ
+-18.1523 -1.2222 TD
+( )Tj
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+[(278)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+58 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS3 9 0 R
+>>
+>>
+endobj
+60 0 obj
+<<
+/Length 2216
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 547.086 360 -83.622 re
+f
+BT
+/F1 1 Tf
+11 0 0 11 207.5377 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+0 Tc
+0 Tw
+(APPENDIX A )Tj
+3.037 -1.1818 TD
+( )Tj
+10 0 0 10 66.4146 568.5083 Tm
+0 0 0 1 k
+/GS3 gs
+[(Gr)18(oss Calori“c value \(kW h/unit\) by fuel type. Quarterly average fuel price )]TJ
+15.49 -1.3 TD
+(per unit.  )Tj
+ET
+0.78 0.05 0.5 0.21 K
+0 J 0 j 2 w 10 M []0 d
+/GS2 gs
+60.945 547.134 m
+420.945 547.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 550.5083 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 66.9448 534.5083 Tm
+[(Fuel T)74.2(ype)-176.9(        Gr)37.1(oss Calorific )-201.8(                                         Price  )]TJ
+0.0123 -1.2 TD
+[(                                 V)110.9(alue)-151.5(            Q3 2009)-155.8(   Q4 2009)-231.4(   Q1 2010)-32.8(    Q2 2010)-34.2(   Q3 2010 )]TJ
+ET
+0 0 0 1 K
+0.5 w 
+60.945 517.1 m
+420.945 517.1 l
+S
+BT
+10 0 0 10 60.9448 519.5083 Tm
+( )Tj
+/F3 1 Tf
+0.6 -1.2 TD
+[(Heating Oil)-27.5(               10.6)-83.1(                0.66)-40.1(           0.63)-73.9(            0.70)-70.5(           0.76)-63.8(         0.86 )]TJ
+T*
+[(Gas)-165.7(                           1)-83.1(                     0.06)-40.1(           0.05)-73.9(            0.05)-70.5(           0.05)-63.8(         0.05 )]TJ
+T*
+[(Electricity )-56.3(                1)-83.1(                     0.17)-40.1(           0.15)-73.9(            0.15)-70.5(           0.15)-63.8(         0.15 )]TJ
+T*
+[(W)80.1(ood)-107.1(                        4.8)-83.1(                  0.22)-40.1(           0.22)-73.9(            0.22)-70.5(           0.22)-63.8(         0.22 )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 463.134 m
+420.945 463.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9456 466.5083 Tm
+/GS3 gs
+( )Tj
+/F3 1 Tf
+-0.5455 -1.5455 TD
+( )Tj
+0 -1.1818 TD
+( )Tj
+T*
+( )Tj
+/F5 1 Tf
+10 0 0 10 61.8827 622.1514 Tm
+(                             )Tj
+/F2 1 Tf
+8 0 0 8 142.5027 622.1514 Tm
+[(A Study of Micro Renewable Energy Systems in Ir)-6(eland)-133.2(                             )]TJ
+/F5 1 Tf
+10 0 0 10 404.2646 622.1514 Tm
+(279)Tj
+/F2 1 Tf
+8 0 0 8 420.9448 622.1514 Tm
+( )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 615.118 m
+420.945 615.118 l
+S
+Q
+endstream
+endobj
+61 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+63 0 obj
+<<
+/Length 5969
+>>
+stream
+q
+1 i 
+0 685.984 481.89 -685.984 re
+240.96 343.02 m
+W n
+0 685.98 481.92 -685.98 re
+W n
+BT
+/F5 1 Tf
+10 0 0 10 60.9449 622.1514 Tm
+0 0 0 1 k
+/GS3 gs
+0 Tc
+0 Tw
+[(280)-70.6(                                     )]TJ
+/F2 1 Tf
+8 0 0 8 181.1909 622.1514 Tm
+(The Economic and Social Review )Tj
+ET
+0 0 0 1 K
+0 J 0 j 0.5 w 10 M []0 d
+60.945 615.118 m
+420.945 615.118 l
+S
+0 0.05 0.15 0 k
+/GS2 gs
+60.945 560.054 360 -108.393 re
+f
+60.945 431.21 360 -144.911 re
+f
+60.945 264.871 360 -131.643 re
+f
+BT
+/F1 1 Tf
+11 0 0 11 207.4333 594.5083 Tm
+0.78 0.05 0.5 0.21 k
+(APPENDIX B  )Tj
+/F9 1 Tf
+0 0 0 1 k
+/GS3 gs
+-13.3171 -1.1818 TD
+( )Tj
+/F1 1 Tf
+10 0 0 10 190.3997 568.5083 Tm
+(Descriptive Statistics )Tj
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 560.134 m
+420.945 560.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 563.5083 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 66.9449 547.5083 Tm
+[(V)110.9(ariable                                                                                           Mean)-227.6(        Standar)37.1(d  )]TJ
+0.2415 -1.2 TD
+(                                                                                                                         Deviat)Tj
+32.9155 0 TD
+(ion   )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 530.1 m
+420.945 530.1 l
+S
+BT
+10 0 0 10 60.9449 532.5083 Tm
+( )Tj
+/F3 1 Tf
+0.6 -1.2 TD
+[(Electricity Use \(Estimated ener)18.1(gy use from electricity kw/h\))-45.3(       15.82)-199.6(         1)37.1(1.00 )]TJ
+T*
+[(T)69.8(otal Fuel Use \(Estimated ener)18.1(gy use from total fuel kw/h\))-57(         34.49)-181(         23.99 )]TJ
+T*
+[(Disposable Income \(  weekly\))-161(                                                      905.31)-181(         674.18 )]TJ
+T*
+[(Number of Persons)-185.9(                                                                        2.72)-181(         1.49 )]TJ
+T*
+[(Number of Bedrooms)-186.4(                                                                    3.22)-181(         1.05 )]TJ
+T*
+[(Number of )18.1(TVs)-93.2(                                                                              2.20)-181(         1.33 )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 452.134 m
+420.945 452.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 455.5083 Tm
+/GS3 gs
+( )Tj
+/F3 1 Tf
+10 0 0 10 66.9449 439.5083 Tm
+( )Tj
+ET
+/GS2 gs
+60.945 431.134 m
+420.945 431.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 434.5083 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 66.9449 418.5083 Tm
+[(V)110.9(ariable )-75(                                          Mean)-133.9(     V)110.9(ariable )-61.5(                                          Mean )]TJ
+ET
+0 0 0 1 K
+0.5 w 
+60.945 413.1 m
+420.945 413.1 l
+S
+BT
+10 0 0 10 60.9449 415.5083 Tm
+( )Tj
+0.6 -1.2 TD
+[(Childr)37.1(en In household)-139.7(                          )-22.3(         Location of household  )]TJ
+/F3 1 Tf
+T*
+[(Children )-178.5(                                        30.5%)-113.4(     Urban)-126.5(                                               68.0% )]TJ
+T*
+[(No Children)-206.3(                                   69.5%)-113.4(     Rural)-153.9(                                                32.0% )]TJ
+/F4 1 Tf
+T*
+[(Ownership status of household)-149.2(                 )-113.4(    Appliance Ownership )]TJ
+/F3 1 Tf
+T*
+[(Own)-233.7(                                               68.5%)-113.4(     Micro Renewable Ener)18.1(gy Systems)-35.7(    1.5% )]TJ
+T*
+[(Rent)-39.4(                                                31.5%)-113.4(     Dishwasher)-154.4(                                      64.1% )]TJ
+/F4 1 Tf
+T*
+(Education level attained by CES)Tj
+/F3 1 Tf
+13.0111 0 TD
+[(               )-113.4(    T)35.2(umble Dryer)-218.3(                                  66.6% )]TJ
+-13.0111 -1.2 TD
+[(Primary Level Education)-125.8(               21.3%)-113.4(     Fridge Freezer)-17.1(                                  81.2% )]TJ
+T*
+[(Secondary Level Education)-126.7(           31.9%)-113.4(     Microwave)-71.8(                                       91.4% )]TJ
+T*
+[(Third-level Education)-125.8(                    46.8%)-113.4(     Console)-97.7(                                            39.9% )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 287.134 m
+420.945 287.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 290.5083 Tm
+/GS3 gs
+( )Tj
+/F3 1 Tf
+10 0 0 10 66.9449 274.5083 Tm
+( )Tj
+ET
+/GS2 gs
+60.945 266.134 m
+420.945 266.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 269.5083 Tm
+/GS3 gs
+( )Tj
+10 0 0 10 159.3672 253.5083 Tm
+(Period in which accommodation was built )Tj
+ET
+0 0 0 1 K
+0.5 w 
+60.945 248.1 m
+420.945 248.1 l
+S
+BT
+10 0 0 10 60.9449 250.5083 Tm
+( )Tj
+/F3 1 Tf
+0.6 -1.2 TD
+[(Pre-1918)-145.6(                                                                                                                   8.5%)]TJ
+34.6447 0 TD
+( )Tj
+-34.6447 -1.2 TD
+[(1918-1945)-228.6(                                                                                                                7.8% )]TJ
+T*
+[(1946-1960)-228.6(                                                                                                                7.3% )]TJ
+T*
+[(1961-1970)-228.6(                                                                                                                6.0% )]TJ
+T*
+[(1971-1980)-228.6(                                                                                                              12.5% )]TJ
+T*
+[(1981-1990)-228.6(                                                                                                                9.6% )]TJ
+T*
+[(1991-2000)-228.6(                                                                                                              14.7% )]TJ
+T*
+[(2001-2005)-228.6(                                                                                                              20.0% )]TJ
+T*
+[(2006-2010)-228.6(                                                                                                              13.6% )]TJ
+ET
+0.78 0.05 0.5 0.21 K
+2 w 
+/GS2 gs
+60.945 134.134 m
+420.945 134.134 l
+S
+BT
+/F4 1 Tf
+11 0 0 11 66.9458 137.5082 Tm
+/GS3 gs
+( )Tj
+ET
+Q
+endstream
+endobj
+64 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 14 0 R
+/F9 41 0 R
+>>
+/ExtGState <<
+/GS2 8 0 R
+/GS3 9 0 R
+>>
+>>
+endobj
+65 0 obj
+<<
+/Type /Halftone
+/HalftoneType 5
+/Red 66 0 R
+/Green 67 0 R
+/Blue 68 0 R
+/Gray 69 0 R
+/Cyan 66 0 R
+/Magenta 67 0 R
+/Yellow 68 0 R
+/Black 69 0 R
+/Default 69 0 R
+>>
+endobj
+66 0 obj
+<<
+/Type /Halftone
+/HalftoneType 1
+/Frequency 100
+/Angle 105
+/SpotFunction /Round
+>>
+endobj
+67 0 obj
+<<
+/Type /Halftone
+/HalftoneType 1
+/Frequency 100
+/Angle 75
+/SpotFunction /Round
+>>
+endobj
+68 0 obj
+<<
+/Type /Halftone
+/HalftoneType 1
+/Frequency 100
+/Angle 90
+/SpotFunction /Round
+>>
+endobj
+69 0 obj
+<<
+/Type /Halftone
+/HalftoneType 1
+/Frequency 100
+/Angle 45
+/SpotFunction /Round
+>>
+endobj
+8 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT 65 0 R
+/TR2 /Default
+>>
+endobj
+9 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP true
+/op true
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT 65 0 R
+/TR2 /Default
+>>
+endobj
+70 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 713
+/CapHeight 713
+/Descent -195
+/Flags 262148
+/FontBBox [-166 -217 1078 988]
+/FontName /MFAMJP+HelveticaNeueLTPro-Bd
+/ItalicAngle 0
+/StemV 142
+/StemH 107
+/CharSet (/hyphen/I/space/N/T/R/O/D/U/C/H/o/u/s/e/h/l/d/E/n/r/g/y/m/p/t/i/colon/A/S/f/M/c/w/a/b/J/k/L/V/W/two/period/one/G/Y/three/four/parenleft/P/parenright/v/F/X/fi/slash/Q/B)
+/FontFile3 71 0 R
+>>
+endobj
+71 0 obj
+<<
+/Filter /FlateDecode
+/Length 3567
+/Subtype /Type1C
+>>
+stream
+H‰lVPSW¾—ä$±^¤‰&‘‘â#BBDD´¡‚. VEë*ÊKåeÀ\„Zèv·ŠµÊØ]‹¯QY+êP§®®Ö‚Ut| Ô¶µÓu×GG«uô¿øÇ™ı/wÆídæü÷œó?¾ÿ;ÿNxNëÃñ<?$eJ\Ê´£’rò=9¥¹Y©9Ës’gÏpœ­*„(&^¨Uûáx,x~îy± ‡àZ¸xypÿ;8?r>¾¨x…;w©«Ô:<k„Õ3nœÆ{÷è´Y#íöqL÷eMÎ-,*]QœC™î÷
+kbAf’Í*Ërx~ïVxVQA¸5.?ßÚí¹ÄêÎ)Éq{r²Ã­³]¹%Ö’¢%¥r†;ÇZ±ÂJ&ÖÌR)ve/ÏÊÉ¶Y——¨cvnIq~Æ
+õ³ (;wInïbV~QÉï§Íñôã<'úp4œ‰ãBÜhn²K¸Y7Ÿã
+ˆ.†‹%9÷·‡»ÅıÆ3~ŸÀê£óIğyÏ§^ã§ÉÖü]Ó®Q´µÕÚíÚÚ'Âx¡Pha"û€ı¬KÓyt_ênêGèékzÃ"CC?m¿yıÖû2ß·}|wùşÓoßl¿-~Oü‡ûæE”Ä·ÄUâå€7¬àƒtñT’.duĞ¸¾¾¶Î\[·eûÎú|µ±n·ñ¸«133¯8ñ#ó»›„ûµ'w˜Ú›çNX\Y0oÅ½|eùªô«>¨.qa&KÊ¯İûB§dvÙ¥™ŞÚ®Lˆ÷D¼†Qç¡2ß!Hî*’œ8p¦àH#:¾Fû8ÄıØ$Í;8`? ö«0Ôü?ËÇª¥§Iÿ‚À#0†Á1ã`ˆû±«ºè4¢=#&¡jéˆ|3¸$8	"d„d-„ó-àĞ´ÂÑAkŸ¬÷tUÉ|U¹ŒACW•€Œ‰É;<Êüg`‘yXG‘•Á]3$X…Õá¾No…ï|Ñ‰ÉkATò(L#†|bœ/]©ÿùVë‘Ì¤¨¨ŒÔÅfô–„ÑFe3¡¸ÅÃ0X^DØÔş€q‚pÌ³˜¼`–ùõšÁÀoöd‘a¸Êà²Ôv·fhÒ»‹ÿ“söÚjšF­~:&ĞÿGë\pîÍ:Kîü¶ı§/!ÚP‹¡#pØÇf0±5Í¦¦cyÓc•©,j¦0–¯’a>e{L$Lf0V	ë˜w›–PŒ½†p%_cxÚk0¾Öõ0
+ˆÕVb
+•C88‰gRÉ(†“bl‘aÅ¸¯”jØ¿q‹€)kq¯Nv
+œlg'‘D4Ãí]éF1ñ'bæ=ƒX"¹üm¨±<Êm	ÂØ©¦÷“¦g¹gYĞI1½%xÈ@‚€³z{ñEçnË¹}µáõˆ#8ØŒ·8¼V	Şb—N›-§ZpË!ÆÈğg•ø`şKòß•¢JS†¯ßA»	‹qÆ 3$C¡ ñsÚ˜­rÎ´Q&š~àÍ$†^¿4'a³E\ÁJyT‘·÷ î”@Ë â›†‘cfÙ-hUÉ
+– •AáS¢3ªĞL±`+÷’ˆ§p£{ühÚ‚”Cì•hñ!UÔC­øÓ|—ÍÇI3æ¥&…=M¤ÕD‹HkÁJÙöÀN:æ!°İ	+œZæ‚~U‚°ÉÂş4sÎ°WÒºz:+v›F2ˆ®@Ëm|ãÿ˜ikßÓqÊ"’VÂ]/w§~¸L+Fª”®tÊ¸C}w^ßáéJ—_BVw©Õ3%+.™ÿ„ÀdÚT*ºÒ©¾¼6oíÔqqå'ÚÌ’¢C;è§ÆÜİ0òY\¦²ŞÙçO©`|¤tª>á+ÂU"C‡g²U0¥ÂÔ¨aJuƒxoµ ş$•uBw„–e#½•B5ÃX¥R ©š\¥¨êvgû\¸ÉÅ	¯[èÎ!Ì[B6ß(%Ú)´“òQÊzÉVka.P‡ôğ
+C›ÑÑ7ÄĞ^ÎÍèzYpÅ0ˆ0\H’Hï¥İ,'4µtèy½òW°õ6‡È:.TØíS+â-(ªÍ!ªY1/QõêAŸ&ZğªŠo¡çÄ+	R¥‹©BUUá'¥¯TB/âIåiÅK-ã¯°7J‘ß-—öÿç‰ñU˜}i\:³¥ş˜ùQ„ şF°@{aïÙÓ“X{cÁ”ø%	œ¤Â6©°èNéÜ›7i³eÓ;k¦lM×Ó¼ğPÍO«~üİòïŞÜ¡¯ÑİlØî–¸ñ·q Ù+1ñ‹râ%X†3à(Ì.º:‚jz¤f|(aÂj1"M0÷ñ¢8
+Ó>³`âÑÜMß[Îì8q­¥tì3Øå3ä<@	ÍS0ƒŸ¥?]f~R\ÕDãäèŠÙÑq÷ÍâGôpt‡ «	ÉTÎ4Í£Îûƒ!¯û¦Q~‘ùİI×LtOIÏ`Ö¥¤‹ú5ùú³2C]Ñá\ĞDÀ˜ìÌ1‹›‰2—¬l“ù®ªÕXºû½kÔÂt*kšÂû/Òx›ó©ºå=24y LæŸÇ©úáŞ*U_Tè•cØß[®N¥\ ö€™ª¹“/Í©’ıi¨t÷´ç_‚È5]ãkÁk˜Î°F1À
+¸'¨ÇŠeh…2§1(Ç»BŸlTyØ¨6=ƒ­J²€ñŒşÄX8( yüÜ›$ˆé+ïÿ¾€8Û}¾Bp µ|ªú¾Ï¥SìüÖtâğ‡Ó-Ÿ¢ı—ò*jêâFÈW£­Ä¡¼ò>ÂˆŠ´VğDKÑª£8¢-rX:DAe*9¬R!Š¡Ö€*RZñ¨VŠ¢#Z¡‡Q(x`6ÎÒi÷ãøGÿiÿÈd¾dwß~»ûÛßïÁ;Üì0êÎ’'MWJëë„¼ÔÂÔiàÅe”m«¯w‡
+ÃË½ÈØ9İ²hÇÉª¸ì)h·,ÆxæLÍŞS»„S»NçU”9(³Ò-Á)WõV¥ea
+”èeçÀ¶±e8v«ücƒÔêØ»÷ºıŞÙylªŸ00w«€¿šÏEV5~q›v$G ]‡WDDrÔZÑ %(qt#K?Í D{ZPî$t©À-åM¨ä1ÈÑ}ûq(IVğØ/¢±56&ŒŸœĞÕz»²ûÁåêøùEâ¿R¤
+¦¨…U@‚v‚_¬¹½óp{Owe ZÈÇÊ6„%®!nŞÁ¹<úL£ÁÑë6¾›/TürDÌ·%é	3šîÃP‹ÌÄÊı4«j
+Ê[ºùëU«ƒKD&9ïö‡q8“ÇIè„¾8å)ÚƒÍ0¬FÄ·¹¸­ËÖFò+jd‹J<AĞõŞ·ÈÌÑ<$«îqïø*®vÏŞ¥ûr¥ÂKE^òú‚Ïytˆ÷Wø˜Ê,Œîõ]%IÏ,sR®ëYÙ “é"5•_Rû­;Õ-mİ¦éêW…èD(²Š*äCÜ¥µÑå¡<zME%º£t…TÓÄÆËß¯óC¹éyk¢‚øè•ûÎfˆ8Š °œ–<ãaKx™EÆ™V5Ø‡²ÖK´$»s”4TpıGjï4W¬°Î7àºÚŒŞQs’æ¯rà ë2şEşF}Éµ‹¬~KĞ$âO‰CiàO]Şh››ÄëeÍdÖÌâ‡pçÏÒ¤§Éiãa<´DÊIŒ`(Î•[G ÉKˆ…¾H>¬§„îšÁœg§´Øş‚ğÁÍÎrO¯í;t?;d€µtşAÑ´§¹­ı«È¤ó¸5àĞà¨˜åë„ÆÄåá|hÔº¨XÑĞ‚îÜ›‚Üüõ˜7X›¤EÙ B§mŞ¡•#Œ ÔaêxøÈ¤Ñh´ï{'üÑ! 45ı8„d§ºŸ6³´A5H8µ´CIóC%Aon™OsoËƒÍ;\ëQùÆµuvVvô<8¢Ö¨ã'ˆhÄCTgÈÍç¢«/$5òàÓJ
+P€±3ˆt"%/$P^eéa*]n4¸¥ÛB^+ë®¾Õ_ZfÈ)ÀMQ°eK~&?3lyx’hxÈœ´é4—á°´´›L¤Å‡‘×Lúv¥&R¡ÇpZ.<	*çSğŞC]¥f¿¸_·³Á½¶~Çá†“›2í#2¥ãhÏ£rŸ¢›o{RÇñiÊ¥´î‹£ÒV-úèàezoùæK¢Åë½à«—u³;g¼šÂFÊ×ßç^äF·nè:T•WX!€"'cSnÿÉæâŸ/zG+”ëÓÁ~µÎºúM÷¬G­F¡‚“>[1-,ù¤Y€::ßP ëñ ğ¾ôÛw¿
+‚)Cå8"Şê¨—Y‹™F†/IÈà¥Çs0kÀ('u¨„ÉT§/ÓÃR=D'ıÌìÇp>øœÌıà¹Î_ĞÁ^È‘4£†¹åº è¥ûä0†SeÍ~¬·:Ñ#°ÄKr´°G:‚ENúÂ6Ê©-™îqb³…ÄÜÄ‚¤tTä˜Lÿèô÷U¢zu½màèi[=0û¬¸; {Vr]üÄÊÔR«ÑS·K9Œ6Z#‹)ØoÅ0§Ôc‹­q;ûv:
+eÚDÇí.N'œ-_»¸€´Çå­<å«®Ö¿Uÿ0 (G
+endstream
+endobj
+72 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 694
+/CapHeight 662
+/Descent -213
+/Flags 6
+/FontBBox [-167 -216 1009 878]
+/FontName /MFAMPO+TimesNewRomanPS
+/ItalicAngle 0
+/StemV 81
+/XHeight 447
+/StemH 81
+/CharSet (/space/equal/parenleft/slash/parenright/zero/plus)
+/FontFile3 73 0 R
+>>
+endobj
+73 0 obj
+<<
+/Filter /FlateDecode
+/Length 492
+/Subtype /Type1C
+>>
+stream
+H‰\ÏkÓpÆ¿ß¦?\Y§‹b•ì[w¨ZWÔSÓVd-xPºuu`<Ì\!mJR&„êz(ì x°—­·m Cã!èÁ›ÈnVêÑñ&}'˜!xğ9<ÏïóÀ‡’`€PJÏoÏK‹ÉåJUo.è­²Y]©•î¿âîyêº„3˜EcürAnîFaqê½kŸ"J²K…Ë¬`Ö×•'«»®¤ÓW}W®±åUÍši­Õu¿Ñ¨›«bÖXÉĞRlŞ0XùxÒde½©7lıqŠıá‹’	ÂDÉ‘)%arÂ''	‘i’×äùEO3‘‰M¼o/¶èÇ!Ÿ½;æSIÌ Cu„È§ä­&ök°J”m?ûò¿<r4$ÈŒ jÔ$d0 ÛHd·q	•*5?YY„/…¾ÃAÿ«ä@ºú¦a×5X‹¹W¶§¶hv9Øõiô0¾ø­†>„E˜mïxüİÁó^ZšC!ì€A8„tP8œ›©¼ÁG·ĞÒ0zs¶Ú7°˜ü>#BÛŞ¡›î€Ût’æœÈÑ oü½Äg}ïJŸ¾…v/ìN÷~nDä-Å&z¿Çÿ8é~šOú#À xRÜÅ
+endstream
+endobj
+74 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 694
+/CapHeight 662
+/Descent -213
+/Flags 70
+/FontBBox [-191 -216 1031 868]
+/FontName /MFAMPM+TimesNewRomanPS-Italic
+/ItalicAngle -17
+/StemV 81
+/XHeight 442
+/StemH 81
+/CharSet (/e/l/c/u/s/i/x/p/n/d/t/r/k/W/h/q/P/space/g/y/X)
+/FontFile3 75 0 R
+>>
+endobj
+75 0 obj
+<<
+/Filter /FlateDecode
+/Length 2163
+/Subtype /Type1C
+>>
+stream
+H‰´U{PSÙ¾—p¶N¶º„®¹nnÖÑÅÂú`­"[­X­Ê*`Q°^óáµ°Y6ˆ!<’pˆ o‚>€" [E|àºt}t»q_Ó©ÛséaloØêN;£³ÿtîÌ;ç~÷œïû}¿ßwQÄÓAQ”±ggÄÁˆ€CB‰ c¿@%“$IF¯ÍLSÜˆ5R+<µK=¨•K}a4ÿÓ6OaàÀ+àøÏ€l™kåO—#(z@À[»ë¼]2¹F)LKÏäoİú}ŞÈ;”.àEÈ¤²L\@#”r™2)S(“òŠSÖóvŠÅ¼(÷'¼(A†@©¤®çñ^@	Aé	D­(²ÛÙç„£È‰ÄXš.âƒøÒÊ‚!ÙÈjFxˆ=&ÇO<<`›±Aæ¯™Ì§^	^=ŞÁŞ–¼ÉcñXÀTF‚ş®rïÒ(Õğ˜nSOÙÍ-'Zğ/[c£‹¡Ü,•¬”EÇÙ}®b˜`íMğóiş}ø™%l¨µ4]Z()’ĞkÀÖÉòõ»pzX™$–"¨è%-$Á¢ä'Uó~$
+b>¢Ï „²Æğ/lÊdj¿‡Óhø¡{Ç3mù‰’÷•%³`ÇH&˜£LFCÌB…ûùõ63tááô"şˆïl.ŠR¢42ÆÃIƒÑEya·+Í¶?-BÜÎá²("Ûë{ÙŸ¨Àİ3AUÏû³é×¤Ë ……«³è	±$€µÛ-œŞ²Ó\÷&ùîM¦kâöÔã0ÆÁx,ä7‡eüE¡r·P…¤Òaïî°X	‚‡aV®¯ÈÉãŠå\7ªÖ
+Î¿§"£ D^>wãä
+z™õH?@ù:Pç G”7ø);ÿûäP|`àÀş¶€WmíÅ*B“^šÆQ[u]u}§Ç÷“ñp5ôƒoÃ€ÀñCŸqmøú—¥Ÿ ¼à˜µL}NÖÏÚFÕ;ÿ.»€	7É±l/cU•±
+'¥™yÅÙ¹±DôÃNe+È4.‡`8\ı;ç®«î¯©~ÂhÀ²#u|1'£&Ë9:6Ó×ÊÍ©ÂtyÇbUxáûU¦ÊÊ6c%Q Şc¯§¿N}'5w ãÉß@ÔcW“HÀ¥uS¯8ĞÖûÀpƒA½
+–°ùQñÂHü`ìÙ+£ÅXC€uVğöÔwœñHk<ô‡kà/áZA3DÀ’G³—&'¹°ù	ûm,ûomĞJbBá5Á‚âv¤oØAÜE³•Üt÷5 ¸2É Hj¾ÆtˆÓL®ß>7QD¼ÒóöJ8s¾¥€{T¾Cô.gX•sõÏ  xŞÚR]Ë]íppZ>¶ÛMÜoŒÿø [©­ÄÊcÂNÇöMŸıûÜH«ğHhòAD`¤$ui’9¡p©öè‘557û\®:ÚŠ±,å3ñÜ*lÃ'0ô3àÆv‹yú+ìÛvà\ÆëNè4ÅÇ¡!‚˜>)‹£$µsW®´psÌ˜V/ˆSãE%•&³}Æ6B¸ÀJÙÇiÏr
+áª]q\ƒcmÓy«S¼¿FÁ¯ ›ÚÿB10+Õéåp¤õÚS#Wfú\m5–+ˆËÄKN˜«NÔ–›‰3T)[nÏr:ív§3Ë.—geÉİ»5o$ò™fÙR|ì¼61 C°äªjI~ntº¿ĞÖĞúRèVË/®l-"¢Aâèàèà@÷M£{j È=•]Î2zl”güÔÿh¥¾ûşğPÃ ^vø²…ˆ£õ™“IÖg&*^RÀ 8ğğ
+Iæ¤|ÎÒ$¨s/§ —,øc{Õ9úèÅˆÒºÃGÂ/ë¨3;+êˆvÀÄ´Îæ¢Ó8ØX ø\\ßÅ'è£à&6¹xl?gMLœUğWëÅ¢êf÷à¹Y¸µÓÑRÏ ¤4‹½î f`Ï“6û¯yxû›Ë.:DvÀÚE6¡?°Q?g7?öóàèvŠA_¸†ì$Xí*ğX5tg±îËõ¾·˜–1lè¯ƒÀ†NYüY¼Û2vÊoËÜ—ÀßFKiş3 {Q]Xízåï@›ÈÑ©ë3$É Pš¿†™[¤/ÌÑñ›Òğ°È„}D àìİÂILU¤eüñ&WÃ”ÀMôßÇRa5[™á7îÌ Äô§»­©ëzóŞÈ¸$“î¾!
+iGûï„€j¨¡.³UÌ#Ái‰Áêõk·™Ağ<İo…‚ÿé7u® J‚ĞJÖôĞ%ùœÂî2ÍíØv&çà©jLÎ–Ï=¼Ã d4ámz=ƒühˆÃ×cñ¼ÂJK9d»D-'lvNKMq$2,YÉµ`¤­ùL^U^T¬(Pòá:¢ ]wXÈ5(:¿ú¼sã—y¡Ÿ.:•£¨ËsŒŒ^ïoæêª±£¢­/0˜*ëê.l Ü£fgÃ®&“h:%a€p cs·ÀUÇs[dx–N«R8´[7ÁªÑN¢ú`2SMj7~æê§=$¡5cÙ…	‡sñœÂ{	‘¶a_Œ9É:›¾·ÛÈæŒÚŒÃ±ûvÄyÃùHîõ60ºdšf¯éê´VšÆ|NM©QêÍ^F=åÏ.×`ÆªÚ›pWµh»‰pÂ+˜R»zÈtÕİB\™!ÏPÕk&'¯€u€E ?şWà9ÇiÓõ¤+´ÙJnÌ˜EÁI÷ƒ¾[¡77T¾w¹¤3³Kg÷·Â²šëû„n¶ï&êşó®]ne>g7×j®;Ü?:D¾ÿ0 ÙÕåI
+endstream
+endobj
+76 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 0
+/CapHeight 0
+/Descent 0
+/Flags 4
+/FontBBox [-166 -214 1076 952]
+/FontName /MFAMMI+HelveticaNeueLTPro-Roman
+/ItalicAngle 0
+/StemV 85
+/StemH 75
+/CharSet (/two/six/space/seven/eight/nine/zero/one/three/four/five)
+/FontFile3 77 0 R
+>>
+endobj
+77 0 obj
+<<
+/Filter /FlateDecode
+/Length 1218
+/Subtype /Type1C
+>>
+stream
+H‰tR}LSWÒ”át¼©-´O„ˆˆ¥È—€Ñj­Ø
+ó7£´¥HµX|:4~$Sç€LÑnJÆ0ËÜ"8p_L‡¨(°7'FŸ²jR°ér’ìÕéŸËM~÷äÜs~÷÷;÷’DpA’$mZ²ĞdZ:Ë`s”ÙJìVór[©Í¸*‡qÎ^á,2oÔDñ
+’ŸÌG„¾¸ùÅ¯/Œbh› Ş„Î‰íÁ¾IDI¶^Ó9‹Ëû¦Â:Ö:“NLŸ;7^ÀtÍKLŠ§çh4ÿaòKL¡ö­Î’òb›X3SNë‹,†xÚív«¯ÔVg‘š^èpĞ/™]4csÙ˜2[¾š^UhwÑ.gA‰ÛÌØè"s9-´Ğ›PRÌ8óK­¶üxºÔÀ|»«Øa.„EÎ|{ıUÒêø_ß),bbIãˆPaV„ØB´3É“ä@&¨>¨[”)j€·€êz—AºFØ+=â³5Õy”uã'dmßÖxå?µX6ë?T®«ûê:[û}kçåí.Ê]¯bJwn¯Ø%«ØUé*”ÃJ4Rü˜_ã“ò–Q5fñ×Z¤atØn–ïeÉV/|çÁø‹z^ˆ˜*4DM;ˆŒÁ˜ƒ`øG™xBM=æ	Ê˜zÈhv‚dv¢5Ê°Seü‘^˜ê&ásNüè:*K‚ÄILœBFÿNvˆåcË`1Kçà´p!Åo ¸­Ÿ*ØîÜù±ËÍªUÍÈN1îÂLoeı„äÄßC²¡®{İ0QSbûqÆ¥Ğ]«ÔƒÆ‘½OÊ@Í’_rïppÌ›-o…ûTõ	OÕ§Š{××ÏI]¼vn\nÏ£ªT	Î8àKƒhLÓ8KoògªjéÅÆ¶+r˜¬¾$ĞGéf£b¿’“Ümí{Ôß™¯]`´ê”å’}ûUíU	F!ƒåƒËàÁë£AÑì£`‹«qX2ÈRz	şî7‹Ó¡3!ã1;Kî†m,$°ä7´{EüæQ…K–úƒ*ÄçÎœoº¨xÜ£Wcğ’•©9öä†ÖÂ¤ß„BZô NzÍB‡ª²ºòÄĞ"	p÷±ı°TË’Í\ê´	ä|#²=º«¢À9hÂµ{WÃ&Ğÿòg09ã)FÌÏvfY&1‡!Y˜Ko›yY­
+ÃqõäûEIi¹‹Ô«oıÙŞç8çÇIˆò‰øñş™¼L‚31¥X¼÷Ê|’c°Mz¦Ã4Y@Ø,¸Xòœ7Ë^“ğ4	|Õ×ÕÜ{ãBN÷Y¿dÅÙ[ÊÄÃÔ²–œË.e¦scVš£Ÿë &?»‘C–îÔ&å¥¦–®ùÃl/& ›…2åU¼Cİ½ÖqoğZÎ‚yÙ9©IÆv.ğ#´°ìf`ä×^hI¹/ú	Pö	·Æ+@ûDB%œBQNÁÈYñôí8ˆ¹q¥ùòWªêJ1÷ç&NWèWµÜØ«‚ÓĞI¥­ÔÍIwàÖƒæ;#¾ŸµÉÊ°í¾ş(˜<,8Êo©®‘¾ÎÈ^gB”§Ò¡!ì8n<ßÎSÔ¿ öÕnå
+endstream
+endobj
+78 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 713
+/CapHeight 713
+/Descent -209
+/Flags 4
+/FontBBox [-166 -214 1106 957]
+/FontName /MFAMLC+HelveticaNeueLTPro-It
+/ItalicAngle 0
+/StemV 85
+/StemH 75
+/CharSet (/hyphen/T/h/e/space/E/c/o/n/m/i/a/d/S/l/R/v/w/comma/V/period/five/zero/N/two/u/r/one/nine/p/six/eight/g/U/s/t/y/D/b/f/P/A/M/I)
+/FontFile3 79 0 R
+>>
+endobj
+79 0 obj
+<<
+/Filter /FlateDecode
+/Length 3310
+/Subtype /Type1C
+>>
+stream
+H‰lT}TT×åİ]M|¨»ºoAA@>T@É *TPÄ°°
+BøØõTR•R*EêZ"jZMĞ
+AQ9ÒŠĞ5u­*BMšcí¼u–“Ş%ù³çŞ3ïÎ¼™¹ó›¹3,ckÃ°,;+6rylLøühm–N[‘š²Z[¨‰_“—ã½¢Àª0[T²â[q¦ƒ3.Áï^¾[ËA£<›ÿœrg¦<ä=Æ†e›ºÂsrwçelO/PÏKõPûyQì;A¼Ôş¾¾?Ó…t‘:&cgNÁî\-=hòRòv«£²5Ñ^j½^ï“õË/ŸÔœlõò¬,õ„ç|u6_›§Ó¦ù¨ãÓ3òÕù9Û
+ô)yZuvÊn55Qk´T%7/'­0U›æ¥.Ì·Ò´ŒüÜ¬”İÖcvNZÆ¶Œ_„©Yÿ4ÃÒÅ8Ú0Slg–™Á2³Æe<Æ‡eü&À–	“1±¶LÇl¢9bæ3Ş4™L:“ÉT2˜¬ëÁîgŸÙÄØÜ—H´’zI¿dÄÖÃv«m­íO\wš"¶äy#].­‘Š²Å²«²ŸìÜì‚íşlÏÚGÙ7Ø¿š3©fÒ¨ƒƒÃGË ìø¯;¢¥è·ô,×xìBÕYUÕÙêÏêêdÍ×+ÏW´¦7j4;r£JT‰Ç9SU{S¿²ïîÆ‹³’„¼Âı{É•æ§+ cxqÜâk—Š³/?®±T™5R9vÑïé D=[íÜAŠ’nY_rpótPŸ(ƒ™ ‘¡„Èq32²pˆ‡frÆÈa3•u•„„Ôƒ„³ªÄ{~ş6,)”ó?tÂUğ§}¨
+‰İŒ-è˜5 œÊï4Ş7QPÔÁÖF?ÁÉ˜€×p¡J^«Ïô€\ÏŠšùdÉÇó4•û£¸îöŠê‡J-_rÃD^fıu°ÄÀŠôB1QÑşí˜ràÆÖĞMZBª€‚+Æ%íÅ21œ1pÔ´İij¹$Ço!~ –+À.°¥è½ÈçîUQğ¾¼õ/°ÀÀVÃİa‰ø™9–G$hc±ç“æú¶†6åÈ­„n«Q²PóÕ3Á ?ü@gMë=Õ½¶óı8FŒâÔ­[ŠsÓU¥åÏÁWÖ$AŸ¡bBì¥a¸6œJı7‰u<H®èE;%ªCÂqR‚°-¸ ¥Ş
+œÙ=æï+à`.È‚GĞ~MLá¦ªRòŸÏ›a(”†+ÛÂ#$âŞ'!ÀÕ?¥sĞtÏøïÁqK&à4 ßÀÖ—CÚpÌ°äx†kÜØV *•ºîZ¡Và,`WÁdº¸ï`Ú@Vwä%U¹ôñÙ¶®'
+xu»¢ln4:©ÀÍ’Ä/]×44öèöèàÍË|W­÷âÅD¾ÿöş¾¦íáQIIQQ?7X/…ß`ÀÀ£áê°ä|À£ÓÑ'kÁ^	³À±]hªvT³#ÇĞ==Ñç ô©Øw>¬½uYU^Ê¹f&¡•ÊˆÌ«=Dƒ¿8¹ãéĞí×¯GZÖx¯_â.ÈŸÔê Ó¢nPÏÆ;¿%029h'—1“{MKcNæ\É|9¹‹Ï9ü5‘ƒ¬Ì(¶YÑh’@‘YÎƒÿk³q¹FâVƒi½—òpÀX¡Pø¼Áü-‘Ÿ+3İz#[é,şŠüÁÈYÜÉ(ãD©µ?,„´‚]&˜´YşQ«3'ë©¶‰€'Æ‹FğE­î½Ø¥{a•¿¤1›9®œŒsÜK"2ºOp0Ÿšàt‚o-ï¸Râ%¾³rrPPØNz±\Gß,õ1BÀQ¤fğ;Ë ÷ãÏfN²<§Vx\|Î¹ù_¨Q‹ª)ö6Šı€ûÒÕ¾3`qüGsÌ$f‘ñ&ò Z8H'°ıÌ|ÓBá,¯ù+êà¾Ê©ƒoL+¤‡pŸƒíä*i>Úª+Ä©ûÂm¨Ê•}Ovvœëªxx¼_ÿpu¬\j:õhĞ¤ $×ÑQ…Éßi‚I_¯> !×=ÜAãÛc„ezèÒÁ<#[mÚg‚&S¼I"¾Ëx¨ÀÉ½¨Vâû8#U.†Ä¡|áÕ'\ï®ûŸ„)æûiüQÒ|…Ê‹`xÈ—A¨¦‚g/m¢©×ê…ùÜÊš„½ŠÁ±Ë½ß÷¤#wT%ßOë#7²fs2o {–rğ)AÅ¸œ£S˜åV–æ{Ñ,èYsÕò"~–PÙYşè§D!¶„?	ÿ×ĞÚú[‚8LÒ¼@	lW‚#°·À®U8yñäİ“2ù¹Zİ¨ŞÌS?QÔ;Á‘q–Ö'ÌÌräÇñdî¿DYløT»ô`§ÎÀ‚Î!	¨`œÿúDWC·²¥³(>2í°o	†Ğız*\úS¿{~ëBë—Ö¦I>|>ç¦²º¾¢ò”pª‹;ZràH‰rßÁãõõ¿¿t¬V¸.\åÅªÆKŠ7şç";oJ÷ªêPÇ—Ã4HÛĞ×&+'Å›oÉI“%ïÜT­Üœ\ß*È+Š)º1½(7@,Î›†$‡“š1úæ6è‰3)!ü5øÑv™¾ò%ªVÅïÜ”&”–ßƒÓÜbµxñsW¢+:®k}
+ìğ'×V©ä	ãb ‚ÅÚ!è’ˆ¥ğ–Ç#a÷¬C1Ö}0ÕıAàCİ û£°˜¬Ê_Ÿò?R«ş)ª2
+³Ñ}ñ£ÙÑÉ«°¯í55Æ	SÈ¯]pq‘¯IS$#‹MqWXLAYDPÖ]EÂ%Å€V†ğ#”3n:hÜ°ÈœŠ¿ÎuŞı¡³Ëøôã}ïyÏûœssÎ£¡©}ƒÀİÄ-2Íù]ÊZÊÈƒ<[\­‡Zƒ¢½=ÂT/!ëY-fº_rz-eº×Ù*È&ÿ´|ûÛËí‚‰d¬â±Í`3Îã›  ºôŞ»ÌKƒÃ‰Ÿ—Ü9äú¯aDQqB‚>tm„}|µ°ªFo¬bsÙL\e”Åµ°	87^~x|jÔn´›¶¯¤ÚˆæAk¾ÕdÌ"?x¦«w”şU§ÑäJÖŒ{/Z„©¢¢rªDÊÑÜ(±ˆÜÒsê°óWj>™—k,·¸¢ôİù»)£9ş³v
+HÖJî>Qîc)¢dèåWÅıÅ)	‘µÉ>˜çry&rİÚBÙrŒ'õÁ”W*¸  [f¾c&›F#bJûs0­Ì§àŸ­O(x6>¾(XëOv˜;ÇaR(ÿğ:®ì‰¿;Ş_6+õ”ÅI7<ë:~ŒÜ„ÈUh(i²6ÚküÎ×µUµĞö†ôøŒì¤\ƒ c]¨…z •;ŞxìÛJÕŸ››ŞÕ~›ˆòT#M”®—ĞŸiÿX™XµEdÏ,î7Â>q=ã%^²å…•{¢ºŸóLT<ƒ2ÿù–1 —áLI{±½ş¼ßù³íöK´¥jWâş/·e'Q¬tƒíøÅ’¦¯í~j;ÏµÒæsiÉY‡v2
+¡ì.ş¿=\Qm±Ã®
+«ÓhÃSÖ%«û²6UEĞĞµ¯O@n—ßæ–“±hõwşg
+Hén)–…‘¶0,y—A"Ï&ß„é {`9!"˜y!yW¨¥|ş™fÂ´ˆeşáX•Ióâ»%µ²!û£ÅRƒ,ôDŠz…üäÏâù!Òg±cµåƒ{~¤ {
+« &‡3_mÜŞ5qB95ÀxÊ6óÌg5>F—lé¾^?cõù–¨•¬cNÄˆëÆjĞÅæ¶Êoüjšêí-æq…¶G*¨™=rø¨`á
+Ì=@FoKÆªP3åwã‡ÂVx?[J— VZ‡Ì”ØüsVômïß©v¦õgÆ©b£ëÂtg~)Ä†b¾#‰0a¼›Áç®ö\øYuxuøéUÇeKÇÕïÓbq®³j«^4È¯‰(épìùÛüb’ÊŞâãJn˜„³.×˜·?K¥ëÌè±ÙLGmjë.Çh<”Iwî.®1›Nä›…ëĞÍ=rëÇÙnı–„QË	(˜gvØbÃ¸E{Ã–Î¥qÛ*ÛN9
+Ë…^èBNF"Í²“¿ú(]5¿åÃ¿oõÛ¯8Ô&b\ÁİÃØ+ôÃyr&½àNwip:%È.ˆ¸,¸ø•R¡jCÑhºÓûyÁ˜aœk>î’çs„E{>Rñ#ˆ\Ã[ˆ’ı±¾Õ.·JÁRú Ì‡	ïÏ#,Ís%¯’—eã"îSƒ>}ÍÒ+şBÈÒrK+slô~}—Ó!(31H3D•–b–S‹F‹|^œŒ{q2^]±tÇ+ãÅ	ÒD¹sŠ,ñÿ	0 ¿Ò×Õ
+endstream
+endobj
+80 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 693
+/CapHeight 661
+/Descent -215
+/Flags 6
+/FontBBox [-77 -216 936 695]
+/FontName /MFAMLF+TimesNewRomanPSMT
+/ItalicAngle 0
+/StemV 0
+/XHeight 446
+/CharSet (/hyphen/I/r/e/l/a/n/d/quoteright/s/space/N/t/i/o/R/w/b/E/g/y/A/c/p/h/m/v/period/O/f/u/parenleft/S/parenright/T/x/H/B/comma/F/two/six/five/P/U/D/C/colon/at/one/V/G/Euro/three/eight/zero/seven/four/K/k/L\
+/W/semicolon/J/slash/uni2008/M/nine/z/q/quoteleft/Y/X/uni2002/Z/j/asterisk/endash/quotedblleft/quotedblright/Q/question/percent)
+/FontFile3 81 0 R
+>>
+endobj
+81 0 obj
+<<
+/Filter /FlateDecode
+/Length 9768
+/Subtype /Type1C
+>>
+stream
+H‰dTiTg­ª»Pi(„ª²ª‚
+Æj‚A‘Å 6È´ÒlMÓ6B³º31CQiWPYT$À :Šâ2£FrŒcfrÌdLòÚ~3•3?æÇœwŞ·œïÇ}÷½û]	agCH$ÈË"#Vø)³rÓóW§o‰ÎËMÓF­Tşö¸ØÌKÌîvfa’‡†qŠs"8JNòÇˆĞm&Ó¿÷ìùßi’Ö9B‰TLŞÇù¶9¤DBNr	)Ğçh³üçÎõÿïxF!®ÊÌtEd6ÏP¤KW,ÏÓëòôi†¬<ílÅ2F•‘iÈWD§ç§ë7§oœıÿõ1)AØÛ„‚%>ñ ò"‹ ¶Ä2‚ Én‘E4¡©
+ÂS2C²]2fÓocµhëe»ØvÄÎËn?9‹L$¿–fIM²…²;2¤¢¨	³'˜?'889“§9º;nr|ætt²ÃäCÎ2çB;—×%®V:wSM‘NùÒ=ÒıG„Ç0ãÇÜd}ÙnhªfêC>˜ÿUˆV¬S¼œ–æéãyŞkºW··Ì{§÷ó2}HŸ?ø<ôùnúšé7g°3rfºÌtéfQA‡›¥†#‰÷5Ò–š³°(9\ú^)“+ä–û©ãÈÚ_ú^ÇY’É—R‹x?I¾¯uKH*Õ&IÚŒT]¥‹*aBjÃOEóMÑmë»´”¶ëË’æîP1^Œ¡BåZºå”1ë˜p.®Î]œdÈã3:c»Ù¸ïP©´ètEUÒ»ãŞkjn\á-¹ã>tRr©6EHÖf¬ß´†Ò­)a‚E@%ß´¶}ı•\*·»§¤—…90\¡ânÙMı5aÓµŒ®¤3Ô™¤ÄÃIìç±ô9û¸Ğ_7'38±80'WçëŠ4l®¾Õ hzJ¾…‰¸~q¦‡o?qº¡…•ß|çdı€íQöªúÓú³õCú«›ÿF€}…HÏ‹)µàÜ¼˜Ş<xrçÆ³nê’¿Áéh°Ê¬ólOƒcø;+¿úgÕ!“ß¼Â‘é‘¤¡„Î¸Î¸Ö˜Fe£òè²ú9Ôq´?ˆnèÉà”2tÖ£¿	ågÄ~ûñÊÈ…É”ZÏ`:ä›eæyt M¸Öñ¡#¾òé£Òdró6K3~B}N}Y})÷´ŞD™ô†êvCfF†æ°îLp¤´¿ø™±oëåÒö¢FU¹j[x™ª¢h;¥Ì×©²u‡ºûHÃŞƒõ|ãáöÖŞ¡æ–¶æM•Ù»õ»»[5%)TIÊö9Œ¦ºÀTÊ=¾µ‘m¿pi ¹| ÿ‰PÚ½½ó³óÚÖÜSÙ”ïØ¥¢‹ìÅ¶Ö‹Ì¼‚ÍB|Mš)³¡õğåÚşƒ_8ŞŞËtfµ¥¦ä”{ÎåµÙÙZµÚÿª¯3w2:T‰jõ
+ıÁ”a|]JMrU2%W€~OÃ†‘WàSpY46ytLØÊKª[µµUûñµuÕÕìŞ/*wîöm«ÚZÆ(>òÄ©)|ªØø1s~føYM¢Ô¡béÕñ‰«ûâ‡‡ûú†‡û"y¼y”#«èÅRk9g‰%ŸJÍåy–”?|çOãªvœó i?|Ä Ù[#}£Â½Ş?=íJÌÀ€8‚u°Â¦ğ¿ÎğbÃ#Ö*à”ø`1Ş` NOCñi8ñ°å;Û:v³ÎUœÎçœ9Dµx×!sL/Á Êxœµa~Ôrvitß›t!&`|ÊÈagw>¬!uµhdÛš
+××ÕyU3˜qlÑî„ÅücYYá¶Â­ªáŸQjsu‡lõçª}[l9PfÚy„Úq¤²çÏgW”-Ã1 å–%`¢ÕRcîfƒ¡Ø`ÜT¡İEíÒÆU.gñWigÇ[°E°
+lÁá)H{ ZîÖÜeD•/‚@ÔáQşîÉæ;¤à×äğ`EÙ: #.ÅÂß[s¬Ëõ»NÙßÁDÊßZÆèsÅ$ØŞınè_,¸ş0§Æ–'æ§
+ù©éé±1
+cwP¹-2z]ì5áXám½š:(.–Ao´G9ry›¾¨ÖóšıÓ¾2TS{Æ*#›š‘µqİ€Â!¦]»„GÏ;~{`2.¾ÅƒÓÏ7~zÃ\/¸š:À®	lC	‹Á(õÆğ An‰4WÒf¡ĞF:nÿŞDWó(Z`!X <eø£›U'5ëŞã2¹Å##h«QŠµÖ“0y×ãƒ\ˆ;üüydqn\\}[<ßQº7“MÊÊR‡Ş[¿ûæqCÇ_„Á¦ŞÖ®Ë]—;ú›‡©æaÓíQSñÅ{ÿŒŠÛÒôÂÜÍ³¤!Hœ“/GfÒk¤ÁA%Ú@!P=oÁÜ+|PB‰™:0}ç€NäWßz¬yÍ’k@	w_·¾’rô‡…éë—½Ê?ùêÌ“ö;m·»¯]¼zj¨é~ı‹Ñ¶ÆmÆ£èQ ¯˜úYXü=Æ`!¦"$R	ªº³YÂì‰°\™¡}ı•—ƒê·nˆvö°¹¢õëî«g=Zk±f{©u&‡‹I°“šã8òòüxh]Sß-¡1½–£-Nb‚šC®…ñ‹îÿ¸AücPóE_ûè?œWkTWöÁô4¢ Ñ	Ø=vƒø@Œ‚‚‚ˆŠ ˆD@Œ#‚2ÈÃADĞ=Ñcˆ¼T^""#¢ÁAcbº¬á`bd7»jÔì£¡z¨Ñìd×ûgOŸûçvõ©ª¯¾úª:å/a7ùØ…=hú€†í`«ûa€œ
+Ö˜D¸eG¨çâ&P¢7³%èR‘ÿuEÏ-æÅ£‡${i¿+ZOŞ€.8…Ã8USz2ë‚7]["`vt"¤š:LÀ&tºüä3,IÒEÁx0ÕôòPAŞ½Çà2î2°±Š{è1³G²he‚¢ù¼¯Ó¦ÉhÆà^x] ä¯Nu¿à¶ ©ÌÚÇ~™ıR_¯¯w•iI±~˜~¥dí
+‡ø@6`M}—œ_õuqkÃÀÆçƒ`¦kM‹næÎF7WyÑU^ÅËü™Ğ<ŸlÎ<Îy	ü]ÂÂ/òz™C.Ã~½Ô‘K™Î¨k ZFîeÿaÜÈ£µthèÿÖT8/Èà¶¤\ÊÎÁH¢ağšÇ?0=[oD|Ê}ã?í,Nb1y¢	3í:ƒ®|¢Ñ¶ñÚ÷¿kg¾èùh°|FX´Ğ-s¥;Îä¦`˜jñ.ô ›©8ÖlÀoI\—µ“$¤&Ï¥¢CÁœºGˆªV¶Îa}“V{òƒ3qÖámş6ëñƒŸZ!Â¹ìÀ<™‚qéxğ÷ºÎ~®¿“(Œ¦/ƒY	×œ4Y"˜Á.†»öãÈ.º‹pÜqäXtÇ9òy8ƒÇsIC™¹¡í†Qè†ŞÎ?ƒ½Èq½8é'kzÑ^„aÓàÌ
+vğöÃa4DáK¢ü:\ÏY´A«“_ 7/‡q´/ŒÛÖàÈÀü&péGœç0
+¬¾¥ï’5Ê¶œXæÈä°şièÅöt§}İd¤È2³)Òê9A¾2Zæ´UÆÊ•çÛ>nü:x0lEø<JrëJˆóòís6¼*pS`$yÖ¯““…MÃ®
+¹ÚÿéÑ¾¦'ü%°¼ñ¢·¾¤Ó»Èšë†
+2É·*ª(‰LdÖ'lÂaùœB8©ãÈ‚u§Ÿ!~È`G’_DÍˆõß¤œ˜‘¹QœCfÍ"beY”¬if7U_âÂf‘PE%}%1((Ø)´@†¡Ed®ÏòÑ/—ÀÜ~ @Ê€3Ùm,1²+÷s.$šl¸§ĞQº¦¬Äcü‘Ôƒk]™WÃÄ‹rÃ³¶qS¢ÓƒÙ0…~ *­ïå¿:~µåüçôùÏ*ot3ÿPöúÆE~²ì¤ãQÚPyY"—]ºVĞÍÂ>°Â	è¦H–óÉr…R¦¢U²Å;íÙE+>*’ñ/¥&Â%qÁé«ûï±¿Ù‘tƒ¿‘Ô[/£ëe¥ádğ¸q³À</Ï¢ÃÉAjògãÚGíVªS2Òiµ:3/ÍN+(KâÛìkf°øÒñ+mxë 7ç@Ñä$à8dôhÅiq,‡î`KÜ •…ıàÃ ¤|üQnÃ¹8*½Ùi³kÚ<x¶÷oÅÜ§cî§ıÌ¨„±çrÍO»nßn¥[nß­¾Ï‚fu®¿Ç7PñÂ‚ò€æ]áG
+Ê!¬l@ÂƒÆw‘e=ˆ%Œ]1ÈùÎë›ÜJ·Ú S5®gí¯aW­g„İs·,+•ìÏQ¿ÀN	–ÿ$ÿ9â#}7^cá6¨0Ã`f 1wàçÁŞEGæñæúÑ‚—T4B"ĞT÷…üœ:¾;©Nqmé&*.Š^P´QWÎª·ÔğiEkç2¯Db´ÊN–«¸¬Ä„\%¡:A)|/Š¦änò€¨(:`Ex&:²˜A)’ªyuANq~	_²÷ô5FDmI‘5|ÑöƒŠüh­¯ öxn_OoKÍödQ'4RæB…àj:¨İêS|£º>µ:±:áhdE ­¡Ô ½Ê#ñ5ÈÍ¬ç+³KvdĞE©>ğ1¢± 74SÅmN‰Ê!Q
+_ke”2¾°<‘WÚQº»‚ŞUµ§å#xÂ‡âM^v5_­>œ^’R’òqì¾µ$¨õ
+
+í2"cQÄâ‡Â	ŠIjòÈH#å»'-=…U§”*øN´[uĞ%ûÃ¨Ä ;Í–9M÷Åwé`ˆbã˜™¯Ã©Ïğ=ˆE¸BKökí=pägñí‚¶’ZNsätE[{ÆPKuÉßYÅWî,Ï,VÑU}àË¤b™‹Sòtv[íÅü‚v¿;áƒtø`
+#	iÊ3Àõ‚˜ƒI÷Áò&,faü1ïòWÖ´ºk¬	Vq‚—‘eÂ|½R"X‰abi]s%WV¢ğ$Û®5Ü!(lxÅu>ÌËŸÿÅ;Fşˆâlı(Ãl£qÆ¯Æ«Æ}Úˆß!W¿6ÖÿLüª;ÿ›ÿ6­¡ÏèÿßU,}íß`õrù7ĞÖJŞêvh˜ønaGE%×XÛ\Şù¿y+îh)sğ¹T4]ÒşßÆOæˆÑ$6vãÖ´Ã§³8ºåœMLÎQ¥ò¹[73î}K`\ß—Õm\ç…3Õ×éªëÅ÷1ú™Æ ÊßÊHAĞï&³¢ÈÀ°è¾UV2QwáÜ)M¥¦²¾´¦ ¦ î@ı>ZkÈW4ˆ»k·Ä§íÚ–¾…
+ÄÑ8eè·péºj5MCŠwì—â56°­ZCï›9gÒEÛŞs¯vİ[‹ç'âÑ¢Ÿ}j%£TÆ{r
+ıD2èBÛV²¤¹ö
+yVD)¤&Å‚™$ÎuS`\L\LlÒ†,:kÃ’\[ÖÂ¥ÿb»Ú£š8³¸®™‡¶êv5f83Û]umÕSÛİª«­Tñµ,*X-ÆˆÊCƒJ*ABDÖò @òÂS¢h•J©Xëºu}«µ×o’;pöv«íî9óçÌï»÷ş^‡µq¼ZŸRsŠqŞ£®¥·çè¹}q¡)Ï”×–q)_Í%o§^¦,¼^‹’6ÄïãäŠ0¥›²\VÑ‚dGÍD­óêëfR(ö’ì%†9Ê“Û>.|OØş5î»ØCÈõ²¼
+¯Ôk:®3®qÔ`Fk¾³–9tgØ»8™•ÃÍ¢ÚÕLˆ“±¤©’ñÚ]›ı˜áqÿ­¶ÿSw½¼«Ïë}ñ¼G	z•Ü¨Ùå¶Ërª¶25¹ˆ¿ªĞ«®¾Mû¼Taò¿œƒ”ëwÃW›—$–|q¶Óî}·µñÑw'ç3C¥ÔĞß]G	QâŞg¢›e`Ìö‡q0‰w‡¶%Ø<ïdÄ¿"4cµ£3Âa*t .xÊ)—H‘ôÇĞ9ü ›a1¨ñCø ^™Ùtg	7½‚CÀnE4£ùw„û×ÀÃ&4uóì|çD©òæ ¦—EÅ8½ÎF»¯Åô÷ğÁ=şË´aÙÌ\ÏŠÉ?kNáKšsàÅ 1¬É Y¾id,7§NK„s”¶³ñ„…ínKP4ò
+ËÖ²tYPî:¼±u¼l]†v)çv5ŒJŠZo£M¨áïgC'¾ ÇBt‰oBö}ğCó@Êuo{ ëó½¶ê¾ß=ÿG!O·?İñPy7•®¦`cÌ~^(†÷½ˆÙR,¤S> ïA¾Æ°ÙËÀ¶Pøó;0Š›³húFx…ño5ßYÂ4éÍ =-hÁ=4š»ùÍÃw“°‡ Â_Ç ˜Q°¼&£`<=²ıßHŠ2ßÆ\9Íw¯©]¡§õËßÈ†©¬¨ù¿ÿ‹v­'ƒ¶¾Ô.JÓëÓt¬¾âÈ/lš@ ar8‡w¿ê8QË"DÁXœYƒ¶(¹|‚òˆÂ=F—÷suúøÀ>U8«Ú•©“óÖŞ…>,ÄÁ˜Ú Co©ù¼UÖ*ûG¢?ÂOÿæòXúŠ¿m™/¯N}VTûq««Cë¢Z£NÆìÿ–‹[íäù¬¢<3kEKW'9ød«=æ8öB¢Ï»:­¼¢u[ÃF{ˆí½˜Ôo_Ÿq1¬²Ä×84êñˆ?w6.â4w:¢isÕúªõzŸÜw°Òn'GÈ¥Ä³á»dô5dšxªÿkelJ?Ï¢yÃzòW½ô3üY=
+ ¤wÛ"¯ÉŞ’@×`Óï†°k«›è9±™‚©¦)ü¸İ«ƒ?[&£eËŞW¾Ë.÷ÏÅ=
+6È«5Šš/:5}tb_ÊÙNF¸Ef¶éÊ0Œë
+»Ùûˆõ}Ò°ò¢‘‚y9 Ñûs°ø¼cP+‹Õ~”±ë*µ³³×x™6^Ö>ÅZh¡.gœÌÓsM&GI'Ûn÷Œèƒau7@œ+'3ÓN¤K£ïª¬2·32•ÃC§ˆèWu˜™“†*ôZ.gÛåÔõ¤Æ=æ°œ…òr?!İ¢=ì¤é%Ñ/V·YÍ†[şÉ,ÚNMğ"şàEÅüåM9é0§h¼I]ÁìT}5Ÿƒœ¡Ğ:÷‘7T=æ”Ùr™³ÙEƒœ4>¤åu)]‚V“˜u@§(ˆÌÛQ=Ç£HØ;ÄB±ó(õOUW)ÓTcïçÊìbšœ¼Zdä3UE*ç	vyØHtÖ‰Ğ—Cˆ¨#…	®oM·ôİÚRÏ¯ëjôı,>#¦¿+ÎƒRT‚¾G£Ñï›¬—ª<Ë²«NÔÅ
+²WN=HÓ%GÓ™êã	ñLtŠ*À‡ƒd82tØÙg30öjÛ³ãœ}ˆ’SÈãĞõP4ÂQ±ÈzÀ€8c&Œ÷ıl~¸§B•´=ç ½vjúñ¨Ê¦â˜öìÙ…Qh?<®)ŒLW{P‹S1ŠØèèN™}H–F»­$¯f„˜á=”Âr÷‚É‹„Íxè`!_¨ÉSg«è,Uzœ’‰ˆİ¸åcŠÄ¹`VaçcÊ˜ó¦ó\¥Ûù†âÔ$-ÿ(äo)·ÀS Å^øæ×ò4`ßD®İòBîĞ=
+}'äÖõZš&O£©ªÄœOç›Ë3ul¹]Œ|¨ü@%Ñp*ïZA·®Rg*+5ĞùÕ™—Xa99äò‚·¹ë6uÁ(—z¯oVì$]½$.bj¾CR}¤>¬—íëoûá2ßMmÙ²+&^C§ÔV³‰šcIüÁŒdmj1Zt¸ë&ƒ.P·“Ï$˜8ecTµLO}ó°c”ŸUŞÚn±ãŸ!LÚrC)Wj0çÔ³hLO ¬â·QĞ‡_ûÍŠµsèØ‰[CxãÎ,4ÉQ“©³qe9=õ÷è^‰ïü•;‚Ø}ûÖù´‡7éz+×Ñğ#5õ9Ó¤ÎY¡T€$/œÈ©(M/b´‡49|&3.=†N9ºêÌğJj[£eÏX„±|ãF=êBSĞ<UÃ<äşSg}ßåVIu£QKZmYVy¢ßâ”™€v–”ñŞK,WğBşwƒó:z,Ê_¾Váè¿÷#V…‚Pô3ãÍ®^¾ÕÑi¸È:Ì‰±¥|KXÒôÒhZQ\y –í±XÚŸ€_H‚Øù9 ù‚?’aŞÿbQr+NmÁO¤0¥™BD¨­„:2ÇYUBz–šWgÔ¥”Ñ)¥©_=ûÙUÕTv‡] ïõØÁv¦iÇ÷ğ]
+VÔ™ªPG¡èÈª(Ê¢²F bH$$€£1@QÂ*{4‚ã‚²¨(—r¨uµsìÔÃi­¼ĞöÇ9íøÿ=¿û}ßïûmÔ›³XzädÄ
+4ÖèÍï+°ˆBë‰‹õ89FŒ±U¢Jè‡¶Àèñ§^<·¶†mß·•Fnh\‚Ër^Ó?®€ŞKõƒts«ZÖ
+Zeõ¢ªäªäò„âXrRèP Šì·¸p y@w”€t˜Ï4ŒÎ`.[`:ïnĞŸd„UÎhuèªmè§ôo×w€€±ÔïCWrÀ	.7gÓwïÅú¶‚2q	¯h9ù9ÇeÈ¾vâ	ªî"Õ0.Ö?3´3†¶Ê:‹™¬´Ôã­¸®&OaEµ¸_—l‘˜U¤Ê\™g¢»ÎØº:dm‰M {[pÍ´¯¿,1lMŒ…¢vı§T(Ú¼n'‚tq	£–°3¤"S¬M§y|ûY«7‡—:=²kÔ—ñÈÇ|¯Ã§\4’ˆhŠW/á1!~~^JœX :@j³uÙÙ¿.åB*³ı9œ!‚\®ƒ®ç_şÜn¿3JÁ™ë Ÿ™ŞÑ•z4¿È÷HÌYl×ÖP•ƒÅ¹sÚn+·è3*»–ü€s8ı_—ƒ¢’#åfÊTX¦;ÊÓ.
+£QÇìcYM#Z†<Q šsİ:íĞÏ>Àí=›×zBk¼RÈËÏÏ="®úl
+; yøš‚^£cã
+ù÷GÜ*HhàRİ«‚[šv–lcÍâÊÍvÃŞüĞÓr:€I¬•l¡Î·İb\à×®ÎEÜjx[tÍ5ú
+Ú\á°\éÿZnê6îrqº‚QHÒòx4ß¾ÛJD§éËd@Vª0jM¤Ö¤ë¢ì2âõøÍú›tKƒ†­5Ù•â2!Y*ÔzPhŒˆ<$,T1QŠŒŒÏè,¾=ÂÊùL\Õ¢ jK~× Çèœ÷'…sù®,¦WoÚ¼Ğ0±’pÙ/8 †ÅÆîØÑÓ××İÓ×Û½<šsã8¨ãç;—6Tã¦Ñ~"'Ş ŠŠ‚–Pè_D˜.I-eÔRE«&Õì>],†¿İJÄïÓ²Ü 4iNêºSıÔ„ÄñÑyWçbî˜˜0ÇGı==}ı1=aàëI	7ş½â¦?
+v§¦Ku!Z£)¥¬‚T²ÙyÙtÜº'	0<X,§ã’’¢£Âñ1)€p)oV`'>û>uÈÉìh{–£ï2P¦.‘ë%-¤¦F‰ğü¤ÜLFËª”9ZR%IÉ‹ÆD’­DÔaA1{Œ=¦4¾%Ò9HÁ~¶!äÜ 0ÀÓ0‡:ÄL“æ‰ŠJä@lØoIk–TÇ]
+zˆ”ğÂÇP	÷=½µÎ,š×2¹(¸XP••Ni
+4ùF£‰vÇ¢$øøÈ>×9–ãèSÈX‹w}ªT]’ır°5uïí•oµé0äplT}©k¯¨øA{W§K„Ë|>¡âÂÈxÂ¡´	+]ÿJ¹SèÕtXÙtX9+å;Âî²»R¿O©QsœT×u^¥ìJ¢©ÃÖz¥‘<Ñn-µÒ½§³âAujY„/5É;STÌv¿Ø‡Ø;ì=S…¶#eÎûûÆ;tÿ™¬x|N	‘Ó"9h%*9«"ÙL¡&‘–ñíQVÎZam£ÃÙº®~Ç•ğH{•íd sÜúsKiï´Íğ£ı«ğÜ¤ı7Š¢B271) €t'r¹0âGü¸*Ğ,
+½ Ğ¼Œ¤ŒÔAŸã!3wÊ }ê:e—Oïß·İ§_unr¬»s0RaA..¾t\|²é÷«$U­¬£ø:(;!^c»HÄoìñ —º!îàb7¼ÙÈõÙ(Môş{wnåy“	ŞY^^"Ú¬`Ğ¬pÖNÈĞOÆ,¶0b»<Ôù˜ì|\õè!Âµé/Ìk/4»ZÄ½w--ø¸½¢ıáÆåËE$ÃªGe¨îeª{;¬ø Ã¹j§]
+'†¹åiÎ†º*}%]U©Ó”ƒ2A©Ï&õÙEIÛ¨©ï0Vy€e2X¡6ù0y Ù.éàìèK9Ì1jÍ¤Æ¬ëÂ«Ñº¯IÚKæXmZ¼é;ÿõÌ“QğÍ«n¼9¬¤àÂ$Hø>cînİ`ı„^´"ın€©IjGgx­â^¹Úe­-'+›[µĞƒ2"màšo3šPhnºg¸?ÉÏ ÑlŸ‘1È«)8ÿG
+~‹÷ãÿ`œqrV¢Œ´E[|“›ÒĞT× ?øÅË‡6<^? ØPh¦<#eT2Q~2-K¶ó:8»±­§«Å¨™æÓ1ˆ«ÅD 5SIÜ¡aiŸÓh9ú9ü%ü–Â¹ğCø›3§r¥xÌKkÅFiMÜEMú.Cğ	Æ’ÀAMÈ©Ôa¬½…6›òÕåƒÕKÉâ¬#!˜$"
+ßùZ}-hÍF`%¼yV9PÔçºHÙƒ‰–¡æî¦ÒXa,)?ykó9ú«®Ó—Ã/ù­]¿Íß  ·¸ÍnøÛTNZ¶:/‹VIô¥`ŠŠ;Æ§‘7¾E8Ès»iOShJŠ¹çå{[…d‹°21†ò	Şò	ú"¿…¡ÉL*ús+Çl(7˜èŠãÚj ½{#·†Ÿân:çşO=ûæ„Æ¬†yYª–êêĞà8w4E]dZáMnñ\.s…œô€Ìhö@¨çšßû‰ÈTøëÉI"°dw…©H«7ÊÿËu¹Ç4uÅq|Ë¸ÃB²i½×İË¢qÄÅiÄeâPñ1%†¡ óE
+–R¡Ô
+·- ÑZËm-m¥µĞò*P+VB :e™:çŸSƒóc2·sË)ÛlíÏóÇ÷ü¾ç›ïù~Èò–Vm=ñÛàƒ ›ƒg(v}Ggä¶ƒhV˜ ù7`>ø]0˜üDÇ¤8x·Ö[4ŸŠØ‰…¯“¥ÒË7øA"+„á/Rââ1_M‡0CÃ«H^e,ÜIEñ¦¶lÆ–íÉ=+#ı}êúÅn¾`aF¼ ;„Úâúnÿo‹cPŠL.%|Õn½Eß­t—´$ûSõ±İ8¸ö6]>·Slµ4š:¤†¤Äu«ş 5êZ*ÓÊÔRæGÎÀ}‚;Ô®kvS=ÍŞÓì$M3®uf÷û*"ğNY©§ğ”GbhÄh¸Õ{£'p‰ûáy)q§Ö©SJL“ÇÀôÈ	˜#¸±êúÚz+å69¬Æiëà/Nsá7RâÜ¯ŞÆyÔ®"ûD°·5²f
+Xe‹¾ÉEùmÎ›FÆ™CÄxgL<è*ƒ^¡:0Ö¥$ìÜ*/—k”\I-™B]DŠ¡°µ²¸»ú®0è‰ÍÌÄz6»rÔ”Z¯ÑpŒF¥Ğ¢ÿxm‘xB^£À2XÄ‚÷ÀŠ‘;½ı>·¸ÑŞÌûCxUJ¸J‹T%»²6²«æoú]í®rhÍb…ïp“jkp!sIDÌ©sÚ&ÎViÑZ+Š3v¹Y	Nmˆİ—b0:kÛş=´®Âh.fm¹…¦R:9GºE2œ1Şs_€u?³Â¬É…óÏI^ÜŞë<ÕoD¤ÄˆƒS[Ğ]çSÅúâÊbîŠ`‰°+½PÙå¡­-——?’ˆOCÌkĞ‚F·ÛQ©$%ûÂ8>Å…Éğ æŸâ	=4açpC¿ùüil:cnµƒxäÍÔ –î', ‹™ô[E·şê]3Ù;Ããó°ı"˜¶¾ÅÄ~]úüÖğàµÑìiLÉ>µŠætF^ÏêøZ»›YW˜nB8P+‚_f}D(N°ÇËİ¾4<6’İ—ÆÈò+Ô´VkäuHTSß@=jú.svfF,µüâK0ÄQ€Œ²tdKr*jb¶zƒÑÆmfƒ‰æëª9kâ‡Ê¨¯déNdv¡™sAÂĞÊ?1°øç‹“¶¤'§³†,ÿ)-®3Õü«T)¨„¬LAJÄ'’éc®*Nİ›³“”l’­M `Ô£eg}Ö¦ÆÕ`ötP—·õeTªkõåLõaîˆ®âŒf«5×Ø]T'ßvÚÃ4u^üÔMöL'-‹n7tzÈÑ±Ö›ãˆŠ²$'_#/b”eUò©”şƒ›á¤ƒ12G‡â««êXSÕ	µ’ÚË¨äŒ|ïöÜõ»Él”1ÏÂ¥"÷=,ò·Û@Tğ)	Ş¹òxø’_ÇÁ| !|bkøÌƒ ÑŸ²ñÒá\\B.Ç+±WøQùÑÒƒTÅj­^ãV¸òœw}>	g?ÑÉ`ıç‹ö«wÙ` tmd¢À›öõöoóŠÉí)«Kè…+†ÀÛ6óe˜U>"…F|ÚR?î=Ö|¼™nâ11q1“üáoÑ? ÔÆú
+endstream
+endobj
+82 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 0
+/CapHeight 0
+/Descent 0
+/Flags 4
+/FontBBox [0 0 639 625]
+/FontName /MFANCE+TimesNewRomanPS-BoldMT
+/ItalicAngle 0
+/StemV 0
+/CharSet (/space)
+/FontFile3 83 0 R
+>>
+endobj
+83 0 obj
+<<
+/Filter /FlateDecode
+/Length 205
+/Subtype /Type1C
+>>
+stream
+H‰bd`ad`dd”óusôsvÕÉÌM-öK-ÊÏMÌÖuÊÏIñ©0ÿ!ÍøC„å‡˜ÌïÎ¿22¦¬r<šfÎüßİ`ñ°÷øî-Øı½Dˆ‰‘ÑÌg¥‚‘™BHFª‚o~^~IeAª‚s~QA~QbIf~‚cNBPfzFI±BPjqjQYjŠ·0 ]2UQE†Íòû±_SdXşM‘ùÍÀ¶zµ¨Ë_!2¿ş…°óı˜Â` tÍI
+endstream
+endobj
+84 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 693
+/CapHeight 661
+/Descent -215
+/Flags 70
+/FontBBox [-498 -307 1353 1023]
+/FontName /MFAMLL+TimesNewRomanPS-ItalicMT
+/ItalicAngle -17.333
+/StemV 0
+/CharSet (/A/b/s/t/r/a/c/colon/space/k/n/o/w/l/e/d/g/m/period/I/p/v/i/u/endash/S/y/C/E/F/D/X/f/H/Y/N/M/one/two/T/U/uni2002/B/P/R/J/comma/j/zero/seven/quoteright/V/G/Q/three/nine/four/h/L/O)
+/FontFile3 85 0 R
+>>
+endobj
+85 0 obj
+<<
+/Filter /FlateDecode
+/Length 8050
+/Subtype /Type1C
+>>
+stream
+H‰t”{PYÆ;@7­BÀGºCwtu} *>@EÅQ@A—ÄCŒá"òy?Q)AÅàkU”AÜ§VgÔ™ÑY|lí”åz‡0ÛqjkÿÚêº}»ºÎ¹÷;¿ûİ#"¬,‘H$ğó	X¿Ş98aOLò†˜ıÊ=‘ŠA.şêHyBt@°9f…Q*2:Yq©g—şfcaäl&šhéØ'RÚ•äêˆ5YÕÕ¿9ò¿/kˆ³ƒr{¨_,ú`a%Ñ^+Â÷)¸º.8/Şî²àøY€R¡T§$ÅÈV(UIJU¤:A©˜'ó‘Ëe	qñêdY`LrŒJ³kŞï’ş¯PB$<„-AØÄx+Â 1má2–X,"|íˆ ’#%AĞ„(O¨‹XJx	1ØF¨‰QÑfÑu‹Íå¶ô´Üm9hÕH‘&Ê`LO¢?IóóØèqãÛxØôØŞGÙÉìJì·ØßbÂâ	?NŒœ88©Db'y1ùû)iSâ'9îa’Y;v·t²ô„Ór9w®…÷ã‡d”ÌGæ;­“‡Ë¤$1Z&E‚jj’H­îKÑ{4ØZ,Ë4¸Or2‘„Ußã˜Ça7ƒ·D„¦Õé¹ÂÌÈ"=]xà¨>“Qeª’“8y|”r«šË`¬–mßdØŞÙÙaèìÜnäÅC¡R2^âæ%ß°Š—ÍsC'?\CoÄy
+tA‚:Ïò“mÜßZz<zNÃ|ˆønB-İè N¸œË‘¼ün5ÎB¿˜¶ /ñÁè»í–­ “	º(Öİï¯À¼nAœÛÀ¾ııÕ÷Wµ5Òç/_>v™½7+	§ğKUYÚÚPXË^kPnÓÖÒñ‡³*3Â0İÔá öÜ¼O±_“¦ÌLÍË>œë`¬¤Ê[I_¶ÿÌMæ\Ù½<ş7)
+™$Ô“ÑÔrùÊ0±8H6ƒ¯@d
+ÌøĞõSÓtİ­ò»]x¢#°èsqêLô^Íµ¤‘oº0¼eAúÖy·½¡<ZârÜğŞ¥c‡<¬ÅĞ;”"yœ÷0õ¾ü¾üJTÃVúìÖªÀuÎwÃeh£J.,Usê’İ5Qõ‘õ{«õtQjJA*¶+f[RµúÜ~^Ñş—ô~ö?×wôó}†Şıô¾Óı}8¯ò÷9H~ıÆ€ÓeŸp>JZŠ_ùq­zrğAoÇSöİ³eÓV)¾å=W¢m8şIE+¬ÅÃ)Rr½d9eê%"QFuÔÔ‚„™Ô'£0-¢.‚=‰îT³
++$¸Ö$&GfPÆCbRlœjÎö»E^¡ÀöUS-¬bá)er‘âÎ±CùRÒ—l6	º’%ËN|× c;€|òùİçw¯€z´0–03°á÷¸,Ğ":›KÛ^rh…Á8gàšY¡Ê¿t:ÑzÈÙˆ’°•»õ¡,Z-ê7èW(ùïú<„È9Ûp™ñâGÆÕÃœ$(BğwG„àïÎÎCñ¦ø/®\Ï`¸×¹Cø+²n“’‰’xÊt{ô'œ;B£få9êcIãª¢•\ZØÜÎ4•}ÔÏ_“F*½³—e‡gkõŠtVGk“â²v²jÊœÕhÎš¾ûøe :÷dS[Ğ\t‡û8<BbHBFšH|KŒM‚%m SJÎ”.¯8RÁ~<'SÓøñ˜gz˜äªÙ”¦rÔkµéIzmV|nÈaàî
+èWÅ÷øjzÎÜk¾Û|íFK7İÒ]Ûó˜[ïÏ¸¨›ƒÒo?	MÁ•¹vCnàá×Ÿ¡Ï¬ó­ZÂh©ŒXvŒ|+ãqáz5fÁÿùtBdPŠçµ‰ùù;yÜjr•€ñy´ñl~{ßÎÁE˜ˆ›„¨]QAEe+~™Rò”`,µ>(#/‘MÛ[RÇ7.ö©ñgq*òÑK‘ã‘_Š"´ğD-Œhœ³˜9§æ<8ƒGÏÚWô¶WÿTƒ%GÁë3dÀL~%Ü={”-Á ¡xAH`âÏ÷ÀÜ×0¨>ºçõ§05´åèZùVİù”ÓêÓêãÊJy¥¼4® º-.R¿×	¨…;fÔ§¨_!±Y[µkyÌ6u'»ïÒ*uZmZ’>å`|î–/˜ŸPB›²>vn<7píy÷óî®{—o_ºÕü¸±Ÿ>ßwlà5óqï‡-¿p[Ş¬ê]x•¾º ¥u¸YEe
+x!FRĞÙ‘ßÂBÌEgìÅóÓPƒhÏ»£5nÜ1ì.eAq*Ÿ\’^_Ç¯¸~ê×‡˜M1ä,%-%àMõßs2›øö´êz9]›\¶'ÑRåÊ¹Vª^£Qæİê¨{Bã…’üyÌ2u©Ü4›R’3ÍÎÉ4—ôÅ9Ã(˜d´%c)Ô
+dù%XÅ¢µ]QT¦çS«ÖÔ2õÅªÚ9˜bÜL‚„êiÏ;XÇŸÌªÑU¦Ò©Åj£È‰ËŒâÚ6F½y¡Ù"P8ç‰|e¼ğEú<)i%“Ô`×7Ùü3Íİ­™¤¼„ì(îõ/xO¶š%ßnş&§–¯Í©Ì*Ë¤Ët…é©Lì­?‡MTîš@AÿïG’ú_ıÆT¥Ğ×ÿP¦={“9]q£î?|WiTgufÒe¹á6m¨*¬ÆQ1*. $âN”YD¡YšYš5È.ƒÒ@7"ôŠÍ"²‰²DQGå(îAÔ`Ğ™ÄerL&'¯›¯áÌWmN’_sêÔ¿úªŞ{÷¾{o=daªa¹ \°é^—P(ÎãpmÖ†<ˆ@k¼¢‘=ƒœ	°7´ğ°ôóLéùb&SZV%áNm°¯ùˆA¢9q^hgêè½uë–­;Wı•²NÄJ4…¶×ÚuÙ±«?}¹‹ô{	“ãa³ş­77¥U÷Uª¨æş6Í%ŠKÓ ‘.h nôä¦5pÊ,yzW :¸›µA?ö£é¡ù.Ò¡¹eàÓ›[ü±m|aì4}˜Tq(;	¼‰¯ßpÄ˜/ü¼8ñTwEÓHUëjUMUZE³¬çpe»¥é”y°­Å‡Tx°Uü`+ÌƒÊLsa1×¯'®IöÎ0#ãW®7x°”<íÄEºIq^}›…™;q
+,Lv‰öøPÂ/lzï²z^çğ¡T|¨QÑ«¹ÃB¾ñzí°®_×„K;¡:u¼VÑ"ûòğ1\Z‘ûæ¿+-2/ ÍåÎRVî#íB¯R‘,½<­,KŒÌ«,:®¤µìG,d¯õÂşz=¥U4ÉºÌMk×tùÍòì÷M¤ncQÎø5é:©O²„:˜šüY^ğˆBsıı|ıĞeøšw5¬Ü ÌoĞi9ÁÉ›Y´ÄT„¶H·&{§„RÉ¡‰‘q±q±’dq&™))0ûâëä•*SjäZ-İzÖÃÙËÃqÑóO`xÂêÀş%Û|­ù›f:6^Y@T«æ—ğU7åØ¦y`iâ=J	^/LK¥¢"EñûÓÉ$ŸMÙË0'‰°™"‡K¯Î«®¡OÈ»Tüúê_i®SQı­§u0‹ÁØ™.ğS8\.Ç&òîd\@Ln`ê6¯Ò-©c²oŠ#ÎG¤t‘vñÍåcŒóÍ~ş/ŒLÊÓåt‡PèüD‘ÔQêŸ’D‰ãvglgâÍæcÆš“§áD¥Wœ×Şg¡ĞøæN¼œ!Œ§Æ^ éx½'Ú—$ŞŸBeÆ‹
+ğAŒ¸á!o$¾a
+u"—^•§©£Ë;ª/°Pj|×6ÍíİJªJÖYú@F¶£‘ÉãChöØf{¶aÄ\Ş·¸˜]Ô“ÔçH!İ„S’C²wZœ¹#^Ü~éÈ°ÑúfÊÓ1[ä½ª›,2~cğ·BÅ‚6Œı¨{¬ë×¾§fÓq¦f™š.|‡‡å_T0¯bƒÌŒäPêx«Éaì<¿uc‡xÑ@“&‡,å–†¬Ú±öãµ;-pG3Iw4K‚f£¹ô§Ê--›ØæM}î÷±—İ•şÄÀB°î+¬Fà`ñìÉ°ë„å°~–:>Ä†å{Õ¹ƒìpvT¯b¢İ„ğûëvlwè>²CnÎ5s‘ÀÍ`Ğ¥°¼€jëXÂ]€W¾¿ñ_—o6“Í7kn3|œxø+›ô1Á´$kg¼-‹á© x·˜tdÍğ€¶™§eU‘ÚØE7T]Õ¿`a’HßçÜ`Ş}§9;Êìë$»u·îÒ°áôƒšYÌ\ğŸ.„•†vAå`YëŸ9 Æ5c§Øƒ‹öñŒ%c=¶gneö¸+Ô›9^·ŞH„°è(°0ï)ŸÂ`Ú(¬"ñİ#ÜrúIÚcÑ+úÊïªóòÌß46¢³o-šÏ!v vh%¹­Ü‹½t¢BñPÅšlÑPm¼@MYz€IÑXH¥ï†s®2 ‚]Ï æsâšşÑò`dÃ8¯Shm9[­{ÕR²4NrDÌDEìç DÃ4+«ß¢O*Æ0<@öh‡óÊl4ÙMÿ†“ÿã·ó`/ZP±·İü)di°ÀÁX àDƒ²ÀßËšÜùÍı®¤/ÈÍıÌ—E¹ã×¥ë¥>æ­M5`taĞç9˜ã:¼M®²0yæ1*­&W×@·WôT_baŠÁöRN_áÅ
+bÇÁx@ˆ=¯S k¬;Šs›ã×ëğ™Z€ûH‹–íã,K„§‰Kº¦úF©+Ì­ã¼aÙ—ùO˜§ÿTµŞáî´ö]h$Ûnª0ø™ÿˆ»ÌÆ]r}dófñk·»ñ]äÎƒİçèŸ_¿Æ!É	H„İ6ñpLqÛBü×°»¯k„ô`8““Sr$+*I®ÕøÖFT¥”’åâÈÒ%àßˆÈË³Ú»ÉS‹;ƒn¹€âF–4ù’ÚEhş²ÍANÈıæ€Û©#gd½l4>0áˆdPòan‡p2	Ú	õ½—O7îh<¯!5çn(3O	Ô2áïƒ|¥QáR*ã@X¾?“`Ö²Q>Eì!Ğ¤ˆ¶‹õÊ‡-0…íØ:ÁÏÄ««yiµÜÉÄêÈ zÿ¡à¬]8±ÀŸÀ$˜¨&øø¨å¿ˆU–ç«ãƒhI^o«´)4Å)+ 0*)
+§ÑnpEÛAS¿¯»ô„îì|Ü9Ô3Îaè¾°Ô>Põ*õJ½ZY« åº6ÙEË«É‰/fœŒŞKK2·ÅşEÓM«¥ëã7J6R’b÷ˆˆ(ÿD2Ñß3‡®=hÌ…5í¥]œ¬şøısœË¤–êÛê~¿N©WèågË®™-çÁËÃM‰°0ÊÆjaÄôu=l¥ÔŠº²æ£
+üÄ2Š#…úØH:³0=7…Í”Dúyo0ÕGX>1^(¿[~¶¼šÒ÷ŸÔ Yò>pài´oºB<R‹Ã½9ôÁÄ8ÇºŞ«Pïç-ªlª*¯,;ó$W{Tg·]'Ì9ºõìF“:ƒ¡JuÏúÂZÔŠUD…ˆ	„€B€I„®@BˆB€"bxE‰ˆHÁ²¾µÖbíVÄ²‹[ßïøbw'zæœù÷ŞïŞû{a%êby!‘™°}ãÊ•0òaà7¤x¤´³3W™µDµ±ÖP§Cµæ£•nœZ’§Ğ«L•ÚE—¡Š	fypáñ[º4rK\&3M´GÊÒxQOqÙn@§Ô2LŠºFÌXU«¯%j;O\¸n€ŸàïHıCŠ)¥D˜«ˆ}‡(…ÑÄŠT]‘™[S`.¶P_{q_îÍÂA¥3ü^nô º…é]S²Wº§9Ó<:üp
+AÄW}v¬ÓÚæ0†JgÕE­WTÊßkª­è,\Í>œãñË[+Œf2%”É’‰)#ÂúVFõpê?ş·*·šÉ5I-.ìXí÷¶»ÄS0Æ§’Fîœjke6[[êZjÌ:‡Î¥­¦
+¬óà¥†v c[Ô!5û™3ŸĞáßòÒ y’½£{¾12›½„	Tû6@>Şùû£ºöAâ¦û×ıh¢õIœŠ“Å:çÆÿÈûDz'š¿ï€˜)/‘k”x©ªR§!UÕe#¦;¤¯0M“ ~zE6ñô[}»(ŠaÁEø“~+ÖîˆÀcâ†'A˜_€=§İ'ñ¹S¾H%>a#<­ÃZq?Ú¬–™I£R+-ÂJd»…kxîcÈú×/xÏğÿL¡ØÈÏcçß ç_·½yƒğ€—0ÈE
+¥%ÀÎéˆgïÌ Ì§˜l Ø+Êıÿì/ØHîÜ¹…ƒr¶DçÇà	Û:£HÊ÷Mw ]p8œ·„@	ÎªqàûÂş|è	¾˜¾ÁÜÙª’ZHïı–`ªrU™Š(S)I±D!ÕÈQ¼L.Åöµe¹ìÍÆfas˜:\ØDäu¸tIft(²õËpV0Ê
+b0
+Ì†>”x,Ä(uT$1wæ¿ïÆñˆ…¤úhG*ÌxSƒZ~˜¬Qj©ŠEóKsD-Vå.†Ï×vÛ#ñ¯×g³V“K-”€:¸ƒa¡ÏÎœmì"~97ñòXÌ…3
+6+xXL{†{üù$`>$Ò­q›yû„ÅL¥LqP‰ËJÌ¦FÃ	Ë%<ò]x|Ş&Ò¡óŒNøî)•LŠÁk°öÖkA”M}D¸ùUÓ¨ ®ñÁï¯ ½MƒCØ/QWàÂÅŸ	XK‰¥Û×­‰öG£ı3ƒ1üQ©Æ„Ş¦½œ9¼ãü&7”J¡Àœ¦ŠVm;©ï§ƒÁ°øâ—;yì°ÕTìZAnÍ	/–£swN„ƒh§Áçíº£=Ãn'joï2ÀëkËTR§©T)å¸",Ã‘í:}¼£ïŸQ…BZœL¤%ó¶rÃ1y)…"q~$_…–æsÆâ%›AƒoW§Àe¹aÊlf~”0>7-—Ÿ³¿-ÌÌR
+p©²B«&5•åZ¦Õêâ°Io2cl{Z"7“S#²y­Çe=øùM'Ï“¿}şXÜÿªŸúàÃ©M°ˆÖp…BèÙé»tØL;¹m	Â¡ƒ2(mFï/AÙ$ŒŒL‰ÃæmyÄÊİ	Y…R”µó5ã›ùÂ‘ÑŸs­ _UŒá¿ß3Ùn“?ép¹Ñwã™!ìT‘+İIğ_õ³Á87#¤YÖhÇŒz£ÉH8ƒGnXÁıË®ÑëèèõÎÛX›ú¸´ƒ á4ÇK>…ËèB>i\!G˜.LÏÉÉ£â¾‚/üñXEY·húğò7~¤'ïm¬İû2·»‚îñX û
+²áŸVZ],bŸ£ £³ú‰¹Sß#;Âõ±V"U¶†ŠZÜÕÉ'ùğcxÇëÓAíØÛ0Ô<ĞÚÇœ‹Çê¬#·Ïº[Q³­IoÁíE9W²“„> D.‹`‰N~ó‘êzá¨;îpì9ÑÖİìÌ´0Rãy)<ª”{Ï]"5Y´Õ­æÌZ‰X.{±›»No¦ŠÏ^îù $Àñ™d„ºµ$_d>œÌu'¹İCÃÉ½lÒäYH‡ÙT÷úSG«ÌxG“H –ïEp¾')b•¦äb‰]©C®Ş§›8ß÷İˆû:¿™ÁåqxY¨¼D¦QàE³Õ w˜úH8½İ[,Ë¡ÓÙIIl¶;ixØíNr³É:>ÜŠğ}ê+k+‡Ğ
+cÍ!Ş{,k©|oşz’rôîİgáÅªJíA²\‹hµ:ƒ¨7U›ë1“Ú(«!L’"çğRSâz“î‚màKÀ 7ï“ væ/ê©±÷[‰¡JéÛm•f¼Ï–·_Z^RVDf‡Àq_ø|N{ øÌ¹ [za˜ËÌ77É[ñK—\`3$ù6nlj
+?—)—”¨å¸Tj²KI©=ïnğİ+¼*9}ïÃjq;¯¹6pÕöT[ÓÅğl¢Éyˆ“æ°–—Õ’Æ²jM•­ÒT¨Õ˜R-“©	k¾€ó>…´èœÙïÕëw½>xG–m-YÚ„ûåòä|JßZşX‡ˆÖËó°¤®”g—ÉÖM:G.^üwVƒÇJãğsP¹Dª–ââs£©º³~„|gÛ½oêÿ$—{PSWÇÛí&½]vX§5³É½Î½j±ÛúXëØ™«¢1•Ró €’bI„xsIB’„¼…„G@^‚h*,¥¢È ëªÔu¦Ë*İºud»vgOğ@wOº3÷ï{^ßïç÷ı¦Ç¦æÓ\R–s°Íæ"†ºJÕµ3M•ş¦­®c7ÙÓ@<^ñõÏ¡Ê²ä=Ãš­Î‹ÄŸV¦6äÆZcÒÊ¿X`{ìˆ ÎøÀ¶¿_}·€u†º;·ËlpRƒM:ı'úZšüÄÈH4Ş†w¹ÊÍçS‹ğì^Ùh Ãéë"»|}¡+£Ã£}¾öÂÜB±,I™Ö2Õ&Âd®CÏ]í¨qºpWÃhÛ‰øÂc5\©Äå}˜•¥Ê9AnNL@‰ÿE˜{8¸MãÎá|V4ÊÏ—29yTšvôƒ]’,Ñ»Ç6 Áy’Äî`)­^6PÏ²¶4~ê$zƒç:$q$·#«ì˜=¿ ‰fƒ7B“<ŠşÈ¥)¬9xÑé'-Ê’ÿ[[yƒ¥ÚËdá‚î¢Hè’78HN\›¾±ˆLy*#?O^ò³)„nô{‘˜)YşY÷øeü¶øs>üÍ†]+¬#/*FÌ<]ä€4øX“w¾­ÈØFnÍØ¿÷xl²–¼õÓÀkR¿ëœüü~òîıñ§ØøÓàÒ?q¸{‡`6‚[úæƒ·Q`î"”êOfÃ5KÂØ±Ÿ¯í½íu~âJ‹FFåºL
+Öÿô‚îUÓp™‡âV´õ/–@nµk)m=í4¹1£ÇÒĞ„79zš®’w€‡%½¦g	ğ'Ğ}Œ€-[Á8·1&ÁMÔĞ²àùÕ!ÎC0ÆçfÀN4ˆ™Écëßgø>¥æœ®)…Å¹g
+är…±Wcï¡ãˆ…–”ÿ,ËqHYõıAk#Š
+fÆK¹ö*=^Ì4I$ÕQ=awƒWmMÍ#ó¼–‰¶/:Â3?N-LÌô^iú\˜İí±z‡£Æl§ì«ñS“ØÛÊB(‰5u5S­—=Ãa<¢lÏ=““ÑÖ=àzø
+ª5	Q-7F@´åJtkìâòÒJ¡Ú>`+§¬Ú²:ß|}äÈ]2ŸœòÉ²¦’¯%fúOc•½T‰ïJM}r÷Ü¹FRÊş~Ú[¨	­K4ø,Æ‹”jz‚ùœ É€ƒ:µP8€cÔ‘?Ó¡0~slì›góûàaÙÏ¾¦bDè\÷Ë*N.ş
+ö…¿;]•ÏEşƒï®Ì³4˜L1$¹6€`ĞONô5}}±0ÀÍL‘I*iL¥Tëµ„NßĞêwù§)°?ú0†:ß4î`ß$;A,ule«“òà&ÉÆ‚÷yù|qrúşô$±H®ÆÔr£&J*|Vï—ÁGÔ?À<«ı±÷f‘÷ŠdùçyäqiV†p_HÍk—Üµ„·‘®¬@–:@½o°	º}BüHD|üP .Š2RÏÂfZÎªğìPÑØ¥ŞŸO0øÇãßœmåÂø’É®"tO[léE
+¼}Ãye‡œUjµúˆÁvíuucln^Ùõ³¨»÷½M@j ^ï˜'dï¹„ßÏÎÏG»}œ#Ç+,å¦2Ò Ô«å´Fph'Œ«T3vm7€=FğóóL÷mÅ=újåUM§qã—õËKHRöÊöÕİ5­5–‡<=¨<’Nƒ—àe>Wö²­+€¼u)`Ôù¨V/ÇÒ¡Ê°0;ºc™?³ÊGb¸sì°œıêïƒw[&1w—½»¿•ÎŸ)”œ·Ñ=é ½z?ó™Şm°VcÆJëğâ2ä™ã~×B®KY6pc™õ¯1wD`·õPÛxÔY	üÔ—«ñÅ’ì©Gx"Ñ)™T…™ªL5Âl©³ÖPŒ‡fX½ı™œœ”ôK‡æşÒÊÁGÊ¨‰`Øö¬GßÜ}·°¾ÙÏ¦Æñ…ì±t±L–©v”{µ¤WÛ¬o©ö›Ìv3fGcÍ„3µŒ…!Mš²‚Â¬ïä¤HI¯K:-Î2\-2=9_cñÏƒQ!çÎOá÷‡_Ÿnz^Èi)B­fö	z¼8ğHfÖGâ]mgH›~ä”ÁlUu¨…”ê?.U’År‰B¨ÆâãŸ»ÖFÿËùŸ  ~3•÷
+endstream
+endobj
+86 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 0
+/CapHeight 0
+/Descent 0
+/Flags 4
+/FontBBox [-167 -303 1000 830]
+/FontName /MFANAG+SymbolProportionalBT-Regular
+/ItalicAngle 0
+/StemV 88
+/StemH 25
+/CharSet (/b/S/e)
+/FontFile3 87 0 R
+>>
+endobj
+87 0 obj
+<<
+/Filter /FlateDecode
+/Length 636
+/Subtype /Type1C
+>>
+stream
+H‰bd`ab`ddTñusôst×®ÌMÊÏ	(Ê/È/*ÉÌÏKÌq
+ÑJM/ÍI,©Sü!ÍøC†å‡,Øoëß‡Õü¼Äú=‡ÿ{±À÷rÁå?¾1032Æ&×;çTe¦g”(ZZ($+$æ)”æ”&ådg¤¦(”çe+$U*8e–—¥&æ*xæ%ë)(8æä(€5+¥§•¥¦ EóóÒ2SRóJ2sôüò‹rsğºLœÜ˜À>dPaHcøÃXø££{ï×½Œ{÷~?°—y¯Ø•+ÿ¨°íıS.úÃõû?®ì|?E»?üØ³‰qÊkÌSVŠæş¸ö=¸Œİ±­¬ÚSú÷u¶ïk¾OgÃş{æ÷¬ß“Ù¾³ŸŠPŸ"?ÿ{ĞŸ#ElßÏÿ~ÈÊ÷cÆïŠùß#×ütXÏøı×³ÈGÌÓ¾K‹ÿşÏú”íè÷Ã¬Ë·œ>xpÑ®½òG®¼xEê~ÚN“•r_6¾rGêBğ‹ßfö¿cşhkÊ}gû+ú½ëĞ‰ïO¥7/Ï	S÷5ö’¯¬˜R!]^ßX]3½~¶ü¬yK^âÒZì/ßPĞXRUÉ‘WU)í»ïâÌŞ¹æËóığ©[ÿ=mõw—UŒ½Ïr0ñI´x&«Oz|N¸tHú¦ı‡¶>4Y¾cãâæ©Òs§N›5·iRqmeG[©|ú„Š%¥l<tbí¼Êô>¹üŞ©µó¥çÍ™½hWÄ›ßì>A	+STËë”FÇ¸IÙ|wçØÆ›[äøªgÿHœò=hîÌl¿+&±Ë-°ÌçáìæáZÂõ˜ À *–¨
+endstream
+endobj
+88 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 4
+/FontBBox [-166 -225 1000 931]
+/FontName /MFAMJA+Helvetica
+/ItalicAngle 0
+/StemV 88
+/XHeight 523
+/StemH 88
+/FontFile2 89 0 R
+>>
+endobj
+89 0 obj
+<<
+/Filter /FlateDecode
+/Length 25375
+/Length1 79124
+>>
+stream
+H‰LÕIˆ¤gÀá¯3Q1b"jÂtí]]ûÚ]ûÒµtíU]ÕD’™Ìa&iâ¨è!ˆBA’(äˆŠ‚‡"¨xğ ˆ‘<DOE}løuóV×óöûUÿª`/‚|»7æëtîAh{ïñè£\½¸~ãç?ûœõÍ xµğØ§n?ü•?7^‚ï~;.İ¼~íêígß{ù‘ øÁİçg®_<qëí{¿ş¦u-îÿÈ7Ÿ¹ŞÿÑ#Ã`ïßúıÍ×®>şBòóß	ö
+oY—nxàş+ïû~¼öqëĞ[·ï”o?Ôµ~6®ln>õØÕàÒ‹o{ïoYŸßºzçâ¿ûİó¾uíöÕ—V½¿·ÿŞºõÔÓwîùô}_‚¿ş0>ôà“Wo]ûã›ŸüR°—ÿ†k]<}íâõ/<™öîû…óÿæâé§.n·£Ÿu¹_ó´‚K—Û{>¸—¿y9O|ô¿?/½\¿'øÿ¯?÷ü{ÜùØÿÖÏ<ı‰ ¼ë÷¼#ø×ËAı/ìıúá`ï¥ùİ6}ù'wO«»¯uğÊ¯\‹ë½rCwôEùûW^ÖålW\Ï•?éoA°ï?³ÿ B*¨§×mñûü>¿Ïïóûü>¿Ï‡øâC|ˆñ!>Ä‡øâC|ˆñ!>Ä‡ù0æÃ|˜óa>Ì‡ù0æÃ|˜óa>ÌGøá#|„ğ>ÂGøá#|„ğ>ÂGù(å£|”òQ>ÊGù(å£|”òQ>ÊÇøãc|Œñ1>ÆÇøãc|Œñ1>ÆÇù8çã|œóq>ÎÇù8çã|œóq>Î'øŸà|‚Oğ	>Á'øŸà|‚Oğ	>ÁğüÀğ=ª™•ƒçe&Ü÷?Õ2coëïA¼OöHÚ#i¤=’Ît†¤3$!éI{$í‘4_I÷iÒÉ¿èŸAphÆ?¬¤Ì÷áDîãCï‡ŸÑ—õ-}Oü!Èò‡|ŠOñ)>Å§øŸâS|ŠOñ)>Å§øŸâS|šOói>Í§ù4ŸæÓ|šOói>Í§ù4ŸæÓ|†Ïğ>ÃgøŸá3|†Ïğ>ÃgøŸá3|–ÏòY>Ëgù,Ÿå³|–ÏòY>Ëgù,Ÿå³|Ïñ9>ÇçøŸãs|Ïñ9>ÇçøŸãs|Ïóy>Ïçù<Ÿçó|Ïóy>Ïçù<Ÿçó|/ğ¾Àø_à|/ğşîûk¿û>]à|‘/òE¾Èù"_ä‹|‘/òE¾Èù"_ä‹|‰/ñ%¾Ä—ø_âK|‰/ñ%¾Ä—ø_âK|™/óe¾Ì—ù2_æË|™/óe¾Ì—ù2_æË|…¯ğ¾ÂWø
+_á+|…¯ğ¾ÂWø
+_á+|•¯òU¾ÊWù*_å«|•¯òU¾ÊWù*_å«üôA™Á£Œìq4”9<2ËGfùÈ>GÏÉçÕÑ+zM¿Ôïd–Ìò±Y>¶ÏqLÙãø\>O}óÇü1ÌóÇü1Ì×ø_ãk|¯ñ5¾Æ×ø_ãk|¯ñ5¾Æ×ù:_çë|¯óu¾Î×ù:_çë|¯óu¾Î7øßà|ƒoğ¾Á7øßà|ƒoğ¾Á7ù&ßä›|“oòM¾É7ù&ßä›|“oòM¾É·øßâ[|‹oñ-¾Å·øßâ[|‹oñ-¾Å·ù6ßæÛ|›oóm¾Í·ù6ßæÛ|›oóm¾Íwøßá;|‡ïğ¾Ãwøßá;|‡ïğ¾Ãwù.ßå»|—ïò]¾Ëwù.ßå»|—ïò]¾Ë÷øßã{|ïñ=¾Ç÷øßã{|ïñ=¾Ç÷ù>ßçû|Ÿïó}¾Ï÷ù>ßçû|Ÿïó}¾ÏŸğ'ü	ÂŸğ'ü	ÂŸğ'ü	ÂŸğ'ü	Âø?àü€ğ~Àø?àü€ğ~Àù!?ä‡üòC~Èù!?ä‡üòC~Èø?âGüˆñ#~Äø?âGüˆñ#~Äù1?æÇü˜óc~Ìù1?æÇü˜óc~ÌŸò§ü)ÊŸò§ü)ÊŸò§ü)ÊŸò§ü)ÊOø	?á'ü„Ÿğ~ÂOø	?á'ü„Ÿğ~ÂOù)?å§ü”ŸòS~ÊOù)?å§ü”ŸòS~ÊÏø?ãgüŒŸñ3~ÆÏø?ãgüŒŸñ3~ÆÏù9?ççüœŸós~ÎÏù9?ççüœŸós~Î/ø¿àü‚_ğ~Á/ø¿àü‚_ğ~Á/ù%¿ä—ü’_òK~É/ù%¿ä—ü’_òK~É¯ø¿âWüŠ_ñ+~Å¯ø¿âWüŠ_ñ+~Å¯ù5¿æ×üš_ók~Í¯ù5¿æ×üš_ók~Íoø¿á7ü†ßğ~Ãoø¿á7ü†ßğ~ÃŸñgüÆŸñgüÆŸñgüÆŸñgüÆoù-¿å·ü–ßò[~Ëoù-¿å·ü–ßò[~Ëïø¿ãwüßñ;~Çïø¿ãwüßñ;~ÇŸóçü9ÎŸóçü9ÎŸóÿ¡¸¾­$êŠ5€ş<ƒ ã€A ˜ÓZëi-¦µÖ·µ²1 ƒ 0 ƒ 0 ƒ ØeîsëëuÖ©®/ş‹ÿâ¿ø/ş‹ÿâC|ˆñ!>Ä‡øâC|ˆñ!>Ä‡øâÃ|˜óa>Ì‡ù0æÃ|˜óa>Ì‡ù0æ#|„ğ>ÂGøá#|„ğ>ÂGøá£|”òQ>ÊGù(å£|”òQ>ÊGù(åc|Œñ1>ÆÇøãc|Œñ1>ÆÇøãã|œóq>ÎÇù8çã|œóq>ÎÇù8ç|‚Oğ	>Á'øŸà|‚Oğ	>Á'øŸà“|’OòI>É'ù$Ÿä“|’OòI>É'ù$ŸäS|ŠOñ)>Å§øŸâS|ŠOñ)>Å§øŸâÓ|šOói>Í§ù4ŸæÓ|šOói>Í§ù4Ÿæ3|†Ïğ>ÃgüÍøÿ˜±ÇeØ›a3l†Í°6ËfÙ,›e³lÖ·³¾õí¬ogù,Ÿå³|–ÏòY>ÇçøŸãs|Ïñ9>ÇçøŸãs|Ïñ9>Ïçù<Ÿçó|Ïóy>Ïçù<Ÿçó|Ïóy¾Àø_à|/ğ¾Àø_à|/ğ¾Èù"_ä‹|‘/òE¾Èù"_ä‹|‘/òE¾Ä—ø_âK|‰/ñ%¾Ä—ø_âK|‰/ñ%¾Ì—ù2_æË|™/óe¾Ì—ù2_æË|™/óe¾ÂWøŠ¤ò;ew¨°¶ÂVØ
+[a+l…­Ø?¬(¿|ÿZÙ=¾ÿ_ı^±ßYÕQîÍ÷K±ßv—o»Ë·İåûÖîRµ»Tí>Uß­Ú[ªvŸª;WupÕÎRµûTí>U»O•¯òU¾ÊWù_ãkr×ä®É]“»¦÷šŞkz¯é½æû5½×ô^Ó{MîšÜu¹ër×ù:_çë|¯óu¾Î×ù:_çë|¯ó¾Á7øßà|ƒoğ¾Á7øßà|ƒoğM¾É7ù&ßä›|“oòM¾É7ù&ßä›|“oò-¾Å·øßâ[|‹oñ-¾Å·øßâ[|‹oñm¾Í·ù6ßæÛ|›oóm¾Í·ù6ßæÛ|›oó¾Ãwøßá;|‡ïğ¾Ãwøßá;|‡ïğ]¾Ëwù.ßå»|—ïò]¾Ëwù.ßå»|—ïò=¾Ç÷øßã{|ïñ=¾Ç÷øßã{|ïñ?üÿÃÿğ?üÿÃÿ¸¿?îïûûó'õõ7õõ/õŸ_~éÿJ¹ÿ}÷¿ïş÷İÿ¾ûßwÿû|Ÿïó}¾Ï÷ù>ßçûü€ğ~Àø?àü€ğ~Àø?àüòC~Èù!?ä‡üòC~Èù!?ä‡üˆñ#~Äø?âGüˆñ#~Äø?âGü˜óc~Ìù1?æÇü˜óc~Ìù1?æÇü„Ÿğ~ÂOø	?á'ü„Ÿğ~ÂOø	?á'ü”ŸòS~ÊOù)?å§ü”ŸòS~ÊOù)?å§üŒŸñ3~ÆÏø?ãgüŒŸñ3~ÆÏø?ãgüœŸós~ÎÏù9?ççüœŸós~ÎÏù9?ççü‚_ğ~Á/ø¿àü‚_ğ~Á/ø¿àü’_òK~É/ù%¿ä—ü’_òK~É/ù%¿ä—üŠ_ñ+~Å¯ø¿âWüŠ_ñ+~Å¯ø¿âWüš_ók~Í¯ù5¿æ×üš_ók~Í¯ù5¿æ×ü†ßğ~Ãoø¿á7ü†ßğ~Ãoø¿á7ü–ßò[~Ëoù-¿å·ü–ßò[~Ëoù-¿å·üßñ;~Çïø¿ãwüßñ;~Çïø¿û§2ƒvfĞŞÚ{CöÎØÿV™c{ïÈŞ9û¤2ËöŞ¢½³ö7eí½G{çíÿªÌ´½7i¯§ı¿•3Ş¥ƒ¾¿QfãÁÛtĞÛáÊ|<xŸú;Ì•yğÆôxø³2'Ş¹ƒ>ú<èóà­;Êzü?e^½wGyfıÑÌ=zó2ı×;š»GïæQîã•Ù{ôve?ş]™¿GïçÑï˜ÿüüüüüüüüüüüüüüüüüüüüü'ùOòŸä?É’ÿ$ÿIş“ü'ùOòŸä?É’ÿ$ÿIş“ü'ùOòŸä?É’ÿìÌ³>Ï²ŸwÖãYî³³Îú;Ë|vÎYogyÏÎ8ëë,ë™¿ğşÂ_øá/ü…¿ğşÂ_øá/ü…¿òWşÊ_ù+å¯ü•¿òWşÊ_ù+å¯ü•¿ñ7şÆßøãoü¿ñ7şÆßøãoü¿ówşÎßù;çïü¿ówşÎßù;çïüğşÁ?øÿàüƒğşÁ?øÿàüƒòOşÉ?ù'ÿäŸü“òOşÉ?ù'ÿäŸü“ñ/şÅ¿øÿâ_ü‹ñ/şÅ¿øÿâ_ü‹óoşÍ¿ù7ÿæßü›óoşÍ¿ù7ÿæßü›ÿğşÃøÿá?ü‡ÿğşÃøÿá?ü‡ÿ/íålWU†á³öúT,èÅŠ±°ö…H	%Ò•D ôĞ;„“Fz€P~8c™AGõôsö>çì‚¢€l¡÷Ş{S°° ØŞaî8îg&¹¿¼¿òÌ¾ÏÎ>÷¬ïıŞ]—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—ßßßßßßßßßßßßßßßßß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß”ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß’ß–ß–ß–ß–ß–ß–ß–ß–ß–ß–ß–ß–ß–ß–ßV.´•måBG÷è(:Ê…r¡£ût”eMGùÕQ&t”3eWGyĞQÆt”[eAG÷é(³ºÊÁ®îÑU^u•]ù]ù]ù]ù]ù]ù]ù]ù]ù]ù]ù]ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù=ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù}ù‰üD~"?‘ŸÈOä'òù‰üD~"?‘ŸÈOä'òù©üT~*?•ŸÊOå§òSù©üT~*?•ŸÊOå§òSùùùùùùùùùùùùùùùùùCùCùCùCùCùCùCùCùCùCùCùCùCùCùCùCù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù#ù™üL~&?“ŸÉÏägò3ù™üL~&?“ŸÉÏägò3ÃLç0×9Ìu\ç0×9Ìusİ'×~ÊµŸré\÷ÊµŸrí§\ç:×ırí§\û)×ÙÎuÏ\û)×~Ê5…«Ğ~.´ŸÍH¡g+´ŸíçBsRèù
+íçBû¹Ğ¬zÆBû¹Ğ~.4/…³Ğ~.´ŸÍ\¡ÏªQª•ÚÏ¥æ®Ôç-µŸKíçR³Wê3—ÚÏ¥ös©ù+õ¹KíçRû¹”Xê³—ëÿ=ñ£ÕşûoW«U¸z-€cğ8xKğVà©à·oŞ¼xx{ğàÁ;§ƒ?Ş¼xWğnàİÁ{€÷üQğ^à½Áû€÷ïŞü1ğàƒ><|øPğaàÃÁG€>|øXğqàãÁ'€OŸ>|
+øTğiàÓÁg€ÏÏŸ>ü	ğ<ğ|ğğ9à…àEàÅà%à¥àsÁËÀËÁ+À+Á«À«ÁkÀkÁçÏ_ ^¾|øbğàÁ7ƒoß~üøYğ3àçÀ??ş9øEğ/Á¿ ÿ
+ükğoÁ¿ÿü{ğÁ/ƒ_ÿ	üğŸÁÿü*øU×¯ÀCpû±|ü4ø›àËªó~ß—®^»	üH•Ç?ˆëWá:²lœY–¿»Ág©ŞçmUöë7ò¾¾ö©À¯€
+NÁ—oøYÜ—6ò™^û|üCœ>w^¾ü {Ùa/‡w€ß	~?øàÍÁïÅóüµÊSoÃuş-‘ó½)\Fè¯:p„ßgÿ~mâgâú”	Üd‚1a:üëÀü¼×‚oß¾|ønğàûÁTùÎÕ}àÇÀƒÅ÷‡÷‚Yqï]ëÈ¢÷ø<?Àõ'ÁxŞ{Û¡Ç;ôx7ŒŞçĞ#{D¾ü0¿öOğSàUyüí¸ş0øjğ·Àßÿü#ğO0Øƒóâ¶ c~z¸CwÈS÷ğ[À›‚7×ÀÈ‡¼plà×7¿ü&ğ›ÁocG:|ßyîçî]àwƒßF¾;ä»›~ûÃa¸ F;ô·%½Ïm
+Æ~u[ƒ·oŞ<¼#x'ğÎà]À»‚wïŞŒ}è°İ^à½Áû€÷ï> Œıí><|øpğà#ÁGg>|øDğIà“Á§€OŸ><<Œ®îĞÕİ<ğ|ğğ9à…àEàÅà%à¥àsÁËÀËÁ+À+Á«À«ÁkÀkÁçƒ/ ¯_Xåù!?#äg„ü¬ªüÚúù_Æ¾òØWûÊc_yìS}ê±¿<ö•Ç¾òØ¿yë‘·yë÷Äßs¬Âÿ3ƒ6ø{şe0»Ş7ğ]2›ùÙ.Áï#+"dE„,ŠfáyĞ-<ºˆg÷Ù¼øPğa¸ÎªñÿºŠ¡«ºŠ¡«ºŠ¡«fÍ0k†Y3>?ºŠ¡«º¬¡ËZ £ËºŒ¡Ëº‹¡»fÉ0K†Y2tCw1tÃy0œC·1t›Æ» ¡ûº¡ûº¡ûæË0_†.dèB†.dèB†.dèB†.d3Àx·4¼[º’¡+º’¡+º’¡+º’aólèR†.eèR†.eØE†.eØEv,»ÈĞ­»È°ËùhØe†nfÈKCŞv¡«òÚ·†İhèv†]ièz†®iØívïŠvïv&øà/VÙ#¿=òÛ#¯=òÜãÿ÷›‚ñü~Œü÷ÈÀÈW|õÈW¼ôÈC<ôÈC<ôÓÁÈC<ôÈ?üóÈ?üôÈ'|òÈ<òÈ<ñ˜÷ç'Â»E„.¡KGËÀìÎèÚæ'Â¼Dx7‰>	ş4ø3àKÁŸüeğWÀ_÷ÀÈÇóì>ş,Ïçğ|® —àËÀW€¯_^¾|=ø:œ§—Àø¾æ#`æ)`Ãkó®Ÿ±	Şb‚7Ÿ`ô¿0Æ~˜·€y˜ß€~Ğ‡ú[@¾äi@äM@ÿÈ³€şĞÿò. ïò.ÔÀØÿû*`ÿìï€ıĞöy@Ø·û5`ßì›€ıĞú@Àş	ØOı1 ò: oô±ßWŒùpO‚pŠyCòÈ#÷!>íç‚Ïcøyàùà`ä¹_^^^^
+Æ~òèÓóëñ¾çñ>èñ¾èñ>êñ>ê‘÷ÑÕàkğû«À««<>{&áÍ&ái“ğ”IxæÆ9F>Ä˜¿ùãóÅgç€q^cœ×ç5Æyq^cœ×ç5Æyq^cœ×ç5Æyq^ãeàåàà•`œ§ç)^^>Œ~cŸÇëÀè{ñEà‹Á—TÙİ ¾|øfğ-à[Á·oß¾|ønğ=à{Á÷ï? ~üøağ#àGÁ?~
+ü4øğ³àçÀÏƒ_ ¿şûõeWU†xÎ·÷€”ªÒö¾“PDGE„ @‚„H€Ğ		ÍJ¨Ò:„zOBïéé:	EA 4]øËó]şvåß}îL2gî|{ï;OÇ¯á×ñøM<¿…É³ÍLü~ÏÂàñGøcü	şGÛÿºşÿİä·`?÷sß‚üä· ¿ù-¸ïƒ¼ä» ßù.ÈwA¾‹ù0û.Èã± ^“×ƒ<äÅ ?ù"–Æô… ïy?Ø—Á¾ò~÷ƒ¼ôXÓÇ‚|ô§økÛyjÛ…ù,Ìga>óY˜ÏÂ|æ³0Ÿ…ù,Ìga>óY˜ÏÂ|æ³0Ÿ…ù,Ìga>óY˜ÏÂ|æ³0Ÿ…üZÈ¯…|WÃô‡B>.ÌaşK÷à>¸/^/…9_…óU8_…óU8_…óU8_…óU8_…óU8_…óU8_…óU–Ç+à1}§¬„é¥^÷Ç«âÕğêx ^¯‰×Âñ ¼6¦ÿúIŒ×Åëáõñ¼ŞÅaúcÙoŠ‡áÍğæøGxüc¼%ş	Ş
+o·ÁÃ1ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®ŒÂô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»2ïÀâƒğÁøü[|(>ÀGâ£ğÑxÁÇâãğñø|">	ŸŒOÁ§â‰ø,|6>Ÿ‹ÏÃçãğ…ø"|1¾_Š/Ã“ğd<_¯ÀWâ«ğÕø|-¾_oÀ7â›ğÍø|+Š‡oÃ·ã;ğïñø.|7¾ß‹ïÃ÷ãğƒø!ü0~?ŠÃÀã'ğ“ø)ü4~?‹ÿˆÿ„ÿŒÿ‚ŸÃÏãğ‹ø%ü2~¿Š§áéø5ü:~¿‰é«åox~¿gâwğßñ»ø=ü>Õrê”"uóŞÈÙ¼÷é÷Í3›ï£Ïæ.L¿ÍC1ù/s?dî‡ÌyÊœ§ÌyÊœ§ÌyÉœ—Ì¼gæ=3ï™yÏÌsf3óœ™çÌ<gæ93™yÌÌcf3ó˜™ÇÌ<fæ13™yÌÌ[…¹Ïrû>‹®!©íİğÆi®–G·ÜTæ'‘ù(‘ù(‘ù(‘ù(‘ÒL^J§áÓñøL<“·ù*‘¯ù*‘¯ù*‘¯ù*‘¯ù*‘‡y(‘‡y(‘‡y(‘‡y(‘‡y(‘‡y(‘‡y(‘‡’óÉı–È?‰ü“È?‰ü“È?‰ü“È?‰ü“È?‰şS§òõA|ß¿òùT?x¾ÿÌıV¹ÿ*y¬r_WîÃú1&ßUò\eTîÿ¯àep¿¶ƒù
+æ«Ó¯ƒ·<ûİıÙ=ºÖHİŸŞ¬­÷F|æ½hºSÓºo¥e[‰ïÆÓğ=xzË©kğlkçÙ¾7÷§OÖú¿6äÿŞ?ŠßÆá™x<†g6›çÜë³Ÿi×¾©oë3ÜŞiÍ”öNkÆ1#£ÛnØ;"öÀìŒî.Üş\›ÌÎÌìÌf<_§sd:G&“g2yÃóuVÂ«ãöÒ¾O†ã˜ü™¶ÆÛğ¬ô¥L_Êô‰LŸHáƒùİÉû­a¿Å^xŞo‚7Ç|^±Şï†÷Æ¿Ä¿Æñ$<“_‚|ä“ y$È#Áş
+öU°Ï‚ıì×`¿û5îÇìŸ`ÿû-è;Aß	úB°/c
+&y,ÈcAæ5È_AşŠ©˜|ä£ ù(ÈGA¿ú_ĞGâqLŸú\<Éñ&ÄLúXĞÇ‚>™8ßiS<÷à>øxmÌı’†bòNZ¯m»3sw¸Ï;Ûâíğx#Ì}Øáóëlˆˆùı;cş>òs‡Ï·³ş)Şsw~†wÇkâQxOÌ¾épßwöÁûâŸã_`öEçW˜ıÑùŞÅûãğ˜}İa_wÁô¥Î¡ø0|8>‰ÂG·İ³$¦Oõğ÷îYl¹ıµæîèY¯‚9»=|Ö=ëµİgn<ß?à¿»áoÛğó>ë†Ïº9¦í8Ÿ†9«Á¬g!vÂÌZœ…ÏÆÌ~0ûÁİX»09¿N8ãn<æïW?‡?¿€¿ˆçÁóâ/á/cæ§ÎÀâ…ğÂøkxÌn«‹áÅñ˜óW9•İ]ûbî†º^/ƒ¿—Åd…úMÜ‹¿…¿¿ƒ—ÃßÅßÃßÇÜOu¼"ş¦‡Ö•1Y§rÿÕş˜,TWÃôÜ: s·WîöÊİ^b²G]ÆëbîëJ–«CğPLöªd¥JVªd±J–­dÑJ–«[à-ñV˜}U‡cïW²g%{ÖíñH¼Ş³/êÎ˜ıSÉŠ•¬XÉŠ•¬XÉŠuŞÆc0Y²’%+Y²’%+û³’%+Y²’%+Y²’%ëXLV¬ä‰J¨ìïÊş¯dÅJV¬dÅJV¬dÅJ~©ä—JV¬dÅ:ÇäŸz,>OÀ'â“0ùª‚'àS1y¬ÏÀgâ‰˜üUÉ_õ|.>Ÿ/Àâ‹ğÅø|)¾OÂ“ñ|9¾_‰¯Â×àkñuøz|¾ß„oÃ·ã;ğø.|7¾ß‹ïÃ÷ã‡ñ#øQü~?‰ŸÂOãgğ³ø9ü<~¿ˆ_Â/ãWğ«x_Ã¯ã7ğÛx&~¿‹ßÃïãYøü!ş¨íÄyMœ×ÄyMœ×Ä|¥ğƒ˜ı“Ø7‰}“Ø7‰ı’Ø'‰}’Æã)mwÚùø?½n‚ÓLøŸşİœ×s^Ïy=çõÿÓë¦g	xQ¼,^/‚çm;n;ØQ2h¦f:`¬„Wæçwáwã¹øùÛâíğöx$…é¼y¼#Ş	ïÜvïp<óü½</ÏßËó÷ò|½{á½1ÏßËó÷úü»`vuï®üştÀLÌtÀLÌtÀLÌt´LGËt¨ìü’É2óé@™”é<™Î“é4™N“É|™Ì—É¨™ŒšéT™N•OÃ§c:l¦Ãæ)˜˜'â³0-ßŒoÁ·b:f¾Óá2®0?±8æ~ÍÌwf¾³ó½Şsş2ç/ïÓvÏAmwÏ‡çÇàùÿÂŸ`³÷ Ü¯‚ûãUñjm7Ü÷AóOöË68ªêŒãÏ9çŞ„lÃ›Ù$\¼ÛË¦!$R´P\’İ/y»‹»Ğ$u”RÅ†n-XX"µEZ«N[ÚqZ.)’:2‘Zúb¡ÔÚi•Q°µRúFG¥äö¹›Mšı2|pøĞ1gàß¹gÏ=çç<Ï`ïr>ppğàz`Œw&ğIàÀàŸò0Ü9%®î˜ò0ì—¹
+8
+^	|ğ
+à›o^Í
+Ö§`ı
+ôQ°~ëWï ¿|ø?À ŸıØ»ºøÀ]`IØŸZà0ğbà%ÀK—Á÷ ^HĞG‚>ô‘ üğ›Àg€ÿ|øà?ãùòU`8/%êû%`ˆ·òÀ`ïìWî€ı…|K.nÈæ C~„ü<¨€5`ÈgƒÏsGçÎùğ#À. †x„x„xœ ÷“àµÀp?BüBü–p>IŒÿo$ä2ö1âŸ‚ø§À~ØÿWàÿ
+Îsç¹ûVœïòCù©€|Q~òCñWàóÀO ¿œ}¾\Íº(…Ü®r›R¸›–Â^|? ¾ ß€ïÀ·à[ğ øN |#à.ŞÅò¥YˆgÅv¸ëšlÅÜü00äî&Ü­L¸Ë™ß†»‡	¹¢	w3l×´÷ÃİÅ„»	wClİ|2›mØödƒ=Ù`O6Ø“±Ä†XbC,±!–ØpöÛpöÛ`Ÿ6Ø§g¿±É†ØdCl²!6Ùà6ÄüÁ°!–ØKlğüÅ..Îf?èí‡³Üg¹Ñü,ğQàcÀ?†»®w]ã8ğÏ³Y{ø4ğ=À÷Âx —z —¹±¹±wMînÜİ¸»pw3 ö{ÈÅØ?÷rq£¸	¸¸x90Ü½¸{Ÿ†ÜÀ€ÜÀ€ÜÀ€\À€\Ø€\ÉX¹•1ø:`ğ7üÍ€óÂ ÿ6À¿ğo#¹»±¸¸x=ğg€Û!0à¼3àü6àü3à|56ßüYàÀ·Cü6î¾øs4øg²Yœá²OÎğŒ—d¸*Ã°ÿ&ø¿	öbB>¿ÿ°şaıÿ¸JŸÊ<e«3Ïåïó~¨}5yO9jÍÔéX¦Ö$Ã™Z³¬Õû©@†Êô$kÓ‰}Ìıÿ{Ù{¬pÏêÏQÁÀ÷ïé›¬wûë“7Í¥~z£”Cû¸^Æß{„‹Nê«è“)HIÒ¨—Ó/…ë¤õôî¿‘Ğ:Hcø7h"¿İ%îfæ××ÒV÷{4…ªèz†fó¨»èœû¤ûc~ÛL+h?=Å¿ÿ…°äAm¼û#÷uEM<æV~sÒ]ì qTA5ÔÈ­[é0_©^vÛÉGÕ<»Çé;´—¥·ÄıâÛînrO¸§IòÛIÔÂ¥K§Õí÷q÷Mw€•(£rşjœvÓ÷yü\ú‰ˆ¸Ml»Å’÷ËCÚ6½pàë0•p©§;h;+ĞÇºÿƒŞç¥O¨ê˜{ƒûOÊ§^¥·’6ÚÄå+\vñš9b†¨¢K<,öˆd¹\!£òóòyV-U«Ô½êín­GïÖÉÉ¸à>í>ç¾H…dĞ-tmáÕ¡ô/zW(k_6«EXÍ%)“}b¯è“¢_œûÅ+â5q^\”º#'Êir£Ü-Ÿ’GäóªCíQßR¯¨Ú<]ê{õ39Üß¬Ø1ğ¼[ívß&ÅŠûygjh)­¡¯öNšE_äUüËŞµ£lgÇÓå51‰ÎÑÛ¬‰q¢XÌK¸,ËÄzÑ!¾-~Âåpz.ÿ–¼2O•…r’l‘kå™”/Ê¤*Qåj‘Z©pù™:¥.ª‹š®×&j´…Ô­mĞåò„¶OëÑ~­ÏÖçéKõ›õ¤¾CïVëô“ú©œ-9»rzrÎçü-·,wqî¹İ¼;ÇÙfÓÙõğŸ&¦ğìgÒí´N„ÅZúïÆ^‘ [W«ØÎs¼“ãÜ­j‹Z g°5¦ûØZ¥.Ú¡VÑ^÷%µŸ~Ë–âÅà$ÙZú7ywî§lEC%íu™/Š4Mñ*l=^kY’Ë ¸Aè$„
+M-ŸZöñÒÀëc~óºÉÆ¤’â"_áµ'Œ7¶àš1ù£óFåæèš’‚*"V]ÜtJãVjÕ×Wzl%¸!1¢!î˜ÜT—İÇ1ãénfvÏ÷\=Cƒ=CÃ=E9—æVV˜Ët~¶Ì^±²)ÊõÃVÌtÎ¥ëKÒõ‡Òõk¸î÷óÌˆ¯=l:"nFœºMí©H<ÌÃõ…X†Ñ•ŞA¢|o`‡j]í>~x="N±8EV8ıN"‰V§±)	—øı1nã¦æ(£²¢Ã›'íÓjµîìÑÚ¸WK¬Š:*sdÜkì4§Ğ
+;…›Ïøş‡CµH÷ˆ—Ô%ÚRu,ÁÎúAŒ{”èfjh1yX¹-uÄ¶Ì$¼9v†§ÛfE¼¦x§éäY5V{ª3ÎâRs´§8T±á˜CÑ¢PQ*+ú|[ªı¼ú¾Êù•ó½gµß·eğùÆ—ÛÓŸŸîwôU~64 ¼/Yy¹.ı‹'[åı×VE©uUÜÿb‚—ÙÁó©u$ÛŒ
+8z`aÂI¶M£=<8¹xg¸'¯¨Ø[C¼&Æıã©‚9üî_`™©Ä[h{+»%‘iÉ	\ ¯êmô°­ğû¡ú¦´0Şç|V»·¿›"¶|‘Ì4Şœ	ÎÌ†Æ¨ß1cÜĞKÓ*z)¯1zPˆ]±^ánë¥°ÑGy¤Ö¬æ×©u„ùû•ÜPîçZ°Â¬ãë<[1SfjakÊ¬3ÛÙ˜´@úÉ/ÚR±é¬`K”u¢åüÅP¬d¸Ú‹Íáq¦{ãhéqR1¡33BgzàwšQÑÀË,mŒ6Ed¸Ä	…c¼l¾ıQ§Ÿ7.ã^×Ï”Ÿ]¾Ìœgòœ¯/çÊ'Giá1xˆX*5H–ßéO¥JRr¯ lez)= +Ú+’éWIË_’ÖÜoùyZ1OÓYlÒCÕK7\^áG*üIíi…«> …g_‰Âs®Háê÷Vx.Ï¹ÚSøSWOáyY
+ßty…C#Ï³¥®ù€®½…ÃW¤pä½®ã9G<…\=…ë³^xy…T¸g»è¿¼—lUÕÇï¾ûî}¥„`'"`‘QÊ´€F*Îk‹@B¡©¥şûÓé£D@² V³Î¹¹±dCF4šµâ*lÎÍ„!0cjİ"ç?À»Ïï¼s¯¯-ÔÄì&ß|Ï9÷üıß¿c$\öIø–şH¸¼_®è]ÂsÙs…JøÖÿŸ„çu“ğüsKxA¦„+Ùí#áªoHÂû#áEı’ğâŞ%\Í«„—¤%|ıˆ]’)áú,Ê7.ò¥"Oåâÿj¼ÈÀÈç·Ÿ>‘»E"İ²Z‰oå‘«kÚY”Æ	çÌsëHzëäz?_ŠcU²8’f')›Àìh¾”»;e)}“Ô+áV«ıÁ>Ë“A!(·€›m¹”¾]
+æ¸Dç1\'ÍñK¥“µF‚í¼+«Á3”[İ.iõŠä{Ô[·ßK{³ñ’¦o3ÿçj_Ã²›òrÆ¦œ¤\èo”x‚‚öIÌSï/Â“¢mò —³|Ö³ßÏ3àk@	}t×‚u‘Ep„ÿõ”Y¶ƒf\ÌdFş3n(õzÊ¹ì#O…ÎÎà s¡<æìd?;%Ï{¤97çHŸ‰ıÛ=õDj%™`Íïƒ¸½Ë‚Œ½e£>s£S¥^eÏ}³óºluË‚ÿ"¯Ø1òâ‚~$e˜ç®”¥Ô³ÏâØnÎAT®:İæ`wô¹“—{ÛáJä>9xÈùTf8Êd¯@–¡_¥Ì¿¼Àœ}X|Äú—›yI-åv…Y›s…²RùĞVÊİŞÄz§(ÌåŠÔ=!;æ`Å*w½ûHÕWÉØ'²œ>»A’öK8?so×1:¹ÙuZ3Xõü.ôæxptódux_!øÿsMp’Ágğ0hyxˆö nÑ>ìÿôêÑ[tGuÔè	:Â\£UÿŒî¦Î‘º³”íÜËø… øŞN©Oµ7Q»Ñ±j7áÜªcª;!ë}ëU§zpV_c“%¦«êÛù8\?›Íy°gÕOx|]t³¬Öâ_¦Êâè¥r;{†LŞaÌşè&ô»§ş4sOq%øXíß¹TÖ*soM}8¾IùaiT²ó#_ÖÁ ½+µƒlVß¡ö—ÂCm½8-»³÷3ÚØ·r§åÍÁ»Ö^ëûËÆ/uû7wŞ{È=ÖÃ.ENŸ¶h«@Ø rf5¼|
+îIı?³ş7œoQ]Ê¸•[£ñ¥böÊËÈ ’:WK§úøĞçY_˜ò7"Óá[™{&sß¡{À6N)Â¹t?±»e\¬LšX§É½n6¾¸É?É,éÛd@[ì'R€O5ukO©öî§Kò)OòŞ’YpAì(íß‘åÈ°Éo¡RòıÓ¦ıWbÃM±?Èì£Êìw…$¢E’p§ìİ»yŠLuwĞ¦à¿Û$#ØS‚ÿ	{NåÓ¯Äôê=+ß…/t·ğ¯\–²Ï„·rc;X# |!ûÔµ0q©I×Ó³ëúÈğä0qLÏ%Æoç;QÏ¼Wd„ßÉy~$	äş6ãW0—êõ3×
+3¶Ä*#l›êŠêj“İo1:‘ºûL¨Nœù˜Ò—´5t×íct«ÙöÛ¡gwd•Á™¹–—Ø¾Sk˜¤{\Ëİ¬EÖ[nÔ²;‘2Qæ;2›œQı6:.ÆV/02®3zô¤aôÏı)ø¿ØøÅF)µ¾9e'MRäÇÿn•zo€ÌÃî‰ÖÉæ}Å}T&ª‹Ê­¬ßÚs=ãçO8ÛL\+·ş¿ÒÄ½IÒÚc·Kh7¹Nª_¥‰5åW‘|9ç—‘Wõ‰Ş>3ïfÍI‚Ï¢÷ÈãÓtı¤xn™¬uÆGwÉsª§ş%èÙ*™Ü—uÇéıàMÊMğëà#Ğ	ƒö›æP~üİŞíĞ–v‹‘J¹ÿz›²‚;L$Î^&ÅvG¾¥1ß™L¬œüÕZâùTÓé®ˆ)5ñ‹¤FıÉçÖÈ~o‡ì÷7›Uæ¼&…#¦¬mà	´©osCÍı4ÎklˆU¿µÎæZ¹ş&ÉÍ©4ånmêïÂ˜§¹[Î»ro¼M*ü£rDîŠıFjÏdQü}©õNRo‘ùa,d¯#ñmAF¬èŸ¯ÏŠ©š3iŞúáĞÿfÇ"lÿåœ×eAü´Ôø§Øo*NùèsiŒXÚKïÙ-óNƒ?‡“½Ç¿à6Tôr¦–Ìõ3â|¯ñ4=¯o&?Kå"áøíš7÷àŒ|Ãä'çã~æ#ú–Ğ––ıÙ$›‹Œoµuäõ!òzŠ±—‹Ò13‹Ã˜šâàIËÏ[ş£ê¬ê]6gÄŞ^¹òmµòkµòóåµ–çX¾8;Ÿé‹»å9iŞµüş×°Bc‡–Ã¼ç|lõ&7‹{äIi6w%ƒí{kˆŞuŸ¹­áàÏçşß/>Ÿî=Ê:'ûúÏŸ?êÏÎ}×Á[}ıcÀù8ûnÒñò<œñşè‹»Ÿïn¹/ölsˆó’ğÇ×ÉSÈ©ßÁ÷iŸøaŞ’osçrƒ;@®²c!{•œ“~Ô—»yr5ãÃÃzğNYæşPVû%äP"Ó>ò¬­©”9c‚WÙ«Úø«èÏAx<u-—PŞ…\k5W£m—æXÌñ²¶ó_ó±Z-Ûş‹ÜNâ^ãÉçb‹xç<+?¥ÏJÆĞvúTƒİÈ%^?İ(s(Ïà»™~»hSĞ¶Ö7k-å ÷TfÊ»øÏ:Ğ6Şì–;um‡wÆH.ñ|˜Îù¬W„¹–2Üy^†Gc²>šG}Œ\	&EGR_!5¼¿ûÓ8C,óŠ‚T/57"VŸàmÙN„ï€ĞÎeøŠ“à(s<t¾O^ª½§uĞ!Ï¨Ó¸üÇøCî1zß¸\şZª£ÿ’Îâ¸%äã¦/ù}%9sƒ”éüÜ÷HÿO2N?ùb”È—¹"{œÊDådï$ô/3Ü7É)ş)×P^ã¾2o©GàGÓ€ïº)š@®Ii ïLw¯L‰M”)şâÔr|ètlà¯¼AÚ‰{ygıV6pîHBd\Üæ§Ó{Ôm_=æ†Ît)³ä½à¹Ø`vdŸÌvŞ“ùñ¯T8U2Èbœæ’UÜ{ÁŸ‹xÒÅØ*™Î˜œtßpl’½0—Í#™Â™šN—¦pê)û¯Ôö³ycÏ\—7J¹Â;"mz/üïŠ—fsOùò7?*#hÓ7g}_ùµ÷°Ùë(ú£)k|.€5^éŞ¯D&-ßÆX™+è£c/ş:ã½™rÍšM>Šÿ#½%ºÊ¯âİ‚^ø¯É"l¤ÚäªU²¯õ¶‘wìBí›¯Ñ/ÇØÁ>iqfÉØèj¹@}‰ó"eŞFáZèÈ…æ.Ö§ô‰X›,‰ı^–øØ¼¿ÅFp Ûş¾¤ÎøğÚy§ø½ ,«x¯ußÓ'|ü†"~|	şËúœñR£Pd1k-Æ*¢Ïàw@l!`Ï±ëÀÍà	Ş
+O?Ø+|Æ(rşÇxùÀ6uÜqüg¿gÇ!E£Ğ(bJYk°âŒqìüsş9‰íØˆlşûœ¼çgÇï%v,$:­-š¦1µ¢¨HS5MS'´®Û´uÿ[Õµ¥ N-ÊÔ ±i)Ú¤©íXûŞË{¤ûøî=ß½»ûıî~÷=´«E»Z´«ã}åNs|z~n®W¨Àãè¨9€~@m;À°óÛgŒeŞö–-M»Xó¾aÌóı›ß½›]÷Ó.×}´«–÷}ìÏƒ?¡ß·ŒïİÑ/†M@â{üS‡¸_‡¸_‡Ï¹Û¼k_G{P·`u)PÇĞşØó¾İäç+pf©Ş™Àú"­¸İ±Wêß£MÎ·‘ÿ‚6¹<Üf×N‚·À›à8^À?…vªº—ÿ×·ß71s8_¦úš%èƒ¯ïÛù7ÿŸÆ¿…üEŒ¡aùÓô£å?^ßñ•Œ1c¼|FÛ%Æ7a|oıÁÙñm©øöõ‡ˆgØÏæyrGŸß|ÿ4¸Ş6Ëï™œ ³à8xÕ´Ùy³Îi³ş	«İİöÈ½bù—Ç+Ş±ÇŒ9wûßò¥¶›ñ@™÷RÇò±ågkßT¾‡:\#òØÍc2âí*ÇJc½Äïƒ8ï<!CÃµ˜Ú¥gû®š
+8şJK°–·™´äi%l´Âµ†N9.Ğ~®¹n3t¿Âû“´_<G-Ğfkgq¿|Ê¸Ûr½8$<L„ÿ^.ÑÎnÜGOBÃZ÷MS— Î> íì†v.A;wBZ¸
+­|Zæ òwˆÓFä­ø¿ùZhå#ĞÊåë9Î2CÏŸ¥_	{ĞÎ|ïlÀ÷Ş§jÍ—ébñ«ó*Î²~j‚Önu<Cë®ç%h¿cfÿ†6@[Àçı´Û­â˜¥uøÎ£˜ƒhÜJu\ã^ŸÇ¿hxØĞ¿¾>fÔã¶ãş1ô°víï°Ãjøi»±¿P6ÏUë|64¨¡Gl¸vëKh¨ÕhšF“Vè©9®APŞÊqì¥]Æş=B:ÏË=Ğáæ3‡ß»ôóó^çwÇŸÁóÔah c¼X?×Éíü=öÆ¬é‡é!g=-çÈ#>EŒáèM”ƒ€„vºq->Âz£±™¾Æ±J»…Zì<D^hÚíõä&ú8ã¼@kĞÇ*Û,ms`7=
+ØA[<G‹íÿ¡¥‚HKí-±GñÌ9zg¨†S3G­µ{(Xë¡n`·m¥ ¥5¸Û9ÀBñ(=(úh™U_¸JÛ8¢H­Bş•h+tâ4táo®gŸhó\I!Ÿ%ºú,òo€Ğ¼>ÿäÛb†šÁÑ†5bƒ>œ†î¥Â´Òñ4Õ05ˆÇ©ñ¦=l=ˆsïó3Ã:0±O°pÑµKó?_ÿ,¿67Ï­Ï°7¾A¹¬_àú™—Í¸‘2ü=	»÷¿ÕÆ~?…ıò;Ü/ÎR¿¹Ntœ"3M[\S+á0í€¯?Ë‡…¯ÒV+·_¢aû_nà’eº…êß‚}/Ù7„Ñ:áUªsÔ¡ÿÃ´^ø&í…­L|·`›çS¿é‡µû\ü>d®7°>æ„1Ï…´åğhäØ/cŸ]6êl´µÓ˜ı4öØ/iÏœx^ü‹¼ÌÛÚ¡EÈw	máõğ¿K¨Ğx·yâHbÓ¬¹Fì'¯q?ûîd¨U¼BŞ•¶£îŞ—í"%ø·nùÆÿ_Üˆøô-â÷\¾‡j`O¾AMâ»Ğ+Wp78ƒu=‡õæ¦…ö³´ÀşİÇïkØ—ıÿ/wlC¼tÁw‹ëu:è:»i´Ó>kÜ#wàeèİˆÍóånáMªµ£Qág$‹k~H51ïeĞq
+CƒôBoøÅßPP˜…ÖËPğoŠˆËq¯úê­BlÄö;xÿ!lÕH_qşœ:;Ñf9ÖÁQÚ.nÃ}—†Ä'ñ~1Ú}:ĞŸW¸‚{Ì =.œ 1Ü]#â³ØgcæĞ&I#Øoİb€.‹ïĞË÷Ø„ía3¯g;ùVI+ªd–{´ùò~T9—(¬Ò4Ñç*ÉqùıçñL©Ki,5ÃÒ	–Î°ŒÊ2Ë³l‰å¦Øxškl\gŠÎòËëLUXIg¥Ód¦M3½Ä¦ÇY–&YBf	-t–¨²dBcÉRàQbI”J,‰>Ñs†¥$é†$¦ù Ò@K²ôLe’S,£ã*ğ¡et–Á›rÁä¸Â²>Öì˜aR‚Ii&)LÒÊLšª2išåec*ø 9ÉœÑD>ÅäRÉèVÎ œ›dò8“e&+H*“ÑLÖ² Çä2SS’LÁ¯“¨Ü*ÊRÌ0ešå1ã|¦ÄòÙËKH9P`y™åUË€‰I¦&™šFÒ¸9UTTU¤SgTVÈ³‚fÚxrŠ•ò¬¤rc—
+YVÂs	vÇW´d‘i¤Ğ˜&Q˜†¾4$8•JÜG0ˆêÓe¦¸ÏtéåI6%3XjzœMO©¬œÈ0·RØ¼T§¬5¶Œÿ¼D¤/Ñ/&‡ÊıCùŒ:¤Ç}½Ñp¥UšôdGS ”¯”âÕlLM7g›|3wG"ì	…Ú+mÁ|±ÔÕå™UÛ¼~¿éğy³¾r÷d²êmUåæx(İÓv»;½ROÔÓ‘“™°´qĞSIuWõ€¿±-”	ù‚ŠZ´Km]’äO6hÙXEªD¢!O¬3îóª1eóD[$œ‰úå¤¿)(•GGó}#şáÈÌ@G,×Û®¸»<CÅœ^LD1Â¶ğt¬\Íä+ŞXc 1 ';#ÅŞŒ?àïéì‰öÍÄ+ñŞ0¢èáğpXÏ†â£íxÓ›“ú“…ş´ÒŒö%»ÚSq_®Ğöµw6zšFÚrÉD[s[®¯)òa¹T$Ü’‘#“é»-ä	W‡üZ5#{'¢ªâiso®ø+Ş–N(ŸõøFºšÒÃwiĞ§Eã£ƒ£ñXïpYïÑÜŸ;YîîO{BR¿ê®v”=ã±\“œ
+y7‡C¥l °eP
+ô&-ı½RHŠ¹‹]á@)‘÷Lü—ÂòHsU‡‚ğ‚<hDèC	$‚MH3“ÛÓí@XıóÛÀIUß_‡@öïjßõÊ/,	›ï¥o½“ÖÈ¶E ¥Ú”€4uËD™ùx³Ş¨YœÆ6ÜªËè9J“<G+)ÆQfÆÉÜ¤kL‹ÎNİwÆŸ”;~ş«²¯ ÊÜw´g&£Q:ë—µkÔ[‡Gı#›ŸOK–j/<‚aæ/y1r¬«%®A&©„¦÷—2#şv½ÛYÒ=5RãV¢BºbúN†Y%ğWÜĞb¡í¯‘‚6í|Îr]Öø‚·åÿE¹e;í
+J(œd¬WçÍ­ß/o{"7×®ßT–"Ë2¢ˆ»C…„ŞŞ´Œw*!nÈV¿y*YÁ±È„ÁÆ´êº%µ™ôÄìïß1Ìv©Sû0ŒER¥õ‹0ÕoÒ§yå·Ùò#™s¯{‘)Â~Bº“ w­íî¬U¼³™ˆ¯ğĞËŞ»&ƒèQ+Ï>7P€^‘(4]ÃÊÖGg§puçP©#’èg‚É$õ?Ûî28±H]­•aÍà·uÇcİzåÕ|—?Å	šZİ_bâ­¶~ĞjÍ5 §
+Îv‡Ó³‰4ë:C°WíëºáÈtŠĞ5×ï0¦GFÓŸËPµ	i„Ô)O5ãL:=²½Û5ş*ŞGù–]‚Ÿt?AØér¹-	±uÕµü?Ôe†º#•ê’áN«ëC³³[DNÑC8/¿•¾’=»Æ#kBlıN·@~Î|k|«®¬}«ª”ì˜’“ıAG}ÀÃq¤0¯Êbò2öÃÚ‹<1='œ`nâ: \Î:¹D[È\•6ò:_O./Níd­VÍV‡N¾œ=àªaÒ·,uÓüõ`—¼ ­íKîçYì-^ÚItŞnf÷Ğ°¬ÚMç‘VY#b±kô]ÃË¸|ÅGÑ”¨#ùîò¯–ZYÛ9Ğ„@âà4KÏ`•C®ı^e¬¤\4âRlË¯ÅŸo‘—	˜v=S0M7ín®ô§Ø…ÃNGİŒ'PfÖ0zğ0+$³Ú´õÔæÏBo1Q=sŞóó „/I6hÌâTr¥‘¹}aòBT
+Şş.Êˆ<‚6Ñ¥s7F‡QChß€›r‰:¸Ÿ{2U‰×ø1}š©«"EIfDSıôß??Ë
+aÍéo¶,)±·ŒòŞtúŞ@hœñX_säĞ¡;ÃĞÅDÿ½övwÄ%xqH“öÖ—ŞH¦d–³9øbJ2®¡8pN·•JÊ¢	œ0à’Š8³k™¸WŸN‘…'Á+³MÆó'²<ñüx®áııBuÇÉGŸc+ˆ7OOâîqYõÍÛ_›w®¸U:”ì/ä÷^Rß­ú•ZR–MêÓŠÇåÊÕ—P¤qã@üqòı]ÉÏ£Ê‘^Ê&õUƒÚ¬R½\%h‡É]j“,Œ¦±|82èoš¹}¢C–äxGE€†ÇE	~ƒŸÕ.sÍôfmñcƒPıDøh‡‚ÊÚ­6ƒ¶ë}ÉŸ!¶¨šãQ%…‚-&™Î°¹6¬°sÖ¿Ó=0ë¹S£ÎÕ…s¿±^eç¾Öë„­	0şHÿÉ-öÜ«Õ)Zæ¬q¸yr¤™L˜;21+ex…1PÅVèV?>hRGö™İã*„²dtŠ½7•sK±„~Ò«ÖÂ1áZAŒà)ìµóÓ)ëèrœ¸ßVïÆd6”PÑAÓ+]t‡?Š<ŞîÈˆYØ·“wÁ[Ğ•S]6¼Çó¢6¹ZJ_SNP™tfÉÜ5]ê(Ô÷“€Pêvçòh~æQV?HÏ@Œ>LVßô‘ñ¢³“A¤KñÇ£åMÎ3ÛØqşµÌ?ìüNò¡¡ÉúEıhœô·ıè
+?ŸËÅ€Ìi€{mñb5o~¨±şA2ÑGÎÈ¬i¥m/fïf˜ş{¨"1Ç"—F.ˆÕ-ïz.ÎŸYş×•—ıUCu#“~jím³¬tª!‰Z4P{¥àÎì	Õpº£ZFU‚GJq#m÷È#4n-]³±ÑQú¥è™Ö·ÇW©levèAÌ…˜õkúŒBœŞå¢Ï2²ûÌù!ÿ1]-ÀNTgxïä¡{½¼k‹X¼Ùd“›¤…‘}f77ÙÍ¾²›(Éîf7ïÜ›„İ¤…ZíL;(P±Hm™–Ñbë´V-/•A½¥wê`-*Õ¡;à«S^2
+ôÜp•{v¾sşıÎ?çÿ÷ÌîşßAÒNÅ&ãvhR"/95ªd¤aÌD‰€šV˜ A„’pójĞM’5è.B²`H+‰˜	{Œ¢gi¨¶C*Må0âeğZG`—^ğQ!=ĞŸ|„C:+\e±d-ã”	6ŒR(epEo4G‡E‡­
+3È±Oxı”ÃÓ
+O!Ş°–ÓŠê§ëj<¥Z¬«Ÿ·ƒ12ìeŒ­Yš?a‡bV¹"4}húªisi…*Ã´ôd¸˜±Ì8î©¦Pµj>4“GxÔ |ZÌ©X
+“@Í“Ã9Ä{ŒËñ¸.Õ"Şª†D
+#À÷	ÎY9œ&T T­•mš@AYwl-fBV"TÕìoX>„³½^¾Ux´Âé´%±¡ª?Gm ô°'XÇ‹ƒ5Í™~½XÒ`–âœ„Mz`6ÔÌ7©¬5dy€ÈQªÀl.ÏªšIç„F	öùi*€R˜ se|PÁ²œê¤›&7ùj•­ZqS9 ¢Éª$òR@Ó’•¦‘¨ìHL²„0™Ñ\ÙeH6Jâƒ2§°E•ŒFÒ‹EÔ(CáXÎ]z6™0°×%çŠ5i”Á¢
+6$a€	ù|R–r|¦Q»‘T~Î’c™P¼uvZ“Wx™LÑñÊ ßLÄY¬6ÊYÌm«:Aåñ£d€#A¢ªi©†Ê'İ’'/fØŸ	ñV0Ê‡«) 7¹’3Šfnæ%>ÎK)…Ñ€—¢£×ÔÒ¬Õu³2œZ‘B˜‚¦T±]¨GÕB]¤ãQ® ´¼0R^^¶dÃ	Š‰œt$(LtŞ ‹LŠBmF5K"1 Ê`”ÌÃnÂÆR1óĞ2µ&x°…U^-ÕĞzŒŠ!¢âÉ¯ ¶¦6½iNr£*™ğól0Äc¬7„Äög(¡A“Œ”ö8)1iÑ¬¹ËÆ×¨j*… 0‰»i9—DÍ °K5Gó•-k@ól)O÷«á:ªÀbTÔs‰¸7h_?›õi­éHØƒ’LA"•l_â]¤ÇÓ¥ZÂ…aÍ	ã2á8rÎNqˆåWeŸ—Èå1š^#nkNÚpüuË´8âPiİ•Y7IÈéŒLÊ™ä´¦¯SM™ğ€'n‚ÿLÍE8•áLÃÉ„=N“¤H«Ép¼FÙ,öó!o0‚k^hÚ´u®!„hÚ[Ò$£a=AÂk6Š‘ı¤  „Ö	ËëJQ˜ExXâ•X)ãiY4Y…ÇJáŒŸ+¢:Ğü¢Q’ÑâSx¡:¾UŒÃôzÌ»+ Ú]‰“qW“ò`8G<*é&
+•:Înœ¨Ó<• TDÊ4}D¤”°èĞ‚ŸAMO”*V2b’Ûgä½ı„Äd¥ì%M3. d>Ş´IQ)WŒ¬WMóe,ÎM	¹VNa,Õ38P<uafÇïŸY‹lÙ°dtÎıuc¤†}­¸jæÑK¿¼üª·ôt×fdİÚ·÷SÆÀ‹oö~|ùG÷ìh^zszäj9ûàów§ĞãŸ^||ÕœKøõNcKß®?²ğ©;:†;´±zßàÎœ]pbWj»ëWı[g¼´©÷éÏNæLÿ¹…‹vœXÒ>{ÃÔ\`Êo—/zıløÓwÖGš“"ÏO£W½;üïÑNÛ‰íÚÿ¿K‘>yyçÃ+¾µYÜ3°úü²Æ¾+³Rø–óĞEÏgG™ŞÿüàĞ‡{ŸèUïy‚{÷x !Ì[´{æz÷ÎŞs/¼VˆÙ?ùøüuÂ…có³UuõsEnößß®Ï¿º­£o¶ŞK£‡øÂÃ=?9í~ïà½µ#¯ÜµmÏµ—ßúù¬%v<yçÂc–RG³L[vçƒt´oï]ëvoÿ¨gøâèS‡7ASíyW–•Ÿıpäì‰å[|è`~óÅ¯]ŸÁô¼:°ñÏÙÈ[÷<rü“ß}KFß(TšzuõÒµÿ\¿£~òÄ‘ïP‹ÿúşé=·Ÿ|o¹cV—Ì_òÁVÚÇmY0âŞU+Ÿ,Î¿ïÅC—O½ÛöMı]ñáx(É*ú¼Y¯|şê>xöéá¿”ç _¸.®üY÷·¿Ç,®¯ß~zÊ;^Ÿuåq§ıO¥›z­|ñş¥â±á•ĞàOûŞÔËÏ]ÛõïNyìÔµ6€š=Œ“º36Ó~4`wŒ9ó˜Æí+-/šÔò™ssq»mÜç:°ÇÖéç¿\çóñ˜ã­møPËoŒ»`. ğ7@İÀ¬ñ:î “ °9¨§­u·A“ÚjPW{;4¹çËvóÙ: ‰m"×®ÎVßucWw«ï™À´ˆï&·úÛ&0S ©­qÚnú­g\ÑŠúĞXßõĞ­< _ÜÊ¦½Åw~Åw€œZL‹ï¾Ù5Û}ÿë[ 6¹qc/Û ~:noèö	Ï}3“öh‡Ò¡€E<aÇgï8ÑÖ8ğğ‘Z;şu|çÿ©¯Êğª®-83+!— !8Å‚»»»»»wNpw¨ ÅZ\Z´kqm‹¶Ğoq¨·@óv.„ä=Şûó~tŸos÷¹gßoÍšYsöEbTsçšîN$aOoå=ìØìÇ@öC\ö‡¯c"CŸCÔıZ g#ç"O‘Ğ1”H~H&$V$ÁÖë\E>ÑæÿûŠH†c½Æã›HxŞpÄÔc¨Ã?Ú'ï1Êz±xù}¡ŒÇTHøgEQˆOÿ;Ã9wk–	+à®_¡–[éãÕÑåøyÏ7Ö,ú÷ÿÿúÔ?kÄym7Ú·ñ¢zÓ«~Oÿ¯„ş±#²ÿ^öš/¬b 1#3s>Bt’YíºÂôÜnZæeA†Z#kaÍÜóç‚"(\™áNTÒÅpë]87ÂA¯ùx½s_ç:~Ö±Şè"/ç‘^éô‘^à÷òñ²Ş5¡^d¡/×#f†»¯ë¼)î:{_Ø³Ëî¯îº<SxøE`*ê¢=¼.‹I.æx1™×A|"ÜÕ×¹kL<ˆ6£÷üÑ+OŒ’y”œ#luyî~™Ÿ‹ı8àÎ§#2ôù7UÿÀÅG.ö¾VõHÿ÷S0|ßeä<2Ó¹F÷á¨¹ÿ§z{1…ã(ö|™Ãòi,h‹E"‰ê{±\õ=ÎÁü½ïçxîàĞ"¡§¥§•§µ§§­§§½'ØÓÁÓ©‘i„tHÈˆLÈŒ,ÈŠlÈÈ‰\È<È‹|È(ˆB(Œ"×b(®z¥Pe˜r(
+nÿR	•QU]åª£†«]-ÔvÕ«‹z¨hˆFhŒ&hŠfhh‰Vh6h‹vN'Áè€è„Îè‚®è†îèè…Şèƒ¾è‡ş®¿bë…Á‚¡æ˜‘åô5c0ã00Ñim2¦`*¦a:f`&fa¶ÓŞ\ÌÃ|¼wğ.ŞÃ,Ä",Æ,u¥_†åX•Xå”ğ!VcÖbëÅØˆMØŒ-Nc+¶a;v`'váìv}ºÇ)fŸ—‘Ïğ¹ëÙC8Œ#8Šc88‰S83nO÷%¾ÂYœÃy\ÀE\Â×ø—qßâ;|«¸†ë¸›¸…Ûø?âîâîãâ‘{»=ÁOø¿àWü†ßñşÄ_xŠgx¿ædEŠFú2ıèalú3ã2ã3€	È„LÄÄLÂ¤LÆäLÁ·˜’©˜ši˜–ALÇôÌà¼+“s¯,ÌÊlÌÎÌÉ\ÌÍ<Î½ò1?8+ÄÂ,Â¢,Æâ,Á’,ÅÒ,Ã²,Çò¬ÀŠ¬ÄÊ¬Âª¬Æê¬Áš¬ÅÚ¬Ãº¬ÇúlÀ†lÄÆlÂ¦lÆælÁ–lÅÖlÃ¶lÇöfvd'vfve7vgöd/öföe?öç ä †p0‡p(‡q8Gp$G1”£9†c9ã99‰“9…S9Ó9ƒ39‹³9‡s9óù6ßá»|¸‹¸˜K¸”ïs—sWr?à‡\Í5\Ëu\ÏÜÈMÜÌ-üˆs+·q;wp'wñîæ§ÜÃ½ÜÇı<ÀÏø9òóòóOòOó¿à—üŠgyçyy‰_ó^æ~Ëïø=¯ò¯óoòoóşÈ;¼Ë{¼Ï|ÈG|Ì'ü‰?óşÊßø;ÿàŸü‹OùŒÏù7ÃQ’ÉG¾Š%?y[şŠ£¸Š§ø
+P*¡)±’(©’)¹Rè-¥T*¥V¥UÒ)½2(£2)³²(«²)»r(§r)·ò(¯ò)¿
+¨ 
+©°Š¨¨Š©¸J¨¤J©´Ê¨¬Ê©¼*¨¢*©²ª¨ªª©ºj¨¦j©¶ê¨®ê©¾¨¡©±š¨©š©¹Z¨¥Z©µÚ¨­Ú©½‚ÕAÕIÕE]ÕMİÕC=ÕK½ÕG}ÕOı5@5H!¬!ªa®©Q
+ÕhÑXÓxMĞDMÒdMÑTMÓtÍĞLÍÒlÍÑ\ÍÓ|½­wô®ŞÓ-Ô"-Ö-ÕûZ¦åZ¡•Z¥ô¡VkÖjÖkƒ6j“6k‹>ÒÇÚªmÚ®Ú©]úD»õ©öh¯öi¿è3}®ƒ:¤Ã:¢£:¦ã:¡“:¥Ó:£/ô¥¾ÒYÓy]ĞE]Ò×úF—uEßê;}¯«º¦ëº¡›º¥ÛúA?êîêîëê‘ë‰~ÒÏúE¿ê7ı®?ô§şÒS=Ósı­0ƒÑdf>æk±ÌÏ<Ûü-Åµxß,ZBKd‰-‰%µd–ÜRØ[–ÒRYjKci-ÈÒYzË`-“e¶,–Õ²YvËa9-—å¶<–×òY~+`­¶"VÔŠYq+a%­”•¶2VÖÊYy«`­’U¶*VÕªYu«a5İŞ ¶Õ±ºVÏê[kèv@İ¿±¦ÖÌš»½PKke­­µµvÖŞ‚­ƒu´NÖÙºXWëfİ­‡õ´^ÖÛúX_ëgım€´Abƒmˆµa6ÜFØHe¡6ÚÆØXgãm‚M´I6Ù¦ØT›ö/†ëAA
+è«;37Û¶mÛ¶mÛ®İÜn¶mÛ¶mÛ¶^qY°µq6Ş&ØD›d“mŠMµi6İfØL›e³mÍµy6ßØB[d‹m‰-µe¶ÜVØJ[e«m­µu¶Ş6ØFÛd›m‹mµm¶İvØNÛe»míµ}¶ßØA;d‡íˆµcvÜNØI;e§íŒµsvŞ.ØE»d—íŠ]µkvİnØM»e·íİµ{vßØÃR|lOì©=³çöÂ^Ú+{moì­½³÷öÁ>Ú'ûl_ì«}³ïöÃ~Ú/ûmìï?f„@H Bp„Bh„AX„CxD@DDBdDATDCtÄ@LÄBlÄA\ÄC|$@B$Bb$AR$Cr¤@J¤Bj¤AZ¤Czd@FdBfdAVdCvä@NäBnäA^äC~@ABaAQCq”@I”Bi”AY”CyT@ETBeTAUTCuÔ@MÔBmÔA]ÔC}4@C4Bc4AS4Cs´@K´Bk´A[´C{t@GtBgtAWtCwô@OôBoôA_ôCÀ@Â`A 1Ã0#0£0c„`ŒÅ8ŒÇLÄ$LÆLÅ4LÇÌÄ,ÌÆÌÅ<ÌÇ,Ä",Æ,Å2,Ç
+¬Ä*¬Æ¬Å:¬ÇlÄ&lÆlÅ6lÇìÄ.ìÆìÅ>ìÇÄ!ÆÅ1Ç	œÄ)œÆœÅ9œÇ\Ä%\Æ\Å5\ÇÜÄ-ÜÆÜÅ=ÜÇ<Ä#<Æ<Å3<Ç¼Ä+¼Æ¼Å;¼Ç|Ä'|Æ|Å7|ÇüÄ/üÆüå¿0$ ):C14Ã0,Ã1<#0"#12£0*£1:c0&c16ã0.ã1>0!11“0)“19S0%S15Ó0-Ó1=30#313³0+³1;s0's17ó0/ó1?° ±0‹°(‹±8K°$K±4Ë°,Ë±<+°"+±2«°*«±:k°&k±6ë°.ë±>°!±1›°)›±9[°%[±5Û°-Û±=;°#;±3»°+»±;{°'{±7û°/û±?p q0‡0€ÊaÎÉQÍ1b0ÇrÇs'r's
+§r§sgrgsçrçsrs	—r—sWrWs×r×s7r7s·r·swrws÷r÷ó òóòóOòOóÏòÏó/ò/ó
+¯ò¯óoòoóïòïóòó	ŸòŸó_ò_óßòßó?ò?ó¿ò¿óòóÿê?…PH™ Jr…Rh…QX…SxEPDERdEQTEStÅPLÅRlÅQ\ÅS|%PB%Rb%QR%Sr¥PJ¥Rj¥QZ¥SzePFeRfeQVeSvåPNåRnåQ^åS~PARaQQSq•PI•Ri•QY•SyUPEUReUQUUSuÕPMÕRmÕQ]ÕS}5PC5Rc5QS5SsµPKµRkµQ[µS{uPGuRguQWuSwõPOõRoõQ_õSĞ@Ò`Q€5TÃ4\#4R£4Zc¤`Õ8×MÔ$MÖMÕ4M×ÍÔ,ÍÖÍÕ<Í×-Ô"-Ö-Õ2-×
+­Ô*­Ö­Õ:­×mÔ&mÖmÕ6m×íÔ.íÖíÕ>í×Ô!ÖÕ1×	Ô)ÖÕ9×]Ô%]Ö]Õ5]×İÔ-İÖİÕ=İ×=Ô#=Ö=Õ3=×½Ô+½Ö½Õ;½×}Ô'}Ö}Õ7}×ıÔ/ıÖıõÿ<„‡ts8]îÊC{ëá<¼GğˆÉ#{êÑ<ºÇğ˜Ëc{ëñ<¾'ğ„È{OêÉ<¹§ğ”ÊS{Oëé<½gğŒÉ3{ÏêÙ<»çğœËs{Ïëù<¿ğ‚^È{/êÅ¼¸—ğ’^ÊK{/ëå¼¼WğŠ^É+{¯êÕ¼º×ğš^Ëk{¯ëõ¼¾7ğ†ŞÈ{oêÍ¼¹·ğ–ŞÊ[{oëí¼½wğŞÉ;{ïêİ¼»÷ğŞË{{ïëı¼¿ğ>Èûğ@êÃ|¸ğ‘>ÊGûò`ÿŸırñªªÊãøooÎ¹¿Ÿ`N¡y9—ÉQl4ŸpAP@)S0A@ÁG˜äS›Æj,¥"ˆ
+>ª-@›8vÅG“šæ4´œ™4kiS£eÍØ÷‚Ëµš¥3ÿÀ9ßõİçs~¿}ö¾çì³÷º{5¯á2^Ëå\Áë¸’×óŞÈU\Í›x3oá­ü"¿Ä/óÏøç¼·ó+ü*×p-×ñŞÉ¯ñ/ØÇõÜÀ¼‹É»ùuöóŞËM¼÷s3àƒ|ˆóü+~“ğQ>Æoñq~›Í'ø$¿Ã§ø7ü.ÿ–Ç¿ç?ğ{|šÏğûüŸå?òŸøÏü!Ÿãóü_àù/|‘?áOù¯ü7ş;ÿƒ?ãK|™?çòü%ÿ‹¯ğUşŠ¿æküËÿæÿğu!Q¢%H1Å%,"m¤­XÒNÚKé(Á"äé,?;å.	•.ÒUî–nâ–0±Å#árDHw‰”%Ñ#=%Vî•^òCé-}$NúÊ}ò#é'ıå~ e–!2Tâ%A¼’(I2L’%E†ËI•4I—‘2J2äyPFË+™2N’ñ2A²$[&ÊÃ2Ir$W&KäKL‘©R(E2M¦Ë™)H±Ì’Ge¶”Èc2GæÊ<™/¥²@—…²HËòcyR~"Kä)yZ‘ŸÊRyV“e²\VÈJy^^U²ZÖH™¬•r© Û~ÊŒõSœ ÷ƒccCi‰ÚNkàá š¡VÒBx9¼6nR¼G­l0Ä»W-¤®*İkö¸Î]ìĞ¶–ı®_¹vm±Ï„~Ô¤ºP{:§º4´§6‰m±ïÜJSÉVÛ(R-¢TŠVU1ÅvR5T/ƒZJ¥jÂúÚÍê^Š4îéAa†Úm_Œëeç×ªÁ>å7p:†+oGû {‹}À=Ín†ëZSµ1şÀ=5îb»<Ì¯ªìµn¿B¢¬õ4ß[wÛ³b*í©q-ùQ•~]×`D~¼×²û·û¹/Ø½£ü¢pİË=ÊîwÂîîn©æA£‘Ş»›»Ü„T˜;%jÜ¤jU5õTÕ‘éö^ ·1-f@¥_-nL‹ô«EŞş©Ñ•1©Q‘1£ìÈ˜áQQàñÇ0¥ÆâÒ‹Q4–¦p,Zñ)ã³n‡O\„ıjGC‚íjRu”€×R×ˆ`úÕkMjgKpçë˜Ó¤³ÿú‡»ˆuö«º]ÁìvµË¯v6¶†vzm#@FK"XJ(IcªQ:ùÔ~-½³4!4¡S|ÈÀáÉ·+ò¾WÆŞşUn_åÈÌ,_­;Û×7 ×İÙ7“ÿãÆÖcŞ|…I±±#Ç.l,-™Y”R‘’‘RçùV–Nõ-)ğxêg–_P¼‚)ÓçüB_IDa²ofD²§¾´èé¢@º4"¹ŠRÆeÕy“J½¥)ùÉÙIsr¾××ò›}ÍIºEcIÆæú*È¹E:'.ô•è+'ĞW· ¥¯Às¦ÌÈLš;_§'eÆH/:Ó—6fb–Ï“ŸìWÛLO˜4-ƒ…AsQ=.ó¥õĞˆ[ÈQ[21‡-Ô1qÕ…XÔÚÙfj{\w€ê1Cu¢p7ºm¸!¦0È"›ìNy ‹Â)<Ì¢º<”º£ßxŠG6²ÈK^d‡Q"8‡’‘Í¥\d'CåQ²ùEOQ²OC-¥gğ;—Ñ³àåÑjZ.£5àµEåIT§XGëğ•Ië!¢*Ú€:ÕÑ&È¢—h3x½Ş½J¯€k¨-ÔR-Z¨ƒ,Ú1ÕÓNÔÙCˆ4Ñ^ğ>ˆi?dR35ã®t w¢ƒÈ¾I‡QódÒ{t‘st‘‹tü	dÑgô)ødÒeÈ¢/ès¼Û+ô%ø*dªGè+h±*/V³ÈRÏ©'Y®–×¨àrU^¯°Ê«
+Oª®¨ğ»ÔU²ôP
+×ñdêQĞ^í×=B §êTpšN?¨ÓÁcôhj«Çê±$z‚ÎD$Og!2EctôT=mêBRzš.BüQ=ñÙz6â%º<W?^£çËtYˆ¥×êµ¶¥Ëu9¸BW€×éuàJ]	^¯×ƒ7èàz#¸JW«u5x“ŞŞ¢7“eÄë­DF‚g1æ^p©^ŒÆğrãqğJoÆXe<Şc¬ï3ö‚÷ûÁ‡fğãğ1ã(ø´ñø}ã™Ø~ ¾d\@ükã2áÕ×ÈÂ.K!vš&°e2v›íÀ]MÌì-ï¦¶ØIvG›Ñ!v”1¶…dODî7ã({Èhf9‘Áæ`ÔbA¡æP´3ÂŒG43uÒMŒö“#Qg”9
+u2ÌÔg>€øxó!p–9œmfƒ'™Á9fêçš¹¶åÊ2'aÇ‘Mş›OwŸp½>é:I–T¸Ş!º£e•HÂ³Ÿ2÷ã;dÖúÿ@zûÉ€%ØOt
+\ƒƒÎ‚qfœƒpns3ƒÑÊøØ½hÉÄ¹OÜ}!á!Qp’±Êÿíysÿµa~#ã›Æ›AŠ;vìØ±cÇ;vìØ±cÇ;vìØ±cÇ;vìØ±cÇ;ş/‘¢ÀDÁ([Ù ß`Èƒ,mñPŸ¬©¾ÁAˆçŞ`üäv·dOÌHOŒM-,.-œ7cJşÿ»¦N‰(ÓQÆ~'†T KË€d	C&C2C"CÎP
+Md("¨šRy`(pLe˜ÄÀÉÍÀô5(dbØ_pÉıÊ%†	v•~ñü6_9Àüxß~0}ıèŠ¦©Ô¹'rür9a:  ÄmğZ
+endstream
+endobj
+90 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 32
+/FontBBox [-166 -225 1000 931]
+/FontName /MFAMNB+Helvetica
+/ItalicAngle 0
+/StemV 88
+/XHeight 523
+/StemH 88
+/FontFile2 91 0 R
+>>
+endobj
+91 0 obj
+<<
+/Filter /FlateDecode
+/Length 25861
+/Length1 79932
+>>
+stream
+H‰LÕKˆ$wÀñšİ¬Æq59ˆ¨Yvº§ÓÓïçLwO÷tO¿ß¯	ÑC–d7{ØÍ›A7 š ‡&Pƒ˜9$¢âÁCT<xP¨ ’ƒ‚BñäAPŒŸE¾3TQŸßü»¨W°ÁGıº'¸4]¦²»¡Il%œ}ô‘+§×®ÿô'_tü• x#ÿØÍ+§Áóç^	¶
+Ÿq®ıØgÏ.=ÿ—ú·‚à;?‚ó7®]½röÌ‡.<ß¿ëÓ×NŸ¸ùî=_ûµc×ß÷É'n<}íÅñoß¶.ş=Î]¼~õÊã/'ıv°U¾ÇõÅëNÜwùÃß‚7?ï8tıæÙÒÙC-Ç¯ÁåÕ[]	>òÕ·ƒ­\ùá›Wîœ^|ïƒ{ÁVéO®¿tóêÙ•W½¿7ÿwnŞº}çÜçî}1şöv|üÁ'¯Ü¼úÇ??ûR°U´Ş­Ğé­§Î‚óäVñÕ»şôöÕÓ·¾ôd&Øº×¼ó¿:½}ëô¬ùB°uÿİ Fpşüs[/‚àÂ7.ä°Oı÷ïù·ƒkç‚ÿÿùCpî½YpçÓÿ;>}úöSA#øÀ?Ï½/ø÷kAíı/oıòR°õÊôîO]øÑİÿ~ww¯}ı>›ûuùºîèËzI¯É:.ÿL¿‘5^ö9·İ‹íR^m­ô¸ÎÄoóÛü6¿ÍoóÛü6âC|ˆñ!>Ä‡øâC|ˆñ!>Ä‡øæÃ|˜óa>Ì‡ù0æÃ|˜óa>Ì‡ù0¿Ãïğ;ü¿Ãïğ;ü¿Ãïğ;ü¿Ãïğ;üá#|„ğ>ÂGøá#|„ğ>ÂGøå£|”òQ>ÊGù(å£|”òQ>ÊGù(ãc|Œñ1>ÆÇøãc|Œñ1>ÆÇøçã|œóq>ÎÇù8çã|œóq>ÎÇù8¿Ëïò»ü.¿ËïÎô¨NõŒ^g|÷òìïÚ»ïè]ı#÷ÊŒ„	3f$¬!a	kHXCÂf$ÌH¼%ÏiÂŒÄ_õ¯ Ø»_Ÿ½¿WÕHã½²Ÿ÷|‡ì}Sß¿Çïñ{üŸä“|’OòI>É'ù$Ÿä“|’OòI>É'ù$ŸâS|ŠOñ)>Å§øŸâS|ŠOñ)>Å§øŸæÓ|šOói>Í§ù4ŸæÓ|šOói>Í§ù4Ÿá3|†Ïğ>ÃgøŸá3|†Ïğ>ÃgøŸå³|–ÏòY>Ëgù,Ÿå³|–ÏòY>Ëgù,Ÿãs|Ïñ9>ÇçøŸãs|Ïñ9>ÇçøŸçó|Ïóy>Ïçù<Ÿçó|Ïóy>Ïçù<_à|/ğşî{¢Àø_à|/ğ¾Àø"_ä‹|‘/òE¾Èù"_ä‹|‘/òE¾Èù_âK|‰/ñ%¾Ä—ø_âK|‰/ñ%¾Ä—ø2_æË|™/óe¾Ì—ù2_æË|™/óe¾Ì—ù
+_á+|…¯ğ¾ÂWø
+_á+|…¯ğ¾ÂWø}~ÿc²÷Ó2c¿'ûpß^Ş·—÷ÍÙN_×ëzS?×ïd/ïÛËöò9Q•eÆÁÃò>9ğ>9àøş€?àøş€¯òU¾ÊWù*_å«|•¯òU¾ÊWù*_å«|•¯ñ5¾Æ×ø_ãk|¯ñ5¾Æ×ø_ãk|¯óu¾Î×ù:_çë|¯óu¾Î×ù:_çë|?äùCş?äùCş?äùCş?äùCşoğ¾Á7øßà|ƒoğ¾Á7øßà|ƒoòM¾É7ù&ßä›|“oòM¾É7ù&ßä›|“?âø#şˆ?âø#şˆ?âø#şˆ?âø#şˆoñ-¾Å·øßâ[|‹oñ-¾Å·øßâ[|‹oóm¾Í·ù6ßæÛ|›oóm¾Í·ù6ßæÛ|›?æùcş˜?æùcş˜?æùcş˜?æùcş˜ïğ¾Ãwøßá;|‡ïğ¾Ãwøßá;|‡ïò]¾Ëwù.ßå»|—ïò]¾Ëwù.ßå»|—ïñ=¾Ç÷øßã{|ïñ=¾Ç÷øßã{|ïó}¾Ï÷ù>ßçû|Ÿïó}¾Ï÷ù>ßçû|Ÿğ~Àø?àü€ğ~Àø?àü€òC~Èù!?ä‡üòC~Èù!?ä‡üñ#~Äø?âGüˆñ#~Äø?âGüˆóc~Ìù1?æÇü˜óc~Ìù1?æÇü˜Ÿğ~ÂOø	?á'ü„Ÿğ~ÂOø	?á'ü„ŸòS~ÊOù)?å§ü”ŸòS~ÊOù)?å§ü”Ÿñ3~ÆÏø?ãgüŒŸñ3~ÆÏø?ãgüŒŸós~ÎÏù9?ççüœŸós~ÎÏù9?ççüœ_ğ~Á/ø¿àü‚_ğ~Á/ø¿àü‚_òK~É/ù%¿ä—ü’_òK~É/ù%¿ä—ü’_ñ+~Å¯ø¿âWüŠ_ñ+~Å¯ø¿âWüŠ_ók~Í¯ù5¿æ×üš_ók~Í¯ù5¿æ×üšßğ~Ãoø¿á7ü†ßğ~Ãoø¿á7ü†?áOøş„?áOøş„?áOøşä?×·µtYĞ1 ƒ ƒ Æ  ¼¿µÖıZ‹×ZëÛZŒA €A €A ÀÆ(sŸ[_¯³Nuñ?øüşâC|ˆñ!>Ä‡øâC|ˆñ!>Ä‡øæÃ|˜óa>Ì‡ù0æÃ|˜óa>Ì‡ù0á#|„ğ>ÂGøá#|„ğ>ÂGøå£|”òQ>ÊGù(å£|”òQ>ÊGù(ãc|Œñ1>ÆÇøãc|Œñ1>ÆÇøçã|œóq>ÎÇù8çã|œóq>ÎÇù8Ÿà|‚Oğ	>Á'øŸà|‚Oğ	>Á'øŸä“|’OòI>É'ù$Ÿä“|’OòI>É'ù$ŸâS|ŠOñ)>Å§øŸâS|ŠOñ)>Å§øŸæÓ|šOói>Í§ù4ŸæÓ|šOói>Í§ù4Ÿá3|†Ïğ>ÃgøŸá3|†Ïğ>ÃgøŸå³|–ÏòY>ëhÖÿÇ¬=.ËfÙ,›e³l–Í²96ÇæØ›cs¾óíœoç|;ÇçøŸãs|Ïñy>Ïçù<Ÿçó|Ïóy>Ïçù<Ÿçó|Ïó¾Àø_à|/ğ¾Àø_à|/ğE¾Èù"_ä‹|‘/òE¾Èù"_ä‹|‘/ò%¾Ä—ø_âK|‰/ñ%¾Ä—ø_âK|‰/ñe¾Ì—ù2_æË|™/óe¾Ì—ù2_æË|™/ó¾ÂWø
+_á+|…¯ğ¾ÂWø
+_á+|…¯ğU¾ÊWí ÕŸ•İ¡ÊVÙ*[e«l•­²U¶jÿ°¢üôõe÷øú½úƒb¿rª«Ü›¯·b¿ì._v—/»Ë×ÿ­İ¥fw©Ù}j¾[³·Ôì>5w®æàš¥f÷©Ù}jvŸ_ãk|¯ñu¾Î×å®Ë]—».w]ïu½×õ^×{İ÷ëz¯ë½®÷ºÜu¹r7änğ¾Á7øßà|ƒoğ¾Á7øßà›|“oòM¾É7ù&ßä›|“oòM¾É7ù&ßä[|‹oñ-¾Å·øßâ[|‹oñ-¾Å·øßâÛ|›oóm¾Í·ù6ßæÛ|›oóm¾Í·ù6ßæ;|‡ïğ¾Ãwøßá;|‡ïğ¾Ãwøßá»|—ïò]¾Ëwù.ßå»|—ïò]¾Ëwù.ßå{|ïñ=¾Ç÷øßã{|ïñ=¾Ç÷øßãû|Ÿïó}¾Ï÷ù>ßçû|Ÿïó}¾Ï÷ù>ßç¿ùoş›ÿæ¿ùoş›ÿv¿İßo÷÷ûÏê¯êïêŸêßê¿?ı4ø•rÿîÿÀı¸ÿ÷àşø?àü€ğ~Àø!?ä‡üòC~Èù!?ä‡üòC~Èù?âGüˆñ#~Äø?âGüˆñ#~Äø1?æÇü˜óc~Ìù1?æÇü˜óc~Ìù	?á'ü„Ÿğ~ÂOø	?á'ü„Ÿğ~ÂOø)?å§ü”ŸòS~ÊOù)?å§ü”ŸòS~ÊOù?ãgüŒŸñ3~ÆÏø?ãgüŒŸñ3~ÆÏø9?ççüœŸós~ÎÏù9?ççüœŸós~ÎÏù¿àü‚_ğ~Á/ø¿àü‚_ğ~Á/ø%¿ä—ü’_òK~É/ù%¿ä—ü’_òK~É/ù¿âWüŠ_ñ+~Å¯ø¿âWüŠ_ñ+~Å¯ø5¿æ×üš_ók~Í¯ù5¿æ×üš_ók~Í¯ù¿á7ü†ßğ~Ãoø¿á7ü†ßğ~Ãoø-¿å·ü–ßò[~Ëoù-¿å·ü–ßò[~Ëoù¿ãwüßñ;~Çïø¿ãwüßñ;~Çïø=¿ç÷üßó{~Ïïù=¿ç÷üßó{~ÿ/eíÍ ƒtğ†œqø2ÇŞ‘ƒs)e–¼EgîÊ<;xÎ;üM™ioÒAO‡ÿ(g½KG}«ÌÆ£·é¨·ã•ùxô>õw\(3òè;êñøeN½sG}õyÔçÑ[w’õôke^¼w'yOfıÉÌ=yóN2Ÿü×;™»'ïæIîÓŸ”Ù{òvd?ıC™¿'ïçÉï˜ÿüüüüüüüüüüüüüüüüüüüüügùÏòŸå?Ë–ÿ,ÿYş³ügùÏòŸå?Ë–ÿ,ÿYş³ügùÏòŸå?Ë–ÿâÌ‹>/²_œwÑãEî‹³.ú»È|qÎEoy/Î¸èë"ë…¿òWşÊ_ù+å¯ü•¿òWşÊ_ù+å¯ü•¿ñ7şÆßøãoü¿ñ7şÆßøãoü¿ówşÎßù;çïü¿ówşÎßù;çïüğşÁ?øÿàüƒğşÁ?øÿàüƒòOşÉ?ù'ÿäŸü“òOşÉ?ù'ÿäŸü“ñ/şÅ¿øÿâ_ü‹ñ/şÅ¿øÿâ_ü‹óoşÍ¿ù7ÿæßü›óoşÍ¿ù7ÿæßü›ÿğşÃøÿá?ü‡ÿğşÃøÿá?ü‡ÿ…ÿ…ÿå´—g°]U†ÏÚëS± +ÆÂÚ"%”HWZĞCïLBéBùáŒeFuôô²÷9gì`½÷fÃŞ»`A±½ÃÜqÜÏLryå™}Ÿ}îYßû½[~]~]~]~]~]~]~]~]~]~]~]~]~]~C~C~C~C~C~C~C~C~C~C~C~C~C~C~C~C~S~S~S~S~S~S~S~S~S~S~S~S~S~S~S~S~K~K~K~K~K~K~K~K~K~K~K~K~K~K~K~K~[~[~[~[~[~[~[~[~[~[~[~[~[~[~[~[~G~G~G~G~G~G~G~G~G~G~G~G~G~G~G¹ĞQ.t”]İ£«\è*ºÊ…®îÓU.t•5]åWW™ĞUÎt•]]åAWÓUnu•]İ§«Ìê){ºGOyÕSöä÷ä÷ä÷ä÷ä÷ä÷ä÷ä÷ä÷ä÷ä÷ä÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷å÷åääääääääääääääää'òù‰üD~"?‘ŸÈOä'òù‰üD~"?‘ŸÈOä§òSù©üT~*?•ŸÊOå§òSù©üT~*?•ŸÊOåååååååååååååååååääääääääääääääääåååååååååååååååågò3ù™üL~&?“ŸÉÏägò3ù™üL~&?“ŸÉÏt3Ã\ç0×=rÃ\ç0×9ÌuŸ\û)×~Êu¦sİ+×~ÊµŸrë\÷ËµŸrí§\g;×=sí§\û)×|z®Bû¹Ğ~.4#…­Ğ~.´ŸÍI¡ç+´ŸíçB³RèíçBû¹Ğ¼zÎBû¹Ğ~.4s…>«F©Vj?—š»RŸ·Ô~.µŸKÍ^©Ï\j?—ÚÏ¥æ¯Ôç.µŸKíçRb©Ï^nş÷ÔnTûï¿]­Váêµ Á“àÁ;g‚ßŞ¼xWğnàYàİÁ{€÷ï~+xoğ>à}Áû÷ >ü6ğÛÁ>|xøàw‚¿|øHğQà¹à£ÁÇ€>|øDğ<ğIà“Á§€OŸ>|øLğYà³Áç€ÏŸ>|x>øBğğBğEàwƒƒ—€////¯ ¯_^^^^^^Ş Ş¾|ørğ&ğà+ÁWoß¾|7øağàï‚şøGàŸ€ş)øçà_‚şø×àß‚şø÷à?‚Ÿ?şø/à?ƒÿşø9ğ?ª®_‚Gà÷c?ø"øûàÏ€¯©rÌû}\V¸zíğ7«<ùf\¿×‘e“Ì²ü…->Kõ>¯¨²ß¼•ÏğIğMøû°Oıü,øà|í–ŸÅ}l+Ÿé…¸Ï§À_Á9ás'àÍà[ÁãÙ°—örxøÕà7‚ßŞüz<Ï_«<ó\çß9Ğ›Âµ`ôÀ€øœGø}öø/Õ¦~¦®Ï˜Âm¦³fÃ¿ÌÏ{3ø^ğ]àûÁ€ß~üX•Ÿå\=ş6ø;àoáûÃ{A„¬‰¸÷®ÃudQ„ûG|/ãúS`<o„½íĞãz¼›Fïsè="?şÏ_û'ø{àUyò•¸ş$øFğgÁŸüUğ×1Øƒóâv c~z¸CwÈS÷"ğËÀÛ‚·×ÀÈ‡¼plà€·¿üğKÁ/cG:|ßyîçî5à×‚_F¾;ä»›~ûÃa¸ F;ô·#½Ïí	Æ~u;ƒwï
+Ş<¼'x/ğŞà}Àû‚÷ï> Œ}è°İAàƒÁ‡€>Œıí 	>
+<|4ø8ğñàÀ'‚çOŸ
+>|:øğ™à³ÀgƒÏŸ>¼ ¼Œ®îĞÕİ"ğbğğÅà¥àeàåàà•àKÀ«À«ÁkÀkÁëÀëÁÀÁ—/o_Qåù!?#äg„ü¬«üüúù_Æ¾òØWûÊc_yìS}ê±¿<ö•Ç¾òØ¿yë‘·yëÄßs¢Âÿ3ƒ¶ø{ş0»Ş§ñ]2›ùÙ®Æï#+"dE„,ŠæáyĞ-<ºˆg÷Ù¼øğ±¸ÎªM€ñÿºŠ¡«ºŠ¡«ºŠ¡«fÍ0k†Y3>?ºŠ¡«º¬¡ËZ £ËºŒ¡Ëº‹¡»fÉ0K†Y2tCw1tÃy0œC·1t›Æ» ¡ûº¡ûº¡ûæË0_†.dèB†.dèB†.dèB†.dsÀx·4¼[º’¡+º’¡+º’¡+º’aólèR†.eèR†.eØE†.eØEv
+»ÈĞ­»È°ËùhØe†nfÈKCŞv¡«òÚ·†İhèv†]ièz†®iØív2ïŠv>ïvø#àVÙ#¿=òÛ#¯=òÜãÿ÷Û‚ñü~Œü÷ÈÀÈW|õÈW¼ôÈC<ôÈC<ô³ÁÈC<ôÈ?üóÈ?üôÈ'|òÈ<òÈ<ñ˜÷ç'Â»E„.¡KG«ÀìÎèÚæ'Â¼Dx7‰Ş~øıà‚?ş0øãàO€ëà>ùaİ{Á ãùÏà|ø:ğõàÀ›Á7ƒoß‚óô4ßwÀ|ÌCÀ<Ìsx~Şõ31Å;LñöSŒş&ÀØó0óĞOúp@È×€<È³€¼	èyĞÿú_@Şä]@Ş…û?`_ìÿ€ı°?ú@À>èû6`¿ì›€}°ŸúA@Ø?û) ?äo@^ô­€>ãûŠ1î)pN1oèCyäñ>äÑ§ıBğE`ì¿¼¼Œ<÷KÁËÀËÁ+À+ÁØO}Úc~=Ş÷<Ş=Ş=ŞG=ŞG=ò>º|~x}•'çOÃÑ4¼İ4<k1Ïİ:ÇÈ‡ó#¿b|¾øBğ0ÎkŒóã¼Æ8¯1ÎkŒóã¼Æ8¯1ÎkŒóã¼Æ8¯1Îk¼
+¼¼¼Œóã<ÅÀÁ—‚Ñïbìóx}/¾|øê*»ÛÀ·ƒï ß	¾|7øğ½àûÀ÷ƒ ?~ü0øğ£àÇÀƒŸ ?ùöë4LëªŒğ¼Ï9£-Z˜Z¹ó¸dMe¥æ.*˜¸{f*.€˜&î¶£¢¹ƒû
+î;¸ïJj®h
+¹b
+®àR¦âV—}ê;uõ¹‹oïıÎÀüççœç÷ÃOãgğ³x~?_ÀÓñü"~	¿Š_Ã3ñ,ü:~¿‰ßÂ³ñÛ˜<Ûš‹ßÁïãyøü!şŒ?Áÿhú_×ÿ¿›üì‡à~ò[ß‚üä· ¿÷}·‚|ä» ßù.ÈwÑ³ï‚<‹âÅ0y=ÈƒA^òC/bL_ò~÷ƒ}ìë ïy?ÈûAßˆ•1},È§AŠ¿6'5]˜ÏÂ|æ³0Ÿ…ù,Ìga>óY˜ÏÂ|æ³0Ÿ…ù,Ìga>óY˜ÏÂ|æ³0Ÿ…ù,Ìga>óYÈ¯…üZÈwe)L(äãÂüæ¿´q^÷ÆËáå1ç«p¾
+ç«p¾
+ç«p¾
+ç«p¾
+ç«p¾
+ç«p¾
+ç«p¾Ê*xU¼¦ï”Õ1ı¯¬‰×Âkãuğºx=Ü¯7Àâ¾¸ŞÓÿ
+ı¤ôÇ›àMñfxs¼€â-1ı±l·ÁÛâíğöøÇxü¼#ş)Ş	ïŒwÁƒ0ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Ğï
+ı®Çô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»B¿+ô»2†ÇGà‘øH|ş=>ƒÅÇáãñ	øD<
+Æ'á“ñ)øT|>ŸÏÄgásğ8<Ÿ/Àâ‹ğÅø|)¾_¯ÀWâ«ğÕxˆ¯Á×âëğõø|#¾	ßŒoÁ·âÛğíø|'¾OÂÀwã{ğ½øø>|?~ ?ˆÂãÉøü(ş~?§à©øÏø	ü$~
+?ŸÁÏâiø9üü<~OÇ3ğ‹ø%ü2~¿Š_Ã3ñ,ü:~¿‰ßÂôÕò7<¿çà¹øüwü.~¿ç5œ:ú¥H¼7¸‡÷>ı¾…zø>úlîÀôÛ<“ÿ2÷Cæ~Èœ§ÌyÊœ§ÌyÊœ—ÌyÉÌ{fŞ3ó™÷Ì<gæ93Ï™yÎÌsf3ó˜™ÇÌ<fæ13™yÌÌcf3ó˜™ÇÌ¼åy˜û,7ï³èØ<5½Ş*-Ğğş·*ó“ÈG‰|”ÈG‰|”ÈG‰|”ÈG‰|”ÈGélL^JcğX|.>Ãä­D¾Jä«D¾Jä«D¾Jä«D¾Jä«D¾Jä¡DJä¡DJä¡DJä¡DJä¡DJä¡DJä¡DJä¡ä|r¿%òO"ÿ$òO"ÿ$òO"ÿ$òO"ÿ$òO¢ÿÔI|½_ç÷¯|>ÕÏ£^Ÿïÿs¿Uî¿J«Ü×•û°~ŒÉw•<WÙ•û¿ë«xE¼fÓÁ|óÕ^oŒû7ÜóîşìNë§ÎOoÖÆ{»~æ½hu¦Vã¾í—Vjx0~ ÏÄâY§ş=<×°ß[ğÓ'kü_ø¿÷ÅSğ<ÏÅ[ãxöm{xÎƒ>û™všz7>ã	ÍÖšØÜi­QÌÈşM·Ø-vDì‡Ù¸ù¹¶2;3³3[£ù:#Ó92™<“É[<_{u¼nŞ!ÍûdŞ“?ÓÎx•¾”éK™>‘éi$>’ß<Ğb¿µØoq> o‡·ÆÛc>¯‚‡â}ğÁøWø7x¾OÀä— Ÿù$È#A	òH°¿‚}ì³`¿û5Ø¯Á~É˜ıìŸ`¿}'è;A_öeLÄä± y,ÈcÁ¼ù+È_1	“‚|ä£ ù(èwAÿúH<ésAŸ‹˜<Ó1ù#fcúXĞÇ‚>ôÉÄùNÛàmq^o„¹_Ò@LŞIëàÍğ’M·aîã6÷y{7¼;Şo‰¹Û|~íøG˜ß¿½æïÓ&?·ù|Û{áŸá½1÷qûçx_¼Äì›6÷}û|(şş%f_´Ùíßâßáø0|8>³¯ÛìëöQ˜¾Ô>ƒÅÇáãñ	øÄ¦»–Ãô©.şŞ]â¾7¿ÖÆÜ]«àµ0g·‹ÏºkÓ¦—]÷âûûüw·øÛ¶øy->ëŸuë¤¦ãL<sVƒY	ÎBì‰™µÏÇÌ~0ûÁİX;09¿N8ãN¼ æïW?‡?¿€¿ˆÂã/á/cæ§.‚¿‚Å‹áÅñ×ñ˜İV—ÂKãe0ç¯rş*»»öÆÜuy¼^¯„É
+õ[¸¯Œ¿‡¿€¹Ÿêªx5üCL­k`²Nåş«kc²P]ÓskÌİ^¹Û+w{í‹ÉucÜo‚¹¯+Y®nb²W%+U²R%‹U²l%‹V²\İïˆwÂì«:{¿’=+Ù³îã!x(f_Ôa˜ıSÉŠ•¬XÉŠ•¬XÉŠu8ŞïÀdÉJ–¬dÉJ–¬ìÏJ–¬dÉJ–¬dÉJ–¬#0Y±’'*y¢²¿+û¿’+Y±’+Y±’+ù¥’_*Y±’ë(<“êÉø|*>ŸÏÀä«z>ŸƒÉcu,>Ÿ‡ÇaòW%Õğ…ø"|1¾_Š/Ã—ã+ğ•ø*|5€'âkğµø:|=¾ß„oÆ·à[ñmøv|7¾ß‹ïÃ÷ãğƒø!ü0ŒÃã)x*~?…ŸÆÏàgñ4<ÏÀ/â—ğËøü*~ÏÄ³ğëøü&ƒçâwğ»ø=ü>‡?ÀâšNœ×ÄyMœ×ÄyMÌWz?ŠÙ?‰}“Ø7‰}“Ø/‰}’Ø'i4Øt»™ÿÓëVcZgÿOÿnşëù¯ç¿ÿúÿéu«kxI¼^/n:õo:ØQm2h¦f:`¬×àçwàîÄğówÃ»ã=ğ`<Óyó<ï‰‡5İ=ïŠyşn¿›çïæù»y¾îƒğÁ˜çïæù»}ş½0»º{o~:`¦f:`¦f:`¦f:Z¦£e:Tv~Éd™yÏt LÊtLçÉtšL§Éd¾LæËdÔLFÍtªL§ÊcğXL‡ÍtØ<Óó8<ÓÙòøN|¦cæ0.Óá
+óKcî×Ì|gæ;;ßûà1ç/sşò!Mwlº³^äŸì—pTÕÇÏ½÷½„lÃ/³Ixø¶MCH¤hA\Ânø~l°»ˆ°	MbQGiªØĞ-K¤¶HkÕiKÛñ!N›GÊI™È@-ı¡PGjí´Ê(ØZ)ıEG¥äõ¼Í&e¿SÿèøGÇÜ{?÷Ş½ïŞsÏ¹çàqÀãaıç€1ö Ï®|ğ¼\ğxØƒ }—óë€ë/FgŸ>	ö)/CÎ)ñ<cÊËÀp_æàpx5ğÍÀ«€o¾xm.+8Ÿ‚ó+‚ó+8¿zøàKÀÿù)Ÿ}W÷¸ô1÷³ 8¼xğràğ=ğä#A>ä#A>òOÀo Ÿş#ğ9à×ÿ ŒïËW€á½”(ß/ƒ¿•¿}— ¿rÜ/Ä[r	pC.	âÓ ÄçA¬C<„x6˜<
+¸ x4p!ğ`ˆÿƒş(p0ø£ ø£ ø£à`ÈO‚WC~ÿÿ-á}’èÿÁßHˆÿdôc0ø?şOş(Ğö¯Àş¼ç
+Şsú­À(xßÄ‡âSñ¢ü0Ä‡âÏÀ€~8÷}ù Û¢b»rˆmÊ!7-‡»0Ø~ l? ¶ Û€mÀ¶`;° ØFÀ\¼3‡å‹³~—Èñíëš tÅÜü 0Äî&äV&äræw€!÷0!V4!73AwMø 0ä.&äB&ä†&èºùx.Û&°ôÉ}²AŸlĞ'|‰¾Ä_bƒ/±áí·áí·A?mĞOŞ~|“¾Éßdƒo²Á>lğ%6Øƒö`ƒ/±Á—Ø`/6Ø‹]\šË~·Şr?¼åÆ ğÓÀÇ€ÿr]r]ãğÏrY{øğİÀ÷Àz /äe€¼ˆˆÈ5ÈİÈİÈİÈİğ½ø^bqîÏÀûƒXÜˆ777¯†ÜË€ÜËø0ÄÄÄÄÄÂÄJÆ:`ˆ­ŒÉÀ× ƒ½`o¼Ø·öm€}I`ˆİÀ-À­À?Üñƒïï·ïŸï«±øVàÏ o¾ü·q'ğ]ÀŸ¥¡?sˆÍÒ,Wdyr–gd¹,Ë5Y†û7ÁşMĞâøı‡íÛÿÇíPæu P¶^’­×fë•ï2>Ü¿–¼ZZAÇ²­(Ï¶e8Ûj’ô*ÒŸ¢
+=E¥ÚtbsÃÿ^òêÁUî9ı*Üäş5“ÉzÙ_¿¼q.ĞıôõPàvï!:!:¨_¬¡ÃtZL¦ ¥H£>ZJ¿®{Š6Ò÷yşf:Jûèáßl¢‰<ºGÜ-Ì!n¯§íîwi
+ÕĞ}ôÍæU÷Ğy÷q÷G<ÚD«è =Á¿ÿ¹°ä!m¼ûC÷5E¼æv9å.u{hUQE¹w;á”ê%·|TË»{”¾MûéizSl‡İ6·Ó=é!É£“¨™K—8,Î¨í>÷Q÷w%QA•üÕí¥ïñú=\‰ˆ¸Ul{Å>’Ûäam‡^<x™å0•rYD·ÓN–@?Ëıoô¶¸ }ªHmVÇİëÜ¿S!5ğ)½“´R'—/sÙÃgzRä‰bˆŠ.ñ Ø'—•r•ŒÉÏÉ»å9µ\­Q÷¨çµ»´^½[(¯pğ¢û¤ûŒû“A7Ó´•Ow”NÒ?è¡x­IœlÖŠ:±–KJ<"ûÅ~Ñ/£b@œ”ÅËâUqA\’º#'Êir³Ü+ŸGå³ª]íSßT/«‹Ú<]êûõ³yüß®Ü5ø¬[ëqß"Å÷óÍÔÑrZGI>í4‹¾À§ø—¾µc¬g'2åU1‰ÎÓ[,ãD©˜)–qY.Vˆ¢]|Kü˜Ë‘Ì^ş)ù"d+‹å$Ù,×ËM2%_)U¦*ÕµZõpù©:­.©Kš®×&jµÅÔ­mÒæò˜v@ëÕÓgëóôåúMzJß¥w«ú)ıtŞÖ¼=y½yòş’_‘¿4ÿöün¾¬³™èzäOSx÷3é6Ú Âb=}oc¿HRšµ«Eìä=ŞÁ~îµU-”3XĞ½¬­SíRkh¿û¢:H¿fMñ|pŠl­ı|;ÛhkÑpÉX]ö‹"CS¼k×[‘"ÁbÜ!tB…¦VN­øxy`Šõ1¿yÍdcRYi‰¯øê‰Æ[tÕ˜ÂÑ£òótMIAU«>a:å	G+·-ªöØJrGòŠ„crW}îÇLd¦™¹3C<s#ÌÍÌEæ\š[]eF,ÓùeØ2ûÄêÆ·ï[qÓ9Ÿi/Ë´È´¯â¶ßÏ?0#¾¶°éˆ„qê;ÛÒ‘D˜—ë±FWWyMˆ
+½…ZìjóqåÍˆ8¥V8â”XáÌ˜
+D’-N´1	—ùıqîã®¦£ºªİÛ'íÓbµìîÑú„×J®‰9*wdÂ[kì4§Ø
+;Å[ÎúşƒÃ­H÷ƒÔ'[Óõ,‚İ‹†0áQ²›©¡ÙäeåxÌ;²›ğöØÚn«ñº¦S`ÕYmé—šb½¥¡Òˆ•ÇŠÆzKB%¨®ê÷m­õóéû«çWÏ÷êZ¿oëPıú—†ú5P˜™wì®šF ¼/Y‹yŸ¹!ó‹7[ãı×ZCé5<ÿâ‚ÙÎûYàHÖpôÀâ¤“jŞF[xhs‰poAI©w†D]œç'ÒEsø3<¿È2Ó‰¯Ğ:ÿfnO2Û“(ºH^Ó»è]áñávgF0Şç|V›w¿‘,[¾ÈÌh¼=;œ™Ñ˜ß1ãÜÑGÓªú¨ ;$ÄxŸpwôQØè§RëÖòp•§jíaş>CuwTú¹¬2ëyázOWÌ´™^Ü’6ëÍ6V&-©y 5ŸÎl±œh%1/i¶ÆãsxéŞ:ZftœWèÈ®Ğ‘Y¸Ì“fT5ğ1Ë£±Æ˜“
+—9¡pœoÕw søââquíÈN¹îj÷e÷<“÷|m%7>1´J3¯ÁKÄÓé!²üÎ@:]–öllˆûaG(ÛÑG™X¢}"Í¥,YFæ~ËÏÛŠ{2Å*=¬Q}tİ{Køú+%üIŞíõ	×ü$<ûıHxÎû’pí—ğ\Şs­'á>8	ÏË‘ğï-áĞ•ş7ïe[euÆñç¾÷½ï½¥„`'¢@N>¢”I) -Ôò!­PAp¦–¢èÜG#¤—Ét¦š1÷á®Ä’­:£Ñ¬Wqsn&‘S*è¸8Q¾ŞısÏ{½½ı &Ä7ùçÎyÏÇsóœçyÎt¤½İh¸ğ
+ixFo4<³WÕµ†ï@æYªáÙßœ†‹:h¸¸gÏI×ğ\¤c4\r…4|go4\Ú+ÏëZÃó‘yjxÁ7§á…4|WÏ^”®á2¤]d4\~…4|wo4¼¸W^Òµ†+y‰jxiJÃ·Ş/é®ÉP¨\q•/KSy2‡oô¥Ñ"}C_¬¾p*{§„:dµÛÉ!W×´³ …SÎaYèV“ôVËíÑ\)Œ”Ë’P\œ„l3Ã¹Rêî“eôMP/ƒu¬ö,ù Ü	æÚr1}ÛÌ1Dç1\-±ë¥µ†‚=¼++À¯)7ºíÒèÈ÷¨ïeÜAWäÚtŒ—0}ø?_ûn•&Ê+7œr‚r~t›äÁc´c§Àn–‡u¿ìåÛ°îı!Ö˜
+OEôQùn›C­
+ÿ}ş×P®cıÍÚ¦šqÕ2yêø_È¸Ôk(g#G2 ò}ş!çjyÂÙ‡<û$Çî{¨Ù7ûHí	ù­L‘”±(¬ù}³g™—&[&j20?<Q*á5vßs·e—[âÿ}µFË ì#![ÁBw•,£Ş9#Mìƒ:¨0\í·¹~Sø3YÇ¿QŞnt¸
+½÷q>—©ÎIïåÉrì«˜ù——™óc«üÓ¬?ÊÌs\ª(·(ÌÚì+Ğ•ê‡¶bÎv6ë§ü)s”*’ç„î˜
+Uïzö¡òK‰Èg²‚>M AûöÏÜ{tŒg®~vÆ4V;¿»ù•Á`¡¬Î+ ÿ_e®1NÂ? ×-oĞîÃ{µò‚]6v‹í¨;ÁF˜k¸ÚŸ±İä>’g–¼;7ÈQoŸT€g€Ş7Ñ{£cõŞs«©í¬ç­{T›êÄ}Í,2ıÕŞ.ÇÁú™löÃ}Vû„'Áßïµá*üËDY¾^V#ó$tò!c†·cÇÜ{êÏ0÷WüOõş;×Ë&eÎ­¯©Â7)?*uz‡ìüèWúuĞOÏJïA&«ïĞûÃm½0¥»¯Îg¸¹ßÊm–wøÇì}­é-¿Ôjî¿9ÛàÜî´÷RäÂ‹°Ô‚­"×ÂÀçàäÿ‹KáÿÀ9ğNµ¥´3P½Õ_*F¦@_F¡„Ô¹UÚÔÇ>ÏúÂ¤¿™/`îiÌ}¯ÊÀİ8¯æRy"÷ËÈH‰Ô³N½{#Ü`|q}ôg²HfÑ·Ş€¶ÈO$Ÿjêö>%Û[9ŸvÉ¥<Î{O¦Ãy‘£´GV Ãúè^ú'$7šeÚ´ÿ*îp}ä²9Ê¼+%.¸{$yß½ÛĞ§ÈD÷9Úüwëe02Åù·ûTş1ıŠL_‘Ş³r|µ»“¥²9ãŞİ”ÛÛÊ>å«‘S×ÚhâR½®§{×õÑáËè=nâ˜îKŒßÎuÂ2™ó¼×ep´ıüHâèıÆ¯d.µëÁf®•fl‘7PÛ6µµÕz+o=1:<ût¨M\ü“´—”Õv´ícl«ÁöÛšfg÷f”ÁÅù–—Ú¾Û’k˜¤2nâl6aG[,×iÙK+w9:›â_Tû66.æ®^et\mìè)ÃØŸû{)Pğ‰ñ‹uRl}sòÔKwÿ»Kj¼>²ÿùb¸Z^dŞ×İÇe¬ú°P¾,`ıfĞ’í?ÊÙmâZ©õÿe&î“fĞY-Í Åä:É~e&Ö’_…r¥Ç/-¯ê]}fŞš“øgÃÈ‹Æ§éú	ñÜYªn—çÕN£C°³52½/ïˆÁ»”ëá·ÁiĞ€“@ûÍs(¿şaÏv'hNC‹ÅÖP™Üƒ½GYAŒ Ægoã"M¡oiÌwÆ+Ç_ÚD<Ÿhb:}ÀM±sR»F*Õï˜|n½ô“ƒÑ&FåÃùYoJ~ß)kÛxmêÇ‚ÜPs?ó"eÆom¶¹Vvt»dg•™r‡6õwAÌÓÜ-ë˜lˆ5Ë¼èQ™}_î‹üVªœ³²8ö±Tyg¨ï•»‚Xˆ¬Cñm~Z¬è¯Ïˆ©š3iŞøáÀÿfÆ"îşkYoË¢Ø©ŒGŞdœôÑçÒ±¬‹8Ş!#óN‚¿€]Ç?ÿŸ6ÌëbO{Ó×O‹ó]ÆÓÔ¼6¾™ü,™‹ã÷hŞÜ‰Óò“Ÿ\{™è[BcXJ÷_å ™\`|«­£¯“èëiÆŞ®IÅÌbj’ı§,¿`ùOj³jw™œ{»ä^è·Ñê¯Ñê/Èc”7YcùÚÌ|¦;îç¤Ø?fùã¯qòÍ=´ä=—ck7ÙÜ)OJ±9+éoß[ô¬»Ímûéù¯ør¶÷8ëœéî?2>~ZÕŸõ|Öş{İıbÀå8ólRñò2œöşè;îï~y0ò¡ìvk‰óµŞ@\¯#O!¤>#Ô>±#¼%?àÌçÉ·ÜbÇÆöÊØ'ı¨¯psäVÆõ‡¯ëÄûd¹ûCY-"‡Ù–ò‘_İ5½%ÎÿdÕ;şösM]ËE”÷£×*ÍÕhÛ¯9s¼¦íü×|¬JË¶ÿb·¸WÎxò¹ÈbŞ9ÏÊOé³Šñ}´> 	½äÀkàám2‡òTŞ¸;è·Ÿ6Em/Áúf­¢\	ôœJLYcÿYg#mıà^Y§ëh;ü¤3B²‰ç×éœ¡ÈEëiÙyK9/È pD¶„s¨›Á¸ğPê+¥’÷—áè$ö'Ë½ÿ´Ú¥æFÄêS¼-À©àÜƒî¾â8ÊôàÃ‚÷©±K½ï)tÈ3ª5.ùÿ5şsŸÁ7®'Ã¿‘Šğ¿¥¯ó8nù¸éK~_FÎ\+%:?ç=4úg©ˆğßùr˜È¹lO‘9Nu¢z²gø—©î»äÿ’É”×»¯Â‡Í[ê1ø1ÆÔâ»f‡ãè5!µôæ¾$"ceBt=qj>t
+wào¼AZˆ/ñÎúl5`ß¡¸<Ì¸˜ÍO§tªÛ¾ºÍ)R¦ËGş)r±Y`fè€Ìt>’,ıñ¯ÌsÊ¥ŸÅHÍ%Ë9÷ ‚?ñ¤±å2…1Y©¾ÁØ²0—Í#™ÄÅÊ$.'qşiû¯Øö³ycç\—7J©Â{_šõ\øß;!æœråïÑ°¦Mßœ5İå×Ş£FÖaô†SÖøœk¼RÙoF'c-Ï#¬Î†•ôÑ±×~ñŞ4¹Êæ&Åÿ‘¿Âˆn‰–ónÁ.¢oÊbîH…ÉUËe	w¼ÊÛMŞñœäkßÌx}9æ½Ît¹!¼V®R_â¼B™·Q°62F¡¹‹õ)İ"Ò,K#¥Qî|ô!‹mà-îö/ğ%ÕÆ‡t‚×Â;Ä6€:°¬á½Ön|O·ˆâ7±ãàø+8"[²FK¥Bı‘ÅtPğÆË¶‰ëã?ûÎCŠF¡PÄ
+”²¯ÁNHˆ3Äqş:ÿœÄvbD6ÿ9Ÿ“;Ÿß%v,$:­-š¦1µ¢¤ªšª©Z×mÚºŒ­êÆÚRP§–?ejĞØ´mÒT‰v¬…}ßåc€ô>~ïÎïİûó{ï÷¾?°Íâğ"üpÅ Æìj!p±Â!ÓŞ–
+´áT¢]%ÚU¢]eÈï«wÂœãÓósó¼JyîGïDÅ~ô*[À0Ø ¶€½˜ß^s,óko¯¥µ.ö¼oó|ÿÖwïfGÏı´Ósí¬ä}Ÿ{À!ğ'ôû¶ù½;ÚÅ\Pÿ^ûTÁïWÁïWÁÇsî6ïÊ7ĞTíCU
+L€chì†yßnòû¸3TíNà}‰VÜnŒ8+ÕîïÑ&÷;ÈA›<>¾f×N‚·Á[à8^À?…ª:à—ÿ×¶ß·0ŸÍ{¸_¡êŠ%èƒïïÛÙ7ÿŸÆ¿ƒü%Œ¡aÛÓ²£m?^ßõ.Ì1c¼|fÛ%æ7a|ošıÁİñ¡c©ø1ÎõGğg8ÏÖ}rG›ß|ÿ4¸Ş±Êï[œ ³à8xÍZ³óVÓVıv»»‘{Å¶/÷9¶¿1}åsîö¿mKÛ4Yş@÷÷RÇ¶±mgû|ßT¾‡:\#rßÍ}2üí*×Js½ÌãAÜw>×€©á,íÒ»}gEµºşJK°—·Y4šäh%Öh…gr] }\rİfê&Äû“´O<GĞfk]g_>eÆ¶\/á¿„Kô‚»ñèIhX;Ş´t	üìĞÎ^hç´s;´ğ‹ĞÂehå#Ğ2û‘§ğ¼]ü„6"oÄÿÕÈ×B+V.^Ïq—™zş,ıJØvÖ{w¾÷•+¾JGà‹÷ÛõÜWq—õR´v£ëZw=/@ûıs°ú7µaÚ>è§]h×,­ÃwÅD36ü)Uq{}ÿ¢uâaSüúú˜Q¯·©‡õkÇ:¬†šÌó…²u¯Ú÷³©AÅ(=âøÃµs\_BC­æ@ÓÔZ4BOÍq‚òVkí4Ïï2ø{^ví†·9<0× ŸXqUœÇ®?ƒCÔfj s¼6Ø?®7Èëş=ÎÆvìé‡é!w5-çÈ'>E­ÃÑ›(Â!ítâ^Z,|Œı4JCb=}ƒãüŒv	}´Ø}üĞ´M®õä%úDr_ 5èc•c–B9°‹¡-£ÅÎÿĞRA¤¥N™–8cxæG½3TÁ©˜£ÆÊİªôQ'p:¶RHŒÑÄv.°P<JŠZf×®Ò6(R£‡}eÚ
+8]ø[€ğìS}+)ä³DWŸEş-×çŸ>/JTÖˆìôá4tt7­>¤•®‡ ©©F<Nµ7aëîŸû€ßö=€q<ˆsú€‡®]šGø	øæçùµ¹yn}ÆzãtÑÔ‘ëÁZğ%®ŸyÙò)ÓŞ“X—3ş[m÷S8/¿C|q–z­}ò¤ëùÜiÚâyœê¸_á‡i»ğlıy>(|¶Ú¹ó:ÿr—L<(Óuğ,¤Pÿœ{È!x©Uø­^£*Wú?Lë…oÓ¬uŸEàó|´ì°v|Ÿ‡ÇCÖ~ãëacNó\H›QZó2ÎÙe³ÎFG:OãŒı’FñÌÙ€çõÈ¿ÌË¼­ãZ„|§ Ó^ÿ{„=w‘wÁôÀ7mÀ«Åyò›ñÙß“] Fñ
+ù+4jBİ¼/ÇEJğoİòş¿¸şéuZÄã\~†*àL¾Iuâ{Ğ+WœÁ¾Ã~óÒBçYZà|ŸîãñÎeïÿË]Ûà/=°İ"øzƒxaİtÚáœ5ãÈÀx9 zD/|ó|¹Sx‹*mÄÇhXø)âøšR_ÅÌ{tcœ"Ğ İĞAñ7f¡õ$êşMQq9âª Ş*ø¦~Ä´ßÅû°Vµô5÷Ï©İ½m–SÈ-c¥&qÎè{4 >‰÷‹Ñî‹Ô†şüÂÄ1ıô¸p‚F»FÅgqÎF)"Ì¡M’†pŞ:ÅVº,¾K¯`Ü£`‡Ã
+Ïvğ£’V5Ù*wéóå}¨r.11¡b—¦‰¾PJ©Èï?gJ%XJg©–N°´Ä$I:ËŒ±Le‘¦ØXšélÌ`ªÁr:ËLSÙ’Á
+y¦+LŸfFM%2,!O²„Âz,QfÉ„Î’RàQfI”
+,‰>Ñ³ÄR²|Ã Ó|éq 'Yz&Ï¤ä“Ts\y>4É`Şóæ ÇT–Éó±f¦À“LN3Ye²^dòT™ÉÓ,›(šSÁ­éÈÖŒÆs)¦$rLA·Š„rv’)cLQ˜¢"iLA3EÏ€,SŠLMÈLM2¿
+–Dã«¢N!åÁS§Y3ÎI–ËH,'#eAå–ÓìLL2-É´4’Î—SCEMCÊ2mFcùËëÖON±B4¾Ø…|†ğ\DÂºã+zr‚éRèL—Mƒ¨LG_:„Jn#,ˆ%4df(ÌÈs›3Š“lJaX©é16=¥±bBbXÜR^f3°,P²÷Ø2şó2ı‘¾B¼˜(Öôä$mÀ©tÇ"¥|L­3’mu­á\©/·eF´t}¦.0õ¶%"¾p¸¥ÔjËM::|Óár³?Ô£m&PìœL–ıõÃšR§»º"Ş‰Îv¿ÜóuE†”¤‘7öûJ©Î²Ñ¬mKá@HÕòÃ­-rs‡,“5zf¤$—‡‡¢±°o¤=ğk#êæñæhDŠ•š`´·.$‡‡s=CÁÁèL_ÛH¶»Eõvø&Ú²ÆD"†6G¦GŠåL_®ä©m­m•'&Û£İR°5ØÕŞë™‰—âa£fH5"‘Áˆ‘	Ç‡[ğ¦;+÷&Ûò½iµ3ÔëIv´¤âl¾6hl¯õÕõ5g“‰æúælOİH8€yfSÑHCfH‰N¦ÃŞæ°/RêeIñÇ4Õ×ìİ\
+–üíÁp.î
+uÔ¥}ŞB@ïˆÅ‡û‡ã#İƒE£sÆ¨ñ–Şd±w°{<25èË½š·ÜVôdë”TØ¿94.dşKay¤¹ªCAxA4"ô…¡Á&H$‰™Ém‚év ¬şùmà¤ªï¯ƒïÿ¢_J¬—vBZ;Å×	Üdÿ®ö]¯lğrÁ’°ù^úÖ;il[Pªı@y HS·LÄ™7ëš‘ÅilÃ­ºŒS 4És´’b,5`fœÌMºÆ´èìÔ}güI¹Óéç¿z û
+ªÌ}G{fR0¥³~Y»F½uxäĞ?²ùù±”a©öÂ#øfşr‘#ÇºZâd’Jhzù 3àoçØØ»½ ‘%İsPÓ(5n%*¤+¦_ád˜UÅ-Úş)hÓÎç,×Ua/x[ş¯Q”[¶Ó® „Â©AÆquÎÑÜúıò¶7!rsıgáúMe)²,#Š¸;THèíMËx§Òâ†lõ›§’‹LlL«®ëYR›IOÌşşãàÉl—:µÃX$UZ¿Sı&}šWîq›-1’9÷*°™"ì'¤;	p×ÚîÎZÅ;›‰ø
+í°¬±à½k2ˆµRñìsèÙ€BÓ5¬l}t6q
+Ww•:"‰~&˜ìIRÿ³í.ƒ8‹ÔÕZÖ~[gq<Ö­W.PÀwùSœ ‰ Õı%&Şjë­Ö\ƒ z:¡àlw8=›ø@³®3ä{Õ¾®L§]sıczd4ı¹UQ›FHòT3Î¤Ó#Û»]ƒà¯â}”oÙ%øI÷ó´.—Û’[W]ËÿsA]f¨;R©.î´Š±>4;»Eäm0„óò[Yà+Ù³k<²&dÁÖïtäçéÌ·Æ·êÊÚ·ªJÉ)9ÙtÔ<Gúóª,&/c?¬½HÀÓsÂ	æ&î¡Àåì “K´…ÌUiÓ)¯óõäòâÔNFØjÕluèäËÙ®&}ËR7ÍoPvÉÒÚ¾ä~ÅŞâ¥DçífvËªİti•5"»Fß5¼ŒËW|M‰:’éî)ñj©•5°M$N³ôV9äÚïUÆJÊEÃ!.Å¶ùZü¹ñy™€i×ó0ÓtÓîæJŠ](á1ìtÔÍxefm £ó±B2«M[Omş\ ôÕ3ç=?ú@ø’dƒÆ,N%W™ËĞ&/D¥àíï¢ŒÈ#h]:wcp5$€ö¸ —¨ƒû¹'S•xÓ§™º*Rô×™dF4Õ_ğGÿ-ñó³¬ÖœşfË’{Ë(ïM§ï„Æõ51Gº3]Lôßk¯awG<P‚‡4io}édJÆa9›ƒ/¦Ô ãŠçt[©¤!šĞÀ	.©ˆ3»f‘‰{õéYx¼2Ûd<r!ËOÀçŞß/Twœ|ôÙ8¹Òxóô$î—Uß¼ıõ°yçŠ[¥ãHùÁşâÑ@~ï%õmÀÑª_©%eÙ¤>­x\®\}	E*7Äw!ßß•ü<ªé¥üaR_5˜¡Í*ÕËU‚v˜Ü¥6ÉÂXaË‡#!ƒÎğ¦™Û':dIwThx\”à7øYí2×LoÖß16ÕĞO„v(¨¬İj3h»Ş—üùb‹j¡9UR(Øb’é›kÃ
++Ğ0gı;İ³;5ê\]8÷ëUvîk½NØš ãôŸÜbÏ½Z=‘Ò¨eÎ‡›'ç@šÉ„¹#³R†WUl…nõãƒ&µpdŸÙ=®B8 KF§èĞKqS9·ÔKèG ½j-®ÄÂ^;Ÿ1².€Î Ç‰ûmõnLfC	ıä8½ÒEwø£Èãí^‘˜%};y¼]9õÑeÃ{</j“«å¨ô5å•Ig–Ì]ÓÕèÉ¡~€B}?	¥îhw.ægeõƒôÔÈèÃdùM@/:K0¤ÑIº<ZŞä<³wà_»ÁüÃÎï$š¬_ÔÑÆIÛ®ğó¹\Èœ¸×/Vóæ‡êë$}äŒÌšVÚöbön†é¿‰*s,riä‚Xİò®çâü™å]yÙY5T72é§FÑŞ6ËJ×©’¨EµW
+îÌP§;ªeäP%x¤7Òv<BãÖÒu1¥_Ši}{|•ÊVf‡ÄìQüÇtµ9m]aí.»áÑ2›å™¦%¤d,[öÚna‚–¼¶d=-9Á–dÉoïÚF²[hÊöG‡h€I	MË´LRÒfÚ4<Z^I’léN3´)Ih2´!È«S^a wÍ&p5ß¹Gß=sÏ•æJç»Z9”V¼¶Â£š—¶U³…jÆ:G!·êŠS$Z”ÈKn*›™!³P"¤f’LØ$B‚†h^^{I’¢†¼•P¤YL©jg`AKX°Ï,yq–€ºà$Hµe °Eü‰,^oâì1Š*b„²B`pI7fGk,–ªgİ
+ÁæÂq
+¥L®ä'àøˆè²5Áf†¸Öä	r™p&‰*iÄ•p%“´Aıt`CUÒªÍzx'œ £~¶È8º­5;<œ°+U¡pE+PËÀ˜G/Q©T¡…”/KÀ¥¬m)¸¯–FÕšMùĞLáQ“è	·j'é¼jµÉaŞçb\Ç©‹ñv-"R¾OpÎÊã4¢òü ¥ê¥¸ì3
+Êºëè…(ñ±‘DUİ)ò¦@8Çïçëñ$V9ƒ¶%6R¦á¸´“õ…x‰á°£y+h”êÃ:ÌRœ«9¤f#­B‹ÊPS–‰|¥Š,Áæ¬ê¢ÙL^h–á@¦B(…É!:_Á‡’XSı¡LËb‹¯£vÅÎ¢U/…‘ƒ*šªI"Ò"š‘ìÄ…¬àÄ’-DiÌŠç+SrP’¹$[RÉx,ƒ±XL3…é|ØcäRš‰€w]vq®Z“A,î£`S™H  å(É×auš)Õàl9‘TÁ®sÂÔšB’—É4­T‡ø–¦°X}0·›˜×Q‚Ê›DÉG‚E¹TË,QM•Oy%_A$¬h0ÄÛáT¤­¥ÜäjŞ,Y)¸Uø\´ Ù¤EC~Š3\KÏ°vÜ0¬êHhE
+aŠz²†eéb#®"­4F5¹bˆĞÂHDÕü¼lË¦µ¼t$(LtÁ¤KLšBF5K"1 Ê`”,À^ÂÁÒ	óÑ2µFAB<x…5^­Œ×ĞF‚‹¢êË
+ŸD]mù3œäEURòl8Âc¬?‚Åd)¡I“Œ”ñ¹i±hÑª{MË%×©Z: 0‰{i9Ÿ
+Åİ$¨GuW÷…“-ë@ól¹@¨Ñš„Å¸hä5Å›t`€ÍtÖ‡$êCI¦(‘ŒJ6„/óÒg‹™r]3#QXw£¸L¸®œwÒbU9à'òŒ¦×H„×^cœÿDÃ¶lÎÇD8ÔcÚğÆeÖKr&+“2E¦8½¨%TK&|`ã(øÏÔ=„[É6İl$i(4IŠ´šŠ*uÊa‘høÃ1\÷@ËĞ–cpM!BÓş².	%Xë	^wPŒ %’Qƒ°ıŒ‡Y4„G%>™(Ç<-‹¦ «0âÚiœ	r%Ô š_4Ë2ª!$/Ô†Á·Šq˜ÑHø`oÒ†€vO*¤bàIÆ¢|ÎÑ!_–Jy‰bµÁ³kš§4JE¤l+@ÄÊšM—tù,jY¸V®Ú©ˆ"$$oÀ,ø‰ÉIyØOZ–" dAi9¤˜¬TÍœ_ÍğLç&M®WÒKõ‡”N]˜Õõ»gÖ"[6,›û`Ã­cg_+­šuôÒ/.¿ê/?İ½Y·ö­ı”9øâ}]şá};Z—Ş˜»ª!g~şŞ4z|Ò'‡_5÷ÒïµÓÜÒàÃë?XøÔ]#ÚØO=‹oğfÏŞsbWz»ç—[g¾´©ïéOOæÌÀ¹…‹vœXÒ9gÃ´|hêo–/zılô“·×ÇZ“cÏO§W½3òï±™?¾;›Øµÿ—bïüòÎ‡W|c³¸gpõùeÍ}Wf§ñ-ç¡‹¾O2}ÿùŞ¡ö>Ñ§Ş÷;ïŞ?<ôBÜ38ÑîYë½;ûÎ½ğZ1á|ôäãÖ	-ÈÕÔÕÏ•¸9«±àê¶®ş9Áù/şşöşè´ûİƒ÷×WŒ¾r÷¶=×^~óg³ÿ¥íxò®…Ç.,¥şz9›¾ì®‡éxÿŞ»×íŞşaïÈÅ±§o‚¦9ó¯,«<ûÁèÙË·ıîğÁÂæ‹_½>“é?yupãŸr±7ï?xäøÇ¿ı–Ìş1¨<íêê¥kÿ¹~Gãä‰#ß¢ÿå½Ó{¾ròİå®uZ]²`Éû[!h·åQïŒîzådiÁ/º|êíÄ¶¯ïˆ*‘›4æÏ~å³W÷ÁsNü¹2olıÜsqåO{¾ùfqcıöÓSÿv±ëõÙWw;ÿX¾°©ïĞÊ÷ï_*Y	ñuîíÚIı·òÜµ]ÿøöÔÇÎ@Ğxë è… 9Ó@? 0ã#7@~×xp¯hÂ¿Ò‚ Éí˜¹7ç™ğ;&b®|Iüó|6‘s¢uŒ|jÇsw Ì  ş
+¨ X€Õ ß$€;Aäd(|êí(C=ÃĞä:ÔİÙ	Miçù¢İ|¶.èöv;×®ImÛuOôãWOÛöŞÆt€Œ·ßMiÛ;nc¦BÓÚıôÛ¸·qE;ë#ã¶û‘[ë€~~k5m~Ò—|XS›ió=7í—£=Ş¸¾`ã‘7ö‚¾à'şV€nàø?õUfÅ‘EÏ9w†yîÜİİwgpwww‡A¢@p—MpKp‚;	Hp÷ÙšÇÀÃ.»öGª¿ÛİÕ]Õï{Ï=U/î7È*Ym«í>:&LÄ„DÜıû9Ûèì˜èxç¼b£œ;WtOª ;z#ïagDdø»Db7DfwøºLDaoDe_Äu_‹ÆIˆÎÉˆÁˆé2K~ˆ'ÄV$Äÿ [ïç*|ó	×ÿßg„f8Â{yüøÊ ÏGyÁØáîÎß{„´¢^,Şü¾aÈ›ŒÈà{…aˆOHş×çÜÍ	
+Êé®wß¡–›éãåÑæøyÏÆ,|Öÿÿ:êŸÕ"½×‹îm”°Úô®?ÓÿË¡l­¿·µæ‹hV=Ñ½˜Ši8½µŸéì’‚ôÊ®Xfc.±šVßêºñÇ’…*Q03ƒ•¨³Î–:sj„^%òñj?Ğ>N}|êøYMDø¨Š¼í‡j}¨Ò‡jßÛáE½s†x‘y;Va°úºÊã®“¶½\2Áúê®³C0›_¦|ÎšÁ«²øÔÙ^LæUŸuõuêú!„ëÑ»"¿AôNÃxÆg§«ŸŞúçl+¶¹óÁ}şMÔç;ûÑÙæ÷¢ªÿ~jßxÚõô¯áu8¬ïÿ)Ş^LÁ8‚^ÍrX6†Á‚&F¾d¡HÂê^}S0ïúÅ­ÈÑšˆéiàièiäiìiâiêiæiîiái‰ÄH‚¤H†äH”H…ÔHƒ´H‡ôÈ€ŒÈ„ÌÈ‚¬È†ìÈœÈ…ÜÈƒ¼.¯ùQ ]ô
+£˜b(nÿR
+¥Qe]äÊ£‚‹]%TvÑ«Šj¨DMÔBmÔA]ÔC}4@C4Bc4ASÇ“æh–h…Öhƒ¶h‡öè€è„Îè‚®è†î®¾z¢—«…>è‹~èï27ƒ0Øñk(†a8F`$Fa´ãÚgƒ±‡ñ˜€‰ø“÷&c
+¦b¾ÄWøßà[|‡é˜™.ô³0s0ó`!a1–¸Z\†åX•øÁ±cVcÖbÖã'üŒ®N79Ælñfd;v¸šİ…_ğ+vcöböã âÛÓÆÅ1Ç	œÄ)œÆœÅ9œÇü?p—pWp×ğ'®ãşÂß¸‰[¸;nu»‡ûx€‡x„Çx‚§x†çx—x…×r´"E£}~ô0"ı‰‘…QÑƒ1‹±‡qñ™€	ù	11“0)“19S0¥Ó®ÔN½Ò2Ó33233³:õÊÎÌé4,7ó0/ó1?° ±0‹0€EYŒÅY‚%YŠ¥Y†eYåYY‰•Y…UYÕYƒ¬ÉZ¬Í:¬Ëz¬ÏlÈFlÌ&lÊflÎlÉVlÍ6lËvlÏìÈNìÌ.ìÊnìÎìÉ^ìÍ>ìË~ìÏÈAÌ!ÊaÎÉQÍOùÇp,Çq<'p"?ç$~ÁÉœÂ©œÆ/ù¿æ7ü–ßq:gp&¿ç,ÎæÎå<Îç.ä".æ.å2.ç
+®äü‘«¸šk¸–ë¸?ñgnàFnâfnáVnãvîàNîâ/ü•»¹‡{¹ûy€yˆ¿ñ0ğ(ñ8Oğ$Oñ4Ïğ,Ïñ</ğwşÁ‹¼ÄË¼Â«¼Æ?y7øÿæMŞâmŞá]Şã}>àC>âc>áS>ãs¾àK¾âk	¢$“|A~ò(¢üI‘EQMÑC1K±GqOñ•@	õ‰)±’(©’)¹R(¥R)µÒ(­Ò)½2(£2)³²(«²)»r(§r)·ò(¯ò)¿
+¨ 
+©°Š(@EULÅUB%UJ¥UFeUNåUAUI•UEUUMÕUCª©Zª­:ª«zª¯j¨Fj¬&jªfj®j©Vj­6j«vj¯ê¨Nê¬.êªnê®ê©^ê­>ê«~ê¯¨A¬!ªa®©Q­Oõ™Æh¬Æi¼&h¢>×$}¡Éš¢©š¦/õ•¾Ö7úVßiºfh¦¾×,ÍÖÍÕ<Í×-Ô"-Ö-Õ2-×
+­ÔúQ«´Zk´Vë´^?égmĞFmÒfmÑVmÓvíĞNíÒ/úU»µG{µOûu@uH¿é°è¨é¸Nè¤Né´Îè¬Îé¼.èwı¡‹º¤Ëº¢«º¦?u]7ô—şÖMİÒmİÑ]İÓ}=ĞC=Òc=ÑS=Ós½ĞK½ÒkŒ&3ó1_‹`~æ±ˆæo‘,²E±¨Í¢[‹i±,¶Å±¸Ïâ[KhŸX"KlI,©%³ä–ÂRZ*Kmi,­¥³ô–Á2Z&ËlY,«e³ì–ÃrZ.Ëmy,¯å³üVÀ
+Z!+lE,ÀŠZ1+n%¬¤•²ÒVÆÊZ9+o¬¢ÛT¶*VÕªYu«anTËı«cu­Û5°†ÖÈ[kjÍ¬¹µ°–ÖÊZ[kkí¬½u°ÖÉ:[ëjİ¬»õ°ÖËz[ëkı¬¿°6ÈşÅp=(†@A ¼öíî«mÛ¶SÛ¶m»MRÛ¶mÛ¶mÛæõ/f-È‚m€´A6Ø†ØPfÃm„´Q6ÚÆØXgãm‚M´I6Ù¦ØT›fÓm†Í´Y6ÛæØ\›góm-´E¶Ø–ØR[fËm…­´U¶ÚÖØZ[gëmƒm´M¶Ù¶ØVÛfÛm‡í´]¶ÛöØ^Ûgûí€´CvØØQ;fÇí„´SvÚÎØY;gçí‚]´KvÙ®ØU»f×í†İ´[vÛîØ]»g÷í=ü'ÅÇöÄÚ3{n/ì¥½²×öÆŞÚ;{oì£}²ÏöÅ¾Ú7ûn?ì§ı²ßöÇşşcF„„ G(„F„E8„GDD$DFDE4DGÄD,ÄFÄE<ÄG$D"$F$E2$G
+¤D*¤F¤E:¤GdD&dFdE6dGäD.äFäE>äG  
+¡0Š (Š¡8J $J¡4Ê ,Ê¡<* "*¡2ª *ª¡:j &j¡6ê .ê¡> !¡1š )š¡9Z %Z¡5Ú -Ú¡=: #:¡3º +º¡;z 'z¡7ú /ú¡?„`À@Â`ÁPÃpŒÀHŒÂhŒÁXŒÃxLÀDLÂdLÁTLÃtÌÀLÌÂlÌÁ\ÌÃ|,ÀB,Âb,ÁR,Ãr¬ÀJ¬Âj¬ÁZ¬ÃzlÀFlÂflÁVlÃvìÀNìÂnìÁ^ìÃ~ÀAÂaÁQÃqœÀIœÂiœÁYœÃy\ÀE\Âe\ÁU\ÃuÜÀMÜÂmÜÁ]ÜÃ}<ÀC<Âc<ÁS<Ãs¼ÀK¼Âk¼Á[¼Ã{|ÀG|Âg|ÁW|ÃwüÀOüÂoüÁ_ş‹CÒ’¢3C3Ã2Ã3#2#3
+£2£3c2c3ã2ã323	“2“3S2S3Ó2Ó33233³2³3s2s3ó2ó³ X…X˜EX”ÅXœ%X’¥XšeX–åXX‘•X™UX•ÕX5X“µX›uX—õXŸØØ˜MØ”ÍØœ-Ø’­ØšmØ–íØØ‘Ø™]Ø•İØ=Ø“½Ø›}Ø—ıØŸb0p q0‡p(‡q8Gp$Gq4Çp,Çq<'p"'q2§p*§q:gp&gq6çp.çq>p!q1—p)—q9Wp%Wq5×p-×q=7p#7q3·p+·q;wp'wq7÷p/÷q?ğ ñ0ğ(ñ8Oğ$Oñ4Ïğ,Ïñ</ğ"/ñ2¯ğ*¯ñ:oğ&oñ6ïğ.ïñ>ğ!ñ1Ÿğ)Ÿñ9_ğ%_ñ5ßğ-ßñ=?ğ#?ñ3¿ğ+¿ñ;ğ'ñ7ÿğ¯şS…”	¢$W(…V…U8…WET$EVEU4EWÅT,ÅVÅU<ÅW%T"%V%U2%W
+¥T*¥V¥U:¥WeT&eVeU6eWåT.åVåU>åW¨ 
+©°Š¨¨Š©¸J¨¤J©´Ê¨¬Ê©¼*¨¢*©²ª¨ªª©ºj¨¦j©¶ê¨®ê©¾¨¡©±š¨©š©¹Z¨¥Z©µÚ¨­Ú©½:¨£:©³º¨«º©»z¨§z©·ú¨¯ú©¿¤`Ğ@Ò`ÑPÓpĞHÒhÑXÓxMĞDMÒdMÑTMÓtÍĞLÍÒlÍÑ\ÍÓ|-ĞB-Òb-ÑR-Ór­ĞJ­Òj­ÑZ­ÓzmĞFmÒfmÑVmÓvíĞNíÒníÑ^íÓ~ĞAÒaÑQÓqĞIÒiÑYÓy]ĞE]Òe]ÑU]ÓuİĞMİÒmİÑ]İÓ}=ĞC=Òc=ÑS=Ós½ĞK½Òk½Ñ[½Ó{}ĞG}Òg}ÑW}ÓwıĞOıÒoıÑ_ÿÏCxH7‡Óåî¡<´‡ñ°ÎÃ{è‘<²Gñ¨Í£{é±<¶Çñ¸Ïã{Oè‰<±'ñ¤Ì“{
+Oé©<µ§ñ´ÎÓ{Ïè™<³gñ¬Í³{Ïé¹<·çñ¼Ïó{ğ‚^È{/êÅ¼¸—ğ’^ÊK{/ëå¼¼WğŠ^É+{¯êÕ¼º×ğš^Ëk{¯ëõ¼¾7ğ†ŞÈ{oêÍ¼¹·ğ–ŞÊ[{oëí¼½wğŞÉ;{ïêİ¼»÷ğŞË{{ïëı¼¿zÿÏw™@eu\qüÎğŞw¯>Œ 6AãÇƒ «hİ>“(FÁˆ"
+.q!.5mÆqa\’´š ’~€5Ï}#jL56­&¶ÆÔ¤K4ÕÄ$µÿÎñœœ£}ÿsg~ïŞûf¾yófÎ7¼Œ—ó+¼‚Wò*^Í¼†y-¯ãõ¼‹¸˜K¸”Ëx#—ó&ŞÌ[¸‚+y+oãí¼ƒ_å×øuşÿšwò.~ƒßä*®æŞÍµüÿ†½\ÇõÜÀ{ø·¼—ßf‡÷ñ~>Àùæ#|”ñq>ÁüŸäS|šßå3üÿÏò9~ŸÏóïùşÿ‘/ğŸøC¾È—ø#ş˜/óŸù/üWş„¯ğUş”¯ñgü7¾ÎŸóüwşÿ“ÿÅ_ò¾É_ñ¿ùk¾ÅÿáÛ|‡¿áoù.Çßóü_¾'$J´ø‰!¦¸„E¤…´Kü¥•<"­%@¥´•vòyT“ i/äqé(n	[B$T0é$áÒY"$R¢¤‹DË“ÒU~*İ¤»ÄHé)?“^Ò[úH_é'ıe€”A+qâ‘Á/C$Ae¨“$I–.©2B’§å)£$MFË³2FÆJºdÈ8yNÆK¦L‰’%“$[&ËÉ‘\™*ÓdºÌçe¦Ì’Ù2Gòä™+ód¾,|Y(/Ê"Y,Kä%ù¹üB~)KåeY&ËåY!+e•¬–Y#…²VÖÉzÙ ER,%R*eôË¡´h‡’aq°^°èèÁA´Tí¢"Ø«0?š®
+i¬ ¶fÜ§*Ø>UXoˆg¿ZDTŠÇ2ìÑíÚÛA--ûG¹öl·/}z@µ§VtEµ¯oE-·Ä¹sM![í¤pµ˜’(RU4DÍ´³ª¢<ØR˜_S©TU}pû°z’Â…g:S°¡öÚ×cºÚŸÅ8ZÕÛÇ#Õ±`ÜyZÛGİÛí#î©öaXMs¨:Êñ=Såi—;ª¢Ş.q;
+âæjîµgE•ÛSbšâ©å®©·û!>ÆcÙ½û†Ú½Ü×ìn(Üwu§Ú]bÎÚÜMi!h4Ühwt—Úı
+v'Fô‡PÕª’º¨Êúğ{?ÃmHê[î¨%I‘1áZìéY••j‡Gˆ 9%ı6—ØŒ"±5…bÓj‡O9 Ÿµ?>qvÔîú8Ûu@ÕP^KMV€é¨·à4¨Ú&gíÛXË¤sï“=DŠÚ9ªfO€ {]MärTmC³«Öc>2šÚW¢@IKRÈ«Ö9.Zñh~\P\›ØÀ~CVdı¨Œ~ø¤ÜŞòáiéŞjw†·‡î¹3îÿÏƒÍ×ü(râ££‡ZÔŸ7#71',1+,1–å-ÌŸä]šR7#ÏñúuÎÊ<ÍWOÊñæ…å$xg„%„Ôåç> œëç‡%ÔQnâèôº\ONB}¾'?1lRBFCvüÜÌõUp¿¯¹ñh,Ş×Ø\__Ù™gúÂÙ¾¾2}}eúúÊöd7õågâô´øyóñu†$NâLó&—î™”‘à¨]p&, ,š¦ÉÂ¤¹¨7ŒõÒ|iø-Äı¨%™XÃ	rLÜµ Cù“¿ma¥¶Âı#A­!¦ È 6îHmÑ†b
+†,²ÉncQdQ(…[FO€Q'ôK±ˆÆAyÈƒèÎ¤D'ĞD'BeQ¢“ ‹^¦lD—A­ åø«i%¸ "Ú@kÀÅT.,*…L*£2Œb#mÄ(Ê!“6AD´9•ÑVÈ¢×hx'½Ş½Io€«¨
+-TS5Z¨,Ú1ÕQ-röQ=<h?ø Ät2é0ÆSGè:FG}‡#ó$dÒ‡t
++tëtü9dÑ—ôødÒMÈ¢¯é+¼ÛÛt|2Õóô&t¦š	^¢f‘¥V©—à)P«ÁEj¸Tƒ7)ìòj³ÂHÕmµş˜ºC–¤ƒÀ±:–L§1Ú£=à¡³ ‡éaà$NÖÉà§u
+x¤~†ZêQz‰«ÓàÉÒéğLÖ˜=EOA›9:‡”ªsáŸ­§Á?GÏ?OççéÀEz>¸XZºD—Ø–.Õ¥à2]Ş¨7‚Ëu9x“ŞŞ¬7ƒ·è-à
+]®Ô•à­z+x»ŞF–«wqÆbÌ3<à|½…àãEp¡7c¬7Ö‚÷ÀıàCÆ!ğqã0ø¤q|Ú8¾h¼şÈ¸D&Î£ƒo×àÿÖ¸IxõÆ]²pÊÄVˆ“¦	Æl™L¾Ó¦?¸ƒ‰Uƒ³åãÔ'ÉàH32ĞÂ‰2Ê¶p’ìO3†üp†ì‹fú›ıá`@Î@s r™ƒĞÎ039ÉfrRLÌÎ“Ã‘“j¦"g„99£Í§àc>N7Ç‚3Ìğxs8ÓÌDşs‚m¹ÒÍ‰D8qd…ÿæãÁg\gÀg]ïÏ¹Î‘%e®÷‰îájÚ%â1öóæ!|‡LCšÿH7‡˜8Dça¾{°ße0jFí‡ºÅe¬F+c¢÷£%u÷˜¡°xc½óıUóĞİ!1â»†¦}ª^0K°…Õ‰rTO¿a°¿ÁåØ—†µÈoj¼ğC?Š‹»u6¦{Û^±ªOÏÀ°ÀÆ×õ»½¦mÆ®»³ın7µsï’ÑÁ¬ jôØÉşÿc¿NB›£8€¿o&™,;‰“tM“vìdB¬ÍÒé…,jZ©çZJ¥4h[šP=X#Ş7´ôäróàEQŒàM…^¼	<ÅË€H-hã›tÄcq9(¼/üŞ÷ÿ¾Ìdyar¢[Nu—¢¥naYaÇœ1wSLòğ[	Ió„«LÎH^M\òx­Ú»CKxš–#G¼U¼ƒip:Ë…¢á
+áRÃIóS¼5ÖqÃÀ
+i#mø{Ö¿}ÑğúJÄŸËôõÄ›pÙ•`W§" ¯‚wÆİ*k“C*´t5©ÌÆ*¸z°´w´ª¬YÁæ;Câ™*•
+Œ³q§¥T²OëUäNÁ¡µ³T²g…väŞş¾dÀ/ang~	døğb¯švõáÓû¾®ımJ@ÏÎ¯èO*öÇ™3ÌÿşóğÁüÜÒö—Ík\½’[Y¼Ufì.Ï…®Ï,,æÎß›]}ùüòX*ztñÍööÏÛÄâ_VİÁ‰„B!„B!„B!„B!ä00‡¼™Xà×‡ß8ëß6P±
+83ìQRµ®ësm­¶fuÍü®¯å„SÖñ<ˆX™õ">v²€)l^›wÂ·2ûà¸•yÜ?ieæV0ß)ä³…Ñ\lD/–õ…é©ÉİÖP€<d±Bb0:¡Œu¦a
+&aói(áî$ÌïzôŸ>]pŞ†›à‚pà·6;3àøäÖ¯€ÕmùUrv¢ah¼Îúz¢p­>¿{ıàÒ¦ş5²ç†s—®g|` H¾rÛ
+endstream
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 147
+/Widths [278 512 512 512 512 512 512 512 296 296 512 512 512 407 278 371 
+512 556 556 556 556 512 512 512 512 512 278 512 512 512 512 512 
+512 685 704 741 741 648 593 759 741 295 556 512 593 907 741 778 
+667 778 722 649 611 741 630 944 667 667 512 512 512 512 512 512 
+512 574 611 574 611 574 333 611 593 258 512 574 258 906 593 611 
+611 512 389 537 352 593 520 814 512 519 512 512 512 512 512 512 
+512 512 512 512 512 512 512 512 512 512 512 512 512 512 512 512 
+512 512 512 611 ]
+/Encoding 92 0 R
+/BaseFont /MFAMJP+HelveticaNeueLTPro-Bd
+/FontDescriptor 70 0 R
+/ToUnicode 93 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 121
+/Widths [278 512 512 512 512 512 512 512 512 512 512 512 278 389 278 512 
+556 556 556 512 512 556 556 512 556 556 512 512 512 512 512 512 
+512 667 512 512 704 611 512 512 512 259 512 512 512 870 722 512 
+648 512 685 648 574 722 611 512 512 512 512 512 512 512 512 512 
+512 519 593 537 593 537 296 574 556 222 512 512 222 852 556 574 
+593 512 333 481 315 556 481 759 512 481 ]
+/Encoding 94 0 R
+/BaseFont /MFAMLC+HelveticaNeueLTPro-It
+/FontDescriptor 78 0 R
+/ToUnicode 95 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 1
+/LastChar 160
+/Widths [250 500 778 778 778 778 778 778 778 778 778 778 778 778 778 778 
+778 778 778 778 778 778 778 778 778 778 778 778 778 778 778 250 
+778 778 778 778 833 778 778 333 333 500 778 250 333 250 278 500 
+500 500 500 500 500 500 500 500 500 278 278 778 778 778 444 921 
+722 667 667 722 611 556 722 722 333 389 722 611 889 722 722 556 
+722 667 556 611 722 722 944 722 722 611 778 778 778 778 778 778 
+444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 500 
+500 333 389 278 500 500 722 500 500 444 778 778 778 778 778 778 
+778 778 778 778 500 778 778 778 778 778 778 778 444 444 333 333 
+778 778 778 778 778 778 778 778 778 778 778 778 778 778 778 500 
+]
+/Encoding 96 0 R
+/BaseFont /MFAMLF+TimesNewRomanPSMT
+/FontDescriptor 80 0 R
+/ToUnicode 97 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 1
+/LastChar 144
+/Widths [500 778 778 778 778 778 778 778 778 778 778 778 778 778 778 778 
+778 778 778 778 778 778 778 778 778 778 778 778 778 778 778 250 
+778 778 778 778 778 778 778 778 778 778 778 250 778 250 778 500 
+500 500 500 500 778 778 500 778 500 333 778 778 778 778 778 778 
+611 611 667 722 611 611 722 722 333 444 778 556 833 667 722 611 
+722 611 500 556 722 611 778 611 556 778 778 778 778 778 778 778 
+500 500 444 500 444 278 500 500 278 278 444 278 722 500 500 500 
+778 389 389 278 500 444 667 778 444 778 778 778 778 778 778 778 
+778 778 778 778 500 778 778 778 778 778 778 778 778 778 778 333 
+]
+/Encoding 98 0 R
+/BaseFont /MFAMLL+TimesNewRomanPS-ItalicMT
+/FontDescriptor 84 0 R
+/ToUnicode 99 0 R
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 57
+/Widths [278 512 512 512 512 512 512 512 512 512 512 512 512 512 512 512 
+556 556 556 556 556 556 556 556 556 556 ]
+/Encoding 100 0 R
+/BaseFont /MFAMMI+HelveticaNeueLTPro-Roman
+/FontDescriptor 76 0 R
+/ToUnicode 101 0 R
+>>
+endobj
+29 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 121
+/Widths [250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 
+250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 
+250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 250 
+611 250 250 250 250 250 250 833 611 250 250 250 250 250 250 250 
+250 250 250 444 500 444 250 500 500 278 250 444 278 250 500 250 
+500 500 389 389 278 500 250 250 444 444 ]
+/Encoding 102 0 R
+/BaseFont /MFAMPM+TimesNewRomanPS-Italic
+/FontDescriptor 74 0 R
+/ToUnicode 103 0 R
+>>
+endobj
+30 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 61
+/Widths [250 250 250 250 250 250 250 250 333 333 250 564 250 250 250 278 
+500 250 250 250 250 250 250 250 250 250 250 250 250 564 ]
+/Encoding 104 0 R
+/BaseFont /MFAMPO+TimesNewRomanPS
+/FontDescriptor 72 0 R
+/ToUnicode 105 0 R
+>>
+endobj
+34 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 83
+/LastChar 101
+/Widths [641 500 500 500 500 500 500 500 500 500 500 500 500 500 500 516 
+500 500 440 ]
+/Encoding 106 0 R
+/BaseFont /MFANAG+SymbolProportionalBT-Regular
+/FontDescriptor 86 0 R
+/ToUnicode 107 0 R
+>>
+endobj
+41 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 32
+/Widths [250 ]
+/Encoding 108 0 R
+/BaseFont /MFANCE+TimesNewRomanPS-BoldMT
+/FontDescriptor 82 0 R
+/ToUnicode 109 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /MFAMJA+Helvetica
+/Encoding /Identity-H
+/DescendantFonts [ 110 0 R ]
+/ToUnicode 111 0 R
+>>
+endobj
+110 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /MFAMJA+Helvetica
+/FontDescriptor 88 0 R
+/CIDSystemInfo<<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/DW 1000
+/W [
+608 [277]
+]
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 51
+/Widths [556 0 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /MFAMNB+Helvetica
+/FontDescriptor 90 0 R
+>>
+endobj
+92 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 45/hyphen/period/slash 49/one/two
+/three/four 58/colon 65/A/B/C/D/E
+/F/G/H/I/J 76/L/M/N
+/O/P/Q/R/S/T/U/V
+/W/X/Y 97/a/b/c/d/e
+/f/g/h/i 107/k/l/m/n
+/o/p 114/r/s/t/u/v/w
+ 121/y 147/fi
+]
+>>
+endobj
+94 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 44/comma/hyphen/period 48/zero/one/two 53/five
+/six 56/eight/nine 65/A 68/D/E 73/I 77/M
+/N 80/P 82/R/S/T/U/V 97/a
+/b/c/d/e/f/g/h/i
+ 108/l/m/n/o/p 114/r/s/t
+/u/v/w 121/y
+]
+>>
+endobj
+96 0 obj
+<<
+/Type /Encoding
+/Differences [ 1/uni2008/uni2002 32/space 37/percent 40/parenleft/parenright/asterisk 44/comma
+/hyphen/period/slash/zero/one/two/three/four
+/five/six/seven/eight/nine/colon/semicolon 63/question
+/at/A/B/C/D/E/F/G
+/H/I/J/K/L/M/N/O
+/P/Q/R/S/T/U/V/W
+/X/Y/Z 97/a/b/c/d/e
+/f/g/h/i/j/k/l/m
+/n/o/p/q/r/s/t/u
+/v/w/x/y/z 133/endash 141/quotedblleft/quotedblright
+/quoteleft/quoteright 160/Euro
+]
+>>
+endobj
+98 0 obj
+<<
+/Type /Encoding
+/Differences [ 1/uni2002 32/space 44/comma 46/period 48/zero/one/two/three
+/four 55/seven 57/nine/colon 65/A/B/C/D
+/E/F/G/H/I/J 76/L/M
+/N/O/P/Q/R/S/T/U
+/V 88/X/Y 97/a/b/c/d/e
+/f/g/h/i/j/k/l/m
+/n/o/p 114/r/s/t/u/v
+/w 121/y 133/endash 144/quoteright
+]
+>>
+endobj
+100 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 48/zero/one/two/three/four/five/six
+/seven/eight/nine
+]
+>>
+endobj
+102 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 80/P 87/W/X 99/c/d/e 103/g
+/h/i 107/k/l 110/n 112/p/q/r
+/s/t/u 120/x/y
+]
+>>
+endobj
+104 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 43/plus 47/slash/zero 61/equal
+]
+>>
+endobj
+106 0 obj
+<<
+/Type /Encoding
+/Differences [ 83/S 98/b 101/e
+]
+>>
+endobj
+108 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space
+]
+>>
+endobj
+93 0 obj
+<<
+/Filter /FlateDecode
+/Length 316
+>>
+stream
+H‰TQËnÃ ¼ó{L•6vDB–òP¤úP“öN`Zª1ÂÎ!ßÜ´E2³»Ãx—o»ƒmGà¯¾×G¡i­ñ8ôW¯Îxi-äL«Çéwİ)œŠ·aÄî`›¤dü‚Ãèo0[Ç5ßçóìø‹7è[{Ù)ÿ âxuî;´#dP×`°a|û¤Ü³êøŸêßĞéæD¼ç“Şàà”F¯ìAŠ¬¹*j@kşÇX™*ÎşT¥Ì,£ƒÉBE\¬	/VÓÁ¢Üo²¼f¤7U.t’¬KJ©Š0&M"vA>'\”éÒ’e Êôh	Mø1i”["ªQ%¢
+Õ™ğ"y®6Á§Ä"™“Ád)ü{Ï½›úê=5:Î062´°µx³ë]èXøØ·  ü—ı
+endstream
+endobj
+95 0 obj
+<<
+/Filter /FlateDecode
+/Length 332
+>>
+stream
+H‰TRMoƒ0½çWøØ© |­R„4µšÔÃ>´v»Ó`:¤¢@ı÷³1ë6$ğË‹ıxvm÷»½ë&ˆ^Ã`8AÛ¹&à8\‚E8á¹shh:;-«ùkûÚCDÅ‡ë8a¿wí Æ¨è6Ç)\aõ0?ëG½ï z	†ÎauLŞ?ˆ8\¼ÿÂİ1T4ØªhûTûçºGˆşTÿn¯AÏëd±148úÚb¨İÁè¸Sn*@×üßS¹TœZûY%™qLA™,™1ÂÁÂ¹ääœS
+OA‘ö¢’Ä?¢ò£-eié-•¥,‘ê™HY'Í™(„È™¸gBÔ	“ƒŒp–‹Œ‰†	Ívì‹õrÑ ¬LÁ¢Qpû(Å~Á>J.)KéA/=ˆiŸæmøöË|äóÜyâÃÛ­ğƒçó«¾ ¼D Ã
+endstream
+endobj
+97 0 obj
+<<
+/Filter /FlateDecode
+/Length 308
+>>
+stream
+H‰T‘Moƒ0†ïü
+;õDÇ¤©bªÔÃ>´v»‡ÄP¤¢@ı÷sê6$ĞÛ¯ß`³úø|tıì=Œæ„3´½³§ñBƒ]ï@H°½™×Óò5ƒöÀH|ºM3G× TÆ>(9Íá›ıòlù–? {Cï:ØœÅçNWï¿q@7‡ª‹mÆêí_õ€Àş¨Sç›GËY¬×-N^ÚuŠ‹
+”æ ³ÿsÙ.)šÖ\tÈR¥ä¼¬ˆebI,I¬yä"qA\KÈ‰£ñ¾®2òY;Şû';%ËX¤S‡è"qŞ¤ IUŞ©"?P`ïô˜Ädj‰KLÎQRFÉS²åjŸãÇ¥Ügh®!Ğx—Í-ã‹ƒëŞ—ëGçßìG€ i–±
+endstream
+endobj
+99 0 obj
+<<
+/Filter /FlateDecode
+/Length 325
+>>
+stream
+H‰T’MoÂ0†ïù>2qHú)ª4±Mâ°Ø=¤.«´¦QZüûÙ	c[¥6OŞÄö['r³}Øºnù»Ã	ÚÎ5Çá,ÂOƒ,‡¦³Óu¿¶7$ï.ã„ıÖµh-ä;-S¸Àì>>ó§r®î@¾†CçN0Ûg‡vgï¿°G7‚º†[!7ÏÆ¿˜Aş‰ş]Ú_<BçÙÕÆĞàèÅ`Ü	A«¬½V5 kş¯‰UŠ8¶öÓ‘væJåµ ˜P1ÛÄfLüH\T‘iºZG¦AèÕ"æÉ
+b.ÌL:Õ¿Vª~ê&ºàME™²qÅ‚³&	œ²dkeˆI`O‹eØØbÅBrA,ô’CªôK©r’gâä'9àÖğéİšmÏ!Ğ9Ä#}æwo·ÀÊ¯ø` ×‹
+endstream
+endobj
+101 0 obj
+<<
+/Filter /FlateDecode
+/Length 235
+>>
+stream
+H‰TPMkÄ ¼û+Şq—=hz(H ìRÈ¡4ÛŞ]}I…Š1‡üûªùh+èã½™Ñqè¹¹4F ïŞÊtÚ(£¼D¸a¯%(-ÃÚåSÂâvé,pNèGÇàg8<åuz~8±#Ğ7¯ĞkÓÃáZ|~ÅA;9wÇM u
+;BÏ/Â½ŠşQÿB×Ù!”¹/VVáè„D/LÀKV¯k@£şc›âÖÉoáÉÂd,¹ëtç,^m×Efµ1,=2Ø-ËÉûø›Tv›|jƒ{–Îºd+mò#À âJxM
+endstream
+endobj
+111 0 obj
+<<
+/Filter /FlateDecode
+/Length 218
+>>
+stream
+H‰TP1nÃ0Üõ
+-2HŠ ƒá%Y<$-b·»"Ñ®€Zhyğï#	vŠ$Á#w$?µçÖÙü“¼î0Â`!œıBá£uPI0VÇ­+YO* Oän#N­<Ô5ã·4œ#­ğÒ÷ÕA¼ÿ ƒdİ˜7ùõn	á't4?]T¸ª	âØ¯A–¾Ú´½Á9(¤ÜˆPyÍ^Ğ™ÿóuô"¶oK!Ş–¶7<óòMOz!JËáÅH¶`>|Èj9ØC€ ØÊjw
+endstream
+endobj
+103 0 obj
+<<
+/Filter /FlateDecode
+/Length 290
+>>
+stream
+H‰TQMo„ ½ó+æ¸Íğ#¢›“vÛ&ú‘ºí]a´&	êÁ_>ì¶%†7ï1Ãƒ«ûJĞW3‰è%ÎÓjB‹ı  N@bÙO~c£Zq½Í•ê&àœĞ7›œ³ÁáÖã#;F7@_ŒD3¨—øıÃõªõ¨ˆ ,AbGèù©ÑÏÍˆ@ÿ¨S—M#$şïmLgİ4êx•ÀóS	¨äÿIƒ¢íÄgcH`F‘İÏBœ¹˜¡ÙCIì;›ıhÃU<Ë-)+‚*wªÔÆ,ÒÔÁNğŒÖ" wÈ}«A’»Êy±÷î€b/
+º×8Ã¯şˆÕkÿo3ePxı8=iç›ä[€ £ıx
+endstream
+endobj
+105 0 obj
+<<
+/Filter /FlateDecode
+/Length 260
+>>
+stream
+H‰TPËnÃ ¼ó{L•6>4•¥4Q$úPöaí"Õa|ğß—‡›¶HÀ,;3ì.=5çÆhôÕM²E½6Êá<-N"t8h%¥¥ß¢tÊQX AÜ®³Ç±1ıœú’³w+ìií/÷ûâè‹Sè´`w-ß?ÂC»Xû…#Ô5(ì	==	û,FúGı›º®¥¸ÜÊ˜ÎVHtÂœ5ğJÕ€FıÏ‘*+º^~
+G2³(Âp—ñcÀQpu®IğØØìG›­8;{ÈªCtèã¿›åe“fr¬$ëÖ›\œm§‰¦¶bCÚàmèv²±ş¸É·  öË)
+endstream
+endobj
+107 0 obj
+<<
+/Filter /FlateDecode
+/Length 237
+>>
+stream
+H‰TMoÃ †ïü
+;õ@’*Õiê4)‡}hév§àdH ‡òï4ê6$cûµÌOİcçlşF^÷a°ÎÎ~!pÁÑ:¨0VÇ-+·T Äı:Gœ:7x‚ñ÷Tœ#­°{(gÿt¿¯î€¿’A²n„İ¹şøLıÂ7Nè"T %?=«ğ¢&şGı[:¯¡)y½axƒsPI¹A´	âØJ@gş×Øáª¸úK»vVUrL›'ÇŠ8Ç­diÆÖ§åßøôB”ĞËV
+Z†²o‹>d†lìG€ ¨\ps
+endstream
+endobj
+109 0 obj
+<<
+/Filter /FlateDecode
+/Length 218
+>>
+stream
+H‰TPÁjÃ0½û+tìèÁNnƒ…Ú¥Ûİµ•Ì°ÈFqùûÙnÖmIHO=Iºç\ùÊŞôapdg¿°A¸âèª¬3q«J4“ ¹_çˆSGƒ‡¦ò-sävOÅöÇÇ½z ùÂÙÑ»Kõş‘ıÂNH´-X„<œt8ë	AşaÿB—5 Ô¥®6Şâ´AÖ4"4µjoÉşÇ~×Á|j·I¥RivëfV>ì®Ã,ÌIb¹¾HÈËáıAÁ‡¼+»ø` j¶k¶
+endstream
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 13 0 R
+/Contents 12 0 R
+>>
+endobj
+17 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 19 0 R
+/Contents 18 0 R
+>>
+endobj
+20 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 22 0 R
+/Contents 21 0 R
+>>
+endobj
+23 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 25 0 R
+/Contents 24 0 R
+>>
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 28 0 R
+/Contents 27 0 R
+>>
+endobj
+31 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 33 0 R
+/Contents 32 0 R
+>>
+endobj
+35 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 37 0 R
+/Contents 36 0 R
+>>
+endobj
+38 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 40 0 R
+/Contents 39 0 R
+>>
+endobj
+42 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 44 0 R
+/Contents 43 0 R
+>>
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 47 0 R
+/Contents 46 0 R
+>>
+endobj
+50 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 52 0 R
+/Contents 51 0 R
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 55 0 R
+/Contents 54 0 R
+>>
+endobj
+56 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 58 0 R
+/Contents 57 0 R
+>>
+endobj
+59 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 61 0 R
+/Contents 60 0 R
+>>
+endobj
+62 0 obj
+<<
+/Type /Page
+/Parent 49 0 R
+/Resources 64 0 R
+/Contents 63 0 R
+>>
+endobj
+112 0 obj
+<<
+/S /D
+>>
+endobj
+113 0 obj
+<<
+/Nums [0 112 0 R ]
+>>
+endobj
+10 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 11 0 R 17 0 R 20 0 R 23 0 R 26 0 R 31 0 R 35 0 R 38 0 R 42 0 R]
+/Count 10
+/Parent 48 0 R
+>>
+endobj
+49 0 obj
+<<
+/Type /Pages
+/Kids [45 0 R 50 0 R 53 0 R 56 0 R 59 0 R 62 0 R]
+/Count 6
+/Parent 48 0 R
+>>
+endobj
+48 0 obj
+<<
+/Type /Pages
+/Kids [10 0 R 49 0 R ]
+/Count 16
+/MediaBox [0 0 482 686]
+>>
+endobj
+114 0 obj
+<<
+/CreationDate (D:20190625141326+01'00')
+/ModDate (D:20190625141326+01'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+115 0 obj
+<<
+/Type /Catalog
+/Pages 48 0 R
+/PageLabels 113 0 R
+>>
+endobj
+xref
+0 116
+0000000000 65535 f 
+0000188396 00000 n 
+0000000016 00000 n 
+0000003442 00000 n 
+0000178227 00000 n 
+0000178884 00000 n 
+0000179435 00000 n 
+0000180266 00000 n 
+0000092841 00000 n 
+0000092979 00000 n 
+0000189808 00000 n 
+0000188477 00000 n 
+0000003577 00000 n 
+0000008899 00000 n 
+0000181039 00000 n 
+0000182659 00000 n 
+0000183015 00000 n 
+0000188561 00000 n 
+0000009049 00000 n 
+0000014129 00000 n 
+0000188645 00000 n 
+0000014276 00000 n 
+0000020955 00000 n 
+0000188729 00000 n 
+0000021105 00000 n 
+0000027533 00000 n 
+0000188813 00000 n 
+0000027680 00000 n 
+0000033588 00000 n 
+0000181335 00000 n 
+0000181890 00000 n 
+0000188897 00000 n 
+0000033747 00000 n 
+0000039938 00000 n 
+0000182193 00000 n 
+0000188981 00000 n 
+0000040118 00000 n 
+0000045621 00000 n 
+0000189065 00000 n 
+0000045768 00000 n 
+0000051718 00000 n 
+0000182466 00000 n 
+0000189149 00000 n 
+0000051876 00000 n 
+0000058578 00000 n 
+0000189233 00000 n 
+0000058725 00000 n 
+0000063551 00000 n 
+0000190054 00000 n 
+0000189945 00000 n 
+0000189317 00000 n 
+0000063667 00000 n 
+0000068431 00000 n 
+0000189401 00000 n 
+0000068579 00000 n 
+0000076229 00000 n 
+0000189485 00000 n 
+0000076376 00000 n 
+0000083538 00000 n 
+0000189569 00000 n 
+0000083664 00000 n 
+0000085933 00000 n 
+0000189653 00000 n 
+0000086080 00000 n 
+0000092102 00000 n 
+0000092260 00000 n 
+0000092440 00000 n 
+0000092541 00000 n 
+0000092641 00000 n 
+0000092741 00000 n 
+0000093115 00000 n 
+0000093519 00000 n 
+0000097177 00000 n 
+0000097463 00000 n 
+0000098045 00000 n 
+0000098338 00000 n 
+0000100592 00000 n 
+0000100874 00000 n 
+0000102183 00000 n 
+0000102538 00000 n 
+0000105939 00000 n 
+0000106495 00000 n 
+0000116354 00000 n 
+0000116566 00000 n 
+0000116861 00000 n 
+0000117269 00000 n 
+0000125410 00000 n 
+0000125646 00000 n 
+0000126372 00000 n 
+0000126591 00000 n 
+0000152056 00000 n 
+0000152276 00000 n 
+0000183194 00000 n 
+0000184921 00000 n 
+0000183463 00000 n 
+0000185310 00000 n 
+0000183696 00000 n 
+0000185715 00000 n 
+0000184121 00000 n 
+0000186096 00000 n 
+0000184409 00000 n 
+0000186494 00000 n 
+0000184528 00000 n 
+0000187095 00000 n 
+0000184664 00000 n 
+0000187459 00000 n 
+0000184784 00000 n 
+0000187793 00000 n 
+0000184856 00000 n 
+0000188104 00000 n 
+0000182807 00000 n 
+0000186803 00000 n 
+0000189737 00000 n 
+0000189766 00000 n 
+0000190146 00000 n 
+0000190279 00000 n 
+trailer
+<<
+/Size 116
+/Root 115 0 R
+/Info 114 0 R
+/ID [<62d44bb2f90b32b7c42ce6c48ec28742><62d44bb2f90b32b7c42ce6c48ec28742>]
+>>
+startxref
+190351
+%%EOF
