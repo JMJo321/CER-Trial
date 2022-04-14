@@ -1,0 +1,44 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Breakdown of Average Treatment Effects in the Peak Rate Period} 
+  \label{Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period_For-Each-Tariff} 
+\small 
+\begin{tabular}{@{\extracolsep{20pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{Dependent Variable} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ HDDs & 0.005$^{**}$ & 0.005$^{**}$ & 0.004$^{**}$ \\ 
+  & (0.002) & (0.002) & (0.002) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] & 0.077$^{***}$ &  &  \\ 
+  & (0.030) &  &  \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs & 0.003$^{**}$ & 0.003$^{**}$ & 0.004$^{**}$ \\ 
+  & (0.001) & (0.002) & (0.002) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] & 0.001 & 0.001 &  \\ 
+  & (0.018) & (0.019) &  \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs & $-$0.001 & $-$0.001 &  \\ 
+  & (0.002) & (0.002) &  \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.128$^{***}$ & $-$0.128$^{***}$ & $-$0.127$^{***}$ \\ 
+  & (0.015) & (0.016) & (0.015) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & $-$0.004$^{***}$ & $-$0.004$^{***}$ & $-$0.004$^{***}$ \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+FEs: ID by Half-Hourly Time Window & No & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Month of Year by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+Observations & 3,522,560 & 3,522,560 & 3,522,560 \\ 
+Adjusted R$^{2}$ & 0.051 & 0.366 & 0.366 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
