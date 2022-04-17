@@ -135,7 +135,7 @@ plot.options <- list(
   theme(
     strip.text = element_text(face = "bold"),
     axis.title.x = element_text(margin = margin(t = 10)),
-    axis.title.y = element_text(margin = margin(r = 12)),
+    axis.title.y = element_text(margin = margin(r = 12), hjust = 0.2),
     legend.text = element_text(margin = margin(r = 10, unit = "pt")),
     legend.position = "bottom"
   )
@@ -158,6 +158,7 @@ plot_treatment.effects <-
       ),
       binwidth = 2, alpha = 0.6, position = "dodge"
     ) +
+    geom_hline(yintercept = 0, linetype = "solid", lwd = 0.3) +
     geom_line(
       data = dt_for.plot_coefs_melted,
       aes(x = hdd_all_60f, y = value, group = variable),
@@ -178,7 +179,6 @@ plot_treatment.effects <-
       aes(x = hdd_all_60f, y = value, shape = variable, color = variable),
       size = 2.0
     ) +
-    geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.4) +
     geom_vline(
       xintercept = round(estimate_non.temp / estimate_temp, 1),
       linetype = "dotdash", alpha = 0.4
