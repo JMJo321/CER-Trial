@@ -6,14 +6,15 @@
 # # : A-02-04A
 # #
 # > Purpose of the script(s)
-# # : Run regressions to breakdown hourly ATEs for each tariff. And then save
-# #   the regression results in .RData format. This script needs about 6 hours
-# #   to run all regressions. 
+# # : For each tariff, run regressions to breakdown hourly ATEs. And then save
+# #   the regression table(s) in .tex format and the regression result(s) in
+# #   .RData format, respectively.
 
 # ------------------------------------------------------------------------------
 # Load required libraries
 # ------------------------------------------------------------------------------
 library(arrow)
+library(stargazer)
 library(lfe)
 library(stringr)
 library(data.table)
@@ -43,7 +44,8 @@ source(PATH_HEADER)
 # ------- Define path(s) -------
 # # 1. Path(s) from which dataset(s) and script(s) are loaded
 # # 1.1. For the DT for regression analysis
-FILE_TO.LOAD_CER_FOR.REG <- "CER_DT-for-Regressions_Electricity.parquet"
+FILE_TO.LOAD_CER_FOR.REG <-
+  "CER_DT-for-Regressions-with-Survey-Data_Electricity.parquet"
 PATH_TO.LOAD_CER_FOR.REG <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.LOAD_CER_FOR.REG, sep = "/")
 
@@ -55,9 +57,17 @@ PATH_TO.LOAD_CER_MODELS <- paste(
 
 
 # # 2. Path(s) to which regression results will be stored
+# # 2.1. For regression table(s)
+DIR_TO.SAVE_LATEX <- paste(
+  PATH_OUTPUT_TABLE,
+  "From-Stargazer/Breakdown-of-Hourly-ATEs/DID-Model-with-ID-FEs",
+  sep = "/"
+)
+
+# # 2.2. For regression result(s)
 DIR_TO.SAVE_REG.RESULTS <- paste(
-  "/Volumes/Extreme-Pro/Energy-Demand-Analysis/Regression-Results",
-  "Breakdown-of-Hourly-ATEs",
+  PATH_DATA_ANALYSIS_REG.RESULTS,
+  "Breakdown-of-Hourly-ATEs/DID-Model-with-ID-FEs",
   sep = "/"
 )
 
@@ -88,6 +98,7 @@ get_reg.results <- function (data_in.DT, formula, case_in.vector) {
 # # 1. Load required DT(s) and/or script(s) for regression analysis
 # # 1.1. Load the DT for regression analysis
 dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
+setDT(dt_for.reg)
 
 # # 1.2. Load the R script including model specification(s)
 source(PATH_TO.LOAD_CER_MODELS)
@@ -101,7 +112,7 @@ dt_for.reg[
   kwh_per.hour := lapply(.SD, sum, na.rm = TRUE), .SDcols = "kwh",
   by = .(id, date, interval_hour)
 ]
-
+# # 2.1.2. Add columns that will directly utilized when running regressions
 dt_for.reg[
   ,
   `:=` (
@@ -117,8 +128,10 @@ dt_for.reg[
 # # 1.1. Create a DT including values for subsetting the DT
 dt_cases <-
   expand.grid(
-    sample = c("Base", "Case1"),
-    range = c("Both Halves", "Only Second Half"),
+    # sample = c("Base", "Case1"),
+    # range = c("Both Halves", "Only Second Half"),
+    sample = "Base",
+    range = "Only Second Half",
     rate.period = "Peak",
     tariff = c("A", "B", "C", "D"),
     stringsAsFactors = FALSE
@@ -142,56 +155,127 @@ for (row in 1:dt_cases[, .N]) {
 
 # # 2. Create a list including regression model(s)
 list_models <- list(
-  model_breakdown.of.ate_hourly.in.peak_dw.mw =
-    model_breakdown.of.ate_hourly.in.peak_dw.mw
+  model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1 =
+    model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1
+)
+
+
+# ------- Create object(s) required to make regression table(s) -------
+# # 1. Create objects that will be utilized to generate stargazer object(s)
+title_ <- paste0(
+  "Breakdown of Average Treatment Effects in the Peak Rate Period, ",
+  "For Each Tariff"
+)
+out.header <- FALSE
+column.labels <- LETTERS[1:4] %>% paste0("Tariff ", .)
+covariate.labels_text <- c(
+  "HDDs",
+  "1[Treatment] x HDDs",
+  "1[Post]",
+  "1[Post] x HDDs",
+  "1[Treatment and Post]",
+  "1[Treatment and Post] x HDDs"
+)
+covariate.labels_latex <- c(
+  "HDDs",
+  "$\\mathbb{1}$[Treatment] $\\times$ HDDs",
+  "$\\mathbb{1}$[Post]",
+  "$\\mathbb{1}$[Post] $\\times$ HDDs",
+  "$\\mathbb{1}$[Treatment \\& Post]",
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs"
+)
+dep.var.caption <- "Dependent Variable"
+dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
+add.lines <- list(
+  c("FEs: ID by Half-Hourly Time Window", rep("Yes", times = 4)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 4)),
+  c("FEs: Month of Year by Half-Hourly Time Window", rep("Yes", times = 4))
+)
+column.sep.width <- "20pt"
+font.size <- "small"
+header <- FALSE
+label <-
+  "Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period"
+model.names <- FALSE
+omit.stat <- c("ser", "rsq")
+omit.table.layout <- "n"
+order <- c(
+  "hdd_all_60f",
+  "treatment_by_hdd",
+  "is_treatment.period",
+  "treatment.period_by_hdd",
+  "is_treatment.and.post",
+  "treatment.and.post_by_hdd"
 )
 
 
 # ------- Run regression(s), and then save results -------
-utils::timestamp()
-n_cases <- length(list_cases)
-for (idx in 2:n_cases) {
-# for (idx in 1) {
+n_models <- length(list_models)
+for (idx in 1:n_models) {
   # ## Create temporary objects that will be used later
-  obj.name_results <-
-    names(list_cases)[idx] %>%
-      tolower(.) %>%
-      str_replace_all(., " ", ".") %>%
-      paste0("reg.results_", .)
-  obj.name_estimates <-
-    names(list_cases)[idx] %>%
-      tolower(.) %>%
-      str_replace_all(., " ", ".") %>%
-      paste0("estimates_", .)
-  case.name <-
-    names(list_cases)[idx] %>%
-      str_replace_all(., " ", "-")
+  model.name <-
+    names(list_models)[idx] %>%
+      str_extract(., "(?<=peak_).+(?=_version1)")
+  obj.name_results <- paste0("reg.results_", model.name)
+  obj.name_estimates <- paste0("estimates_", model.name)
 
   # ## Run regression(s)
   print("Be Running Regressions ...")
   assign(
     obj.name_results,
     lapply(
-      list_models,
+      list_cases,
       FUN = get_reg.results,
       data_in.DT = dt_for.reg,
-      case_in.vector = list_cases[[idx]]
+      formula = list_models[[idx]]
     )
   )
 
-  # ## Save regression result(s)
-  print("Be Saving Regression Results ...")
-  save(
-    list = obj.name_results,
-    file = paste(
-      DIR_TO.SAVE_REG.RESULTS,
-      paste0(
-        "CER_Regression-Results_Breakdown-of-ATEs_",
-        "Hourly-in-the-Peak-Rate-Period_For-Each-Tariff_",
-        paste0(case.name, ".RData")
-      ),
+  # ## Create stargazer object(s)
+  # ### For a screenshot
+  stargazer(
+    get(obj.name_results),
+    type = "text",
+    title = title_,
+    out.header = out.header,
+    column.labels = column.labels,
+    covariate.labels = covariate.labels_text,
+    dep.var.caption = dep.var.caption,
+    dep.var.labels = dep.var.labels,
+    add.lines = add.lines,
+    column.sep.width = column.sep.width,
+    font.size = font.size,
+    header = header,
+    label = label,
+    model.names = model.names,
+    omit.stat = omit.stat,
+    omit.table.layout = omit.table.layout,
+    order = order
+  )
+  # ### For exporting in .tex format
+  stargazer(
+    get(obj.name_results),
+    type = "latex",
+    title = title_,
+    out = paste(
+      DIR_TO.SAVE_LATEX,
+      "Breakdown-of-ATEs_Hourly-in-the-Peak-Rate-Period_For-Each-Tariff.tex",
       sep = "/"
-    )
+    ),
+    out.header = out.header,
+    column.labels = column.labels,
+    covariate.labels = covariate.labels_latex,
+    dep.var.caption = dep.var.caption,
+    dep.var.labels = dep.var.labels,
+    add.lines = add.lines,
+    column.sep.width = column.sep.width,
+    font.size = font.size,
+    header = header,
+    label = label,
+    model.names = model.names,
+    omit.stat = omit.stat,
+    omit.table.layout = omit.table.layout,
+    order = order
   )
 
   # ## Extract estimates
@@ -206,16 +290,31 @@ for (idx in 2:n_cases) {
     )
   )
 
+  # ## Save regression result(s)
+  print("Be Saving Regression Results ...")
+  save(
+    list = obj.name_results,
+    file = paste(
+      DIR_TO.SAVE_REG.RESULTS,
+      paste0(
+        "CER_Regression-Results_Breakdown-of-ATEs_",
+        "Hourly-in-the-Peak-Rate-Period_For-Each-Tariff_",
+        paste0(str_replace_all(model.name, "\\.", "-"), ".RData")
+      ),
+      sep = "/"
+    )
+  )
+
   # ## Remove regression result(s)
   rm(list= obj.name_results)
   gc(reset = TRUE, full = TRUE)
 
   # ## Show the current work progress
   print(
-    paste0("Estimation is completed : Model ", idx, " out of ", n_cases)
+    paste0("Estimation is completed : Model ", idx, " out of ", n_models)
   )
 }
-utils::timestamp()
+
 # ## Save estimates in a separate .RData file
 obj.to.save_estimates <- ls()[str_detect(ls(), "^estimates_")]
 save(
