@@ -401,6 +401,96 @@ get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.tariff <-
   return (condition_in.str)
 }
 
+# # 2.5. For breaking down hourly ATEs in the peak rate period, by heating type
+get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.heating.type.and.tariff <-
+  function (case_in.vector) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half",
+  # ##    `rate.period` = "Night", "Day", or "Peak",
+  # ##    `tariff` = "A", "B", "C", or "D",
+  # ##    `heating.type` = "Space", "Water", or "Both",
+  # ##    `is_electric.heating` = TRUE, or FALSE
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  heating.type.var.names <- if (case_in.vector[5] == "Both") {
+    c(
+      "is_elec.heating_space_pre", "is_elec.heating_space_post",
+      "is_elec.heating_water_pre", "is_elec.heating_water_post"
+    )
+  } else {
+    tolower(case_in.vector[5]) %>%
+      paste0("is_elec.heating_", .) %>%
+      paste0(., c("_pre", "_post"))
+  }
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    paste0("alloc_r_tariff %in% c('", case_in.vector[4], "', 'E')"),
+    paste0(heating.type.var.names, " == ", case_in.vector[6]) %>%
+      paste(., collapse = " & "),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
+
+# # 2.6. For breaking down hourly ATEs in the peak rate period,
+# #      by heating type and tariff
+get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.heating.type <-
+  function (case_in.vector) {
+  # ## Note:
+  # ## The list must be in the form of
+  # ## (
+  # ##    `sample` = "Base" or "Case1",
+  # ##    `range` = "Both Halves" or "Only Second Half",
+  # ##    `rate.period` = "Night", "Day", or "Peak",
+  # ##    `heating.type` = "Space", "Water", or "Both",
+  # ##    `is_electric.heating` = TRUE, or FALSE
+  # ## )
+  indicator.var.name <- paste0(
+    "is_in.sample_incl.control_",
+    tolower(case_in.vector[1]),
+    if (case_in.vector[2] == "Both Halves") {
+      ""
+    } else {
+      tolower(case_in.vector[2]) %>%
+        str_replace_all(., " ", ".") %>%
+        paste0(".", .)
+    }
+  )
+  heating.type.var.names <- if (case_in.vector[4] == "Both") {
+    c(
+      "is_elec.heating_space_pre", "is_elec.heating_space_post",
+      "is_elec.heating_water_pre", "is_elec.heating_water_post"
+    )
+  } else {
+    tolower(case_in.vector[4]) %>%
+      paste0("is_elec.heating_", .) %>%
+      paste0(., c("_pre", "_post"))
+  }
+  condition_in.str <- paste(
+    paste0(indicator.var.name, " == TRUE"),
+    paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    paste0(heating.type.var.names, " == ", case_in.vector[5]) %>%
+      paste(., collapse = " & "),
+    sep = " & "
+  )
+  return (condition_in.str)
+}
+
+
 # # 3. Extract estimates
 # # 3.1. From a `felm` object
 get_estimates_from.felm <- function (
