@@ -1,0 +1,67 @@
+\begin{table}[!htbp]
+% Add the title
+\caption{Breakdown of Average Treatment Effects in the Peak Rate Period}
+\label{Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period}
+\centering
+% Determine font size
+\small
+% The number of "c" is equal to the number of columns. And determine the width
+% of each column.
+\begin{adjustbox}{scale = 0.8}
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc}
+\\[-5.5ex]
+\hline \hline
+\\[-3.0ex]
+% Add the label of the dependent variable. And the number must be the same with
+% the number of columns.
+& \multicolumn{7}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+\\[-3.0ex]
+% The range must be "2-(The number of columns + 1)"
+\cline{2-8}
+\\[-3.0ex]
+%& All & All & All & Tariff A & Tariff B & Tariff C & Tariff D \\
+%\\[-4.0ex]
+& (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+\\[-3.0ex]
+\hline
+\\[-2.0ex]
+HDDs & 0.005$^{**}$ & 0.005$^{**}$ & 0.004$^{**}$ & 0.004$^{*}$ & 0.006$^{***}$ & 0.006$^{**}$ & 0.007$^{***}$ \\
+& (0.002) & (0.002) & (0.002)  & (0.002) & (0.002) & (0.002) & (0.002) \\
+& & & & & & & \\
+$\mathbb{1}$[Treatment] & 0.077$^{***}$ & & \\
+& (0.030) &  & \\
+& & & & & & & \\
+$\mathbb{1}$[Treatment] $\times$ HDDs & 0.003$^{**}$ & 0.003$^{**}$ & 0.004$^{**}$ & 0.005$^{***}$ & 0.004 & 0.002 & 0.001 \\
+& (0.001) & (0.002) & (0.002) & (0.002) & (0.003) & (0.002) & (0.002) \\
+& & & & & & & \\
+$\mathbb{1}$[Post] & 0.001 & 0.001 & & 0.00002 & 0.002 & 0.001 & 0.001 \\
+& (0.018) & (0.019) & & (0.019) & (0.019) & (0.019) & (0.019) \\
+& & & & & & & \\
+$\mathbb{1}$[Post] $\times$ HDDs & $-$0.001 & $-$0.001 & & $-$0.0005 & $-$0.001 & $-$0.001 & $-$0.001 \\
+& (0.002) & (0.002) & & (0.002) & (0.002) & (0.002) & (0.002) \\
+& & & & & & & \\
+$\mathbb{1}$[Treatment \& Post] & $-$0.128$^{***}$ & $-$0.128$^{***}$ & $-$0.127$^{***}$ & $-$0.099$^{***}$ & $-$0.122$^{***}$ & $-$0.138$^{***}$ & $-$0.182$^{***}$ \\
+& (0.015) & (0.016) & (0.015) & (0.019) & (0.026) & (0.019) & (0.025) \\
+& & & & & & & \\
+$\mathbb{1}$[Treatment \& Post] $\times$ HDDs & $-$0.004$^{***}$ & $-$0.004$^{***}$ & $-$0.004$^{***}$ & $-$0.004$^{***}$ & $-$0.005$^{***}$ & $-$0.003$^{*}$ & $-$0.003 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.002) & (0.001) & (0.002) \\
+& & & & & & & \\
+\hline
+\\[-2.0ex]
+Tariff & All & All & All & A & B & C & D \\
+FEs: ID by Half-Hourly Time Window & No & Yes & Yes & Yes & Yes & Yes & Yes \\
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+FEs: Month of Year by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+Observations & 3,522,560 & 3,522,560 & 3,522,560 & 1,771,600 & 1,147,240 & 1,795,680 & 1,155,840 \\
+Adjusted R$^{2}$ & 0.051 & 0.366 & 0.366 & 0.361 & 0.377 & 0.362 & 0.360 \\
+\\[-2.0ex]
+\hline \hline
+\\[-4.5ex]
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}
+    \footnotesize
+    \textit{Note}: (...)  % Add a note.
+\end{tablenotes}
+\label{Table:}  % Add the label
+\end{table}
