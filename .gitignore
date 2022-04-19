@@ -25,5 +25,12 @@
 **/01_Raw-Data/02_Use/Met-Eireann/**/*.txt
 **/01_Raw-Data/02_Use/Met-Eireann/**/*.xlsx
 
+
 # 3. Scripts
 # (Not Applicable)
+
+
+# 4. Others
+# 4.1. LaTeX files for checking table(s)
+03_Output/02_Tables/For-LaTeX-Documents
+For-Test.*
