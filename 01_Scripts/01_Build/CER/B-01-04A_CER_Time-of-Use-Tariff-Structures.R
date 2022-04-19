@@ -264,7 +264,8 @@ plot_tou <-
 # # 1. Plot(s) for TOU Tariff Structures
 export_figure.in.png(
   plot_tou,
-  filename_str =
-    paste(DIR_TO.SAVE_PLOT, "CER_Time-of-Use-Tariff-Structures.png", sep = "/"),
+  filename_str = paste(
+    DIR_TO.SAVE_PLOT, "Figure_Time-of-Use-Tariff-Structures.png", sep = "/"
+  ),
   width_numeric = 40, height_numeric = 25, units_str = "cm"
 )
