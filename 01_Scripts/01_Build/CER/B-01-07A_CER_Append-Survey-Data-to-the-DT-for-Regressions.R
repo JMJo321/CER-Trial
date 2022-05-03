@@ -69,7 +69,7 @@ PATH_TO.SAVE_CER_DT <-
 # ------- Define parameter(s) -------
 # # 1. Create lists incl. answer codes for heating-type-related questions
 # # 1.1. For space heating type (i.e., `question_id == 470`)
-heating.type_space <- list(
+list_heating.type_space <- list(
   `1` = "Electricity (Electric Central Heating/Storage Heating)",
   `2` = "Electricity (Plug-In Heaters)",
   `3` = "Gas",
@@ -79,7 +79,7 @@ heating.type_space <- list(
   `7` = "Other"
 )
 # # 1.2. For water heating type (i.e., `question_id == 4701`)
-heating.type_water <- list(
+list_heating.type_water <- list(
   `1` = "Central Heating System",
   `2` = "Electricity (Immersion)",
   `3` = "Electricity (Instantaneous Heater)",
@@ -145,26 +145,73 @@ names_new_water <- paste0("heating.type_water_", 1:8)
 setnames(dt_survey_pre_wideform, names_old_water, names_new_water)
 
 # # 1.2. Add data fields
+# # 1.2.1. Add indicator variables with respect to heating type
 dt_survey_pre_wideform[
-  ,
-  is_elec.heating_space :=
-    heating.type_space_1 == 1 | heating.type_space_2 == 1
+  (heating.type_space_1 == 1 | heating.type_space_2 == 1) &
+    (
+      heating.type_space_3 != 1 & heating.type_space_4 != 1 &
+      heating.type_space_5 != 1 & heating.type_space_6 != 1 &
+      heating.type_space_7 != 1
+    ),
+  is_elec.heating_space := TRUE
+
 ]
 dt_survey_pre_wideform[
-  ,
-  is_elec.heating_water :=
-    heating.type_water_2 == 1 | heating.type_water_3 == 1
+  (heating.type_space_1 != 1 & heating.type_space_2 != 1) &
+    (
+      heating.type_space_3 == 1 | heating.type_space_4 == 1 |
+      heating.type_space_5 == 1 | heating.type_space_6 == 1 |
+      heating.type_space_7 == 1
+    ),
+  is_elec.heating_space := FALSE
+
 ]
 dt_survey_pre_wideform[
-  ,
+  (heating.type_water_2 == 1 | heating.type_water_3 == 1) &
+    (
+      heating.type_water_1 != 1 & heating.type_water_4 != 1 &
+      heating.type_water_5 != 1 & heating.type_water_6 != 1 &
+      heating.type_water_7 != 1 & heating.type_water_8 != 1
+    ),
+  is_elec.heating_water := TRUE
+]
+dt_survey_pre_wideform[
+  (heating.type_water_2 != 1 & heating.type_water_3 != 1) &
+    (
+      heating.type_water_1 == 1 | heating.type_water_4 == 1 |
+      heating.type_water_5 == 1 | heating.type_water_6 == 1 |
+      heating.type_water_7 == 1 | heating.type_water_8 == 1
+    ),
+  is_elec.heating_water := FALSE
+]
+dt_survey_pre_wideform[
+  !is.na(is_elec.heating_space) & !is.na(is_elec.heating_water),
   is_elec.heating_and :=
     is_elec.heating_space == TRUE & is_elec.heating_water == TRUE
 ]
 dt_survey_pre_wideform[
-  ,
+  !is.na(is_elec.heating_space) & !is.na(is_elec.heating_water),
   is_elec.heating_or :=
     is_elec.heating_space == TRUE | is_elec.heating_water == TRUE
 ]
+# # 1.2.2. Add a data field showing heating type
+# for (idx in 1:7) {
+#   col.name <- paste0("heating.type_space_", idx)
+#   dt_survey_pre_wideform[
+#     get(col.name) == 1,
+#     heating.type_space_desc := list_heating.type_space[[idx]]
+#   ]
+# }
+# for (idx in 1:8) {
+#   col.name <- paste0("heating.type_water_", idx)
+#   dt_survey_pre_wideform[
+#     get(col.name) == 1,
+#     heating.type_water_desc := list_heating.type_water[[idx]]
+#   ]
+# }
+# ## Note:
+# ## Those two questions in the pre-survey are multiple selection questions.
+# ## Because of the reason, I do not assign a specific description. 
 
 # # 1.3. Create a DT by subsetting the DT above
 cols_indicators <- c(
@@ -172,8 +219,14 @@ cols_indicators <- c(
   "is_elec.heating_and", "is_elec.heating_or"
 )
 dt_survey_pre_wideform[, .N, keyby = cols_indicators]
-subdt_survey_pre <-
-  dt_survey_pre_wideform[, .SD, .SDcols = c("id", cols_indicators)]
+subdt_survey_pre <- dt_survey_pre_wideform[
+  ,
+  .SD,
+  .SDcols = c(
+    # "id", cols_indicators, "heating.type_space_desc", "heating.type_water_desc"
+    "id", cols_indicators
+  )
+]
 
 
 # # 2. For the post-trial survey data
@@ -197,6 +250,7 @@ names_new <- c("heating.type_space", "heating.type_water")
 setnames(dt_survey_post_wideform, names_old, names_new)
 
 # # 2.2. Add data fields
+# # 2.2.1. Add indicator variables with respect to heating type
 dt_survey_post_wideform[
   ,
   is_elec.heating_space :=
@@ -217,11 +271,35 @@ dt_survey_post_wideform[
   is_elec.heating_or :=
     is_elec.heating_space == TRUE | is_elec.heating_water == TRUE
 ]
+# # 2.2.2. Add a data field showing heating type
+dt_survey_post_wideform[
+  ,
+  heating.type_space_desc := (
+    lapply(.SD, function (x) list_heating.type_space[x]) %>%
+      unlist(.) %>%
+      as.vector(., mode = "character")
+  ),
+  .SDcols = "heating.type_space"
+]
+dt_survey_post_wideform[
+  ,
+  heating.type_water_desc := (
+    lapply(.SD, function (x) list_heating.type_water[x]) %>%
+      unlist(.) %>%
+      as.vector(., mode = "character")
+  ),
+  .SDcols = "heating.type_water"
+]
 
 # # 2.3. Create a DT by subsetting the DT above
 dt_survey_post_wideform[, .N, keyby = cols_indicators]
-subdt_survey_post <-
-  dt_survey_post_wideform[, .SD, .SDcols = c("id", cols_indicators)]
+subdt_survey_post <- dt_survey_post_wideform[
+  ,
+  .SD,
+  .SDcols = c(
+    "id", cols_indicators, "heating.type_space_desc", "heating.type_water_desc"
+  )
+]
 
 
 # ------- Merge the DTs created, and then peform simple tests -------
@@ -311,7 +389,6 @@ dt_to.append[
 dt_to.append[
   is_elec.heating_water_pre == FALSE & is_elec.heating_water_post == FALSE, .N
 ]
-
 # ## Note:
 # ## Those results mean:
 # ## 1) Non-electric energy source are utilized for space or water heating.
