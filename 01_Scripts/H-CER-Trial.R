@@ -281,6 +281,29 @@ get_formula_felm <- function (
   return (formula(formula_in.str))
 }
 
+# # 1.2. Replace term(s) in a formula
+get_change.terms.in.formula <-
+  function (
+    formula, is_terms.in.dep.var = FALSE, term_old_in.str, term_new_in.str
+  ) {
+    formula_in.str <- as.character(formula)
+    if (is_terms.in.dep.var == TRUE) {
+      formula_in.str[2] <-
+        stringr::str_replace(
+          formula_in.str[2], term_old_in.str, term_new_in.str
+        )
+    } else {
+      formula_in.str[3] <-
+        stringr::str_replace_all(
+          formula_in.str[3], term_old_in.str, term_new_in.str
+        )
+    }
+    formula_modified <-
+      paste(formula_in.str[2], formula_in.str[3], sep = " ~ ") %>%
+        as.formula(.)
+    return (formula_modified)
+  }
+
 
 # # 2. Function(s) for creating subsetting condition(s) in string
 # # 2.1. For half-hourly ATEs
