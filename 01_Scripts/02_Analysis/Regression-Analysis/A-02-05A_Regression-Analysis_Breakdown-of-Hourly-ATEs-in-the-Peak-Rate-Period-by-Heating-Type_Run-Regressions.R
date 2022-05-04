@@ -6,8 +6,12 @@
 # # : A-02-05A
 # #
 # > Purpose of the script(s)
-# # : Run regressions to breakdown hourly ATEs by heating type. And then save
-# #   the regression table(s) in .tex format.
+# # : 1) Run regressions, by heating type, to breakdown hourly ATEs.
+# #      In this script, two econometric specifications are used:
+# #      linear and quadratic models.
+# #   2) Save regression table(s) in .tex format.
+# #   3) Make figure(s), which show predicted load profiles, by exploiting
+# #      the estimates.
 
 # ------------------------------------------------------------------------------
 # Load required libraries
@@ -15,6 +19,8 @@
 library(arrow)
 library(stargazer)
 library(lfe)
+library(ggplot2)
+library(gridExtra)
 library(stringr)
 library(data.table)
 
@@ -70,6 +76,10 @@ DIR_TO.SAVE_REG.RESULTS <- paste(
   sep = "/"
 )
 
+# # 2.3. For figure(s)
+DIR_TO.SAVE_FIGURE <- "Breakdown-of-Hourly-ATEs"
+PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
+
 
 # ------- Define parameter(s) -------
 # (Not Applicable)
@@ -78,15 +88,144 @@ DIR_TO.SAVE_REG.RESULTS <- paste(
 # ------- Define function(s) -------
 # # 1. Function(s) for running regression(s)
 get_reg.results <- function (data_in.DT, formula, case_in.vector) {
-  subsetting.condition <-
-    get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.heating.type(
-      case_in.vector
-    )
+  func.name <- paste0(
+    "get_subsetting.condition.in.str_",
+    "breakdown.of.ate_hourly.in.peak_by.heating.type"
+  )
+  subsetting.condition <- get(func.name)(case_in.vector)
   reg.results <- felm(
     data = data_in.DT[eval(parse(text = subsetting.condition))],
     formula = formula
   )
   return (reg.results)
+}
+
+
+# # 2. To create ggplot object(s) demonstrating predicted load profiles
+# # 2.1. Create a DT from a felm object
+get_dt.for.plotting <- function (felm.obj, model.type = "Linear") {
+  dt_fes <- getfe(felm.obj) %>% setDT(.)
+
+  fes_id <- dt_fes[fe %like% "^id"]$effect %>% mean(.)
+  fes_day <- dt_fes[fe %like% "^day"]$effect %>% mean(.)
+  fes_month <- dt_fes[fe %like% "^month"]$effect %>% mean(.)
+
+  dt_plot <- data.table(hdd = seq(0, 30, by = 1))
+  if (model.type == "Quadratic") {
+    dt_plot[
+      ,
+      hourly.kwh_initial := (
+        hdd * felm.obj$coefficients["hdd_all_60f",] +
+          hdd^2 * felm.obj$coefficients["hdd2",] +
+          hdd * felm.obj$coefficients["treatment_by_hdd",] +
+          hdd^2 * felm.obj$coefficients["treatment_by_hdd2",] +
+          felm.obj$coefficients["is_treatment.periodTRUE",] +
+          hdd * felm.obj$coefficients["treatment.period_by_hdd",] +
+          hdd^2 * felm.obj$coefficients["treatment.period_by_hdd2",] +
+          fes_id + fes_day + fes_month
+      )
+    ]
+    dt_plot[
+      ,
+      hourly.kwh_add.non.temp := (
+        hourly.kwh_initial + felm.obj$coefficients["is_treatment.and.postTRUE",]
+      )
+    ]
+    dt_plot[
+      ,
+      hourly.kwh_final := (
+        hourly.kwh_add.non.temp +
+          hdd * felm.obj$coefficients["treatment.and.post_by_hdd",] +
+          hdd^2 * felm.obj$coefficients["treatment.and.post_by_hdd2",]
+      )
+    ]
+  } else {
+    dt_plot[
+      ,
+      hourly.kwh_initial := (
+        hdd * felm.obj$coefficients["hdd_all_60f",] +
+          hdd * felm.obj$coefficients["treatment_by_hdd",] +
+          felm.obj$coefficients["is_treatment.periodTRUE",] +
+          hdd * felm.obj$coefficients["treatment.period_by_hdd",] +
+          fes_id + fes_day + fes_month
+      )
+    ]
+    dt_plot[
+      ,
+      hourly.kwh_add.non.temp := (
+        hourly.kwh_initial + felm.obj$coefficients["is_treatment.and.postTRUE",]
+      )
+    ]
+    dt_plot[
+      ,
+      hourly.kwh_final := (
+        hourly.kwh_add.non.temp +
+          hdd * felm.obj$coefficients["treatment.and.post_by_hdd",]
+      )
+    ]
+  }
+
+  tmp_dt_1 <- dt_plot[, .(hdd, hourly.kwh_initial, hourly.kwh_add.non.temp)]
+  tmp_dt_2 <- dt_plot[, .(hdd, hourly.kwh_add.non.temp, hourly.kwh_final)]
+  names_new <- c("hdd", "hourly.kwh_min", "hourly.kwh_max")
+  names(tmp_dt_1) <- names_new
+  names(tmp_dt_2) <- names_new
+  dt_plot_melted <- rbind(
+    tmp_dt_1[, category := "Non-Temperature"],
+    tmp_dt_2[, category := "Temperature"]
+  )
+
+  return (dt_plot_melted)
+}
+
+# # 2.2. Generate a ggplot object
+get_ggplot.obj <- function (data.table_dt, subtitle_str) {
+  col.pal_custom <- unikn::usecol(c("firebrick", "gold", "steelblue"))
+
+  ggplot.obj <-
+    ggplot() +
+      geom_ribbon(
+        data = data.table_dt,
+        aes(
+          x = hdd,
+          ymin = hourly.kwh_min,
+          ymax = hourly.kwh_max,
+          fill = category
+        ),
+        alpha = 0.3
+      ) +
+      geom_line(
+        data = data.table_dt[category == "Non-Temperature"],
+        aes(x = hdd, y = hourly.kwh_min),
+        linetype = "dotted", lwd = 0.3
+      ) +
+      geom_line(
+        data = data.table_dt[category == "Non-Temperature"],
+        aes(x = hdd, y = hourly.kwh_max),
+        linetype = "dotdash", lwd = 0.3
+      ) +
+      geom_line(
+        data = data.table_dt[category == "Temperature"],
+        aes(x = hdd, y = hourly.kwh_max),
+        color = col.pal_custom[3]
+      ) +
+      scale_x_continuous(breaks = seq(0, 30, by = 5)) +
+      scale_y_continuous(labels = scales::comma_format(accuracy = 0.1)) +
+      scale_fill_manual(values = col.pal_custom[1:2]) +
+      labs(
+        x = "Heating Degree Days  (HDDs)",
+        y = "kWh/Hour",
+        fill = "",
+        subtitle = subtitle_str
+      ) +
+      theme_linedraw() +
+      theme(
+        strip.text = element_text(face = "bold"),
+        axis.title.x = element_text(margin = margin(t = 10)),
+        axis.title.y = element_text(margin = margin(r = 12)),
+        legend.position = "bottom"
+      )
+  return (ggplot.obj)
 }
 
 
@@ -96,9 +235,8 @@ get_reg.results <- function (data_in.DT, formula, case_in.vector) {
 # ------- Load the DT for regression analysis -------
 # # 1. Load required DT(s) and/or script(s) for regression analysis
 # # 1.1. Load the DT for regression analysis
-dt_for.reg <-
-  read_parquet(PATH_TO.LOAD_CER_FOR.REG) %>%
-    setDT(.)
+dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
+setDT(dt_for.reg)
 
 # # 1.2. Load the R script including model specification(s)
 source(PATH_TO.LOAD_CER_MODELS)
@@ -112,13 +250,19 @@ dt_for.reg[
   kwh_per.hour := lapply(.SD, sum, na.rm = TRUE), .SDcols = "kwh",
   by = .(id, date, interval_hour)
 ]
-
+# # 2.1.2. Add data fields that will be used when running regression(s)
 dt_for.reg[
   ,
   `:=` (
     treatment_by_hdd = as.numeric(is_treated_r) * hdd_all_60f,
     treatment.period_by_hdd = as.numeric(is_treatment.period) * hdd_all_60f,
-    treatment.and.post_by_hdd = as.numeric(is_treatment.and.post) * hdd_all_60f
+    treatment.and.post_by_hdd = as.numeric(is_treatment.and.post) * hdd_all_60f,
+    hdd2 = (hdd_all_60f^2),
+    treatment_by_hdd2 = as.numeric(is_treated_r) * (hdd_all_60f^2),
+    treatment.period_by_hdd2 =
+      as.numeric(is_treatment.period) * (hdd_all_60f^2),
+    treatment.and.post_by_hdd2 =
+      as.numeric(is_treatment.and.post) * (hdd_all_60f^2)
   )
 ]
 
@@ -160,7 +304,9 @@ for (row in 1:dt_cases[, .N]) {
 # # 2. Create a list including regression model(s)
 list_models <- list(
   model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1 =
-    model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1
+    model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1,
+  model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_quadratic =
+    model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_quadratic
 )
 
 
@@ -171,57 +317,78 @@ title_ <- paste0(
   "By Heating Type"
 )
 out.header <- FALSE
-column.labels <- c("Electric Heating", "Non-Electric Heating")
-column.separate <- c(3, 3)
+column.labels <- c("Linear Model", "Quadratic Model")
+column.separate <- c(6, 6)
 covariate.labels_text <- c(
   "HDDs",
+  "HDDs\\^2",
   "1[Treatment] x HDDs",
+  "1[Treatment] x HDDs\\^2",
   "1[Post]",
   "1[Post] x HDDs",
+  "1[Post] x HDDs\\^2",
   "1[Treatment and Post]",
-  "1[Treatment and Post] x HDDs"
+  "1[Treatment and Post] x HDDs",
+  "1[Treatment and Post] x HDDs\\^2"
 )
 covariate.labels_latex <- c(
   "HDDs",
+  "HDDs$^{2}$",
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs",
+  "$\\mathbb{1}$[Treatment] $\\times$ HDDs$^{2}$",
   "$\\mathbb{1}$[Post]",
   "$\\mathbb{1}$[Post] $\\times$ HDDs",
+  "$\\mathbb{1}$[Post] $\\times$ HDDs$^{2}$",
   "$\\mathbb{1}$[Treatment \\& Post]",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs"
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs",
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs$^{2}$"
 )
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
 add.lines <- list(
-  c("Heating Type", rep(c("Space only", "Water only", "Both"), times = 2)),
-  c("FEs: ID by Half-Hourly Time Window", rep("Yes", times = 6)),
-  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 6)),
-  c("FEs: Month of Year by Half-Hourly Time Window", rep("Yes", times = 6))
+  c(
+    "Heating Type",
+    rep(rep(c("Electric", "Non-Electric"), each = 3), times = 2)
+  ),
+  c("Heating Purpose", rep(c("Space", "Water", "Space and Water"), times = 4)),
+  c("FEs: ID by Half-Hourly Time Window", rep("Yes", times = 12)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 12)),
+  c("FEs: Month of Year by Half-Hourly Time Window", rep("Yes", times = 12))
 )
 column.sep.width <- "20pt"
 font.size <- "small"
 header <- FALSE
-label <-
-  "Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period"
+label <- paste0(
+  "Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period_",
+  "By-Heating-Type_Linear-and-Quadratic-Models"
+)
 model.names <- FALSE
 omit.stat <- c("ser", "rsq")
 omit.table.layout <- "n"
 order <- c(
-  "hdd_all_60f",
-  "treatment_by_hdd",
-  "is_treatment.period",
-  "treatment.period_by_hdd",
-  "is_treatment.and.post",
-  "treatment.and.post_by_hdd"
+  "hdd_all_60f$",
+  "hdd2$",
+  "treatment_by_hdd$",
+  "treatment_by_hdd2$",
+  "is_treatment.period$",
+  "treatment.period_by_hdd$",
+  "treatment.period_by_hdd2$",
+  "is_treatment.and.post$",
+  "treatment.and.post_by_hdd$",
+  "treatment.and.post_by_hdd2$"
 )
 
 
-# ------- Run regression(s), and then save results -------
+# ------- Run regression(s), and then save results in .tex format -------
+# # 1. Run regression(s)
 n_models <- length(list_models)
 for (idx in 1:n_models) {
   # ## Create temporary objects that will be used later
-  model.name <-
-    names(list_models)[idx] %>%
-      str_extract(., "(?<=peak_).+(?=_version1)")
+  model.name <- if (str_detect(names(list_models)[idx], "quadratic")) {
+    "quadratic"
+  } else {
+    "linear"
+  }
   obj.name_results <- paste0("reg.results_", model.name)
   obj.name_estimates <- paste0("estimates_", model.name)
 
@@ -237,55 +404,6 @@ for (idx in 1:n_models) {
     )
   )
 
-  # ## Create stargazer object(s)
-  # ### For a screenshot
-  stargazer(
-    get(obj.name_results),
-    type = "text",
-    title = title_,
-    out.header = out.header,
-    column.labels = column.labels,
-    column.separate = column.separate,
-    covariate.labels = covariate.labels_text,
-    dep.var.caption = dep.var.caption,
-    dep.var.labels = dep.var.labels,
-    add.lines = add.lines,
-    column.sep.width = column.sep.width,
-    font.size = font.size,
-    header = header,
-    label = label,
-    model.names = model.names,
-    omit.stat = omit.stat,
-    omit.table.layout = omit.table.layout,
-    order = order
-  )
-  # ### For exporting in .tex format
-  stargazer(
-    get(obj.name_results),
-    type = "latex",
-    title = title_,
-    out = paste(
-      DIR_TO.SAVE_LATEX,
-      "Breakdown-of-ATEs_Hourly-in-the-Peak-Rate-Period_By-Heating-Type.tex",
-      sep = "/"
-    ),
-    out.header = out.header,
-    column.labels = column.labels,
-    column.separate = column.separate,
-    covariate.labels = covariate.labels_latex,
-    dep.var.caption = dep.var.caption,
-    dep.var.labels = dep.var.labels,
-    add.lines = add.lines,
-    column.sep.width = column.sep.width,
-    font.size = font.size,
-    header = header,
-    label = label,
-    model.names = model.names,
-    omit.stat = omit.stat,
-    omit.table.layout = omit.table.layout,
-    order = order
-  )
-
   # ## Extract estimates
   assign(
     obj.name_estimates,
@@ -298,16 +416,65 @@ for (idx in 1:n_models) {
     )
   )
 
-  # ## Remove regression result(s)
-  rm(list= obj.name_results)
-  gc(reset = TRUE, full = TRUE)
-
   # ## Show the current work progress
   print(
     paste0("Estimation is completed : Model ", idx, " out of ", n_models)
   )
 }
-# ## Save estimates in a separate .RData file
+
+
+# # 2. Export regression result(s)
+# # 2.1. Regression table(s)
+# # 2.1.1. Print regression table(s)
+stargazer(
+  reg.results_linear, reg.results_quadratic,
+  type = "text",
+  title = title_,
+  out.header = out.header,
+  column.labels = column.labels,
+  column.separate = column.separate,
+  covariate.labels = covariate.labels_text,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = NULL,
+  omit.table.layout = omit.table.layout
+)
+# # 2.1.2. Export regression table(s) in .tex format
+stargazer(
+  reg.results_linear, reg.results_quadratic,
+  type = "latex",
+  title = title_,
+  out = paste(
+    DIR_TO.SAVE_LATEX,
+    paste0(
+      "Breakdown-of-ATEs_Hourly-in-the-Peak-Rate-Period_",
+      "By-Heating-Type_Linear-and-Quadratic-Models.tex"
+    ),
+    sep = "/"
+  ),
+  out.header = out.header,
+  column.labels = column.labels,
+  column.separate = column.separate,
+  covariate.labels = covariate.labels_latex,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat,
+  omit.table.layout = omit.table.layout
+)
+
+# # 2.2. Export the estimates in .RData format
 obj.to.save_estimates <- ls()[str_detect(ls(), "^estimates_")]
 save(
   list = obj.to.save_estimates,
@@ -315,8 +482,53 @@ save(
     DIR_TO.SAVE_REG.RESULTS,
     paste0(
       "CER_Estimates_Breakdown-of-ATEs_",
-      "Hourly-in-the-Peak-Rate-Period_By-Heating-Type.RData"
+      "Hourly-in-the-Peak-Rate-Period_",
+      "By-Heating-Type_Linear-and-Quadratic-Models.RData"
     ),
     sep = "/"
   )
+)
+
+
+# # 3. Export figure(s), showing predicted load profiles, in .PNG format
+# # 3.1. Create object(s) that will be used later
+subtitles <- c(
+  paste(
+    "Electric Heating", c("Space", "Water", "Space and Water"),
+    sep = ", For "
+  ),
+  paste(
+    "Non-Electric Heating", c("Space", "Water", "Space and Water"),
+    sep = ", For "
+  )
+) %>%
+  rep(., times = 2)
+
+# # 3.2. Run regressions
+list_reg.results_linear <-
+  lapply(reg.results_linear, get_dt.for.plotting, "Linear")
+list_reg.results_quadratic <-
+  lapply(reg.results_quadratic, get_dt.for.plotting, "Quadratic")
+
+# # 3.3. Create ggplot object(s)
+ggplot.objs <- mapply(
+  get_ggplot.obj,
+  c(list_reg.results_linear, list_reg.results_quadratic),
+  subtitle_str = subtitles,
+  SIMPLIFY = FALSE
+)
+plot_by.heating.type.and.model <- grid.arrange(grobs = ggplot.objs, nrow = 2)
+
+# # 3.4. Export the ggplot object(s) in .PNG format
+export_figure.in.png(
+  plot_by.heating.type.and.model,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE,
+    paste0(
+      "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
+      "By-Heating-Type_Linear-and-Quadratic-Models.png"
+    ),
+    sep = "/"
+  ),
+  width_numeric = 70, height_numeric = 35
 )
