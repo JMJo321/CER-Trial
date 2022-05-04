@@ -1,0 +1,56 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Breakdown of Average Treatment Effects in the Peak Rate Period, By Heating Type, For Knot = 15} 
+  \label{Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period_By-Heating-Type_Knot-15} 
+\small 
+\begin{tabular}{@{\extracolsep{20pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{Dependent Variable} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ HDDs & 0.088$^{***}$ & $-$0.010 & $-$0.005 \\ 
+  & (0.021) & (0.008) & (0.003) \\ 
+  & & & \\ 
+ (HDDs - Knot) $\times$ $\mathbb{1}$[HDDs $>$ Knot] & $-$0.011 & 0.005 & 0.025$^{***}$ \\ 
+  & (0.030) & (0.017) & (0.007) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs & $-$0.081$^{**}$ & 0.006 & 0.006$^{*}$ \\ 
+  & (0.028) & (0.010) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ (HDDs - Knot) $\times$ $\mathbb{1}$[HDDs $>$ Knot] & 0.052$^{**}$ & 0.025 & $-$0.008$^{*}$ \\ 
+  & (0.021) & (0.018) & (0.005) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] & 0.245 & $-$0.215$^{***}$ & $-$0.020 \\ 
+  & (0.146) & (0.071) & (0.025) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs & $-$0.054$^{***}$ & 0.015$^{*}$ & 0.002 \\ 
+  & (0.011) & (0.008) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ (HDDs - Knot) $\times$ $\mathbb{1}$[HDDs $>$ Knot] & 0.010 & 0.004 & $-$0.017$^{**}$ \\ 
+  & (0.014) & (0.022) & (0.008) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.409 & $-$0.007 & $-$0.096$^{***}$ \\ 
+  & (0.316) & (0.093) & (0.027) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.023 & $-$0.017$^{*}$ & $-$0.005$^{*}$ \\ 
+  & (0.018) & (0.010) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ (HDDs - Knot) $\times$ $\mathbb{1}$[HDDs $>$ Knot] & 0.048$^{*}$ & $-$0.022 & 0.010$^{**}$ \\ 
+  & (0.020) & (0.022) & (0.005) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Electrical Heating for Space & True & False & False \\ 
+Electrical Heating for Water & True & True & False \\ 
+FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Month of Year by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+Number of Households &     7 &    89 & 1,170 \\ 
+Observations & 6,020 & 76,540 & 1,006,200 \\ 
+Adjusted R$^{2}$ & 0.428 & 0.371 & 0.380 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 

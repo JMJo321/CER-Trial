@@ -1,42 +1,43 @@
 
 \begin{table}[!htbp] \centering 
   \caption{Breakdown of Average Treatment Effects in the Peak Rate Period, By Heating Type} 
-  \label{Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period} 
+  \label{Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period_By-Heating-Type} 
 \small 
-\begin{tabular}{@{\extracolsep{20pt}}lcccccc} 
+\begin{tabular}{@{\extracolsep{20pt}}lccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & \multicolumn{6}{c}{Dependent Variable} \\ 
-\cline{2-7} 
-\\[-1.8ex] & \multicolumn{6}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
- & \multicolumn{3}{c}{Electric Heating} & \multicolumn{3}{c}{Non-Electric Heating} \\ 
-\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+ & \multicolumn{3}{c}{Dependent Variable} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
 \hline \\[-1.8ex] 
- HDDs & 0.064$^{**}$ & $-$0.002 & 0.095$^{***}$ & 0.004 & 0.007$^{**}$ & 0.005 \\ 
-  & (0.026) & (0.006) & (0.023) & (0.002) & (0.003) & (0.003) \\ 
-  & & & & & & \\ 
- $\mathbb{1}$[Treatment] $\times$ HDDs & $-$0.039 & 0.009 & $-$0.080$^{**}$ & 0.004$^{**}$ & 0.001 & 0.004 \\ 
-  & (0.034) & (0.006) & (0.028) & (0.002) & (0.003) & (0.003) \\ 
-  & & & & & & \\ 
- $\mathbb{1}$[Post] & 0.188$^{**}$ & $-$0.142$^{**}$ & 0.243$^{**}$ & $-$0.013 & 0.010 & 0.008 \\ 
-  & (0.085) & (0.063) & (0.107) & (0.022) & (0.025) & (0.026) \\ 
-  & & & & & & \\ 
- $\mathbb{1}$[Post] $\times$ HDDs & $-$0.034$^{**}$ & 0.007 & $-$0.052$^{***}$ & $-$0.001 & $-$0.004$^{*}$ & $-$0.003 \\ 
-  & (0.014) & (0.006) & (0.006) & (0.002) & (0.002) & (0.002) \\ 
-  & & & & & & \\ 
- $\mathbb{1}$[Treatment \& Post] & $-$0.325$^{**}$ & $-$0.072 & $-$0.473$^{**}$ & $-$0.127$^{***}$ & $-$0.118$^{***}$ & $-$0.112$^{***}$ \\ 
-  & (0.128) & (0.073) & (0.208) & (0.020) & (0.025) & (0.026) \\ 
-  & & & & & & \\ 
- $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.025 & $-$0.012$^{*}$ & 0.051$^{***}$ & $-$0.003$^{**}$ & $-$0.001 & $-$0.002 \\ 
-  & (0.018) & (0.007) & (0.009) & (0.001) & (0.002) & (0.002) \\ 
-  & & & & & & \\ 
+ HDDs & 0.088$^{**}$ & $-$0.006 & 0.004 \\ 
+  & (0.024) & (0.009) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs & $-$0.065 & 0.014 & 0.004 \\ 
+  & (0.034) & (0.010) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] & 0.224$^{*}$ & $-$0.221$^{***}$ & 0.008 \\ 
+  & (0.107) & (0.078) & (0.026) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs & $-$0.050$^{***}$ & 0.017$^{**}$ & $-$0.003 \\ 
+  & (0.006) & (0.008) & (0.002) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.460 & 0.030 & $-$0.112$^{***}$ \\ 
+  & (0.306) & (0.102) & (0.026) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.039$^{***}$ & $-$0.024$^{***}$ & $-$0.002 \\ 
+  & (0.010) & (0.009) & (0.002) \\ 
+  & & & \\ 
 \hline \\[-1.8ex] 
-Heating Type & Space only & Water only & Both & Space only & Water only & Both \\ 
-FEs: ID by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes \\ 
-FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes \\ 
-FEs: Month of Year by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes \\ 
-Observations & 17,200 & 202,960 & 8,600 & 2,356,400 & 1,080,160 & 1,007,920 \\ 
-Adjusted R$^{2}$ & 0.390 & 0.347 & 0.367 & 0.358 & 0.380 & 0.380 \\ 
+Electrical Heating for Space & True & False & False \\ 
+Electrical Heating for Water & True & True & False \\ 
+FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Month of Year by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+Number of Households &     7 &    89 & 1,170 \\ 
+Observations & 6,020 & 76,540 & 1,006,200 \\ 
+Adjusted R$^{2}$ & 0.426 & 0.371 & 0.380 \\ 
 \hline 
 \hline \\[-1.8ex] 
 \end{tabular} 
