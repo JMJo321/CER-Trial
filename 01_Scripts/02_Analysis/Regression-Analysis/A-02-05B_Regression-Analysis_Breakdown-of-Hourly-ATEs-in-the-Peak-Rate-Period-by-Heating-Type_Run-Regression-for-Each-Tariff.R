@@ -3,11 +3,13 @@
 # # : A-02, Regression-Analysis
 # #
 # > Script Number(s)
-# # : A-02-06A
+# # : A-02-05B
 # #
 # > Purpose of the script(s)
-# # : Run regressions to breakdown hourly ATEs by heating type and tariff. And
-# #   then save the regression table(s) in .tex format.
+# # : Run regressions, by heating type
+# #   (three heating types, `Space`, `Water`, and `Both`) and tariff,
+# #   to breakdown hourly ATEs.
+# #   And then save the regression table(s) in .tex format.
 
 # ------------------------------------------------------------------------------
 # Load required libraries
@@ -78,8 +80,12 @@ DIR_TO.SAVE_REG.RESULTS <- paste(
 # ------- Define function(s) -------
 # # 1. Function(s) for running regression(s)
 get_reg.results <- function (data_in.DT, formula, case_in.vector) {
+  func.name <- paste0(
+    "get_subsetting.condition.in.str_breakdown.of.ate_",
+    "hourly.in.peak_by.heating.type.and.tariff"
+  )
   subsetting.condition <-
-    get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.heating.type.and.tariff(
+    get(func.name)(
       case_in.vector
     )
   reg.results <- felm(
@@ -206,8 +212,10 @@ add.lines <- list(
 column.sep.width <- "20pt"
 font.size <- "small"
 header <- FALSE
-label <-
-  "Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period"
+label <- paste0(
+  "Table:Breakdown-of-Average-Treatment-Effects-in-the-Peak-Rate-Period_",
+  "By-Heating-Type-and-Tariff"
+)
 model.names <- FALSE
 omit.stat <- c("ser", "rsq")
 omit.table.layout <- "n"
@@ -239,7 +247,7 @@ for (idx in 1:n_models) {
       list_cases,
       FUN = get_reg.results,
       data_in.DT = dt_for.reg,
-      formula = list_models_[[idx]]
+      formula = list_models[[idx]]
     )
   )
 
@@ -261,8 +269,6 @@ for (idx in 1:n_models) {
     header = header,
     label = label,
     model.names = model.names,
-    omit.stat = omit.stat,
-    omit.table.layout = omit.table.layout,
     order = order
   )
   # ### For exporting in .tex format
@@ -305,10 +311,6 @@ for (idx in 1:n_models) {
       se.type = "cluster"
     )
   )
-
-  # ## Remove regression result(s)
-  rm(list= obj.name_results)
-  gc(reset = TRUE, full = TRUE)
 
   # ## Show the current work progress
   print(
