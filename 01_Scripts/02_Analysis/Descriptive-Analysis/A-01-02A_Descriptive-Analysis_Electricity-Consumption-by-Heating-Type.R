@@ -90,6 +90,8 @@ help_compute.avg.kwh <- function (
       include.lowest = TRUE
     )
   ][
+    alloc_r_tariff %in% LETTERS[1:5]
+  ][
     parse(text = condition_str) %>% eval(.)
   ][
     ,
@@ -346,9 +348,8 @@ get_ggplot.obj <- function (
 # ------------------------------------------------------------------------------
 # ------- Load the DT for regression analysis -------
 # # 1. Load the DT for regression analysis
-dt_for.reg <-
-  read_parquet(PATH_TO.LOAD_CER_FOR.REG) %>%
-    setDT(.)
+dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
+setDT(dt_for.reg)
 
 
 # # 2. Modify the DT loaded
@@ -411,6 +412,7 @@ list_plots <- lapply(
   list_var.names,
   get_ggplot.obj,
   condition_str = "is_in.sample_incl.control_base.only.second.half == TRUE",
+  # condition_str = "is_in.sample_incl.control_base == TRUE",
   var.name.for.facetting_str = "heating.type",
   lowest_numeric = temp.bin_lowest,
   highest_numeric = temp.bin_highest,
@@ -462,7 +464,10 @@ mapply(
 # # 1. Create DTs by reshaping the DT for regression analysis
 dt_1by1 <- dcast(
   dt_for.reg[
-    , .N, keyby = .(id, is_elec.heating_space_pre, is_elec.heating_water_pre)
+    is_in.sample_incl.control_base.only.second.half == TRUE &
+      alloc_r_tariff %in% LETTERS[1:5],
+    .N,
+    keyby = .(id, is_elec.heating_space_pre, is_elec.heating_water_pre)
   ][
     , N := NULL
   ],
@@ -471,7 +476,10 @@ dt_1by1 <- dcast(
 )
 dt_2by1 <- dcast(
   dt_for.reg[
-    , .N, keyby = .(id, is_elec.heating_space_pre, is_elec.heating_water_post)
+    is_in.sample_incl.control_base.only.second.half == TRUE &
+      alloc_r_tariff %in% LETTERS[1:5],
+    .N,
+    keyby = .(id, is_elec.heating_space_pre, is_elec.heating_water_post)
   ][
     , N := NULL
   ],
@@ -480,7 +488,10 @@ dt_2by1 <- dcast(
 )
 dt_1by2 <- dcast(
   dt_for.reg[
-    , .N, keyby = .(id, is_elec.heating_space_post, is_elec.heating_water_pre)
+    is_in.sample_incl.control_base.only.second.half == TRUE &
+      alloc_r_tariff %in% LETTERS[1:5],
+    .N,
+    keyby = .(id, is_elec.heating_space_post, is_elec.heating_water_pre)
   ][
     , N := NULL
   ],
@@ -489,7 +500,10 @@ dt_1by2 <- dcast(
 )
 dt_2by2 <- dcast(
   dt_for.reg[
-    , .N, keyby = .(id, is_elec.heating_space_post, is_elec.heating_water_post)
+    is_in.sample_incl.control_base.only.second.half == TRUE &
+      alloc_r_tariff %in% LETTERS[1:5],
+    .N,
+    keyby = .(id, is_elec.heating_space_post, is_elec.heating_water_post)
   ][
     , N := NULL
   ],
@@ -583,3 +597,6 @@ number_format(ht)[4:10, 4:10] <- fmt_pretty()
 
 # # 3. Print the huxtable(s)
 ht
+# ## Note:
+# ## The table is a snapshot only
+# ## (i.e., some number = stayed + inflow - outflow.)
