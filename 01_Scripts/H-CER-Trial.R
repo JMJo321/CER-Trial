@@ -483,6 +483,7 @@ get_subsetting.condition.in.str_breakdown.of.ate_hourly.in.peak_by.heating.type 
   condition_in.str <- paste(
     paste0(indicator.var.name, " == TRUE"),
     paste0("as.character(rate.period) == '", case_in.vector[3], "'"),
+    "alloc_r_tariff %in% LETTERS[1:5]",
     paste0(heating.type.var.names, " == ", case_in.vector[5]) %>%
       paste(., collapse = " & "),
     sep = " & "
