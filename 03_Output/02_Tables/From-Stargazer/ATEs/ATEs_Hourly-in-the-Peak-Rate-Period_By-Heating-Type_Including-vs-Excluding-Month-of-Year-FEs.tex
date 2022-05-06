@@ -1,0 +1,29 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Average Treatment Effects in the Peak Rate Period: By Heating Type, Including/Excluding Month of Year FEs} 
+  \label{Table:Average-Treatment-Effects-in-the-Peak-Rate-Period_By-Heating-Type_Model-without-Interaction-Terms_Month-of-Year-FEs} 
+\small 
+\begin{tabular}{@{\extracolsep{20pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{Dependent Variable} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.282 & $-$0.246$^{***}$ & $-$0.143$^{***}$ & $-$0.453 & $-$0.349$^{***}$ & $-$0.242$^{***}$ \\ 
+  & (0.346) & (0.066) & (0.015) & (0.382) & (0.084) & (0.049) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Electrical Heating for Space & True & False & False & True & False & False \\ 
+Electrical Heating for Water & True & True & False & True & True & False \\ 
+FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+FEs: Month of Year & Yes & Yes & Yes & No & No & No \\ 
+Number of Households &     7 &    89 & 1,170 &     7 &    89 & 1,170 \\ 
+Observations & 6,020 & 76,540 & 1,006,200 & 6,020 & 76,540 & 1,006,200 \\ 
+Adjusted R$^{2}$ & 0.414 & 0.370 & 0.379 & 0.332 & 0.325 & 0.327 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
