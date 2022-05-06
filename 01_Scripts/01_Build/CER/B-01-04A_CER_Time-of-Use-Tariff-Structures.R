@@ -46,7 +46,11 @@ PATH_TO.SAVE_CER_TOU <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.SAVE_CER_TOU, sep = "/")
 
 # # 1.2. Path(s) to which Plot(s) will be stored
-DIR_TO.SAVE_PLOT <- paste(PATH_OUTPUT_FIGURE, sep = "/")
+DIR_TO.SAVE_PLOT <- paste(
+  PATH_OUTPUT_FIGURE,
+  "TOU-Tariff-Structures",
+  sep = "/"
+)
 
 
 # ------- Define parameter(s) -------
@@ -231,25 +235,25 @@ plot_tou <-
       geom = "text",
       x = dt_annotate_rate.priod$x, y = dt_annotate_rate.priod$y,
       label = dt_annotate_rate.priod$label,
-      color = "grey", size = 4
+      color = "black", alpha = 0.5, size = 3.5
     ) +
     annotate(
       geom = "text",
       x = dt_annotate_rate_night$x, y = dt_annotate_rate_night$y,
       label = dt_annotate_rate_night$label,
-      color = "grey", size = 3
+      color = "black", alpha = 0.5, size = 2.5
     ) +
     annotate(
       geom = "text",
       x = dt_annotate_rate_day$x, y = dt_annotate_rate_day$y,
       label = dt_annotate_rate_day$label,
-      color = "grey", size = 3
+      color = "black", alpha = 0.5, size = 2.5
     ) +
     annotate(
       geom = "text",
       x = dt_annotate_rate_peak$x, y = dt_annotate_rate_peak$y,
       label = dt_annotate_rate_peak$label,
-      color = "grey", size = 3
+      color = "black", alpha = 0.5, size = 2.5
     ) +
     scale_x_continuous(breaks = seq(0, 24, by = 1), minor_breaks = NULL) +
     scale_y_continuous(breaks = seq(5, 45, by = 5), labels = scales::comma) +
@@ -267,5 +271,5 @@ export_figure.in.png(
   filename_str = paste(
     DIR_TO.SAVE_PLOT, "Figure_Time-of-Use-Tariff-Structures.png", sep = "/"
   ),
-  width_numeric = 40, height_numeric = 25, units_str = "cm"
+  width_numeric = 30, height_numeric = 17, units_str = "cm"
 )
