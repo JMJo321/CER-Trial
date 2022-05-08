@@ -560,25 +560,38 @@ model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_cubic <- get_formula_felm(
 )
 
 
-# ------- Define econometric models:                                  -------
-# ------- Breakdown of Hourly ATEs in the peak rate period, Splinw    -------
-# ## Note:
-# ## Several objects are defined above.
+# ------- Define econometric models:                                     -------
+# ------- Breakdown of Hourly ATEs in the peak rate period,              -------
+# ------- By using Spline Regressions                                    -------
+# # 1. Define dependent and independent variables commonly used
+# # 1.1. Dependent variable
+# (Same as the linear model)
 
-# # 1. Models for spline regression(s)
-# # 1.1. Model including month-of-year-by-30-minute-window FEs
+# # 1.2. Independent variables
+# # 1.2.1. Covariate(s)
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_spline_iw.dw.mw <- paste(
+  "hdd_all_60f", "hdd.knot",
+  "treatment_by_hdd", "treatment_by_hdd.knot",
+  "is_treatment.period",
+  "treatment.period_by_hdd", "treatment.period_by_hdd.knot",
+  "is_treatment.and.post",
+  "treatment.and.post_by_hdd", "treatment.and.post_by_hdd.knot",
+  sep = " + "
+)
+# # 1.2.2. Fixed effect(s)
+# (Defined in each econometric model.)
+# # 1.2.3. Instrument variable(s)
+# (Same as the linear model)
+# # 1.2.4. Clustered standard error(s)
+# (Same as the linear model)
+
+# # 2. Econometric models for spline regression(s)
+# # 2.1. Model including month-of-year-by-30-minute-window FEs
 model_breakdown.of.ate_hourly.in.peak_splines_iw.dw.mw <- get_formula_felm(
   dep.var =
     dep.var_breakdown.of.ate_hourly.in.peak,
-  indep.vars_covariates = paste(
-    "hdd_all_60f", "hdd.knot",
-    "treatment_by_hdd", "treatment_by_hdd.knot",
-    "is_treatment.period",
-    "treatment.period_by_hdd", "treatment.period_by_hdd.knot",
-    "is_treatment.and.post",
-    "treatment.and.post_by_hdd", "treatment.and.post_by_hdd.knot",
-    sep = " + "
-  ),
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_spline_iw.dw.mw,
   indep.vars_fes = paste(
     "id.and.30min.interval_in.factor",
     "day.of.week.and.30min.interval_in.factor",
@@ -591,19 +604,12 @@ model_breakdown.of.ate_hourly.in.peak_splines_iw.dw.mw <- get_formula_felm(
     indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
 )
 
-# # 1.2. Model including month-of-year FEs
+# # 2.2. Model including month-of-year FEs
 model_breakdown.of.ate_hourly.in.peak_splines_iw.dw.m <- get_formula_felm(
   dep.var =
     dep.var_breakdown.of.ate_hourly.in.peak,
-  indep.vars_covariates = paste(
-    "hdd_all_60f", "hdd.knot",
-    "treatment_by_hdd", "treatment_by_hdd.knot",
-    "is_treatment.period",
-    "treatment.period_by_hdd", "treatment.period_by_hdd.knot",
-    "is_treatment.and.post",
-    "treatment.and.post_by_hdd", "treatment.and.post_by_hdd.knot",
-    sep = " + "
-  ),
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_spline_iw.dw.mw,
   indep.vars_fes = paste(
     "id.and.30min.interval_in.factor",
     "day.of.week.and.30min.interval_in.factor",
@@ -616,19 +622,12 @@ model_breakdown.of.ate_hourly.in.peak_splines_iw.dw.m <- get_formula_felm(
     indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
 )
 
-# # 1.3. Model including no month-related FEs
+# # 2.3. Model including no month-related FEs
 model_breakdown.of.ate_hourly.in.peak_splines_iw.dw <- get_formula_felm(
   dep.var =
     dep.var_breakdown.of.ate_hourly.in.peak,
-  indep.vars_covariates = paste(
-    "hdd_all_60f", "hdd.knot",
-    "treatment_by_hdd", "treatment_by_hdd.knot",
-    "is_treatment.period",
-    "treatment.period_by_hdd", "treatment.period_by_hdd.knot",
-    "is_treatment.and.post",
-    "treatment.and.post_by_hdd", "treatment.and.post_by_hdd.knot",
-    sep = " + "
-  ),
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_spline_iw.dw.mw,
   indep.vars_fes = paste(
     "id.and.30min.interval_in.factor",
     "day.of.week.and.30min.interval_in.factor",
@@ -639,3 +638,141 @@ model_breakdown.of.ate_hourly.in.peak_splines_iw.dw <- get_formula_felm(
   indep.vars_clustered.ses =
     indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
 )
+
+
+# ------- Define econometric models:                                     -------
+# ------- Breakdown of Hourly ATEs in the peak rate period as a function -------
+# ------- of Rate Change                                                 -------
+# # 1. Define dependent and independent variables commonly used
+# # 1.1. Dependent variable
+# (Same as the linear model)
+
+# # 1.2. Independent variables
+# # 1.2.1. Covariate(s)
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change_dw <- paste(
+  "hdd_all_60f",
+  "is_treated_r",
+  "treatment_times_rate.change",
+  "treatment_times_hdd",
+  "treatment_times_hdd_times_rate.change",
+  "is_treatment.period",
+  "post_times_hdd",
+  "is_treatment.and.post",
+  "treatment.and.post_times_rate.change",
+  "treatment.and.post_times_hdd",
+  "treatment.and.post_times_hdd_times_rate.change",
+  sep = " + "
+)
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw <-
+  paste(
+    "hdd_all_60f",
+    # "treatment_times_rate.change",
+    "treatment_times_hdd",
+    "treatment_times_hdd_times_rate.change",
+    "is_treatment.period",
+    "post_times_hdd",
+    "is_treatment.and.post",
+    "treatment.and.post_times_rate.change",
+    "treatment.and.post_times_hdd",
+    "treatment.and.post_times_hdd_times_rate.change",
+    sep = " + "
+  )
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw <-
+  paste(
+    "hdd_all_60f", "hdd.knot",
+    "is_treated_r", "treatment_times_rate.change",
+    "treatment_times_hdd", "treatment_times_hdd.knot",
+    "treatment_times_hdd_times_rate.change",
+      "treatment_times_hdd.knot_times_rate.change",
+    "is_treatment.period",
+    "post_times_hdd", "post_times_hdd.knot",
+    "is_treatment.and.post", "treatment.and.post_times_rate.change",
+    "treatment.and.post_times_hdd", "treatment.and.post_times_hdd.knot",
+    "treatment.and.post_times_hdd_times_rate.change",
+      "treatment.and.post_times_hdd.knot_times_rate.change",
+    sep = " + "
+  )
+indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw <-
+  paste(
+    "hdd_all_60f", "hdd.knot",
+    # "treatment_times_rate.change",
+    "treatment_times_hdd", "treatment_times_hdd.knot",
+    "treatment_times_hdd_times_rate.change",
+      "treatment_times_hdd.knot_times_rate.change",
+    "is_treatment.period",
+    "post_times_hdd", "post_times_hdd.knot",
+    "is_treatment.and.post", "treatment.and.post_times_rate.change",
+    "treatment.and.post_times_hdd", "treatment.and.post_times_hdd.knot",
+    "treatment.and.post_times_hdd_times_rate.change",
+      "treatment.and.post_times_hdd.knot_times_rate.change",
+    sep = " + "
+  )
+# # 1.2.2. Fixed effect(s)
+# (Defined in each econometric model.)
+# # 1.2.3. Instrument variable(s)
+# (Same as the linear model)
+# # 1.2.4. Clustered standard error(s)
+# (Same as the linear model)
+
+# # 2. Econometric models for spline regression(s)
+# # 2.1. FEs Model(s)
+model_breakdown.of.ate_hourly.in.peak_rate.change_dw <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+    # "kwh",
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change_dw,
+  indep.vars_fes = "day.of.week.and.30min.interval_in.factor",
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
+model_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+    # "kwh",
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw,
+  indep.vars_fes = paste(
+    "id.and.30min.interval_in.factor",
+    "day.of.week.and.30min.interval_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
+
+# # 2.2. Spline regression(s)
+model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw <-
+  get_formula_felm(
+    dep.var =
+      dep.var_breakdown.of.ate_hourly.in.peak,
+      # "kwh",
+    indep.vars_covariates =
+      indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw,
+    indep.vars_fes = "day.of.week.and.30min.interval_in.factor",
+    indep.vars_ivs =
+      indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+    indep.vars_clustered.ses =
+      indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+  )
+model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw <-
+  get_formula_felm(
+    dep.var =
+      dep.var_breakdown.of.ate_hourly.in.peak,
+      # "kwh",
+    indep.vars_covariates =
+      indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw,
+    indep.vars_fes = paste(
+      "id.and.30min.interval_in.factor",
+      "day.of.week.and.30min.interval_in.factor",
+      sep = " + "
+    ),
+    indep.vars_ivs =
+      indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+    indep.vars_clustered.ses =
+      indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+  )
