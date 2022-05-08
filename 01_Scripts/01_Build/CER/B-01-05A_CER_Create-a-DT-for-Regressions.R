@@ -56,10 +56,23 @@ FILE_TO.LOAD_CER_LABELS <- "D-CER-Trial_Data-Dictionary.R"
 PATH_TO.LOAD_CER_LABELS <-
   paste(PATH_SCRIPT, FILE_TO.LOAD_CER_LABELS, sep = "/")
 
+# # 1.4. For Pre- and Post-Trial Data
+# # 1.4.1. For Pre-Trial Data
+FILE_TO.LOAD_CER_SURVEY_PRE <- "CER_Survey_Electricity_Pre.parquet"
+PATH_TO.LOAD_CER_SURVEY_PRE <- paste(
+  PATH_DATA_INTERMEDIATE_CER_SURVEY, FILE_TO.LOAD_CER_SURVEY_PRE, sep = "/"
+)
+# # 1.4.1. For Post-Trial Data
+FILE_TO.LOAD_CER_SURVEY_POST <- "CER_Survey_Electricity_Post.parquet"
+PATH_TO.LOAD_CER_SURVEY_POST <- paste(
+  PATH_DATA_INTERMEDIATE_CER_SURVEY, FILE_TO.LOAD_CER_SURVEY_POST, sep = "/"
+)
+
 
 # # 2. Path(s) to which Ouputs will be stored
 # # 2.1. For the DT created to run regressions
-FILE_TO.SAVE_CER_DT <- "CER_DT-for-Regressions_Electricity.parquet"
+FILE_TO.SAVE_CER_DT <-
+  "CER_DT-for-Regressions-with-Survey-Data_Electricity.parquet"
 PATH_TO.SAVE_CER_DT <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.SAVE_CER_DT, sep = "/")
 
@@ -72,18 +85,43 @@ season_cold <- 11:12
 # ## Those vectors are created based on the plot generated from A-01-04B_A1.
 
 
+# # 2. Create lists incl. answer codes for heating-type-related questions
+# # 2.1. For space heating type (i.e., `question_id == 470`)
+list_heating.type_space <- list(
+  `1` = "Electricity (Electric Central Heating/Storage Heating)",
+  `2` = "Electricity (Plug-In Heaters)",
+  `3` = "Gas",
+  `4` = "Oil",
+  `5` = "Solid Fuel",
+  `6` = "Renewable (e.g., Solar)",
+  `7` = "Other"
+)
+
+# # 2.2. For water heating type (i.e., `question_id == 4701`)
+list_heating.type_water <- list(
+  `1` = "Central Heating System",
+  `2` = "Electricity (Immersion)",
+  `3` = "Electricity (Instantaneous Heater)",
+  `4` = "Gas",
+  `5` = "Oil",
+  `6` = "Solid Fuel",
+  `7` = "Renewable (e.g., Solar)",
+  `8` = "Other"
+)
+
+
 # ------- Define function(s) -------
 # (Not Applicable)
 
 
 # ------------------------------------------------------------------------------
-# Create a DT for running Regressions
+# Load dataset(s) required
 # ------------------------------------------------------------------------------
 # ------- Load DT(s) required -------
 # # 1. Load the Combined Metering Dataset
-dt_metering_elec <-
-  read_parquet(PATH_TO.LOAD_CER_METERING) %>%
-    setDT(.)
+dt_metering_elec <- read_parquet(PATH_TO.LOAD_CER_METERING)
+setDT(dt_metering_elec)
+
 
 # # 2. Load the Dataset for TOU Tariffs
 dt_tou <-
@@ -91,6 +129,304 @@ dt_tou <-
     setDT(.)
 
 
+# # 3. DTs for pre- and post-trial data
+# # 3.1. DT for the pre-trial
+dt_survey_pre <-
+  read_parquet(PATH_TO.LOAD_CER_SURVEY_PRE) %>%
+    setDT(.)
+# # 3.2. DT for the post-trial
+dt_survey_post <-
+  read_parquet(PATH_TO.LOAD_CER_SURVEY_POST) %>%
+    setDT(.)
+
+
+# ------------------------------------------------------------------------------
+# Create a DT from survey datasets, which will be merged to the DT for
+# regression analysis
+# ------------------------------------------------------------------------------
+# ------- Create DTs by modifying DTs incl. survey data -------
+# # 1. For the pre-trial survey data
+dt_survey_pre[
+  question_id %like% "^470", .N, keyby = .(question_id, question_desc)
+]
+# ## Note:
+# ## In the pre-trail survey, Question 470 and Question 4701 are multiple
+# ## selection. But in the post-trial survey, they are not.
+
+# # 1.1. Create a DT incl. data in wide-form
+# # 1.1.1. Create a DT by converting the pre-trial survey data to wideform
+dt_survey_pre_wideform <- dcast(
+  dt_survey_pre[
+    question_id %like% "(470_)|(4701_)",
+    # To include heating-type-related questions
+    .(id, question_id, answer_code)
+  ],
+  formula = id ~ question_id,
+  value.var = "answer_code"
+)
+# # 1.1.2. Rename data fields
+names_old_space <- paste0("470_", 1:7)
+names_new_space <- paste0("heating.type_space_", 1:7)
+setnames(dt_survey_pre_wideform, names_old_space, names_new_space)
+names_old_water <- paste0("4701_", 1:8)
+names_new_water <- paste0("heating.type_water_", 1:8)
+setnames(dt_survey_pre_wideform, names_old_water, names_new_water)
+
+# # 1.2. Add data fields
+# # 1.2.1. Add indicator variables with respect to heating type
+dt_survey_pre_wideform[
+  (heating.type_space_1 == 1 | heating.type_space_2 == 1) &
+    (
+      heating.type_space_3 != 1 & heating.type_space_4 != 1 &
+      heating.type_space_5 != 1 & heating.type_space_6 != 1 &
+      heating.type_space_7 != 1
+    ),
+  is_elec.heating_space := TRUE
+
+]
+dt_survey_pre_wideform[
+  (heating.type_space_1 != 1 & heating.type_space_2 != 1) &
+    (
+      heating.type_space_3 == 1 | heating.type_space_4 == 1 |
+      heating.type_space_5 == 1 | heating.type_space_6 == 1 |
+      heating.type_space_7 == 1
+    ),
+  is_elec.heating_space := FALSE
+
+]
+dt_survey_pre_wideform[
+  (heating.type_water_2 == 1 | heating.type_water_3 == 1) &
+    (
+      heating.type_water_1 != 1 & heating.type_water_4 != 1 &
+      heating.type_water_5 != 1 & heating.type_water_6 != 1 &
+      heating.type_water_7 != 1 & heating.type_water_8 != 1
+    ),
+  is_elec.heating_water := TRUE
+]
+dt_survey_pre_wideform[
+  (heating.type_water_2 != 1 & heating.type_water_3 != 1) &
+    (
+      heating.type_water_1 == 1 | heating.type_water_4 == 1 |
+      heating.type_water_5 == 1 | heating.type_water_6 == 1 |
+      heating.type_water_7 == 1 | heating.type_water_8 == 1
+    ),
+  is_elec.heating_water := FALSE
+]
+dt_survey_pre_wideform[
+  !is.na(is_elec.heating_space) & !is.na(is_elec.heating_water),
+  is_elec.heating_and :=
+    is_elec.heating_space == TRUE & is_elec.heating_water == TRUE
+]
+dt_survey_pre_wideform[
+  !is.na(is_elec.heating_space) & !is.na(is_elec.heating_water),
+  is_elec.heating_or :=
+    is_elec.heating_space == TRUE | is_elec.heating_water == TRUE
+]
+# # 1.2.2. Add a data field showing heating type
+# for (idx in 1:7) {
+#   col.name <- paste0("heating.type_space_", idx)
+#   dt_survey_pre_wideform[
+#     get(col.name) == 1,
+#     heating.type_space_desc := list_heating.type_space[[idx]]
+#   ]
+# }
+# for (idx in 1:8) {
+#   col.name <- paste0("heating.type_water_", idx)
+#   dt_survey_pre_wideform[
+#     get(col.name) == 1,
+#     heating.type_water_desc := list_heating.type_water[[idx]]
+#   ]
+# }
+# ## Note:
+# ## Those two questions in the pre-survey are multiple selection questions.
+# ## Because of the reason, I do not assign a specific description.
+
+# # 1.3. Create a DT by subsetting the DT above
+cols_indicators <- c(
+  "is_elec.heating_space", "is_elec.heating_water",
+  "is_elec.heating_and", "is_elec.heating_or"
+)
+dt_survey_pre_wideform[, .N, keyby = cols_indicators]
+subdt_survey_pre <- dt_survey_pre_wideform[
+  ,
+  .SD,
+  .SDcols = c(
+    # "id", cols_indicators, "heating.type_space_desc", "heating.type_water_desc"
+    "id", cols_indicators
+  )
+]
+
+
+# # 2. For the post-trial survey data
+dt_survey_post[, .N, by = .(id, question_id)][N > 1][, .N, by = .(id)]
+# ## Note:
+# ## The result shows that there are duplicate rows for `id == 5059`.
+
+# # 2.1. Create a DT incl. data in wide-form
+# # 2.1.1. Create a DT by converting the post-trial survey data to wideform
+dt_survey_post_wideform <- dcast(
+  dt_survey_post[
+    question_id %in% c("470", "4701"), .(id, question_id, answer_code)
+  ] %>%
+    unique(.),
+  formula = id ~ question_id,
+  value.var = "answer_code"
+)
+# # 2.1.2. Rename data fields
+names_old <- c("470", "4701")
+names_new <- c("heating.type_space", "heating.type_water")
+setnames(dt_survey_post_wideform, names_old, names_new)
+
+# # 2.2. Add data fields
+# # 2.2.1. Add indicator variables with respect to heating type
+dt_survey_post_wideform[
+  ,
+  is_elec.heating_space :=
+    heating.type_space %in% c(1, 2)
+]
+dt_survey_post_wideform[
+  ,
+  is_elec.heating_water :=
+    heating.type_water %in% c(2, 3)
+]
+dt_survey_post_wideform[
+  ,
+  is_elec.heating_and :=
+    is_elec.heating_space == TRUE & is_elec.heating_water == TRUE
+]
+dt_survey_post_wideform[
+  ,
+  is_elec.heating_or :=
+    is_elec.heating_space == TRUE | is_elec.heating_water == TRUE
+]
+# # 2.2.2. Add a data field showing heating type
+dt_survey_post_wideform[
+  ,
+  heating.type_space_desc := (
+    lapply(.SD, function (x) list_heating.type_space[x]) %>%
+      unlist(.) %>%
+      as.vector(., mode = "character")
+  ),
+  .SDcols = "heating.type_space"
+]
+dt_survey_post_wideform[
+  ,
+  heating.type_water_desc := (
+    lapply(.SD, function (x) list_heating.type_water[x]) %>%
+      unlist(.) %>%
+      as.vector(., mode = "character")
+  ),
+  .SDcols = "heating.type_water"
+]
+
+# # 2.3. Create a DT by subsetting the DT above
+dt_survey_post_wideform[, .N, keyby = cols_indicators]
+subdt_survey_post <- dt_survey_post_wideform[
+  ,
+  .SD,
+  .SDcols = c(
+    "id", cols_indicators, "heating.type_space_desc", "heating.type_water_desc"
+  )
+]
+
+
+# ------- Merge the DTs created, and then peform simple tests -------
+# 1. Do simple tests before merging DTs
+subdt_survey_pre[, .N] == subdt_survey_post[, .N]
+# ## Note:
+# ## This result implies that the number of respondents in the pre-trial survey
+# ## is different from that in the post-trial survey.
+
+n_both <- dt_metering_elec[
+  , .N, keyby = .(id)
+][
+  id %in% dt_survey_pre_wideform$id & id %in% dt_survey_post_wideform$id,
+  .N
+]
+n_only.pre <- dt_metering_elec[
+  , .N, keyby = .(id)
+][
+  id %in% dt_survey_pre_wideform$id & (!id %in% dt_survey_post_wideform$id),
+  .N
+]
+n_only.post <- dt_metering_elec[
+      , .N, keyby = .(id)
+    ][
+      (!id %in% dt_survey_pre_wideform$id) & id %in% dt_survey_post_wideform$id,
+      .N
+    ]
+n_none <- dt_metering_elec[
+  , .N, keyby = .(id)
+][
+  (!id %in% dt_survey_pre_wideform$id) & (!id %in% dt_survey_post_wideform$id),
+  .N
+]
+stopifnot(
+  dt_metering_elec[, .N, by = .(id)][, .N] ==
+    n_both + n_only.pre + n_only.post + n_none
+)
+
+
+# # 2. Merge DTs
+# # 2.1. Create a DT by merging the DTs in wide-form
+dt_to.append <- merge(
+  x = subdt_survey_pre,
+  y = subdt_survey_post,
+  by = "id",
+  suffixes = c("_pre", "_post"),
+  all = TRUE
+)
+
+# # 2.2. Perform simple tests
+# # 2.2.1. Check the number of observations
+stopifnot(dt_to.append[, .N, by = .(id)][N > 1] == 0)
+stopifnot(
+  dt_to.append[id %in% dt_metering_elec[, .N, by = .(id)]$id, .N] ==
+    n_both + n_only.pre + n_only.post
+)
+# # 2.2.2. Do simple tests after merging DTs to check
+# # 2.2.2.1. With respect to space heating
+dt_to.append[
+  is_elec.heating_space_pre != is_elec.heating_space_post, .N
+]
+dt_to.append[
+  is_elec.heating_space_pre == TRUE & is_elec.heating_space_post == TRUE, .N
+]
+dt_to.append[
+  is_elec.heating_space_pre == TRUE & is_elec.heating_space_post == FALSE, .N
+]
+dt_to.append[
+  is_elec.heating_space_pre == FALSE & is_elec.heating_space_post == TRUE, .N
+]
+dt_to.append[
+  is_elec.heating_space_pre == FALSE & is_elec.heating_space_post == FALSE, .N
+]
+# # 2.2.2.2. With respect to water heating
+dt_to.append[
+  is_elec.heating_water_pre != is_elec.heating_water_post, .N
+]
+dt_to.append[
+  is_elec.heating_water_pre == TRUE & is_elec.heating_water_post == TRUE, .N
+]
+dt_to.append[
+  is_elec.heating_water_pre == TRUE & is_elec.heating_water_post == FALSE, .N
+]
+dt_to.append[
+  is_elec.heating_water_pre == FALSE & is_elec.heating_water_post == TRUE, .N
+]
+dt_to.append[
+  is_elec.heating_water_pre == FALSE & is_elec.heating_water_post == FALSE, .N
+]
+# ## Note:
+# ## Those results mean:
+# ## 1) Non-electric energy source are utilized for space or water heating.
+# ## 2) With respect to water heating, many households change their way of
+# ##    heating from electric to non-electric energy source.
+
+
+# ------------------------------------------------------------------------------
+# Create a DT for running Regressions
+# ------------------------------------------------------------------------------
 # ------- Create a DT to run regressions -------
 # # 1. Create a DT from the combined metering dataset
 # # 1.1. Create a temporary DT by subetting the combined metering dataset
@@ -263,6 +599,7 @@ dt_for.reg[
 ]
 # ## Note:
 # ## During the baseline period, both groups have the same flat rate.
+gc(reset = TRUE, full = TRUE)
 
 # # 2.2. Add columns that are related to Treatment Group and/or Period
 # # 2.2.0. Add columns, in factor type, that are related to Treatment Group and
@@ -363,6 +700,7 @@ dt_for.reg[
     paste(year(date), as.character(month_in.factor), sep = "-")
   )
 ]
+gc(reset = TRUE, full = TRUE)
 
 # # 2.4. Add columns that indicate whether an observation should be dropped
 # #      when constructing a sample or not
@@ -432,13 +770,36 @@ dt_for.reg[
     date %in% dates_out.of.temperature.range
 ]
 
-# # 2.5. Add columns that indicate whether an observation is included in the
+# # 2.5. Append the DT created from survey datasets to the DT for regression
+# #      analysis
+dt_for.reg_append <- merge(
+  x = dt_for.reg,
+  y = dt_to.append[
+    , .(
+    id,
+    is_elec.heating_space_pre, is_elec.heating_space_post,
+    is_elec.heating_water_pre, is_elec.heating_water_post,
+    heating.type_space_desc, heating.type_water_desc
+  )
+  ],
+  by = "id",
+  all.x = TRUE
+)
+gc(reset = TRUE, full = TRUE)
+
+# # 2.6. Add columns that indicate whether an observation is included in the
 # #      sample or not
-# # 2.5.1. Set conditions for the indicator variable
-# # 2.5.1.1. For sample(s) that includes the control group
+# # 2.6.1. Set conditions for the indicator variable
+# # 2.6.1.1. For sample(s) that includes the control group
 conditions_for.sample.construction_incl.control_base <- paste(
-  "alloc_r_tariff != 'W'",
-  # To exclude observaions for Weekend Tariff
+  "alloc_r_tariff %in% LETTERS[1:5]",
+  # To include observation for Tariff A, B, C, D, and E
+  "is_elec.heating_space_pre == FALSE & is_elec.heating_water_pre == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the pre-trial survey
+  "is_elec.heating_space_post == FALSE & is_elec.heating_water_post == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the post-trial survey
   "is_weekend == FALSE",
   # TOU pricing was active on nonholiday weekdays
   "is_holiday == FALSE",
@@ -457,8 +818,14 @@ conditions_for.sample.construction_incl.control_base <- paste(
   sep = " & "
 )
 conditions_for.sample.construction_incl.control_base.only.second.half <- paste(
-  "alloc_r_tariff != 'W'",
-  # To exclude observaions for Weekend Tariff
+  "alloc_r_tariff %in% LETTERS[1:5]",
+  # To include observation for Tariff A, B, C, D, and E
+  "is_elec.heating_space_pre == FALSE & is_elec.heating_water_pre == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the pre-trial survey
+  "is_elec.heating_space_post == FALSE & is_elec.heating_water_post == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the post-trial survey
   "is_weekend == FALSE",
   # TOU pricing was active on nonholiday weekdays
   "is_holiday == FALSE",
@@ -479,8 +846,14 @@ conditions_for.sample.construction_incl.control_base.only.second.half <- paste(
   sep = " & "
 )
 conditions_for.sample.construction_incl.control_case1 <- paste(
-  "alloc_r_tariff != 'W'",
-  # To exclude observaions for Weekend Tariff
+  "alloc_r_tariff %in% LETTERS[1:5]",
+  # To include observation for Tariff A, B, C, D, and E
+  "is_elec.heating_space_pre == FALSE & is_elec.heating_water_pre == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the pre-trial survey
+  "is_elec.heating_space_post == FALSE & is_elec.heating_water_post == FALSE",
+  # To include households using non-electric heating for both space and water
+  # in the post-trial survey
   "is_weekend == FALSE",
   # TOU pricing was active on nonholiday weekdays
   "is_holiday == FALSE",
@@ -495,8 +868,14 @@ conditions_for.sample.construction_incl.control_case1 <- paste(
 )
 conditions_for.sample.construction_incl.control_case1.only.second.half <-
   paste(
-    "alloc_r_tariff != 'W'",
-    # To exclude observaions for Weekend Tariff
+    "alloc_r_tariff %in% LETTERS[1:5]",
+    # To include observation for Tariff A, B, C, D, and E
+    "is_elec.heating_space_pre == FALSE & is_elec.heating_water_pre == FALSE",
+    # To include households using non-electric heating for both space and water
+    # in the pre-trial survey
+    "is_elec.heating_space_post == FALSE & is_elec.heating_water_post == FALSE",
+    # To include households using non-electric heating for both space and water
+    # in the post-trial survey
     "is_weekend == FALSE",
     # TOU pricing was active on nonholiday weekdays
     "is_holiday == FALSE",
@@ -511,21 +890,21 @@ conditions_for.sample.construction_incl.control_case1.only.second.half <-
     # Baseline period began July 14, 2009
     sep = " & "
   )
-# # 2.5.1.2. For sample(s) that excludes the control group
+# # 2.6.1.2. For sample(s) that excludes the control group
 conditions_for.sample.construction_excl.control_base <- paste(
   conditions_for.sample.construction_incl.control_base,
   "is_treated_r == TRUE",
   sep = " & "
 )
-# # 2.5.2. Add indicator variables
-# # 2.5.2.1. For sample(s) that includes the control group
-dt_for.reg[
+# # 2.6.2. Add indicator variables
+# # 2.6.2.1. For sample(s) that includes the control group
+dt_for.reg_append[
   ,
   is_in.sample_incl.control_base := eval(
     parse(text = conditions_for.sample.construction_incl.control_base)
   )
 ]
-dt_for.reg[
+dt_for.reg_append[
   ,
   is_in.sample_incl.control_base.only.second.half := eval(
     parse(
@@ -534,13 +913,13 @@ dt_for.reg[
     )
   )
 ]
-dt_for.reg[
+dt_for.reg_append[
   ,
   is_in.sample_incl.control_case1 := eval(
     parse(text = conditions_for.sample.construction_incl.control_case1)
   )
 ]
-dt_for.reg[
+dt_for.reg_append[
   ,
   is_in.sample_incl.control_case1.only.second.half := eval(
     parse(
@@ -549,20 +928,22 @@ dt_for.reg[
     )
   )
 ]
-# # 2.5.2.2. For sample(s) that excludes the control group
-dt_for.reg[
+# # 2.6.2.2. For sample(s) that excludes the control group
+dt_for.reg_append[
   ,
   is_in.sample_excl.control_base := eval(
     parse(text = conditions_for.sample.construction_excl.control_base)
   )
 ]
 
-# # 2.6. Drop unnecessary columns
+# # 2.7. Drop unnecessary columns
 cols_keep <-
-  names(dt_for.reg)[str_detect(names(dt_for.reg), "_sme", negate = TRUE)]
-dt_for.reg <- dt_for.reg[, .SD, .SDcols = cols_keep]
+  names(dt_for.reg_append)[
+    str_detect(names(dt_for.reg_append), "_sme", negate = TRUE)
+  ]
+dt_for.reg_append <- dt_for.reg_append[, .SD, .SDcols = cols_keep]
 
-# # 2.7. Reorder columns
+# # 2.8. Reorder columns
 cols_reorder <- c(
   "id", "alloc_group", "alloc_group_desc",
   "alloc_r_tariff", "alloc_r_tariff_desc", "rate_cents.per.kwh",
@@ -574,11 +955,14 @@ cols_reorder <- c(
   "rate.period_detail_level1", "length_rate.period_detail_level1",
   "rate.period_detail_level2", "length_rate.period_detail_level2",
   "day.of.week", "season",
+  "heating.type_space_desc", "heating.type_water_desc",
   "is_weekend", "is_holiday",
   "is_having.zero.consumption.day", "is_missing.date",
   "is_after.ending.daylight.saving.time.in.oct", "is_last.five.days.of.year",
   "is_within.temperature.range",
   "is_date.with.harsh.temperature.only.in.treatment.period",
+  "is_elec.heating_space_pre", "is_elec.heating_space_post",
+  "is_elec.heating_water_pre", "is_elec.heating_water_post",
   "is_in.sample_incl.control_base",
   "is_in.sample_incl.control_base.only.second.half",
   "is_in.sample_incl.control_case1",
@@ -605,11 +989,11 @@ cols_reorder <- c(
   "month.and.rate.period.level1.and.30min.interval_in.factor",
   "year.and.month_in.factor"
 )
-setcolorder(dt_for.reg, cols_reorder)
+setcolorder(dt_for.reg_append, cols_reorder)
 
-# # 2.8 Sort Observations
+# # 2.9. Sort Observations
 keys <- c("id", "datetime")
-setkeyv(dt_for.reg, keys)
+setkeyv(dt_for.reg_append, keys)
 
 
 # ------- Label Data Fields in the DT created above -------
@@ -617,19 +1001,19 @@ setkeyv(dt_for.reg, keys)
 source(PATH_TO.LOAD_CER_LABELS)
 
 # # 2. Label Data Fields
-cols_to.label <- names(dt_for.reg)[
-  str_detect(names(dt_for.reg), "(^date)|(^datetime)", negate = TRUE)
+cols_to.label <- names(dt_for.reg_append)[
+  str_detect(names(dt_for.reg_append), "(^date)|(^datetime)", negate = TRUE)
 ]
 lapply(
-  names(dt_for.reg), label_data.fields,
-  dt_in.str = "dt_for.reg", list_labels = labels_cer
+  names(dt_for.reg_append), label_data.fields,
+  dt_in.str = "dt_for.reg_append", list_labels = labels_cer
 )
 
 
 # ------- Save the DT created above -------
 # # 1. Save the DT created above in Parquet format
 write_parquet(
-  dt_for.reg,
+  dt_for.reg_append,
   sink = PATH_TO.SAVE_CER_DT,
   compression = "snappy",
   use_dictionary = TRUE
