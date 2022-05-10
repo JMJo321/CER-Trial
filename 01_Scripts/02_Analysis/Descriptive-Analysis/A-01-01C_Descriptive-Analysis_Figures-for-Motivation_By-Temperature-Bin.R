@@ -45,7 +45,8 @@ source(PATH_HEADER)
 # ------- Define path(s) -------
 # # 1. Path(s) from which dataset(s) and script(s) are loaded
 # # 1.1. For the DT for regression analysis
-FILE_TO.LOAD_CER_FOR.REG <- "CER_DT-for-Regressions_Electricity.parquet"
+FILE_TO.LOAD_CER_FOR.REG <-
+  "CER_DT-for-Regressions-with-Survey-Data_Electricity.parquet"
 PATH_TO.LOAD_CER_FOR.REG <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.LOAD_CER_FOR.REG, sep = "/")
 
@@ -270,6 +271,7 @@ get_ggplot.obj <- function (
 # ------------------------------------------------------------------------------
 # ------- Load the DT for regression analysis -------
 dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
+setDT(dt_for.reg)
 
 
 # ------- Conduct preliminary analysis -------
