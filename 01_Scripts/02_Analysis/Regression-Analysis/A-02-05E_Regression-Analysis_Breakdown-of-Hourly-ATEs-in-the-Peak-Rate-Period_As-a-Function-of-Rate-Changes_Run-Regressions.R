@@ -3,7 +3,7 @@
 # # : A-02, Regression-Analysis
 # #
 # > Script Number(s)
-# # : A-02-056
+# # : A-02-05E
 # #
 # > Purpose of the script(s)
 # #   The key purpose of this script is to break the ATEs down in two parts,
@@ -232,7 +232,7 @@ get_ggplot.obj_treatment.effects <- function (dt, knot_in.numeric) {
       scale_shape_manual(values = c(16, 18)) +
       labs(
         x = "Heating Degree Days  (HDDs)",
-        y = TeX(r'(Treatment Effects  ($\Delta kWh$))'),
+        y = TeX(r'(Treatment Effects  ($\Delta$ kWh per Hour))'),
         color = TeX(r'(Rate Changes  ($\Delta$ Cents per kWh))'),
         shape = "Treatment Effects"
       ) +
@@ -322,14 +322,14 @@ get_dt_load.profiles <- function (
       (coef_hdd * hdd) +
         (coef_hdd.knot * hdd.knot) +
         (coef_treatment) +
-        # (coef_treatment_times_rate.change * rate.change_in.numeric) +
+        # (coef_treatment_times_rate.change * rate.change_in.numeric) +  #
         (coef_treatment_times_hdd * hdd) +
         (coef_treatment_times_hdd.knot * hdd.knot) +
-        # (
+        # (  #
         #   coef_treatment_times_hdd_times_rate.change * hdd *
         #     rate.change_in.numeric
         # ) +
-        # (
+        # (  #
         #   coef_treatment_times_hdd.knot_times_rate.change * hdd.knot *
         #     rate.change_in.numeric
         # ) +
@@ -403,17 +403,17 @@ get_ggplot.obj_load.profile <- function (
       geom_line(
         data = dt.incl.load.profile_data.table[category == "Non-Temperature"],
         aes(x = hdd, y = hourly.kwh_min),
-        linetype = "dotted", lwd = 0.3
+        linetype = "solid", lwd = 0.5
       ) +
       geom_line(
         data = dt.incl.load.profile_data.table[category == "Non-Temperature"],
         aes(x = hdd, y = hourly.kwh_max),
-        linetype = "dotdash", lwd = 0.3
+        linetype = "dotdash", lwd = 0.5
       ) +
       geom_line(
         data = dt.incl.load.profile_data.table[category == "Temperature"],
         aes(x = hdd, y = hourly.kwh_max),
-        color = col.pal_custom[3]
+        color = col.pal_custom[3], lwd = 0.8
       ) +
       facet_wrap(. ~ rate.change) +
       scale_x_continuous(breaks = seq(0, 30, by = 5)) +
@@ -517,7 +517,8 @@ dt_for.reg[
 # # 1.2.3. Add data fields for spline regression(s)
 # # 1.2.3.1. Add data fields for spline regression(s)
 # ## Set names of data fields
-for (KNOT in c(10, 15)) {
+KNOTS <- seq(10, 14, by = 2)
+for (KNOT in KNOTS) {
   var.name_hdd.diff <- paste0("hdd.diff_", KNOT)
   var.name_indicator <- paste0("indicator_", KNOT)
   var.name_hdd.knot <- paste0("hdd.knot", KNOT)
@@ -562,32 +563,36 @@ for (KNOT in c(10, 15)) {
 # Run regression(s), and then create stargazer object(s)
 # ------------------------------------------------------------------------------
 # ------- Run regression(s) -------
-list_models <- list(
+list_models_ols <- list(
   model_breakdown.of.ate_hourly.in.peak_rate.change_dw =
     model_breakdown.of.ate_hourly.in.peak_rate.change_dw,
   model_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw =
-    model_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw,
-  model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw_knot10 =
-    get_change.terms.in.formula(
-      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw,
-      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", 10)
-    ),
-  model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw_knot15 =
-    get_change.terms.in.formula(
-      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw,
-      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", 15)
-    ),
-  model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw_knot10 =
-    get_change.terms.in.formula(
-      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw,
-      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", 10)
-    ),
-  model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw_knot15 =
-    get_change.terms.in.formula(
-      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw,
-      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", 15)
-    )
+    model_breakdown.of.ate_hourly.in.peak_rate.change_iw.dw
 )
+list_models_spline <- NULL
+for (KNOT in KNOTS) {
+  tmp_name_dw <- paste0(
+    "model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw_knot",
+    KNOT
+  )
+  tmp_name_iw.dw <- paste0(
+    "model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw_knot",
+    KNOT
+  )
+  tmp_list <- list(
+    get_change.terms.in.formula(
+      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw,
+      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
+    ),
+    get_change.terms.in.formula(
+      model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw,
+      term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
+    )
+  )
+  names(tmp_list) <- c(tmp_name_dw, tmp_name_iw.dw)
+  list_models_spline <- c(list_models_spline, tmp_list)
+}
+list_models <- c(list_models_ols, list_models_spline)
 reg.results <- lapply(
   list_models,
   felm,
@@ -601,74 +606,63 @@ reg.results <- lapply(
 # ------- Create stargazer object(s) -------
 # # 1. Create object(s) that will be used to make stargazer object(s)
 title_ <- paste0(
-  "Breakdonw of Average Treatment Effects in the Peak Rate Period ",
-  "As a Function of Rate Changes: "
+  "Breakdonw of Average Treatment Effects in the Peak Rate Period: ",
+  "As a Function of Rate Changes"
 )
 out.header <- FALSE
 column.labels <- NULL
 column.separate <- NULL
 covariate.labels_text <- c(
   "HDDs",
-  "(HDDs - Knot) x 1[HDDs > Knot],  Knot = 10",
-  "(HDDs - Knot) x 1[HDDs > Knot],  Knot = 15",
+  rep("(HDDs - Knot) x 1[HDDs > Knot]", times = length(list_models_spline) / 2),
   "1[Treatment]",
   "1[Treatment] x R.C.",
   "1[Treatment] x HDDs",
-  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 10",
-  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 15",
+  rep("1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot]", times = length(list_models_spline) / 2),
   "1[Treatment] x HDDs x R.C.",
-  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.,  Knot = 10",
-  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.,  Knot = 15",
+  rep("1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.", times = length(list_models_spline) / 2),
   "1[Post]",
   "1[Post] x HDDs",
-  "1[Post] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 10",
-  "1[Post] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 15",
+  rep("1[Post] x (HDDs - Knot) x 1[HDDs > Knot]", times = length(list_models_spline) / 2),
   "1[Treatment and Post]",
   "1[Treatment and Post] x R.C.",
   "1[Treatment and Post] x HDDs",
-  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 10",
-  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot],  Knot = 15",
+  rep("1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot]", times = length(list_models_spline) / 2),
   "1[Treatment and Post] x HDDs x R.C.",
-  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.,  Knot = 10",
-  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.,  Knot = 15"
+  rep("1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.", times = length(list_models_spline) / 2)
 )
 covariate.labels_latex <- c(
   "HDDs",
-  "(HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 10",
-  "(HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 15",
+  rep("(HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment]",
   "$\\mathbb{1}$[Treatment] $\\times$ $\\Delta$Price",
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs",
-  "$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 10",
-  "$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 15",
+  rep("$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs $\\times$ $\\Delta$Price",
-  "$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price,  Knot = 10",
-  "$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price,  Knot = 15",
+  rep("$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Post]",
   "$\\mathbb{1}$[Post] $\\times$ $\\Delta$Price",
   "$\\mathbb{1}$[Post] $\\times$ HDDs",
-  "$\\mathbb{1}$[Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 10",
-  "$\\mathbb{1}$[Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 15",
+  rep("$\\mathbb{1}$[Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment \\& Post]",
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 10",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot],  Knot = 15",
+  rep("$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs $\\times$ $\\Delta$Price",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price,  Knot = 10",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price,  Knot = 15"
+  rep("$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price", times = length(list_models_spline) / 2)
 )
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
 add.lines <- list(
-  c("Electrical Heating for Space", rep("False", times = 6)),
-  c("Electrical Heating for Water", rep("False", times = 6)),
+  c("Electrical Heating for Space", rep("False", times = length(list_models))),
+  c("Electrical Heating for Water", rep("False", times = length(list_models))),
+  c("Knot", c(rep("(N/A)", times = 2), rep(KNOTS, each = 2))),
   c(
     "FEs: Household by Half-Hourly Time Window",
-    c("No", "Yes", "No", "No", "Yes", "Yes")
+    rep(c("No", "Yes"), times = length(list_models) / 2)
   ),
-  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 6))
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = length(list_models)))
 )
-column.sep.width <- "20pt"
+column.sep.width <- "0pt"
 font.size <- "small"
 header <- FALSE
 label <- paste0(
@@ -737,66 +731,72 @@ stargazer(
 # ------------------------------------------------------------------------------
 # ------- Make plots by using the regression result(s) above -------
 # # 0. Create object(s) that will be used later
-FELM.OBJ <- reg.results[[4]]
-KNOT <- 15
-# ## Note:
-# ## THis value depends on the felm object exploited
-RATE.CHANGES <- seq(6, 24, by = 6)
+INDICES <- c(3, 5, 7)
+for (idx in INDICES) {
+  FELM.OBJ <- reg.results[[idx]]
+  KNOT <- KNOTS[which(INDICES == idx)]
+  # ## Note:
+  # ## THis value depends on the felm object exploited
+  RATE.CHANGES <- seq(6, 24, by = 6)
 
 
-# # 1. Make plot(s): ATEs
-# # 1.1. Create a DT incl. the estimated ATEs
-dt_ates <- lapply(
-  RATE.CHANGES,
-  get_dt_estimated.ates,
-  felm.obj = FELM.OBJ,
-  knot_in.numeric = KNOT
-) %>%
-  rbindlist(.)
-dt_ates[, rate.change := factor(rate.change, levels = RATE.CHANGES)]
-
-# # 1.2. Create a ggplot object, and then export it in .PNG format
-plot_ates <- get_ggplot.obj_treatment.effects(dt_ates, KNOT)
-export_figure.in.png(
-  plot_ates,
-  filename_str = paste(
-    PATH_TO.SAVE_FIGURE,
-    paste0(
-      "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
-      "As-a-Function-of-Rate-Changes_ATEs.png"
-    ),
-    sep = "/"
-  ),
-  width_numeric = 30, height_numeric = 17
-)
-
-
-# # 2. Make plot(s): Predicted load profile(s)
-# # 2.1. Create a DT incl. the predicted load profile(s)
-dt_load.profiles <-
-  lapply(
+  # # 1. Make plot(s): ATEs
+  # # 1.1. Create a DT incl. the estimated ATEs
+  dt_ates <- lapply(
     RATE.CHANGES,
-    get_dt_load.profiles,
+    get_dt_estimated.ates,
     felm.obj = FELM.OBJ,
     knot_in.numeric = KNOT
   ) %>%
     rbindlist(.)
-dt_load.profiles[
-  ,
-  rate.change := factor(rate.change, levels = RATE.CHANGES)
-]
+  dt_ates[, rate.change := factor(rate.change, levels = RATE.CHANGES)]
 
-# # 2.2. Create a ggplot object, and then export it in .PNG format
-plot_load.profiles <- get_ggplot.obj_load.profile(dt_load.profiles, KNOT)
-export_figure.in.png(
-  plot_load.profiles,
-  filename_str = paste(
-    PATH_TO.SAVE_FIGURE,
-    paste0(
-      "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
-      "As-a-Function-of-Rate-Changes_Load-Profiles.png"
+  # # 1.2. Create a ggplot object, and then export it in .PNG format
+  plot_ates <- get_ggplot.obj_treatment.effects(dt_ates, KNOT)
+  export_figure.in.png(
+    plot_ates,
+    filename_str = paste(
+      PATH_TO.SAVE_FIGURE,
+      paste0(
+        "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
+        "As-a-Function-of-Rate-Changes_ATEs_Knot-", KNOT,".png"
+      ),
+      sep = "/"
     ),
-    sep = "/"
-  ),
-  width_numeric = 35, height_numeric = 20
-)
+    width_numeric = 30, height_numeric = 17
+  )
+
+
+  # # 2. Make plot(s): Predicted load profile(s)
+  # # 2.1. Create a DT incl. the predicted load profile(s)
+  obj.name <- paste0("dt_load.profiles_knot", KNOT)
+  assign(
+    obj.name,
+    lapply(
+      RATE.CHANGES,
+      get_dt_load.profiles,
+      felm.obj = FELM.OBJ,
+      knot_in.numeric = KNOT
+    ) %>%
+      rbindlist(.)
+  )
+  get(obj.name)[
+    ,
+    rate.change := factor(rate.change, levels = RATE.CHANGES)
+  ]
+
+  # # 2.2. Create a ggplot object, and then export it in .PNG format
+  plot_load.profiles <- get_ggplot.obj_load.profile(get(obj.name), KNOT)
+  export_figure.in.png(
+    plot_load.profiles,
+    filename_str = paste(
+      PATH_TO.SAVE_FIGURE,
+      paste0(
+        "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
+        "As-a-Function-of-Rate-Changes_Load-Profiles_Knot-", KNOT, ".png"
+      ),
+      sep = "/"
+    ),
+    width_numeric = 35, height_numeric = 20
+  )
+}
