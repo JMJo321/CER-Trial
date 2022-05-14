@@ -97,7 +97,7 @@ indep.vars_ivs_ate_hourly.in.peak <- "0"
 indep.vars_clustered.ses_ate_hourly.in.peak <- "id_in.factor + day_in.factor"
 
 
-# # 2. Econometric models for half-hourly ATEs
+# # 2. Econometric models for hourly ATEs
 model_ate_hourly.in.peak_iw.dw.m <- get_formula_felm(
   dep.var = dep.var_ate_hourly.in.peak,
   indep.vars_covariates = indep.vars_covariates_ate_hourly.in.peak,
@@ -138,11 +138,11 @@ dep.var_breakdown.of.ate_hourly.in.peak <- "kwh_per.hour"
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_dw.mw <- paste(
   "hdd_all_60f",
   "is_treated_r",
-  "treatment_by_hdd",
+  "treatment_times_hdd",
   "is_treatment.period",
-  "treatment.period_by_hdd",
+  "post_times_hdd",
   "is_treatment.and.post",
-  "treatment.and.post_by_hdd",
+  "treatment.and.post_times_hdd",
   sep = " + "
 )
 # ## Note:
@@ -151,60 +151,60 @@ indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw <-
   paste(
     "hdd_all_60f",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version1 <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
+    "treatment_times_hdd",
     "is_treatment.period",
-    "treatment.period_by_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version2 <-
   paste(
     "hdd_all_60f",
     "is_treatment.period",
-    "treatment.period_by_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version3 <-
   paste(
     "hdd_all_60f",
-    "treatment.period_by_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version4 <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
+    "treatment_times_hdd",
     "is_treatment.period",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version5 <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
-    "treatment.period_by_hdd",
+    "treatment_times_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version6 <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
+    "treatment_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version7 <-
@@ -212,27 +212,27 @@ indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.mw_version7 <-
     "hdd_all_60f",
     "is_treatment.period",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw.m <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
+    "treatment_times_hdd",
     "is_treatment.period",
-    "treatment.period_by_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_iw.dw <-
   paste(
     "hdd_all_60f",
-    "treatment_by_hdd",
+    "treatment_times_hdd",
     "is_treatment.period",
-    "treatment.period_by_hdd",
+    "post_times_hdd",
     "is_treatment.and.post",
-    "treatment.and.post_by_hdd",
+    "treatment.and.post_times_hdd",
     sep = " + "
   )
 # ## Note:
@@ -571,11 +571,11 @@ model_breakdown.of.ate_hourly.in.peak_iw.dw.mw_cubic <- get_formula_felm(
 # # 1.2.1. Covariate(s)
 indep.vars_covariates_breakdown.of.ate_hourly.in.peak_spline_iw.dw.mw <- paste(
   "hdd_all_60f", "hdd.knot",
-  "treatment_by_hdd", "treatment_by_hdd.knot",
+  "treatment_times_hdd", "treatment_times_hdd.knot",
   "is_treatment.period",
-  "treatment.period_by_hdd", "treatment.period_by_hdd.knot",
+  "treatment.period_times_hdd", "treatment.period_times_hdd.knot",
   "is_treatment.and.post",
-  "treatment.and.post_by_hdd", "treatment.and.post_by_hdd.knot",
+  "treatment.and.post_times_hdd", "treatment.and.post_times_hdd.knot",
   sep = " + "
 )
 # # 1.2.2. Fixed effect(s)
