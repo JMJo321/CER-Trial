@@ -211,6 +211,7 @@ order <- c(
 
 
 # ------- Run regression(s), and then save results -------
+utils::timestamp()
 n_cases <- length(list_cases)
 for (idx in 1:n_cases) {
   # ## Create temporary objects that will be used later
@@ -257,8 +258,8 @@ for (idx in 1:n_cases) {
     header = header,
     label = label,
     model.names = model.names,
-    omit.stat = omit.stat,
-    omit.table.layout = omit.table.layout,
+    # omit.stat = omit.stat,
+    # omit.table.layout = omit.table.layout,
     order = order
   )
   # # 1.2.2. For exporting in .tex format
@@ -299,26 +300,26 @@ for (idx in 1:n_cases) {
     )
   )
 
-  # ## Save regression result(s)
-  print("Be Saving Regression Results ...")
-  assign(
-    obj.name_results,
-    get(obj.name_results)[2]
-  )
-  save(
-    list = obj.name_results,
-    # ## Note:
-    # ## Save the regression result from the second model only.
-    file = paste(
-      DIR_TO.SAVE_REG.RESULTS,
-      paste0(
-        "CER_Regression-Results_Breakdown-of-ATEs_",
-        "Hourly-in-the-Peak-Rate-Period_",
-        paste0(case.name, ".RData")
-      ),
-      sep = "/"
-    )
-  )
+  # # ## Save regression result(s)
+  # print("Be Saving Regression Results ...")
+  # assign(
+  #   obj.name_results,
+  #   get(obj.name_results)[2]
+  # )
+  # save(
+  #   list = obj.name_results,
+  #   # ## Note:
+  #   # ## Save the regression result from the second model only.
+  #   file = paste(
+  #     DIR_TO.SAVE_REG.RESULTS,
+  #     paste0(
+  #       "CER_Regression-Results_Breakdown-of-ATEs_",
+  #       "Hourly-in-the-Peak-Rate-Period_",
+  #       paste0(case.name, ".RData")
+  #     ),
+  #     sep = "/"
+  #   )
+  # )
 
   # ## Remove regression result(s)
   rm(list= obj.name_results)
@@ -329,6 +330,7 @@ for (idx in 1:n_cases) {
     paste0("Estimation is completed : Model ", idx, " out of ", n_cases)
   )
 }
+utils::timestamp()
 # ## Note:
 # ## This work takes about 1 hour.
 # ## Save estimates in a separate .RData file
