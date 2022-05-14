@@ -67,7 +67,39 @@ PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
 
 
 # ------- Define function(s) -------
-# (Not Applicable)
+# # 1. For obtaining half-hourly ATEs to generate ggplot object(s)
+# # 1.1. To get felm object(s) by running regression(s)
+get_felm.obj_half.hourly.ates_by.tariff <- function (tariff_in.str) {
+  felm.obj <- felm(
+    formula = model_ate_half.hourly_iw.dw.m,
+    data = dt_for.reg[
+      is_in.sample_incl.control_base.only.second.half == TRUE &
+        alloc_r_tariff %in% c(tariff_in.str, "E")
+    ]
+  )
+  return (felm.obj)
+}
+
+# # 1.2. To make DT(s) by extracting estimates from a felm object
+get_dt.incl.estimates <- function (felm.obj) {
+  dt_estimates <- get_estimates_from.felm(
+      felm.obj, level = 0.95, fe = FALSE, se.type = "cluster"
+    )
+  dt_estimates[
+    ,
+    is_significant := !(conf.low <= 0 & 0 <= conf.high)
+  ]
+  dt_estimates[
+    ,
+    interval_30min := (
+      str_extract(term, "[0-9]+?TRUE") %>%
+        str_replace("TRUE", "") %>%
+        as.numeric(.)
+    ) - 0.5
+  ]
+  dt_estimates[, interval_hour := interval_30min / 2]
+  return (dt_estimates)
+}
 
 
 # ------------------------------------------------------------------------------
@@ -78,6 +110,7 @@ PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
 # # 1.1. Load the DT for regression analysis
 dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
 setDT(dt_for.reg)
+gc(reset = TRUE)
 
 # # 1.2. Load the R script including model specification(s)
 source(PATH_TO.LOAD_CER_MODELS)
@@ -97,7 +130,7 @@ for (interval in 1:48) {
 }
 
 
-# ------- Run a regression to estimate half-hourly ATEs -------
+# ------- Run a regression to estimate half-hourly ATEs: For All Tariffs -------
 # # 1. Create a felm object by running a regression
 reg.result <- felm(
   formula = model_ate_half.hourly_iw.dw.m,
@@ -106,19 +139,26 @@ reg.result <- felm(
 
 
 # # 2. Create a DT including the estimated ATEs
-dt_estimates <- get_estimates_from.felm(
-  reg.result, level = 0.95, fe = FALSE, se.type = "cluster"
+dt_estimates <- get_dt.incl.estimates(reg.result)
+
+
+# ------- Run a regression to estimate half-hourly ATEs: For Each Tariff -------
+# # 1. Create a felm object by running a regression. And then create a DT
+# #    including the estimated ATEs
+# # 1.1. Obtain felm object(s) by running regressions
+list_tariffs <- LETTERS[1:4]
+names(list_tariffs) <- LETTERS[1:4]
+list_reg.result_by.tariff <- lapply(
+  list_tariffs,
+  get_felm.obj_half.hourly.ates_by.tariff
 )
-dt_estimates[, is_significant := !(conf.low <= 0 & 0 <= conf.high)]
-dt_estimates[
-  ,
-  interval_30min := (
-    str_extract(term, "[0-9]+?TRUE") %>%
-      str_replace("TRUE", "") %>%
-      as.numeric(.)
-  ) - 0.5
-]
-dt_estimates[, interval_hour := interval_30min / 2]
+
+# # 1.2. Create a DT incl. estimates
+dt_estimates_by.tariff <- lapply(
+  list_reg.result_by.tariff,
+  get_dt.incl.estimates
+) %>%
+  rbindlist(., idcol = "alloc_r_tariff")
 
 
 # ------------------------------------------------------------------------------
@@ -138,6 +178,7 @@ plot.options <- list(
 
 
 # ------- Create a ggplot object -------
+# # 1. For all tariff groups
 plot_time.profile <-
   ggplot() +
     geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.5) +
@@ -162,12 +203,44 @@ plot_time.profile <-
     scale_x_continuous(breaks = seq(0, 24, by = 1)) +
     labs(
       x = "Hour of Day",
-      y = TeX(r'(Treatment Effects  $(\Delta kWh)$)')
+      y = TeX(r'(Treatment Effects  ($\Delta$ kWh per Hour))')
+    ) +
+    plot.options
+
+
+# # 2. For each tariff group
+plot_time.profile_by.tariff <-
+  ggplot() +
+    geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.5) +
+    geom_vline(
+      xintercept = c(8, 17, 19, 23), linetype = "dotdash", alpha = 0.5
+    ) +
+    geom_errorbar(
+      data = dt_estimates_by.tariff,
+      aes(x = interval_hour, y = estimate, ymin = conf.low, ymax = conf.high),
+      width = 0.2
+    ) +
+    geom_point(
+      data = dt_estimates_by.tariff[is_significant == TRUE],
+      aes(x = interval_hour, y = estimate),
+      shape = 16, size = 1.8, color = unikn::usecol("firebrick")
+    ) +
+    geom_point(
+      data = dt_estimates_by.tariff,
+      aes(x = interval_hour, y = estimate),
+      shape = 1, size = 1.8
+    ) +
+    facet_grid(alloc_r_tariff ~ .) +
+    scale_x_continuous(breaks = seq(0, 24, by = 1)) +
+    labs(
+      x = "Hour of Day",
+      y = TeX(r'(Treatment Effects  ($\Delta$ kWh per Hour))')
     ) +
     plot.options
 
 
 # ------- Export the ggplot object(s) in .PNG format -------
+# # 1. For all tariff groups
 export_figure.in.png(
   plot_time.profile,
   filename_str = paste(
@@ -175,5 +248,16 @@ export_figure.in.png(
     "Figure_Time-Profile-of-Half-Hourly-ATEs.png",
     sep = "/"
   ),
-  width_numeric = 25, height_numeric = 13
+  width_numeric = 35, height_numeric = 17
+)
+
+# # 2. For each tariff group
+export_figure.in.png(
+  plot_time.profile_by.tariff,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE,
+    "Figure_Time-Profile-of-Half-Hourly-ATEs_By-Tariff.png",
+    sep = "/"
+  ),
+  width_numeric = 35, height_numeric = 27
 )
