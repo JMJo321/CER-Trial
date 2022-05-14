@@ -443,6 +443,7 @@ get_ggplot.obj_load.profile <- function (
 # # 1.1. Load the DT for regression analysis
 dt_for.reg <- read_parquet(PATH_TO.LOAD_CER_FOR.REG)
 setDT(dt_for.reg)
+gc(reset = TRUE)
 
 
 # # 2. Load required script(s) for regression analysis
@@ -641,10 +642,10 @@ covariate.labels_latex <- c(
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs $\\times$ $\\Delta$Price",
   rep("$\\mathbb{1}$[Treatment] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot] $\\times$ $\\Delta$Price", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Post]",
-  "$\\mathbb{1}$[Post] $\\times$ $\\Delta$Price",
   "$\\mathbb{1}$[Post] $\\times$ HDDs",
   rep("$\\mathbb{1}$[Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment \\& Post]",
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ $\\Delta$Price",
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs",
   rep("$\\mathbb{1}$[Treatment \\& Post] $\\times$ (HDDs - Knot) $\\times$ $\\mathbb{1}$[HDDs $>$ Knot]", times = length(list_models_spline) / 2),
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs $\\times$ $\\Delta$Price",
