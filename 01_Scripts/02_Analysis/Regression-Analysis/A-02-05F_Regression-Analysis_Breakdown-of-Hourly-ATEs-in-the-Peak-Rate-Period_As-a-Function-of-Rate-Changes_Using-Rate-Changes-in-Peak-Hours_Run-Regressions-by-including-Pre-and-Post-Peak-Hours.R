@@ -76,14 +76,9 @@ PATH_TO.LOAD_CER_MODELS <- paste(
 
 # # 2. Path(s) to which regression results will be stored
 # # 2.1. For regression table(s)
-DIR_TO.SAVE_LATEX_ATE <- paste(
+DIR_TO.SAVE_LATEX_DYNAMIC <- paste(
   PATH_OUTPUT_TABLE,
-  "From-Stargazer/ATEs",
-  sep = "/"
-)
-DIR_TO.SAVE_LATEX_BREAKDOWN <- paste(
-  PATH_OUTPUT_TABLE,
-  "From-Stargazer/Breakdown-of-Hourly-ATEs/DID-Model-with-ID-FEs",
+  "From-Stargazer/Dynamic-Behavior",
   sep = "/"
 )
 
@@ -608,9 +603,22 @@ setnames(
 )
 dt_for.reg <- merge(
   x = dt_for.reg,
-  y = dt_rate.change,
-  by = c("alloc_r_tariff", "rate.period"),
+  y = dt_rate.change[rate.period == "Peak", .(alloc_r_tariff, rate.change)],
+  by = "alloc_r_tariff",
   all.x = TRUE
+)
+stopifnot(
+  dt_for.reg[
+    is_in.sample_incl.control_base.only.second.half == TRUE,
+    .N,
+    keyby = .(alloc_r_tariff, rate.period, rate.change)
+  ][
+    ,
+    .N,
+    keyby = .(alloc_r_tariff, rate.change)
+  ][
+    , .N
+  ] == 5
 )
 # # 1.2.2.2. Add rate-change-related interaction term(s)
 dt_for.reg[
@@ -696,8 +704,8 @@ for (KNOT in KNOTS) {
 # ------- Create stargazer object(s) -------
 # # 1. Create object(s) that will be used to make stargazer object(s)
 title_ <- paste0(
-  "Breakdonw of Average Treatment Effects in the Peak Rate Period: ",
-  "As a Function of Rate Changes"
+  "Breakdonw of Average Treatment Effects: ",
+  "As a Function of Rate Changes, For Different Intervals"
 )
 out.header <- FALSE
 column.labels <- NULL
@@ -747,8 +755,8 @@ column.sep.width <- "0pt"
 font.size <- "small"
 header <- FALSE
 label <- paste0(
-  "Table:Breakdown-of-Average-Treatement-Effects-in-the-Peak-Rate-Period_",
-  "As-a-Function-of-Rate-Changes"
+  "Table:Breakdown-of-Average-Treatement-Effects_",
+  "As-a-Function-of-Rate-Changes_For-Different-Intervals"
 )
 model.names <- FALSE
 omit.stat <- c("ser", "rsq")
@@ -795,10 +803,11 @@ for (KNOT in KNOTS) {
     type = "latex",
     title = title_,
     out = paste(
-      DIR_TO.SAVE_LATEX_BREAKDOWN,
+      DIR_TO.SAVE_LATEX_DYNAMIC,
       paste0(
-        "Breakdown-of-ATEs_Hourly-in-the-Peak-Rate-Period_",
-        "As-a-Function-of-Rate-Changes_For-Different-Intervals_Knot-", KNOT,
+        "Breakdown-of-Hourly-ATEs_",
+        "As-a-Function-of-Rate-Changes_Using-Rate-Changes-in-Peak-Hours_",
+        "For-Different-Intervals_Knot-", KNOT,
         ".tex"
       ),
       sep = "/"
@@ -885,8 +894,9 @@ export_figure.in.png(
   filename_str = paste(
     PATH_TO.SAVE_FIGURE,
     paste0(
-      "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
-      "As-a-Function-of-Rate-Changes_ATEs_For-Different-Knots-and-Intervals.png"
+      "Figure_Breakdown-of-Hourly-ATEs_",
+      "As-a-Function-of-Rate-Changes_Using-Rate-Changes-in-Peak-Hours_",
+      "ATEs-for-Different-Knots-and-Intervals.png"
     ),
     sep = "/"
   ),
@@ -902,8 +912,9 @@ for (KNOT in KNOTS) {
     filename_str = paste(
       PATH_TO.SAVE_FIGURE,
       paste0(
-        "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
-        "As-a-Function-of-Rate-Changes_Load-Profiles_For-Different-Intervals_",
+        "Figure_Breakdown-of-Hourly-ATEs_",
+        "As-a-Function-of-Rate-Changes_Using-Rate-Changes-in-Peak-Hours_",
+        "Load-Profiles-for-Different-Intervals_",
         "Knot-", KNOT, ".png"
       ),
       sep = "/"
