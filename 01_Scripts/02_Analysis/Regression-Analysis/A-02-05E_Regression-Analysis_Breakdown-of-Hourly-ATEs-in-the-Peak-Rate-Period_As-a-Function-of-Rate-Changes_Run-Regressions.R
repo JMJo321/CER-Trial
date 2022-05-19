@@ -70,19 +70,14 @@ PATH_TO.LOAD_CER_MODELS <- paste(
 
 # # 2. Path(s) to which regression results will be stored
 # # 2.1. For regression table(s)
-DIR_TO.SAVE_LATEX_ATE <- paste(
+DIR_TO.SAVE_LATEX_DYNAMIC <- paste(
   PATH_OUTPUT_TABLE,
-  "From-Stargazer/ATEs",
-  sep = "/"
-)
-DIR_TO.SAVE_LATEX_BREAKDOWN <- paste(
-  PATH_OUTPUT_TABLE,
-  "From-Stargazer/Breakdown-of-Hourly-ATEs/DID-Model-with-ID-FEs",
+  "From-Stargazer/Dynamic-Behavior",
   sep = "/"
 )
 
 # # 2.2. For figure(s)
-DIR_TO.SAVE_FIGURE <- "Breakdown-of-Hourly-ATEs"
+DIR_TO.SAVE_FIGURE <- "Dynamic-Behavior"
 PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
 
 
@@ -703,9 +698,9 @@ stargazer(
   type = "latex",
   title = title_,
   out = paste(
-    DIR_TO.SAVE_LATEX_BREAKDOWN,
+    DIR_TO.SAVE_LATEX_DYNAMIC,
     paste0(
-      "Breakdown-of-ATEs_Hourly-in-the-Peak-Rate-Period_",
+      "Breakdown-of-Hourly-ATEs_",
       "As-a-Function-of-Rate-Changes.tex"
     ),
     sep = "/"
@@ -759,7 +754,7 @@ for (idx in INDICES) {
     filename_str = paste(
       PATH_TO.SAVE_FIGURE,
       paste0(
-        "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
+        "Figure_Breakdown-of-Hourly-ATEs_",
         "As-a-Function-of-Rate-Changes_ATEs_Knot-", KNOT,".png"
       ),
       sep = "/"
@@ -793,7 +788,7 @@ for (idx in INDICES) {
     filename_str = paste(
       PATH_TO.SAVE_FIGURE,
       paste0(
-        "Figure_Breakdown-of-Hourly-ATEs-in-the-Peak-Rate-Period_",
+        "Figure_Breakdown-of-Hourly-ATEs_",
         "As-a-Function-of-Rate-Changes_Load-Profiles_Knot-", KNOT, ".png"
       ),
       sep = "/"
