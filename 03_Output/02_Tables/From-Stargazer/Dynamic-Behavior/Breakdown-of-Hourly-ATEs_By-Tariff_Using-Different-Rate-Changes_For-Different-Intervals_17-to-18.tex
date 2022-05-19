@@ -1,0 +1,58 @@
+
+\begin{table}[!htbp] \centering 
+%  \caption{Breakdonw of Average Treatment Effects: By Tariff Group, Interval of Hours - 17 to 18} 
+  \label{Table:Breakdown-of-Average-Treatement-Effects_By-Tariff_17-to-18} 
+\scriptsize
+\begin{tabular}{@{\extracolsep{30pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{Dependent Variable} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ HDDs & 0.042$^{***}$ & 0.042$^{***}$ & 0.042$^{***}$ & 0.042$^{***}$ \\ 
+  & (0.006) & (0.006) & (0.006) & (0.006) \\ 
+  & & & & \\ 
+ HDDs$^{*}$ & 0.001 & 0.0004 & 0.0003 & 0.001 \\ 
+  & (0.010) & (0.010) & (0.010) & (0.010) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment] & 0.017 & 0.171$^{*}$ & $-$0.022 & 0.249$^{***}$ \\ 
+  & (0.063) & (0.093) & (0.063) & (0.083) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs & 0.011$^{**}$ & 0.009 & 0.005 & 0.004 \\ 
+  & (0.004) & (0.006) & (0.004) & (0.006) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ & $-$0.010$^{*}$ & $-$0.006 & $-$0.007$^{*}$ & $-$0.003 \\ 
+  & (0.005) & (0.007) & (0.004) & (0.005) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Post] & 0.044 & 0.045 & 0.046 & 0.043 \\ 
+  & (0.035) & (0.036) & (0.036) & (0.035) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs & $-$0.015$^{*}$ & $-$0.015$^{*}$ & $-$0.015$^{*}$ & $-$0.015$^{*}$ \\ 
+  & (0.008) & (0.008) & (0.008) & (0.008) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs$^{*}$ & 0.007 & 0.008 & 0.008 & 0.007 \\ 
+  & (0.013) & (0.013) & (0.013) & (0.013) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.057$^{*}$ & $-$0.127$^{***}$ & $-$0.078$^{**}$ & $-$0.189$^{***}$ \\ 
+  & (0.030) & (0.039) & (0.031) & (0.041) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & $-$0.010$^{***}$ & $-$0.002 & $-$0.004 & $-$0.009 \\ 
+  & (0.004) & (0.005) & (0.003) & (0.006) \\ 
+  & & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & 0.013$^{***}$ & 0.003 & 0.005 & 0.011$^{*}$ \\ 
+  & (0.005) & (0.006) & (0.003) & (0.006) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+Tariff Group & A & B & C & D \\ 
+Interval of Hours & 17 to 18 & 17 to 18 & 17 to 18 & 17 to 18 \\ 
+Knot & 10 & 10 & 10 & 10 \\ 
+FEs: Household by Half-Hourly Time Window & No & No & No & No \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes \\ 
+Observations & 506,540 & 326,800 & 511,700 & 331,960 \\ 
+Adjusted R$^{2}$ & 0.046 & 0.044 & 0.044 & 0.045 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
