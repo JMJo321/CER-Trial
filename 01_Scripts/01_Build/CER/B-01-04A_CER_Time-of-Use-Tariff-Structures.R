@@ -259,7 +259,9 @@ plot_tou <-
     scale_y_continuous(breaks = seq(5, 45, by = 5), labels = scales::comma) +
     scale_color_viridis_d() +
     labs(
-      x = "\nHour of Day", y = "Rates  (Cents per kWh)\n", color = "Tariffs"
+      x = "\nHour of Day",
+      y = "Rates  (Cents per kWh)\n",
+      color = "Tariff Groups"
     ) +
     theme_linedraw()
 
