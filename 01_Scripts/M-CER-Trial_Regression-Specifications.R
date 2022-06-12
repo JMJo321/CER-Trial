@@ -263,6 +263,20 @@ model_breakdown.of.ate_hourly.in.peak_dw.mw <- get_formula_felm(
   indep.vars_clustered.ses =
     indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
 )
+model_breakdown.of.ate_hourly.in.peak_dw <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+  indep.vars_covariates =
+    indep.vars_covariates_breakdown.of.ate_hourly.in.peak_dw.mw,
+  indep.vars_fes = paste(
+    "day.of.week.and.30min.interval_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
 
 # # 2.2. DID Model with ID FEs
 model_breakdown.of.ate_hourly.in.peak_iw.dw.mw <-
