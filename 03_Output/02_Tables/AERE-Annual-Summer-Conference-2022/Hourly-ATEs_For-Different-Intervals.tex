@@ -1,0 +1,27 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Hourly Average Treatment Effects: By Interval} 
+  \label{Table:Hourly-ATEs_For-Different-Intervals} 
+\small 
+\begin{tabular}{@{\extracolsep{0pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{Dependent Variable} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.032$^{***}$ & $-$0.143$^{***}$ & $-$0.058$^{***}$ \\ 
+  & (0.011) & (0.015) & (0.015) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Interval of Hours & 15 to 16 & 17 to 18 & 19 to 20 \\ 
+FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+FEs: Month of Year & Yes & Yes & Yes \\ 
+Observations & 1,006,200 & 1,006,200 & 1,006,200 \\ 
+Adjusted R$^{2}$ & 0.308 & 0.379 & 0.372 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
