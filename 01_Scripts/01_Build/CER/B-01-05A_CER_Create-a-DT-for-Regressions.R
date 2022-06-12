@@ -138,6 +138,7 @@ dt_survey_pre <-
 dt_survey_post <-
   read_parquet(PATH_TO.LOAD_CER_SURVEY_POST) %>%
     setDT(.)
+gc(reset = TRUE, full = TRUE)
 
 
 # ------------------------------------------------------------------------------
@@ -513,6 +514,8 @@ dt_for.reg[
     range_temp_f_max.in.hour = NULL
   )
 ]
+rm(tmp_dt_for.reg)
+gc(reset = TRUE, full = TRUE)
 
 
 # # 2. Modify the temporary DT
@@ -810,6 +813,10 @@ conditions_for.sample.construction_incl.control_base <- paste(
   # To make a balanced panel dataset
   "is_date.with.harsh.temperature.only.in.treatment.period == FALSE",
   # No comparable observations in the baseline period
+  "hdd_all_60f <= 30",
+  # The condition right above does not fully rule out the issue about
+  # non-existence of comparable obersvations because other conditions generate
+  # a non-existence case.
   "is_after.ending.daylight.saving.time.in.oct == FALSE",
   # Consumption just after ending daylight saving time could be noticeably
   # different from consumption just before ending daylight saving time
@@ -836,6 +843,10 @@ conditions_for.sample.construction_incl.control_base.only.second.half <- paste(
   # To make a balanced panel dataset
   "is_date.with.harsh.temperature.only.in.treatment.period == FALSE",
   # No comparable observations in the baseline period
+  "hdd_all_60f <= 30",
+  # The condition right above does not fully rule out the issue about
+  # non-existence of comparable obersvations because other conditions generate
+  # a non-existence case
   "is_after.ending.daylight.saving.time.in.oct == FALSE",
   # Consumption just after ending daylight saving time could be noticeably
   # different from consumption just before ending daylight saving time
@@ -864,6 +875,10 @@ conditions_for.sample.construction_incl.control_case1 <- paste(
   # To make a balanced panel dataset
   "is_date.with.harsh.temperature.only.in.treatment.period == FALSE",
   # No comparable observations in the baseline period
+  "hdd_all_60f <= 30",
+  # The condition right above does not fully rule out the issue about
+  # non-existence of comparable obersvations because other conditions generate
+  # a non-existence case
   sep = " & "
 )
 conditions_for.sample.construction_incl.control_case1.only.second.half <-
@@ -886,6 +901,10 @@ conditions_for.sample.construction_incl.control_case1.only.second.half <-
     # To make a balanced panel dataset
     "is_date.with.harsh.temperature.only.in.treatment.period == FALSE",
     # No comparable observations in the baseline period
+    "hdd_all_60f <= 30",
+  # The condition right above does not fully rule out the issue about
+  # non-existence of comparable obersvations because other conditions generate
+  # a non-existence case
     "7 <= month(date)",
     # Baseline period began July 14, 2009
     sep = " & "
