@@ -30,8 +30,8 @@ rm(list = setdiff(ls(), c("PATH_PROJ")))
 # # 1. Set folder name(s)
 # # 1.1. For scripts
 PATH_SCRIPT <- "01_Scripts"
-PATH_SCRIPT_BUILD <- paste(PATH_SCRIPT, "01_Build", sep= "/")
-PATH_SCRIPT_ANALYSIS <- paste(PATH_SCRIPT, "02_Analysis", sep= "/")
+PATH_SCRIPT_BUILD <- paste(PATH_SCRIPT, "01_Build", sep = "/")
+PATH_SCRIPT_ANALYSIS <- paste(PATH_SCRIPT, "02_Analysis", sep = "/")
 
 # # 1.2. For data
 # # 1.2.1. For folders commonly used
