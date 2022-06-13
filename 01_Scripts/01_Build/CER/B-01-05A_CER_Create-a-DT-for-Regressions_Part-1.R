@@ -773,10 +773,52 @@ dt_for.reg[
     date %in% dates_out.of.temperature.range
 ]
 
-# # 2.5. Append the DT created from survey datasets to the DT for regression
-# #      analysis
-dt_for.reg_append <- merge(
+# # 2.5. Add columns that are utilized in econometric models
+# # 2.5.1. Add a column showing hourly electricity consumption
+dt_for.reg[
+  ,
+  kwh_per.hour := lapply(.SD, sum, na.rm = TRUE), .SDcols = "kwh",
+  by = .(id, date, interval_hour)
+]
+# # 2.5.2. Add a column showing the size of rate changes in the peak rate period
+# # 2.5.2.1. Extract the fixed flat rate for the control group
+basis_rate <- dt_for.reg[
+  group == "Control", .N, by = .(rate_cents.per.kwh)
+]$rate_cents.per.kwh
+# # 2.5.2.2. Create a DT including the size of rate changes
+dt_for.reg[
+  ,
+  dummy_rate.change := rate_cents.per.kwh - basis_rate
+]
+dt_rate.change <- dt_for.reg[
+  period == "Treatment" &
+    rate.period == "Peak" &
+    alloc_r_tariff %in% LETTERS[1:5],
+  .N,
+  by = .(alloc_r_tariff, dummy_rate.change)
+][
+  , N := NULL
+]
+setnames(
+  dt_rate.change,
+  old = "dummy_rate.change",
+  new = "rate.change"
+)
+# # 2.5.2.3. Append the DT created above to the DT for regression analysis
+# # (Refer to 2.6.)
+
+# # 2.6. Append DTs generated above to the DT for regression analysis
+# # 2.6.1. Append the DT including the size of rate changes
+dt_for.reg_incl.rate.changes <- merge(
   x = dt_for.reg,
+  y = dt_rate.change,
+  by = "alloc_r_tariff",
+  all.x = TRUE
+)
+dt_for.reg_incl.rate.changes[, dummy_rate.change := NULL]
+# # 2.6.2. Append the DT including indicator variables regarding heating types
+dt_for.reg_append <- merge(
+  x = dt_for.reg_incl.rate.changes,
   y = dt_to.append[
     , .(
     id,
@@ -789,11 +831,53 @@ dt_for.reg_append <- merge(
   all.x = TRUE
 )
 gc(reset = TRUE, full = TRUE)
+# # 2.6.3. Conduct test(s)
+stopifnot(
+  dt_for.reg_append[
+    alloc_r_tariff %in% LETTERS[1:5],
+    .N,
+    keyby = .(alloc_r_tariff, rate.period, rate.change)
+  ][
+    ,
+    .N,
+    keyby = .(alloc_r_tariff, rate.change)
+  ][
+    , .N
+  ] == 5
+)
+# # 2.6.4. Add interaction terms
+# # 2.6.4.1. Add interaction terms between treatment-related indicators and HDDs
+dt_for.reg_append[
+  ,
+  `:=` (
+    treatment_times_hdd =
+      as.numeric(is_treated_r) * hdd_all_60f,
+    post_times_hdd =
+      as.numeric(is_treatment.period) * hdd_all_60f,
+    treatment.and.post_times_hdd =
+      as.numeric(is_treatment.and.post) * hdd_all_60f
+  )
+]
+# # 2.6.4.2. Add interaction terms between treatment-related terms and
+# #          the size of rate changes
+dt_for.reg_append[
+  ,
+  `:=` (
+    treatment_times_rate.change =
+      as.numeric(is_treated_r) * rate.change,
+    treatment_times_hdd_times_rate.change =
+      treatment_times_hdd * rate.change,
+    treatment.and.post_times_rate.change =
+      as.numeric(is_treatment.and.post) * rate.change,
+    treatment.and.post_times_hdd_times_rate.change =
+      treatment.and.post_times_hdd * rate.change
+  )
+]
 
-# # 2.6. Add columns that indicate whether an observation is included in the
+# # 2.7. Add columns that indicate whether an observation is included in the
 # #      sample or not
-# # 2.6.1. Set conditions for the indicator variable
-# # 2.6.1.1. For sample(s) that includes the control group
+# # 2.7.1. Set conditions for the indicator variable
+# # 2.7.1.1. For sample(s) that includes the control group
 conditions_for.sample.construction_incl.control_base <- paste(
   "alloc_r_tariff %in% LETTERS[1:5]",
   # To include observation for Tariff A, B, C, D, and E
@@ -909,14 +993,14 @@ conditions_for.sample.construction_incl.control_case1.only.second.half <-
     # Baseline period began July 14, 2009
     sep = " & "
   )
-# # 2.6.1.2. For sample(s) that excludes the control group
+# # 2.7.1.2. For sample(s) that excludes the control group
 conditions_for.sample.construction_excl.control_base <- paste(
   conditions_for.sample.construction_incl.control_base,
   "is_treated_r == TRUE",
   sep = " & "
 )
-# # 2.6.2. Add indicator variables
-# # 2.6.2.1. For sample(s) that includes the control group
+# # 2.7.2. Add indicator variables
+# # 2.7.2.1. For sample(s) that includes the control group
 dt_for.reg_append[
   ,
   is_in.sample_incl.control_base := eval(
@@ -947,7 +1031,7 @@ dt_for.reg_append[
     )
   )
 ]
-# # 2.6.2.2. For sample(s) that excludes the control group
+# # 2.7.2.2. For sample(s) that excludes the control group
 dt_for.reg_append[
   ,
   is_in.sample_excl.control_base := eval(
@@ -955,20 +1039,26 @@ dt_for.reg_append[
   )
 ]
 
-# # 2.7. Drop unnecessary columns
+# # 2.8. Drop unnecessary columns
 cols_keep <-
   names(dt_for.reg_append)[
     str_detect(names(dt_for.reg_append), "_sme", negate = TRUE)
   ]
 dt_for.reg_append <- dt_for.reg_append[, .SD, .SDcols = cols_keep]
 
-# # 2.8. Reorder columns
+# # 2.9. Reorder columns
 cols_reorder <- c(
   "id", "alloc_group", "alloc_group_desc",
   "alloc_r_tariff", "alloc_r_tariff_desc", "rate_cents.per.kwh",
   "alloc_r_stimulus", "alloc_r_stimulus_desc",
+  "rate.change",
   "is_treated_r", "group", "is_treatment.period", "period",
   "is_treatment.and.post",
+  "treatment_times_hdd", "post_times_hdd", "treatment.and.post_times_hdd",
+  "treatment_times_rate.change",
+  "treatment_times_hdd_times_rate.change",
+  "treatment.and.post_times_rate.change",
+  "treatment.and.post_times_hdd_times_rate.change",
   "day", "date", "datetime", "interval_hour", "interval_30min",
   "rate.period", "length_rate.period",
   "rate.period_detail_level1", "length_rate.period_detail_level1",
@@ -987,7 +1077,7 @@ cols_reorder <- c(
   "is_in.sample_incl.control_case1",
   "is_in.sample_incl.control_case1.only.second.half",
   "is_in.sample_excl.control_base",
-  "kwh",
+  "kwh", "kwh_per.hour",
   "temp_f", "soil_f", "range_temp_f", "range_temp_f_selected",
   "mean.temp_extremes_f", "mean.temp_all_f",
   "hdd_extremes_65f", "hdd_all_65f", "hdd_soil_65f",
@@ -1010,7 +1100,7 @@ cols_reorder <- c(
 )
 setcolorder(dt_for.reg_append, cols_reorder)
 
-# # 2.9. Sort Observations
+# # 2.10. Sort Observations
 keys <- c("id", "datetime")
 setkeyv(dt_for.reg_append, keys)
 
