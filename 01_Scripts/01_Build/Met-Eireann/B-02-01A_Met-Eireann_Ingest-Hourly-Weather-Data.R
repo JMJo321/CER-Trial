@@ -136,10 +136,10 @@ dt_weather_hourly[
 dt_weather_hourly[, `:=` (date = NULL, tmp_datetime = NULL)]
 
 # # 3.2. Add a column showing station names
-for (code in names(list_stations)) {
+for (code in names(LIST_STATIONS)) {
   dt_weather_hourly[
     station_code == as.integer(code),
-    station := list_stations[[code]]
+    station := LIST_STATIONS[[code]]
   ]
 }
 

@@ -231,7 +231,7 @@ dt_metering_30min <- merge(
 dt_metering_30min[, is_weekend := day.of.week %in% c("Saturday", "Sunday")]
 # # 4.1.4. Add an indicator variable that shows whether an observation is for
 # #        holidays or not
-dt_metering_30min[, is_holiday := date %in% holidays]
+dt_metering_30min[, is_holiday := date %in% HOLIDAYS]
 
 # # 4.2. Reorder columns
 cols_reorder <- c(

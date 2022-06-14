@@ -130,10 +130,10 @@ dt_weather_daily[
 ]
 
 # # 3.2. Add a column showing station names
-for (code in names(list_stations)) {
+for (code in names(LIST_STATIONS)) {
   dt_weather_daily[
     station_code == as.integer(code),
-    station := list_stations[[code]]
+    station := LIST_STATIONS[[code]]
   ]
 }
 

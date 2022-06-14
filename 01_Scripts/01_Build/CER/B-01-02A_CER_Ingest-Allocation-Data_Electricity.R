@@ -102,25 +102,25 @@ dt_allocation_elec[
     alloc_group_desc =
       lapply(
         alloc_group, get_description,
-        list = list_allocation_groups
+        list = LIST_ALLOCATION_GROUPS
       ) %>%
         as.vector(., mode = "character"),
     alloc_r_tariff_desc =
       lapply(
         alloc_r_tariff, get_description,
-        list = list_allocation_tariffs
+        list = LIST_ALLOCATION_TARIFFS
       ) %>%
         as.vector(., mode = "character"),
     alloc_r_stimulus_desc =
       lapply(
         alloc_r_stimulus, get_description,
-        list = list_allocation_stimuli_residential
+        list = LIST_ALLOCATION_STIMULI_RESIDENTIAL
       ) %>%
         as.vector(., mode = "character"),
     alloc_sme_desc =
       lapply(
         alloc_sme, get_description,
-        list = list_allocation_stimuli_enterprises
+        list = LIST_ALLOCATION_STIMULI_ENTERPRISES
       ) %>%
         as.vector(., mode = "character")
   )
