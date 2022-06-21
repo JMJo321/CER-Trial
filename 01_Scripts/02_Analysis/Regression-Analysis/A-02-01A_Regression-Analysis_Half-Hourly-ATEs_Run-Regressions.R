@@ -45,7 +45,7 @@ source(PATH_HEADER)
 # # 1. Path(s) from which dataset(s) and script(s) are loaded
 # # 1.1. For the DT for regression analysis
 FILE_TO.LOAD_CER_FOR.REG <-
-  "CER_DT-for-Regressions-with-Survey-Data_Electricity.parquet"
+  "CER_SubDT-for-Regressions-with-Survey-Data_Electricity.parquet"
 PATH_TO.LOAD_CER_FOR.REG <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.LOAD_CER_FOR.REG, sep = "/")
 
@@ -71,7 +71,7 @@ PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
 # # 1.1. To get felm object(s) by running regression(s)
 get_felm.obj_half.hourly.ates_by.tariff <- function (tariff_in.str) {
   felm.obj <- felm(
-    formula = model_ate_half.hourly_iw.dw.m,
+    formula = model_ate_half.hourly_iw.tw.m,
     data = dt_for.reg[
       is_in.sample_incl.control_base.only.second.half == TRUE &
         alloc_r_tariff %in% c(tariff_in.str, "E")
@@ -116,7 +116,8 @@ gc(reset = TRUE)
 source(PATH_TO.LOAD_CER_MODELS)
 
 
-# # 2. Add data fields indicating half-hourly intervals
+# # 2. Add data fields
+# # 2.1. Add data fields indicating half-hourly intervals
 for (interval in 1:48) {
   tmp_col.name <- paste0("is_treatment.and.post_30min_", interval)
   dt_for.reg[
@@ -129,17 +130,48 @@ for (interval in 1:48) {
   ]
 }
 
+# # 2.2. Add a data field including day-of-sample-by-half-hourly-interval FEs
+dt_for.reg[
+  ,
+  day.and.30min.interval_in.factor := factor(
+    paste0(day_in.factor, interval_30min)
+  )
+]
+
 
 # ------- Run a regression to estimate half-hourly ATEs: For All Tariffs -------
-# # 1. Create a felm object by running a regression
-reg.result <- felm(
+# # 1. Create felm object(s) by running a regression
+# # 1.1. By using the model "model_ate_half.hourly_iw.dw.m"
+reg.result_iw.dw.m <- felm(
   formula = model_ate_half.hourly_iw.dw.m,
+  data = dt_for.reg[is_in.sample_incl.control_base.only.second.half == TRUE]
+)
+# ## Note:
+# ## Using "model_ate_half.hourly_iw.dw.ym" gives slightly small SEs, compared
+# ## to using "model_ate_half.hourly_iw.dw.m". But the size of the estimated
+# ## treatment effects shows minor variations.
+
+# # 1.2. By using the model "model_ate_half.hourly_iw.tw.m"
+reg.result_iw.tw.m <- felm(
+  formula = model_ate_half.hourly_iw.tw.m,
   data = dt_for.reg[is_in.sample_incl.control_base.only.second.half == TRUE]
 )
 
 
-# # 2. Create a DT including the estimated ATEs
-dt_estimates <- get_dt.incl.estimates(reg.result)
+# # 2. Create DT(s) including the estimated ATEs
+# # 2.1. Create DT(s) by using the regression results
+dt_estimates_iw.dw.m <- get_dt.incl.estimates(reg.result_iw.dw.m)
+dt_estimates_iw.tw.m <- get_dt.incl.estimates(reg.result_iw.tw.m)
+
+# # 2.2. Combine the DTs created above
+dt_estimates <- rbind(
+  dt_estimates_iw.dw.m[
+    , category := "Day-of-Week-by-Half-Hourly-Interval FEs"
+  ],
+  dt_estimates_iw.tw.m[
+    , category := "Day-of-Sample-by-Half-Hourly-Interval FEs"
+  ]
+)
 
 
 # ------- Run a regression to estimate half-hourly ATEs: For Each Tariff -------
@@ -179,6 +211,7 @@ plot.options <- list(
 
 # ------- Create a ggplot object -------
 # # 1. For all tariff groups
+# # 1.1. For a figure showing the regression results from both models
 plot_time.profile <-
   ggplot() +
     geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.5) +
@@ -200,6 +233,45 @@ plot_time.profile <-
       aes(x = interval_hour, y = estimate),
       shape = 1, size = 1.8
     ) +
+    facet_grid(category ~ .) +
+    scale_x_continuous(breaks = seq(0, 24, by = 1)) +
+    labs(
+      x = "Hour of Day",
+      y = TeX(r'(Treatment Effects  ($\Delta$ kWh per Hour))')
+    ) +
+    plot.options
+
+# # 1.2. For a figure showing the regression results from the model
+# #      "model_ate_half.hourly_iw.tw.m"
+plot_time.profile_iw.tw.m <-
+  ggplot() +
+    geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.5) +
+    geom_vline(
+      xintercept = c(8, 17, 19, 23), linetype = "dotdash", alpha = 0.5
+    ) +
+    geom_errorbar(
+      data = dt_estimates[
+        category == "Day-of-Sample-by-Half-Hourly-Interval FEs"
+      ],
+      aes(x = interval_hour, y = estimate, ymin = conf.low, ymax = conf.high),
+      width = 0.2
+    ) +
+    geom_point(
+      data = dt_estimates[
+        category == "Day-of-Sample-by-Half-Hourly-Interval FEs" &
+          is_significant == TRUE
+      ],
+      aes(x = interval_hour, y = estimate),
+      shape = 16, size = 1.8, color = unikn::usecol("firebrick")
+    ) +
+    geom_point(
+      data = dt_estimates[
+        category == "Day-of-Sample-by-Half-Hourly-Interval FEs"
+      ],
+      aes(x = interval_hour, y = estimate),
+      shape = 1, size = 1.8
+    ) +
+    facet_grid(category ~ .) +
     scale_x_continuous(breaks = seq(0, 24, by = 1)) +
     labs(
       x = "Hour of Day",
@@ -232,6 +304,10 @@ plot_time.profile_by.tariff <-
     ) +
     facet_grid(alloc_r_tariff ~ .) +
     scale_x_continuous(breaks = seq(0, 24, by = 1)) +
+    scale_y_continuous(
+      breaks = seq(-0.2, 0.05, by = 0.05),
+      labels = scales::number_format(accuracy = 0.01)
+    ) +
     labs(
       x = "Hour of Day",
       y = TeX(r'(Treatment Effects  ($\Delta$ kWh per Hour))')
@@ -243,6 +319,15 @@ plot_time.profile_by.tariff <-
 # # 1. For all tariff groups
 export_figure.in.png(
   plot_time.profile,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE,
+    "Figure_Time-Profile-of-Half-Hourly-ATEs_Comparing-Two-Models.png",
+    sep = "/"
+  ),
+  width_numeric = 35, height_numeric = 27
+)
+export_figure.in.png(
+  plot_time.profile_iw.tw.m,
   filename_str = paste(
     PATH_TO.SAVE_FIGURE,
     "Figure_Time-Profile-of-Half-Hourly-ATEs.png",
@@ -259,5 +344,5 @@ export_figure.in.png(
     "Figure_Time-Profile-of-Half-Hourly-ATEs_By-Tariff.png",
     sep = "/"
   ),
-  width_numeric = 35, height_numeric = 27
+  width_numeric = 35, height_numeric = 30
 )

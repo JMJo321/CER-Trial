@@ -79,6 +79,30 @@ model_ate_half.hourly_iw.dw.m <- get_formula_felm(
   indep.vars_ivs = indep.vars_ivs_ate_half.hourly,
   indep.vars_clustered.ses = indep.vars_clustered.ses_ate_half.hourly
 )
+model_ate_half.hourly_iw.dw.ym <- get_formula_felm(
+  dep.var = dep.var_ate_half.hourly,
+  indep.vars_covariates = indep.vars_covariates_ate_half.hourly,
+  indep.vars_fes = paste(
+    "id.and.30min.interval_in.factor",
+    "day.of.week.and.30min.interval_in.factor",
+    "year.and.month_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs = indep.vars_ivs_ate_half.hourly,
+  indep.vars_clustered.ses = indep.vars_clustered.ses_ate_half.hourly
+)
+model_ate_half.hourly_iw.tw.m <- get_formula_felm(
+  dep.var = dep.var_ate_half.hourly,
+  indep.vars_covariates = indep.vars_covariates_ate_half.hourly,
+  indep.vars_fes = paste(
+    "id.and.30min.interval_in.factor",
+    "day.and.30min.interval_in.factor",
+    "month_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs = indep.vars_ivs_ate_half.hourly,
+  indep.vars_clustered.ses = indep.vars_clustered.ses_ate_half.hourly
+)
 
 
 # ------- Define econometric models: Hourly ATEs in the peak rate period -------
