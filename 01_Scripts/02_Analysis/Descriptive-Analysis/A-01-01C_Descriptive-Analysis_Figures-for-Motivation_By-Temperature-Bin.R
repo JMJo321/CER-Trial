@@ -196,7 +196,7 @@ help_create.ggplot.obj <- function (
       ) +
       labs(
         x = TeX(r'(Temperature $ (\degree F)$)'),
-        y = "Average Daily Consumption  (kWh/Day)",
+        y = "Average Daily Consumption\n(kWh/Day)",
         color = "",
         shape = "",
         subtitle = "Panel A: Household Average Daily Electricity Consumption"
@@ -234,7 +234,7 @@ help_create.ggplot.obj <- function (
       labs(
         x = TeX(r'(Temperature $ (\degree F)$)'),
         y =
-          "Percentage Changes in Household Average Daily Consumption  (kWh/Day)",
+          "Percentage Changes in Household Average Daily Consumption\n(kWh/Day)",
         color = "",
         shape = "",
         subtitle =
@@ -357,6 +357,7 @@ list_paths_step.size.1 <- lapply(
   function (filename_str) {
     paste(
       PATH_OUTPUT_FIGURE,
+      "For-Motivation",
       paste0(
         "Figure_For-Motivation_Daily-Consumption-with-Percentage-Changes_",
         paste(filename_str, paste0("Step-Size-", 1), sep = "_"),
@@ -371,6 +372,7 @@ list_paths_step.size.2 <- lapply(
   function (filename_str) {
     paste(
       PATH_OUTPUT_FIGURE,
+      "For-Motivation",
       paste0(
         "Figure_For-Motivation_Daily-Consumption-with-Percentage-Changes_",
         paste(filename_str, paste0("Step-Size-", 2), sep = "_"),
@@ -382,8 +384,8 @@ list_paths_step.size.2 <- lapply(
 )
 # # 2.1.3. Make a list containing plot options
 list_args <- list(
-  width_numeric = 45,
-  height_numeric = 30,
+  width_numeric = 33,
+  height_numeric = 28,
   dpi_int = 700
 )
 
@@ -398,5 +400,17 @@ mapply(
 mapply(
   export_figure.in.png,
   list_plots_step.size.2, list_paths_step.size.2,
+  MoreArgs = list_args
+)
+# # 2.2.3. Export a ggplot object for Dissertation
+mapply(
+  export_figure.in.png,
+  list_plots_step.size.2[2],
+  str_replace(
+    list_paths_step.size.2[[2]],
+    "For-Motivation",
+    "For-Dissertation_Chapter-2"
+  ) %>%
+    list(.),
   MoreArgs = list_args
 )
