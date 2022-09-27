@@ -51,6 +51,11 @@ DIR_TO.SAVE_PLOT <- paste(
   "TOU-Tariff-Structures",
   sep = "/"
 )
+DIR_TO.SAVE_PLOT_FOR.DISSERTATION <- paste(
+  PATH_OUTPUT_FIGURE,
+  "For-Dissertation_Chapter-2",
+  sep = "/"
+)
 
 
 # ------- Define parameter(s) -------
@@ -214,6 +219,11 @@ dt_annotate_rate_peak <- data.table(
 
 
 # ------- Create ggplot Object(s) -------
+# # 0. Create object(s) that will be used for making ggplot object(s)
+# # 0.1. Define color pallette(s)
+col.pal_viridis <- scales::viridis_pal()(4) %>% c("#000000", .)
+
+
 # # 1. Plot for TOU Tariff Structures
 plot_tou <-
   ggplot() +
@@ -257,7 +267,7 @@ plot_tou <-
     ) +
     scale_x_continuous(breaks = seq(0, 24, by = 1), minor_breaks = NULL) +
     scale_y_continuous(breaks = seq(5, 45, by = 5), labels = scales::comma) +
-    scale_color_viridis_d() +
+    scale_color_manual(values = col.pal_viridis) +
     labs(
       x = "\nHour of Day",
       y = "Rates  (Cents per kWh)\n",
@@ -274,4 +284,13 @@ export_figure.in.png(
     DIR_TO.SAVE_PLOT, "Figure_Time-of-Use-Tariff-Structures.png", sep = "/"
   ),
   width_numeric = 30, height_numeric = 17, units_str = "cm"
+)
+export_figure.in.png(
+  plot_tou,
+  filename_str = paste(
+    DIR_TO.SAVE_PLOT_FOR.DISSERTATION,
+    "Figure_Time-of-Use-Tariff-Structures.png",
+    sep = "/"
+  ),
+  width_numeric = 25, height_numeric = 15, units_str = "cm"
 )
