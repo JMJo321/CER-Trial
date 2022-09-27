@@ -235,6 +235,7 @@ LIST_INTERVALS <- list(
   `15 to 16` = 15:16,
   `17 to 18` = 17:18,
   `19 to 20` = 19:20,
+  `21 to 22` = 21:22,
   `15 to 18` = 15:18,
   `17 to 20` = 17:20,
   `15 to 20` = 15:20
@@ -572,6 +573,34 @@ dt.oper_add.col_knot <- function (dt, knot) {
 }
 
 # # 3.2. Creat a `felm` object
+# # 3.2.2. For an interval of half-hours
+# # 3.2.2.1. For all tariff groups
+get_felm.obj_interval.half.hour <- function (
+  dt, formula, interval.half.hours_in.array
+) {
+  reg.result <- lfe::felm(
+    formula = formula,
+    data = dt[
+      is_in.sample_incl.control_base.only.second.half == TRUE &
+        interval_30min %in% interval.half.hours_in.array
+    ]
+  )
+  return (reg.result)
+}
+# # 3.2.2.2. For a specific tariff group
+get_felm.obj_interval.half.hour_by.tariff <- function (
+  dt, formula, interval.half.hours_in.array, tariff.group_in.str
+) {
+  reg.result <- lfe::felm(
+    formula = formula,
+    data = dt[
+      is_in.sample_incl.control_base.only.second.half == TRUE &
+        interval_30min %in% interval.half.hours_in.array &
+        alloc_r_tariff %in% c(tariff.group_in.str, "E")
+    ]
+  )
+  return (reg.result)
+}
 # # 3.2.1. For an interval of hours
 get_felm.obj_interval.hour <- function (dt, formula, interval.hours_in.array) {
   reg.result <- lfe::felm(
@@ -601,6 +630,7 @@ get_estimates_from.felm <- function (
       se.type = se.type
     ) %>%
       data.table::setDT(.)
+  dt_estimates[, is_significant := !(conf.low <= 0 & 0 <= conf.high)]
   return (dt_estimates)
 }
 
