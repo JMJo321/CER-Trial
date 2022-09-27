@@ -59,7 +59,10 @@ PATH_TO.LOAD_CER_MODELS <- paste(
 # # 2. Path(s) to which output will be saved
 # # 2.1. For figure(s)
 DIR_TO.SAVE_FIGURE <- "Half-Hourly-ATEs"
+DIR_TO.SAVE_FIGURE_FOR.DISSERTATION <- "For-Dissertation_Chapter-2"
 PATH_TO.SAVE_FIGURE <- paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE, sep = "/")
+PATH_TO.SAVE_FIGURE_FOR.DISSERTATION <-
+  paste(PATH_OUTPUT_FIGURE, DIR_TO.SAVE_FIGURE_FOR.DISSERTATION, sep = "/")
 
 
 # ------- Define parameter(s) -------
@@ -271,7 +274,6 @@ plot_time.profile_iw.tw.m <-
       aes(x = interval_hour, y = estimate),
       shape = 1, size = 1.8
     ) +
-    facet_grid(category ~ .) +
     scale_x_continuous(breaks = seq(0, 24, by = 1)) +
     labs(
       x = "Hour of Day",
@@ -330,6 +332,15 @@ export_figure.in.png(
   plot_time.profile_iw.tw.m,
   filename_str = paste(
     PATH_TO.SAVE_FIGURE,
+    "Figure_Time-Profile-of-Half-Hourly-ATEs.png",
+    sep = "/"
+  ),
+  width_numeric = 35, height_numeric = 17
+)
+export_figure.in.png(
+  plot_time.profile_iw.tw.m,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE_FOR.DISSERTATION,
     "Figure_Time-Profile-of-Half-Hourly-ATEs.png",
     sep = "/"
   ),
