@@ -1,0 +1,41 @@
+\afterpage{
+    \begin{table}[t!]
+        \centering
+        \caption{Correlations in Average Daily Temperatures between Weather Stations}
+        \label{Table:Correlations-in-Average-Daily-Temperatures-among-Weather-Stations}
+        \vspace{0.2cm}
+        \begin{adjustbox}{scale = 1.0}
+            \begin{tabular}{
+                >{\raggedright}m{4.8cm} |
+                >{\centering}m{5.5cm} 
+                >{\centering\arraybackslash}m{5.5cm}
+            }
+                \hline \hline
+                \multicolumn{1}{c|}{Stations} & \multicolumn{2}{c}{Correlation Coefficients} \\
+                \cline{2-3}
+                \multicolumn{1}{c|}{}  & \multicolumn{1}{c}{For Sample Period} & \multicolumn{1}{c}{For Experiment Period} \\
+                \hline
+                Ballyhaise & 0.98291 & 0.98244 \\
+                Belmullet & 0.96089 & 0.96361 \\
+                Cork Airport & 0.97121 & 0.97130 \\
+                Gurteen & 0.98389 & 0.98307 \\
+                Johnstown & 0.98189 & 0.97958 \\
+                Mace & 0.95870 & 0.95921 \\
+                Malin & 0.95632 & 0.95705 \\
+                Markree Castle & 0.97194 & 0.97179 \\
+                Moore Park & 0.98057 & 0.97798 \\
+                Mount Dillon & 0.97945 & 0.97782 \\
+                Mullingar & 0.98876 & 0.98654 \\
+                Newport Furnace & 0.97015 & 0.97211 \\
+                Oak Park & 0.99074 & 0.98925 \\
+                Shannon Airport & 0.97696 & 0.97582 \\
+                Sherkin Island & 0.95342 & 0.95411 \\
+                \hline \hline
+            \end{tabular}
+        \end{adjustbox}
+        \begin{tablenotes}[flushleft]
+            \small
+            \textit{Note}: For each weather station, data from the weather station at Dublin airport is utilized to compute the two correlation coefficients. I do not provide the $p$-value of each correlation coefficient because it is arbitrarly small in magnitude. And the experiment period is the period between July 2009 to December 2010, while the sample period is the second half of 2009 and 2010. 
+        \end{tablenotes}
+    \end{table}
+}
