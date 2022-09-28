@@ -90,7 +90,7 @@ names(HDDS) <- HDDS
 # # 1.1. Load the DT for regression analysis
 dt_for.reg <-
   read_parquet(PATH_TO.LOAD_CER_FOR.REG) %>%
-    setDT(dt_for.reg)
+    setDT(.)
 gc(reset = TRUE)
 
 
