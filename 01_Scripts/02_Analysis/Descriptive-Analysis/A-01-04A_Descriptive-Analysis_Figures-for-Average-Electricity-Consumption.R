@@ -145,8 +145,14 @@ dt_avg.kwh_by.date <-
 # # 2. Modify the DT
 # # 2.1. Add data field(s)
 dt_avg.kwh_by.date[, kwh_se := kwh_sd / sqrt(N)]
-dt_avg.kwh_by.date[, kwh_upper := kwh + kwh_se]
-dt_avg.kwh_by.date[, kwh_lower := kwh - kwh_se]
+dt_avg.kwh_by.date[
+  ,
+  kwh_upper := kwh + (qt(p = 0.05/2, df = N - 1, lower.tail = FALSE) * kwh_se)
+]
+dt_avg.kwh_by.date[
+  ,
+  kwh_lower := kwh - (qt(p = 0.05/2, df = N - 1, lower.tail = FALSE) * kwh_se)
+]
 
 
 # ------------------------------------------------------------------------------
