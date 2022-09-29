@@ -3,7 +3,7 @@
 # # : A-02, Regression Analysis
 # #
 # > Script Number(s)
-# # : A-02-02D
+# # : A-02-06A
 # #
 # > Purpose of the script(s)
 # # : Run regression(s), and then export the result(s) in TEX format.
@@ -142,12 +142,14 @@ covariate.labels <- "$\\mathbb{1}$[Treatment \\& Post]"
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
 add.lines <- list(
+  c("Description of Interval", rep(c("Pre-Peak", "Peak", "Post-Peak"), each = 5)),
+  c("Interval of Hours", rep(names(LIST_INTERVALS[1:3]), each = 5)),
   c("Tariff Group", rep(c(LETTERS[1:4], "All"), times = 3)),
   c("FEs: Household by Half-Hourly Time Window", rep("Yes", times = 15)),
   c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 15)),
   c("FEs: Month of Year", rep("Yes", times = 15))
 )
-column.sep.width <- "20pt"
+column.sep.width <- "1pt"
 font.size <- "small"
 header <- FALSE
 label <- "Table:Average-Treatment-Effects-in-and-near-the-Peak-Rate-Period"
