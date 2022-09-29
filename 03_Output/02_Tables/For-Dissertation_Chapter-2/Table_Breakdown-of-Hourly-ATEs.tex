@@ -1,0 +1,76 @@
+\afterpage{
+    \begin{table}[t!]
+        \centering
+        \caption{Breakdown of Hourly Average Treatment Effects}
+        \label{Table:Breakdown-of-Hourly-ATEs}
+        \vspace{0.3cm}
+        \small
+        \begin{adjustbox}{scale = 0.75}
+            \begin{threeparttable}
+                \begin{tabular}{@{\extracolsep{100pt}}lccc}
+                    \\[-5.5ex]
+                    \hline \hline
+                    \\[-3.0ex]
+%                    & \multicolumn{15}{c}{Dependent Variable} \\
+%                    \\[-3.0ex]
+%                    \cline{2-100}
+%                    \\[-3.0ex]
+                    & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                    \\[-3.0ex]
+                    & (1) & (2) & (3) \\
+                    \\[-3.0ex]
+                    \hline
+                    \\[-2.0ex]
+                    HDDs & 0.020$^{***}$ & 0.046$^{***}$ & 0.042$^{***}$ \\
+                    & (0.003) & (0.004) & (0.003) \\
+                    & & & \\
+                    HDDs$^{*}$ & 0.005 & $-$0.012 & $-$0.014$^{**}$ \\
+                    & (0.007) & (0.010) & (0.007) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment] & 0.039 & 0.059 & 0.071 \\
+                    & (0.043) & (0.054) & (0.047) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment] $\times$ HDDs & 0.001 & 0.006$^{**}$ & 0.006$^{**}$ \\
+                    & (0.002) & (0.003) & (0.003) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ & $-$0.0002 & $-$0.008$^{**}$ & $-$0.012$^{***}$ \\
+                    & (0.003) & (0.003) & (0.003) \\
+                    & & & \\
+                    $\mathbb{1}$[Post] & 0.022 & 0.052 & 0.033 \\
+                    & (0.021) & (0.034) & (0.039) \\
+                    & & & \\
+                    $\mathbb{1}$[Post] $\times$ HDDs & $-$0.009$^{***}$ & $-$0.015$^{***}$ & $-$0.011$^{***}$ \\
+                    & (0.003) & (0.006) & (0.004) \\
+                    & & & \\
+                    $\mathbb{1}$[Post] $\times$ HDDs$^{*}$ & 0.008 & 0.014 & 0.0002 \\
+                    & (0.008) & (0.013) & (0.009) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment \& Post] & $-$0.018 & $-$0.096$^{***}$ & $-$0.030 \\
+                    & (0.020) & (0.024) & (0.024) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.0002 & $-$0.005$^{**}$ & 0.0002 \\
+                    & (0.002) & (0.002) & (0.002) \\
+                    & & & \\
+                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & $-$0.003 & 0.010$^{***}$ & 0.003$^{*}$ \\
+                    & (0.004) & (0.002) & (0.002) \\
+                    & & & \\
+                    \hline
+                    \\[-2.0ex]
+                    Description of Interval & Pre-Peak & Peak & Post-Peak \\
+                    Interval of Hours & 15 to 16 & 17 to 18 & 19 to 20 \\
+                    Knot & 15 & 15 & 15 \\
+                    FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\
+                    Observations & 1,006,200 & 1,006,200 & 1,006,200 \\
+                    Adjusted R$^{2}$ & 0.024 & 0.047 & 0.040 \\
+                    \\[-2.0ex]
+                    \hline \hline
+                    \\[-4.5ex]
+                \end{tabular}
+                \begin{tablenotes}[flushleft]
+                    \footnotesize
+                    \item \textit{Note}: * $p < 0.1$, ** $p < 0.05$, and *** $p < 0.01$.
+                \end{tablenotes}
+            \end{threeparttable}
+        \end{adjustbox}
+    \end{table}
+}
