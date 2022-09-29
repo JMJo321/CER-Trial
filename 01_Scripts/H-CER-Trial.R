@@ -602,12 +602,27 @@ get_felm.obj_interval.half.hour_by.tariff <- function (
   return (reg.result)
 }
 # # 3.2.1. For an interval of hours
+# # 3.2.1.1. For all tariff groups
 get_felm.obj_interval.hour <- function (dt, formula, interval.hours_in.array) {
   reg.result <- lfe::felm(
     formula = formula,
     data = dt[
       is_in.sample_incl.control_base.only.second.half == TRUE &
         interval_hour %in% interval.hours_in.array
+    ]
+  )
+  return (reg.result)
+}
+# # 3.2.1.2. For a specific tariff groupd
+get_felm.obj_interval.hour_by.tariff <- function (
+  dt, formula, interval.hours_in.array, tariff.group_in.str
+) {
+  reg.result <- lfe::felm(
+    formula = formula,
+    data = dt[
+      is_in.sample_incl.control_base.only.second.half == TRUE &
+        interval_hour %in% interval.hours_in.array &
+        alloc_r_tariff %in% c(tariff.group_in.str, "E")
     ]
   )
   return (reg.result)
