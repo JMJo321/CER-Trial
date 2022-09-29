@@ -1,0 +1,45 @@
+\afterpage{
+    \begin{sidewaystable}[t!]
+        \centering
+        \caption{Correlations in Average Daily Temperatures between Weather Stations}
+        \label{Table:Correlations-in-Average-Daily-Temperatures-among-Weather-Stations}
+        \small
+        \begin{adjustbox}{scale = 0.65}
+            \begin{threeparttable}
+                \begin{tabular}{@{\extracolsep{2pt}}lccccccccccccccc}
+                    \\[-5.5ex]
+                    \hline \hline
+                    \\[-3.0ex]
+%                    & \multicolumn{15}{c}{Dependent Variable} \\
+%                    \\[-3.0ex]
+%                    \cline{2-16}
+%                    \\[-3.0ex]
+                    & \multicolumn{15}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                    \\[-3.0ex]
+                    & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) & (11) & (12) & (13) & (14) & (15)\\
+                    \\[-3.0ex]
+                    \hline
+                    \\[-2.0ex]
+                    $\mathbb{1}$[Treatment \& Post] & $-$0.048$^{***}$ & $-$0.053$^{*}$ & $-$0.002 & $-$0.049 & $-$0.032$^{***}$ & $-$0.125$^{***}$ & $-$0.161$^{***}$ & $-$0.119$^{***}$ & $-$0.249$^{***}$ & $-$0.143$^{***}$ & $-$0.082$^{***}$ & $-$0.055$^{*}$ & $-$0.015 & $-$0.113$^{**}$ & $-$0.058$^{***}$ \\
+                    & (0.016) & (0.027) & (0.017) & (0.031) & (0.011) & (0.020) & (0.036) & (0.022) & (0.044) & (0.015) & (0.020) & (0.030) & (0.021) & (0.048) & (0.015) \\
+                    & & & & & & & & & & & & & & & \\
+                    \hline
+                    \\[-2.0ex]
+                    Tariff Group & A & B & C & D & All & A & B & C & D & All & A & B & C & D & All \\
+                    FEs: Household by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+                    FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+                    FEs: Month of Year & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+                    Observations & 506,540 & 326,800 & 511,700 & 331,960 & 1,006,200 & 506,540 & 326,800 & 511,700 & 331,960 & 1,006,200 & 506,540 & 326,800 & 511,700 & 331,960 & 1,006,200 \\
+                    Adjusted R$^{2}$ & 0.312 & 0.330 & 0.320 & 0.327 & 0.308 & 0.384 & 0.397 & 0.383 & 0.367 & 0.379 & 0.371 & 0.389 & 0.376 & 0.361 & 0.372 \\
+                    \\[-2.0ex]
+                    \hline \hline
+                    \\[-4.5ex]
+                \end{tabular}
+                \begin{tablenotes}[flushleft]
+                    \footnotesize
+                    \item \textit{Note}: * $p < 0.1$, ** $p < 0.05$, and *** $p < 0.01$.
+                \end{tablenotes}
+            \end{threeparttable}
+        \end{adjustbox}
+    \end{sidewaystable}
+}
