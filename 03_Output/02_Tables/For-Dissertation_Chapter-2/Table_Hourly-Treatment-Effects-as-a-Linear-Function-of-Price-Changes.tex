@@ -1,0 +1,112 @@
+\afterpage{
+    \begin{table}[t!]
+        \centering
+        \vspace{0.3cm}
+        \small
+        \begin{ThreePartTable}
+            \renewcommand\TPTminimum{\textwidth}
+    
+            \begin{TableNotes}[flushleft]
+                \small
+                \item \textit{Note}: * $p < 0.1$, ** $p < 0.05$, and *** $p < 0.01$.
+            \end{TableNotes}
+    
+            \begin{longtable}{@{\extracolsep{40pt}}lccc}
+                \caption{Hourly Treatment Effects as a Linear Function of Peak-Rate-Period Price Changes}
+                \label{Table:Hourly-ATEs-as-a-Linear-Function-of-Peak-Rate-Period-Price-Changes} \\
+
+                \\[-5.5ex]
+                \hline \hline
+                \\[-3.0ex]
+                & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                \\[-3.0ex]
+                & (1) & (2) & (3) \\
+                \\[-3.0ex]
+                \hline
+                \\[-2.0ex]
+                \endfirsthead
+
+                \multicolumn{4}{c}{{\bfseries \tablename \ \thetable{} -- continued from previous page}} \\
+
+                \hline \hline
+                \\[-3.0ex]
+                & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                \\[-3.0ex]
+                & (1) & (2) & (3) \\
+                \\[-3.0ex]
+                \hline
+                \\[-2.0ex]
+                \endhead
+
+                \multicolumn{4}{r}{{\footnotesize{\textit{(Continued on next page...)}}}} \\
+                \endfoot
+                \insertTableNotes
+                \endlastfoot
+
+                HDDs & 0.020$^{***}$ & 0.046$^{***}$ & 0.042$^{***}$ \\
+                & (0.003) & (0.004) & (0.003) \\
+                & & & \\
+                HDDs$^{*}$ & 0.005 & $-$0.012 & $-$0.014$^{**}$ \\
+                & (0.007) & (0.010) & (0.007) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] & $-$0.015 & $-$0.017 & 0.072 \\
+                & (0.058) & (0.072) & (0.065) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] $\times$ $\Delta$Price & 0.004 & 0.006 & $-$0.0001 \\
+                & (0.003) & (0.004) & (0.003) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] $\times$ HDDs & 0.0002 & 0.012$^{***}$ & 0.005 \\
+                & (0.003) & (0.005) & (0.004) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ & $-$0.002 & $-$0.015$^{***}$ & $-$0.016$^{***}$ \\
+                & (0.004) & (0.006) & (0.004) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] $\times$ HDDs $\times$ $\Delta$Price & 0.00003 & $-$0.0004 & 0.00001 \\
+                & (0.0002) & (0.0003) & (0.0003) \\
+                & & & \\
+                $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ $\times$ $\Delta$Price & 0.0001 & 0.001$^{**}$ & 0.0003 \\
+                & (0.0002) & (0.0003) & (0.0003) \\
+                & & & \\
+                $\mathbb{1}$[Post] & 0.022 & 0.052 & 0.033 \\
+                & (0.021) & (0.034) & (0.039) \\
+                & & & \\
+                $\mathbb{1}$[Post] $\times$ HDDs & $-$0.009$^{***}$ & $-$0.015$^{***}$ & $-$0.011$^{***}$ \\
+                & (0.003) & (0.006) & (0.004) \\
+                & & & \\
+                $\mathbb{1}$[Post] $\times$ HDDs$^{*}$ & 0.008 & 0.014 & 0.0002 \\
+                & (0.008) & (0.013) & (0.009) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] & $-$0.047$^{*}$ & $-$0.024 & $-$0.054 \\
+                & (0.028) & (0.034) & (0.034) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] $\times$ $\Delta$Price & 0.002 & $-$0.005$^{***}$ & 0.002 \\
+                & (0.002) & (0.002) & (0.002) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.0002 & $-$0.009$^{***}$ & 0.0005 \\
+                & (0.003) & (0.003) & (0.003) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & 0.002 & 0.020$^{***}$ & 0.007$^{*}$ \\
+                & (0.005) & (0.004) & (0.004) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] $\times$ HDDs $\times$ $\Delta$Price & $-$0.00001 & 0.0003 & $-$0.00002 \\
+                & (0.0002) & (0.0002) & (0.0002) \\
+                & & & \\
+                $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ $\times$ $\Delta$Price & $-$0.0003 & $-$0.001$^{***}$ & $-$0.0002 \\
+                & (0.0002) & (0.0003) & (0.0003) \\
+                & & & \\
+                \hline
+                \\[-2.0ex]
+                Description of Interval & Pre-Peak & Peak & Post-Peak \\
+                Interval of Hours & 15 to 16 & 17 to 18 & 19 to 20 \\
+                Knot & 15 & 15 & 15 \\
+                FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\
+                Observations & 1,006,200 & 1,006,200 & 1,006,200 \\
+                Adjusted R$^{2}$ & 0.024 & 0.047 & 0.040 \\
+                \\[-2.0ex]
+                \hline \hline
+                \\[-4.5ex]
+
+            \end{longtable}
+        \end{ThreePartTable}
+    \end{table}
+}

@@ -1,0 +1,75 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Hourly Treatment Effects as a Linear Function of Peak-Rate-Period Price Changes} 
+  \label{Table:Hourly-ATEs-as-a-Linear-Function-of-Peak-Rate-Period-Price-Changes} 
+\small 
+\begin{tabular}{@{\extracolsep{95pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{Dependent Variable} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ HDDs & 0.020$^{***}$ & 0.046$^{***}$ & 0.042$^{***}$ \\ 
+  & (0.003) & (0.004) & (0.003) \\ 
+  & & & \\ 
+ HDDs$^{*}$ & 0.005 & $-$0.012 & $-$0.014$^{**}$ \\ 
+  & (0.007) & (0.010) & (0.007) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] & $-$0.015 & $-$0.017 & 0.072 \\ 
+  & (0.058) & (0.072) & (0.065) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ $\Delta$RC & 0.004 & 0.006 & $-$0.0001 \\ 
+  & (0.003) & (0.004) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs & 0.0002 & 0.012$^{***}$ & 0.005 \\ 
+  & (0.003) & (0.005) & (0.004) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ & $-$0.002 & $-$0.015$^{***}$ & $-$0.016$^{***}$ \\ 
+  & (0.004) & (0.006) & (0.004) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs $\times$ $\Delta$RC & 0.00003 & $-$0.0004 & 0.00001 \\ 
+  & (0.0002) & (0.0003) & (0.0003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment] $\times$ HDDs$^{*}$ $\times$ $\Delta$RC & 0.0001 & 0.001$^{**}$ & 0.0003 \\ 
+  & (0.0002) & (0.0003) & (0.0003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] & 0.022 & 0.052 & 0.033 \\ 
+  & (0.021) & (0.034) & (0.039) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs & $-$0.009$^{***}$ & $-$0.015$^{***}$ & $-$0.011$^{***}$ \\ 
+  & (0.003) & (0.006) & (0.004) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Post] $\times$ HDDs$^{*}$ & 0.008 & 0.014 & 0.0002 \\ 
+  & (0.008) & (0.013) & (0.009) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] & $-$0.047$^{*}$ & $-$0.024 & $-$0.054 \\ 
+  & (0.028) & (0.034) & (0.034) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ $\Delta$RC & 0.002 & $-$0.005$^{***}$ & 0.002 \\ 
+  & (0.002) & (0.002) & (0.002) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.0002 & $-$0.009$^{***}$ & 0.0005 \\ 
+  & (0.003) & (0.003) & (0.003) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & 0.002 & 0.020$^{***}$ & 0.007$^{*}$ \\ 
+  & (0.005) & (0.004) & (0.004) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs $\times$ $\Delta$RC & $-$0.00001 & 0.0003 & $-$0.00002 \\ 
+  & (0.0002) & (0.0002) & (0.0002) \\ 
+  & & & \\ 
+ $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ $\times$ $\Delta$RC & $-$0.0003 & $-$0.001$^{***}$ & $-$0.0002 \\ 
+  & (0.0002) & (0.0003) & (0.0003) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Description of Interval & Pre-Peak & Peak & Post-Peak \\ 
+Interval of Hours & 15 to 16 & 17 to 18 & 19 to 20 \\ 
+Knot & 15 & 15 & 15 \\ 
+FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\ 
+Observations & 1,006,200 & 1,006,200 & 1,006,200 \\ 
+Adjusted R$^{2}$ & 0.024 & 0.047 & 0.040 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
