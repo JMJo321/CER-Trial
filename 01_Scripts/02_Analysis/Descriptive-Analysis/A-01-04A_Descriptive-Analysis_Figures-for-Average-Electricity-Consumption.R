@@ -184,6 +184,10 @@ sec.axis_scale.factor <- 2
 # # 1. Figure for average hourly electricity consumption by time of day
 plot_avg.kwh_within.day <-
   ggplot() +
+    geom_vline(
+      xintercept = c(8, 17, 19, 23),
+      linetype = "dotdash", alpha = 0.3
+    ) +
     geom_line(
       data = dt_avg.kwh_within.day,
       aes(x = hour.for.plot, y = kwh_per.hour, group = group),
