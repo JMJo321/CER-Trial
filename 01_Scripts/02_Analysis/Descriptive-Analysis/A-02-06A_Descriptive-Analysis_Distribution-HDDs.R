@@ -83,17 +83,32 @@ gc(reset = TRUE)
 # # 1. Generate DT(s)
 # # Note:
 # # Only use the second halves of 2009 and 2010.
+
+# # 1.1. Create a DT including eacy day's HDDs
 dt_for.plot_hdds <- dt_for.reg[
   month(date) >= 7, .N, by = .(date, period, hdd_all_60f)
 ][
   , `:=` (N = NULL, date = NULL)
 ]
 
-dt_for.plot_hdds[
+# # 1.2. Create a DT containing the mean and median values
+tmp_dt_mean <- dt_for.plot_hdds[
   ,
   lapply(.SD, mean, na.rm = TRUE), .SDcols = "hdd_all_60f",
   by = .(period)
+][
+  ,
+  category := "Mean"
 ]
+tmp_dt_median <- dt_for.plot_hdds[
+  ,
+  lapply(.SD, median, na.rm = TRUE), .SDcols = "hdd_all_60f",
+  by = .(period)
+][
+  ,
+  category := "Median"
+]
+dt_for.plot_mean.and.med <- rbind(tmp_dt_mean, tmp_dt_median)
 
 
 # ------- Create objects for setting plot options -------
@@ -121,6 +136,15 @@ col.pal_custom <- usecol(c("firebrick", "gold", "forestgreen", "steelblue"))
 # ------- Create ggplot object(s) -------
 plot_dist.of.hdds <-
   ggplot() +
+    geom_vline(
+      data = dt_for.plot_mean.and.med,
+      aes(xintercept = hdd_all_60f, group = period, linetype = category),
+      color = "black", alpha = 0.3, lwd = 1
+    ) +
+    geom_vline(
+      data = dt_for.plot_mean.and.med,
+      aes(xintercept = hdd_all_60f, color = period, linetype = category)
+    ) +
     geom_histogram(
       data = dt_for.plot_hdds,
       aes(
@@ -129,8 +153,14 @@ plot_dist.of.hdds <-
       ),
       binwidth = 2, alpha = 0.5, position = "dodge"
     ) +
+    scale_color_manual(values = col.pal_custom) +
     scale_fill_manual(values = col.pal_custom) +
-    labs(x = "Heating Degree Days", y = "Frequency", fill = "Periods") +
+    labs(
+      x = "Heating Degree Days",
+      y = "Frequency",
+      color = "Periods", fill = "Periods",
+      linetype = "Values"
+    ) +
     plot.options
 
 
@@ -142,5 +172,5 @@ export_figure.in.png(
     "Figure_Distribution-of-HDDs.png",
     sep = "/"
   ),
-  width_numeric = 20, height_numeric = 13
+  width_numeric = 20, height_numeric = 14
 )
