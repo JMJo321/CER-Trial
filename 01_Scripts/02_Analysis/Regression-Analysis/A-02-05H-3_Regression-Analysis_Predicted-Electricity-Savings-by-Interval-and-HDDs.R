@@ -78,6 +78,10 @@ KNOT <- 10
 HDDS <- seq(0, 30, by = 5)
 names(HDDS) <- HDDS
 
+# # 1.3. Rate changes
+RATE.CHANGES_EXTEND <- c(RATE.CHANGES, 30)
+names(RATE.CHANGES_EXTEND) <- RATE.CHANGES_EXTEND
+
 
 # ------- Define function(s) -------
 # (Refer to the R header script.)
@@ -136,7 +140,7 @@ dt_estimates <- lapply(
 dt_for.plot <- expand.grid(
   interval = names(LIST_INTERVALS[1:4]),
   hdd = HDDS,
-  rate.change = RATE.CHANGES,
+  rate.change = RATE.CHANGES_EXTEND,
   stringsAsFactors = FALSE
 ) %>%
   setDT(.)
@@ -246,12 +250,10 @@ tmp_dt_for.plot_melted[
   `:=` (
     hdd = factor(hdd, levels = HDDS),
     rate.change = factor(
-      paste0("+", rate.change), levels = paste0("+", RATE.CHANGES)
+      paste0("+", rate.change), levels = paste0("+", RATE.CHANGES_EXTEND)
     )
   )
 ]
-
-
 tmp_dt_for.plot_all.intervals <- tmp_dt_for.plot_melted[
   interval != "21 to 22",
   lapply(.SD, sum, na.rm = TRUE), .SDcols = "predicted.kwh",
@@ -260,7 +262,6 @@ tmp_dt_for.plot_all.intervals <- tmp_dt_for.plot_melted[
   ,
   interval := "Pre-Peak + Peak + Post-Peak"
 ]
-
 dt_for.plot_melted <- rbind(
   tmp_dt_for.plot_melted[
     interval != "21 to 22",
@@ -268,6 +269,7 @@ dt_for.plot_melted <- rbind(
   ],
   tmp_dt_for.plot_all.intervals
 )
+
 
 # ------- Create a DT to show additional savings -------
 # # 1. Create a DT to show additiona savings under adoption of an alternative
@@ -297,29 +299,41 @@ dt_coord_2nd <- data.table(
 )
 dt_coord_3rd <- data.table(
   id = rep("+6 to +24", times = 4),
-  coord_x = c(5, 7, 7, 5),
+  coord_x = c(5, 6, 6, 5),
   coord_y = c(
     tmp_dt_for.polygon[hdd == 20 & rate.change == "+6"]$predicted.kwh,
-    tmp_dt_for.polygon[hdd == 30 & rate.change == "+6"]$predicted.kwh,
-    tmp_dt_for.polygon[hdd == 30 & rate.change == "+24"]$predicted.kwh,
+    tmp_dt_for.polygon[hdd == 25 & rate.change == "+6"]$predicted.kwh,
+    tmp_dt_for.polygon[hdd == 25 & rate.change == "+24"]$predicted.kwh,
     tmp_dt_for.polygon[hdd == 20 & rate.change == "+24"]$predicted.kwh
   )
 )
-dt_coord <- rbind(dt_coord_1st, dt_coord_2nd, dt_coord_3rd)
+dt_coord_4th <- data.table(
+  id = rep("+6 to +30", times = 4),
+  coord_x = c(6, 7, 7, 6),
+  coord_y = c(
+    tmp_dt_for.polygon[hdd == 25 & rate.change == "+6"]$predicted.kwh,
+    tmp_dt_for.polygon[hdd == 30 & rate.change == "+6"]$predicted.kwh,
+    tmp_dt_for.polygon[hdd == 30 & rate.change == "+30"]$predicted.kwh,
+    tmp_dt_for.polygon[hdd == 25 & rate.change == "+30"]$predicted.kwh
+  )
+)
+dt_coord <- rbind(dt_coord_1st, dt_coord_2nd, dt_coord_3rd, dt_coord_4th)
 
 
 # ------- Create a DT to show an alternative price scheme -------
 tmp_dt_price_old <-
   data.table(hdd = seq(1, 7, by = 1)) %>%
-    .[, `:=` (coord_y = 6, category = "Current")]
+    .[, `:=` (coord_y = 6, category = "Typical")]
 tmp_dt_price_new <- rbind(
   data.table(hdd = seq(1, 3, by = 1)) %>% .[, coord_y := 6],
   data.table(hdd = seq(3, 4, by = 1)) %>% .[, coord_y := 12],
   data.table(hdd = seq(4, 5, by = 1)) %>% .[, coord_y := 18],
-  data.table(hdd = seq(5, 7, by = 1)) %>% .[, coord_y := 24]
+  data.table(hdd = seq(5, 6, by = 1)) %>% .[, coord_y := 24],
+  data.table(hdd = seq(6, 7, by = 1)) %>% .[, coord_y := 30]
 ) %>%
   .[, category := "Alternative"]
 dt_price <- rbind(tmp_dt_price_old, tmp_dt_price_new)
+dt_price[, category := factor(category, levels = c("Typical", "Alternative"))]
 
 
 # ------------------------------------------------------------------------------
@@ -378,16 +392,16 @@ plot_predicted.kwh <-
       linetype = "dotdash", alpha = 0.3
     ) +
     geom_line(
-      data = dt_for.plot_melted,
+      data = dt_for.plot_melted[rate.change != "+30"],
       aes(x = hdd, y = predicted.kwh, group = rate.change),
       color = "black", alpha = 0.3, lwd = 1
     ) +
     geom_line(
-      data = dt_for.plot_melted,
+      data = dt_for.plot_melted[rate.change != "+30"],
       aes(x = hdd, y = predicted.kwh, color = rate.change, group = rate.change)
     ) +
     geom_point(
-      data = dt_for.plot_melted,
+      data = dt_for.plot_melted[rate.change != "+30"],
       aes(x = hdd, y = predicted.kwh, color = rate.change)
     ) +
     facet_grid(
@@ -418,7 +432,7 @@ plot_additional.savings <-
       linetype = "dashed", alpha = 0.3
     ) +
     geom_hline(
-      yintercept = seq(6, 24, by = 6) / 200,
+      yintercept = seq(6, 30, by = 6) / 200,
       linetype = "dashed", alpha = 0.3, lwd = 0.3
     ) +
     geom_vline(
@@ -455,16 +469,17 @@ plot_additional.savings <-
       color = col.pal_custom[1], lwd = 0.7
     ) +
     scale_y_continuous(
-      limits = c(-0.2, 0.12),
-      breaks = seq(-0.2, 0.1, by = 0.05),
+      limits = c(-0.22, 0.16),
+      breaks = seq(-0.20, 0.15, by = 0.05),
       sec.axis = sec_axis(
         trans = ~ . * 200,
-        breaks = c(seq(-40, 20, by = 10), seq(6, 24, by = 6)),
+        breaks = c(seq(-40, 30, by = 10), seq(6, 24, by = 6)),
         name = "Rates (Cents per kWh)"
       )
     ) +
     scale_color_viridis_d() +
-    scale_fill_manual(values = col.pal_custom[c(1:2, 4)]) +
+    scale_fill_manual(values = col.pal_custom) +
+    scale_linetype_manual(values = c("dashed", "solid")) +
     labs(
       x = "Heating Degree Days",
       y = TeX(r'(Treatment Effects ($\Delta$ kWh per Hour))'),
