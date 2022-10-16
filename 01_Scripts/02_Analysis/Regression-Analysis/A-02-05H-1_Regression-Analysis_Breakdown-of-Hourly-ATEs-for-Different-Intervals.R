@@ -71,7 +71,7 @@ PATH_TO.SAVE_FIGURE_FOR.DISSERTATION <-
 # ------- Define parameter(s) -------
 # # 1. Parameters for making figure(s)
 # # 1.1. Value of knot for spline regression(s)
-KNOT <- 15
+KNOT <- 10
 
 # # 1.2. Heating degree days
 HDDS <- seq(0, 30, by = 2)
