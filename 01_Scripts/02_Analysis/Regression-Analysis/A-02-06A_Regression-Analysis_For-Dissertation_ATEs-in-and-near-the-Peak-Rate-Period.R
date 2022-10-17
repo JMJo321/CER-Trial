@@ -127,11 +127,45 @@ list_reg.results_post <- lapply(
 
 # ------- Create stargazer object(s) -------
 # # 1. Create objects that will be utilized to generate stargazer object(s)
+list_reg.results_for.body <- c(
+  list_reg.results_peak[1:4],
+  list_reg.results_pre[5], list_reg.results_peak[5], list_reg.results_post[5]
+)
+list_reg.results_for.appendix <- c(
+  list_reg.results_pre[1:4],
+  list_reg.results_peak[1:4],
+  list_reg.results_post[1:4]
+)
+
 title_ <- "Average Treatment Effects in and near the Peak Rate Period"
-out <- paste(
+out_body <- paste(
   DIR_TO.SAVE_LATEX,
   paste0(
     "Stargazer-Table_ATEs_Hourly-in-and-near-the-Peak-Rate-Period",
+    ".tex"
+  ),
+  sep = "/"
+)
+out_body_se <- paste(
+  DIR_TO.SAVE_LATEX,
+  paste0(
+    "Stargazer-Table_ATEs_Hourly-in-and-near-the-Peak-Rate-Period_With-SE",
+    ".tex"
+  ),
+  sep = "/"
+)
+out_appendix <- paste(
+  DIR_TO.SAVE_LATEX,
+  paste0(
+    "Stargazer-Table_ATEs_Hourly-in-and-near-the-Peak-Rate-Period_For-Appendix",
+    ".tex"
+  ),
+  sep = "/"
+)
+out_appendix_se <- paste(
+  DIR_TO.SAVE_LATEX,
+  paste0(
+    "Stargazer-Table_ATEs_Hourly-in-and-near-the-Peak-Rate-Period_With-SE_For-Appendix",
     ".tex"
   ),
   sep = "/"
@@ -141,13 +175,41 @@ column.labels <- NULL
 covariate.labels <- "$\\mathbb{1}$[Treatment \\& Post]"
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
-add.lines <- list(
-  c("Description of Interval", rep(c("Pre-Peak", "Peak", "Post-Peak"), each = 5)),
-  c("Interval of Hours", rep(names(LIST_INTERVALS[1:3]), each = 5)),
-  c("Tariff Group", rep(c(LETTERS[1:4], "All"), times = 3)),
-  c("FEs: Household by Half-Hourly Time Window", rep("Yes", times = 15)),
-  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 15)),
-  c("FEs: Month of Year", rep("Yes", times = 15))
+add.lines_for.body <- list(
+  c(
+    "Description of Interval",
+    c(rep("Peak", each = 4), "Pre-Peak", "Peak", "Post-Peak")
+  ),
+  c(
+    "Interval of Hours",
+    c(rep(names(LIST_INTERVALS[2]), each = 4), names(LIST_INTERVALS[1:3]))
+  ),
+  c("Tariff Group", c(LETTERS[1:4], rep("All", times = 3))),
+  c(
+    "Price Change in the Peak Rate Period",
+    c(RATE.CHANGES, rep("[-]", times = 3))
+  ),
+  c("FEs: Household by Half-Hourly Time Window", rep("Yes", times = 7)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 7)),
+  c("FEs: Month of Year", rep("Yes", times = 7))
+)
+add.lines_for.appendix <- list(
+  c(
+    "Description of Interval",
+    rep(c("Pre-Peak", "Peak", "Post-Peak"), each = 4)
+  ),
+  c(
+    "Interval of Hours",
+    rep(names(LIST_INTERVALS[1:3]), each = 4)
+  ),
+  c("Tariff Group", rep(LETTERS[1:4], times = 3)),
+  c(
+    "Price Change in the Peak Rate Period",
+    rep(RATE.CHANGES, times = 3)
+  ),
+  c("FEs: Household by Half-Hourly Time Window", rep("Yes", times = 12)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 12)),
+  c("FEs: Month of Year", rep("Yes", times = 12))
 )
 column.sep.width <- "1pt"
 font.size <- "small"
@@ -160,8 +222,9 @@ omit.table.layout <- "n"
 
 # # 2. Export the stargazer object(s)
 # # 2.1. Just print the stargazer object(s)
+# # 2.1.1. Table(s) for body
 stargazer(
-  list_reg.results_pre, list_reg.results_peak, list_reg.results_post,
+  list_reg.results_for.body,
   type = "text",
   title = title_,
   out.header = out.header,
@@ -169,7 +232,61 @@ stargazer(
   covariate.labels = covariate.labels,
   dep.var.caption = dep.var.caption,
   dep.var.labels = dep.var.labels,
-  add.lines = add.lines,
+  add.lines = add.lines_for.body,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat
+)
+stargazer(
+  list_reg.results_for.body,
+  type = "text",
+  title = title_,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  ci = TRUE, ci.level = 0.95,
+  add.lines = add.lines_for.body,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat
+)
+# # 2.1.2. Table(s) for appendix
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines_for.appendix,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat
+)
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  ci = TRUE, ci.level = 0.95,
+  add.lines = add.lines_for.appendix,
   column.sep.width = column.sep.width,
   font.size = font.size,
   header = header,
@@ -179,17 +296,78 @@ stargazer(
 )
 
 # # 2.2. Export the stargazer object(s) in TEX format
+# # 2.2.1. Table(s) for body
 stargazer(
-  list_reg.results_pre, list_reg.results_peak, list_reg.results_post,
+  list_reg.results_for.body,
   type = "text",
   title = title_,
-  out = out,
+  out = out_body,
   out.header = out.header,
   column.labels = column.labels,
   covariate.labels = covariate.labels,
   dep.var.caption = dep.var.caption,
   dep.var.labels = dep.var.labels,
-  add.lines = add.lines,
+  add.lines = add.lines_for.body,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat,
+  omit.table.layout = omit.table.layout
+)
+stargazer(
+  list_reg.results_for.body,
+  type = "text",
+  title = title_,
+  out = out_body_se,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  ci = TRUE, ci.level = 0.95,
+  add.lines = add.lines_for.body,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat,
+  omit.table.layout = omit.table.layout
+)
+# # 2.2.2. Table(s) for appendix
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out = out_appendix,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines_for.appendix,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label,
+  model.names = model.names,
+  omit.stat = omit.stat,
+  omit.table.layout = omit.table.layout
+)
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out = out_appendix_se,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  ci = TRUE, ci.level = 0.95,
+  add.lines = add.lines_for.appendix,
   column.sep.width = column.sep.width,
   font.size = font.size,
   header = header,
