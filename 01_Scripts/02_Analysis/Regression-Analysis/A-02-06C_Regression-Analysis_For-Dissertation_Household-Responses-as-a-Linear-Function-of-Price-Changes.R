@@ -8,7 +8,7 @@
 # > Purpose of the script(s)
 # # : Run regression(s), and then export the result(s) in TEX format.
 # #   1) Average treatment effects as a linear function of price changes in the
-# #      peak rate period. 
+# #      peak rate period.
 
 # ------------------------------------------------------------------------------
 # Load required libraries
@@ -63,7 +63,7 @@ DIR_TO.SAVE_LATEX <-
 # ------- Define parameter(s) -------
 # # 1. Parameters for making figure(s)
 # # 1.1. Value of knot for spline regression(s)
-KNOT <- 15
+KNOT <- 10
 
 
 # ------- Define function(s) -------
@@ -125,45 +125,45 @@ covariate.labels_text <- c(
   "HDDs",
   "(HDDs - Knot) x 1[HDDs > Knot]",
   "1[Treatment]",
-  "1[Treatment] x R.C.",
+  "1[Treatment] x P.C.",
   "1[Treatment] x HDDs",
   "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot]",
-  "1[Treatment] x HDDs x R.C.",
-  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot] x R.C.",
+  "1[Treatment] x HDDs x P.C.",
+  "1[Treatment] x (HDDs - Knot) x 1[HDDs > Knot] x P.C.",
   "1[Post]",
   "1[Post] x HDDs",
   "1[Post] x (HDDs - Knot) x 1[HDDs > Knot]",
   "1[Treatment and Post]",
-  "1[Treatment and Post] x R.C.",
+  "1[Treatment and Post] x P.C.",
   "1[Treatment and Post] x HDDs",
   "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot]",
-  "1[Treatment and Post] x HDDs x R.C.",
-  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot] x R.C."
+  "1[Treatment and Post] x HDDs x P.C.",
+  "1[Treatment and Post] x (HDDs - Knot) x 1[HDDs > Knot] x P.C."
 )
 covariate.labels_latex <- c(
   "HDDs",
   "HDDs$^{*}$",
   "$\\mathbb{1}$[Treatment]",
-  "$\\mathbb{1}$[Treatment] $\\times$ $\\Delta$RC",
+  "$\\mathbb{1}$[Treatment] $\\times$ $\\Delta$PC",
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs",
   "$\\mathbb{1}$[Treatment] $\\times$ HDDs$^{*}$",
-  "$\\mathbb{1}$[Treatment] $\\times$ HDDs $\\times$ $\\Delta$RC",
-  "$\\mathbb{1}$[Treatment] $\\times$ HDDs$^{*}$ $\\times$ $\\Delta$RC",
+  "$\\mathbb{1}$[Treatment] $\\times$ HDDs $\\times$ $\\Delta$PC",
+  "$\\mathbb{1}$[Treatment] $\\times$ HDDs$^{*}$ $\\times$ $\\Delta$PC",
   "$\\mathbb{1}$[Post]",
   "$\\mathbb{1}$[Post] $\\times$ HDDs",
   "$\\mathbb{1}$[Post] $\\times$ HDDs$^{*}$",
   "$\\mathbb{1}$[Treatment \\& Post]",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ $\\Delta$RC",
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ $\\Delta$PC",
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs",
   "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs$^{*}$",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs $\\times$ $\\Delta$RC",
-  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs$^{*}$ $\\times$ $\\Delta$RC"
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs $\\times$ $\\Delta$PC",
+  "$\\mathbb{1}$[Treatment \\& Post] $\\times$ HDDs$^{*}$ $\\times$ $\\Delta$PC"
 )
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
 add.lines <- list(
-  c("Description of Interval", c("Pre-Peak", "Peak", "Post-Peak")),
-  c("Interval of Hours", names(LIST_INTERVALS[1:3])),
+  c("Description of Period", c("Pre-Peak", "Peak", "Post-Peak")),
+  c("Period of Hours", names(LIST_INTERVALS[1:3])),
   c("Knot", rep(KNOT, times = 3)),
   c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 3))
 )
