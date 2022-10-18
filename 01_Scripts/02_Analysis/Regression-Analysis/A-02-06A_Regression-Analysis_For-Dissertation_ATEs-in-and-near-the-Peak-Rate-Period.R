@@ -177,11 +177,11 @@ dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
 add.lines_for.body <- list(
   c(
-    "Description of Interval",
+    "Description of Period",
     c(rep("Peak", each = 4), "Pre-Peak", "Peak", "Post-Peak")
   ),
   c(
-    "Interval of Hours",
+    "Period of Hours",
     c(rep(names(LIST_INTERVALS[2]), each = 4), names(LIST_INTERVALS[1:3]))
   ),
   c("Tariff Group", c(LETTERS[1:4], rep("All", times = 3))),
@@ -195,17 +195,17 @@ add.lines_for.body <- list(
 )
 add.lines_for.appendix <- list(
   c(
-    "Description of Interval",
+    "Description of Period",
     rep(c("Pre-Peak", "Peak", "Post-Peak"), each = 4)
   ),
   c(
-    "Interval of Hours",
+    "Period of Hours",
     rep(names(LIST_INTERVALS[1:3]), each = 4)
   ),
   c("Tariff Group", rep(LETTERS[1:4], times = 3)),
   c(
     "Price Change in the Peak Rate Period",
-    rep(RATE.CHANGES, times = 3)
+    paste0("+", rep(RATE.CHANGES, times = 3))
   ),
   c("FEs: Household by Half-Hourly Time Window", rep("Yes", times = 12)),
   c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 12)),
