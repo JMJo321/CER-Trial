@@ -1,13 +1,13 @@
 \afterpage{
     \begin{table}[t!]
         \centering
-        \caption{Breakdown of Hourly Average Treatment Effects, Coefficients of Interest only}
-        \label{Table:Breakdown-of-Hourly-ATEs_Only-Coefficients-of-Interest}
-        \vspace{0.2cm}
+        \caption{Breakdown of Hourly Average Treatment Effects}
+        \label{Table:Breakdown-of-Hourly-ATEs}
+        \vspace{0.3cm}
         \small
-        \begin{adjustbox}{scale = 1.0}
+        \begin{adjustbox}{scale = 0.75}
             \begin{threeparttable}
-                \begin{tabular}{@{\extracolsep{45pt}}lccc}
+                \begin{tabular}{@{\extracolsep{10pt}}lccccccc}
                     \\[-5.5ex]
                     \hline \hline
                     \\[-3.0ex]
@@ -15,29 +15,31 @@
 %                    \\[-3.0ex]
 %                    \cline{2-100}
 %                    \\[-3.0ex]
-                    & \multicolumn{3}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                    & \multicolumn{7}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
                     \\[-3.0ex]
-                    & (1) & (2) & (3) \\
+                    & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
                     \\[-3.0ex]
                     \hline
                     \\[-2.0ex]
-                    $\mathbb{1}$[Treatment \& Post] & $-$0.018 & $-$0.096$^{***}$ & $-$0.030 \\
-                    & (0.020) & (0.024) & (0.024) \\
-                    & & & \\
-                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.0002 & $-$0.005$^{**}$ & 0.0002 \\
-                    & (0.002) & (0.002) & (0.002) \\
-                    & & & \\
-                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & $-$0.003 & 0.010$^{***}$ & 0.003$^{*}$ \\
-                    & (0.004) & (0.002) & (0.002) \\
-                    & & & \\
+                    $\mathbb{1}$[Treatment \& Post] & $-$0.017 & $-$0.092$^{***}$ & $-$0.022 & $-$0.057$^{*}$ & $-$0.127$^{***}$ & $-$0.078$^{**}$ & $-$0.189$^{***}$ \\
+                    & (0.020) & (0.025) & (0.024) & (0.030) & (0.039) & (0.031) & (0.041) \\
+                    & & & & & & & \\
+                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs & 0.00005 & $-$0.007$^{**}$ & $-$0.002 & $-$0.010$^{***}$ & $-$0.002 & $-$0.004 & $-$0.009 \\
+                    & (0.003) & (0.003) & (0.003) & (0.004) & (0.005) & (0.003) & (0.006) \\
+                    & & & & & & & \\
+                    $\mathbb{1}$[Treatment \& Post] $\times$ HDDs$^{*}$ & $-$0.002 & 0.008$^{***}$ & 0.006$^{*}$ & 0.013$^{***}$ & 0.003 & 0.005 & 0.011$^{*}$ \\
+                    & (0.003) & (0.003) & (0.003) & (0.005) & (0.006) & (0.003) & (0.006) \\
+                    & & & & & & & \\
                     \hline
                     \\[-2.0ex]
-                    Description of Interval & Pre-Peak & Peak & Post-Peak \\
-                    Interval of Hours & 15 to 16 & 17 to 18 & 19 to 20 \\
-                    Knot & 15 & 15 & 15 \\
-                    FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes \\
-                    Observations & 1,006,200 & 1,006,200 & 1,006,200 \\
-                    Adjusted R$^{2}$ & 0.024 & 0.047 & 0.040 \\
+                    Description of Period & Pre-Peak & Peak & Post-Peak & Peak & Peak & Peak & Peak \\
+                    Period of Hours & 15 to 16 & 17 to 18 & 19 to 20 & 17 to 18 & 17 to 18 & 17 to 18 & 17 to 18 \\
+                    Tariff Group & All & All & All & A & B & C & D \\
+                    Price Change in the Peak Rate Period & [-] & [-] & [-] & +6 & +12 & +18 & +24 \\
+                    Knot & 10 & 10 & 10 & 10 & 10 & 10 & 10 \\
+                    FEs: Day of Week by Half-Hourly Time Window & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+                    Observations & 1,006,200 & 1,006,200 & 1,006,200 & 506,540 & 326,800 & 511,700 & 331,960 \\
+                    Adjusted R$^{2}$ & 0.024 & 0.047 & 0.040 & 0.046 & 0.044 & 0.044 & 0.045 \\
                     \\[-2.0ex]
                     \hline \hline
                     \\[-4.5ex]

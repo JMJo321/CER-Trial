@@ -9,6 +9,8 @@
 # # : Run regression(s), and then export the result(s) in TEX format.
 # #   1) Breakdown of average treatment effects in and near the peak rate
 # #      period.
+# #   2) For each interval, all tariff grups are used.
+# #   3) For each tariff group, only in the peak rate period.
 
 # ------------------------------------------------------------------------------
 # Load required libraries
@@ -63,7 +65,7 @@ DIR_TO.SAVE_LATEX <-
 # ------- Define parameter(s) -------
 # # 1. Parameters for making figure(s)
 # # 1.1. Value of knot for spline regression(s)
-KNOT <- 15
+KNOT <- 10
 
 
 # ------- Define function(s) -------
@@ -97,6 +99,7 @@ dt.oper_add.col_knot(dt_for.reg, KNOT)
 
 
 # ------- Run regression(s) -------
+# # 1. For all tariff groups and intervals
 list_reg.results <- lapply(
   LIST_INTERVALS[1:3],
   get_felm.obj_interval.hour,
@@ -106,16 +109,68 @@ list_reg.results <- lapply(
     term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
   )
 )
-stargazer(list_reg.results, type = "text")
+
+
+# # 2. By tariff groups, and only for the peak rate period
+list_tariff.group <- as.list(LETTERS[1:4])
+names(list_tariff.group) <- as.character(list_tariff.group)
+list_reg.results_by.tariff_pre <- lapply(
+  list_tariff.group,
+  get_felm.obj_interval.hour_by.tariff,
+  dt = dt_for.reg,
+  formula = get_change.terms.in.formula(
+    model_breakdown.of.ate_hourly.in.peak_spline_dw,
+    term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
+  ),
+  interval.hours_in.array = LIST_INTERVALS[[1]]
+)
+list_reg.results_by.tariff_peak <- lapply(
+  list_tariff.group,
+  get_felm.obj_interval.hour_by.tariff,
+  dt = dt_for.reg,
+  formula = get_change.terms.in.formula(
+    model_breakdown.of.ate_hourly.in.peak_spline_dw,
+    term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
+  ),
+  interval.hours_in.array = LIST_INTERVALS[[2]]
+)
+list_reg.results_by.tariff_post <- lapply(
+  list_tariff.group,
+  get_felm.obj_interval.hour_by.tariff,
+  dt = dt_for.reg,
+  formula = get_change.terms.in.formula(
+    model_breakdown.of.ate_hourly.in.peak_spline_dw,
+    term_old_in.str = "hdd.knot", term_new_in.str = paste0("hdd.knot", KNOT)
+  ),
+  interval.hours_in.array = LIST_INTERVALS[[3]]
+)
+
+
+list_reg.results_for.body <- c(
+  list_reg.results,
+  list_reg.results_by.tariff_peak
+)
+list_reg.results_for.appendix <- c(
+  list_reg.results_by.tariff_pre,
+  list_reg.results_by.tariff_post
+)
 
 
 # ------- Create stargazer object(s) -------
 # # 1. Create objects that will be utilized to generate stargazer object(s)
 title_ <- "Breakdown of Hourly Average Treatment Effects"
-out <- paste(
+out_for.body <- paste(
   DIR_TO.SAVE_LATEX,
   paste0(
     "Stargazer-Table_Breakdown-of-Hourly-ATEs",
+    ".tex"
+  ),
+  sep = "/"
+)
+out_for.appendix <- paste(
+  DIR_TO.SAVE_LATEX,
+  paste0(
+    "Stargazer-Table_Breakdown-of-Hourly-ATEs_For-Appendix",
     ".tex"
   ),
   sep = "/"
@@ -137,16 +192,45 @@ covariate.labels <- c(
 )
 dep.var.caption <- "Dependent Variable"
 dep.var.labels <- "Hourly Electricity Consumption  (kWh/Hour)"
-add.lines <- list(
-  c("Description of Interval", c("Pre-Peak", "Peak", "Post-Peak")),
-  c("Interval of Hours", names(LIST_INTERVALS[1:3])),
-  c("Knot", rep(KNOT, times = 3)),
-  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 3))
+add.lines_for.body <- list(
+  c(
+    "Description of Period",
+    c(c("Pre-Peak", "Peak", "Post-Peak"), rep("Peak", times = 4))
+  ),
+  c(
+    "Period of Hours",
+    c(names(LIST_INTERVALS[1:3]), rep(names(LIST_INTERVALS[2]), times = 4))
+  ),
+  c("Tariff Group", c(rep("All", times = 3), names(list_tariff.group))),
+  c(
+    "Price Change in the Peak Rate Period",
+    c(rep("[-]", times = 3), paste0("+", RATE.CHANGES))
+  ),
+  c("Knot", rep(KNOT, times = 7)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 7))
 )
-column.sep.width <- "95pt"
+add.lines_for.appendix <- list(
+  c(
+    "Description of Period",
+    rep(c("Pre-Peak", "Post-Peak"), each = 4)
+  ),
+  c(
+    "Period of Hours",
+    rep(names(LIST_INTERVALS[c(1, 3)]), each = 4)
+  ),
+  c("Tariff Group", rep(names(list_tariff.group), times = 2)),
+  c(
+    "Price Change in the Peak Rate Period",
+    rep(paste0("+", RATE.CHANGES), times = 2)
+  ),
+  c("Knot", rep(KNOT, times = 8)),
+  c("FEs: Day of Week by Half-Hourly Time Window", rep("Yes", times = 8))
+)
+column.sep.width <- "10pt"
 font.size <- "small"
 header <- FALSE
-label <- "Table:Breakdown-of-Hourly-ATEs"
+label_for.body <- "Table:Breakdown-of-Hourly-ATEs"
+label_for.appendix <- "Table:Breakdown-of-Hourly-ATEs_For-Appendix"
 model.names <- FALSE
 omit.stat <- c("ser", "rsq")
 omit.table.layout <- "n"
@@ -154,8 +238,9 @@ omit.table.layout <- "n"
 
 # # 2. Export the stargazer object(s)
 # # 2.1. Just print the stargazer object(s)
+# # 2.1.1. For table(s) in body
 stargazer(
-  list_reg.results,
+  list_reg.results_for.body,
   type = "text",
   title = title_,
   out.header = out.header,
@@ -163,31 +248,70 @@ stargazer(
   covariate.labels = covariate.labels,
   dep.var.caption = dep.var.caption,
   dep.var.labels = dep.var.labels,
-  add.lines = add.lines,
+  add.lines = add.lines_for.body,
   column.sep.width = column.sep.width,
   font.size = font.size,
   header = header,
-  label = label,
+  label = label_for.body,
+  model.names = model.names,
+  omit.stat = omit.stat
+)
+# # 2.1.2. For table in appendix
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines_for.appendix,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label_for.appendix,
   model.names = model.names,
   omit.stat = omit.stat
 )
 
 # # 2.2. Export the stargazer object(s) in TEX format
+# # 2.2.1. For table(s) in body
 stargazer(
-  list_reg.results,
+  list_reg.results_for.body,
   type = "text",
   title = title_,
-  out = out,
+  out = out_for.body,
   out.header = out.header,
   column.labels = column.labels,
   covariate.labels = covariate.labels,
   dep.var.caption = dep.var.caption,
   dep.var.labels = dep.var.labels,
-  add.lines = add.lines,
+  add.lines = add.lines_for.body,
   column.sep.width = column.sep.width,
   font.size = font.size,
   header = header,
-  label = label,
+  label = label_for.body,
+  model.names = model.names,
+  omit.stat = omit.stat,
+  omit.table.layout = omit.table.layout
+)
+# # 2.2.2. For table(s) in appendix
+stargazer(
+  list_reg.results_for.appendix,
+  type = "text",
+  title = title_,
+  out = out_for.appendix,
+  out.header = out.header,
+  column.labels = column.labels,
+  covariate.labels = covariate.labels,
+  dep.var.caption = dep.var.caption,
+  dep.var.labels = dep.var.labels,
+  add.lines = add.lines_for.appendix,
+  column.sep.width = column.sep.width,
+  font.size = font.size,
+  header = header,
+  label = label_for.appendix,
   model.names = model.names,
   omit.stat = omit.stat,
   omit.table.layout = omit.table.layout
