@@ -46,7 +46,7 @@ source(PATH_HEADER)
 # # 1. Path(s) from which dataset(s) and script(s) are loaded
 # # 1.1. For the DT for regression analysis
 FILE_TO.LOAD_CER_FOR.REG <-
-  "CER_DT-for-Regressions-with-Survey-Data_Electricity.parquet"
+  "CER_SubDT-for-Regressions-with-Survey-Data_Electricity.parquet"
 PATH_TO.LOAD_CER_FOR.REG <-
   paste(PATH_DATA_INTERMEDIATE_CER, FILE_TO.LOAD_CER_FOR.REG, sep = "/")
 
@@ -197,8 +197,8 @@ help_create.ggplot.obj <- function (
       labs(
         x = TeX(r'(Temperature $ (\degree F)$)'),
         y = "Average Daily Consumption\n(kWh/Day)",
-        color = "",
-        shape = "",
+        color = "Period",
+        shape = "Period",
         subtitle = "Panel A: Household Average Daily Electricity Consumption"
       ) +
       plot.options
