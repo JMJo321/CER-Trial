@@ -215,8 +215,8 @@ plot_avg.kwh_within.day <-
     labs(
       x = "Hour of Day",
       y = "Average Hourly Consumption  (kWh/Hour)",
-      color = "Groups ",
-      shape = "Groups "
+      color = "Group ",
+      shape = "Group "
     ) +
     plot.options
 
@@ -268,8 +268,8 @@ plot_avg.kwh_by.date <-
     labs(
       x = "Date",
       y = "Average Daily Consumption  (kWh/Day)",
-      color = "Groups ",
-      fill = "Groups "
+      color = "Group ",
+      fill = "Group "
     ) +
     plot.options
 
