@@ -820,6 +820,23 @@ model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_dw <-
     indep.vars_clustered.ses =
       indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
   )
+model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_i.dw <-
+  get_formula_felm(
+    dep.var =
+      dep.var_breakdown.of.ate_hourly.in.peak,
+      # "kwh",
+    indep.vars_covariates =
+      indep.vars_covariates_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw,
+    indep.vars_fes = paste(
+      "id_in.factor",
+      "day.of.week.and.30min.interval_in.factor",
+      sep = " + "
+    ),
+    indep.vars_ivs =
+      indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+    indep.vars_clustered.ses =
+      indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+  )
 model_breakdown.of.ate_hourly.in.peak_rate.change.in.spline_iw.dw <-
   get_formula_felm(
     dep.var =
