@@ -217,7 +217,7 @@ dt_for.plot_melted[
 ]
 dt_for.plot_melted[
   category == "predicted.kwh_total",
-  category := "Total"
+  category := "Non-Temperature-Control + Temperature-Control"
 ]
 
 
