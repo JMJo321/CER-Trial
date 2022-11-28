@@ -158,8 +158,8 @@ plot_dist.of.hdds <-
     labs(
       x = "Heating Degree Days",
       y = "Frequency",
-      color = "Periods", fill = "Periods",
-      linetype = "Values"
+      color = "Period", fill = "Period",
+      linetype = "Value"
     ) +
     plot.options
 
