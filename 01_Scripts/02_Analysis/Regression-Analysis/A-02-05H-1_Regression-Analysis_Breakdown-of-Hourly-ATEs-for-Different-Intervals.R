@@ -433,7 +433,7 @@ export_figure.in.png(
     ),
     sep = "/"
   ),
-  width_numeric = 20, height_numeric = 12
+  width_numeric = 23, height_numeric = 13
 )
 export_figure.in.png(
   plot_predicted.kwh_17to18,
@@ -446,7 +446,7 @@ export_figure.in.png(
     ),
     sep = "/"
   ),
-  width_numeric = 20, height_numeric = 12
+  width_numeric = 23, height_numeric = 13
 )
 export_figure.in.png(
   plot_predicted.kwh_19to20,
@@ -459,7 +459,7 @@ export_figure.in.png(
     ),
     sep = "/"
   ),
-  width_numeric = 20, height_numeric = 12
+  width_numeric = 23, height_numeric = 13
 )
 export_figure.in.png(
   plot_predicted.kwh,
