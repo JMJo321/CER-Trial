@@ -273,12 +273,15 @@ dt_for.plot_melted[
 ]
 dt_for.plot_melted[
   is.na(group),
-  group := "Predicted Electricity Savings"
+  group := "Aggregate Changes in Electricity Consumption"
 ]
 dt_for.plot_melted[
   ,
   group := factor(
-    group, levels = c("Treatment Effects", "Predicted Electricity Savings")
+    group,
+    levels = c(
+      "Treatment Effects", "Aggregate Changes in Electricity Consumption"
+    )
   )
 ]
 
@@ -418,7 +421,8 @@ plot_predicted.kwh_15to16 <-
       color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
       shape = "Treatment Effects"
     ) +
-    plot.options
+    plot.options +
+    guides(shape = guide_legend(order = 1))
 
 # # 1.2. For peak interval
 plot_predicted.kwh_17to18 <-
@@ -523,7 +527,8 @@ plot_predicted.kwh_17to18 <-
       color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
       shape = "Treatment Effects"
     ) +
-    plot.options
+    plot.options +
+    guides(shape = guide_legend(order = 1))
 
 # # 1.3. For post-peak interval
 plot_predicted.kwh_19to20 <-
@@ -628,11 +633,13 @@ plot_predicted.kwh_19to20 <-
       color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
       shape = "Treatment Effects"
     ) +
-    plot.options
+    plot.options +
+    guides(shape = guide_legend(order = 1))
 
 
 # # 2. All of the three intervals
-plot_predicted.kwh <-
+# # 2.1. Non-temperature-control and temperature-control
+plot_predicted.kwh_both <-
   ggplot() +
     geom_hline(
       yintercept = 0,
@@ -734,7 +741,220 @@ plot_predicted.kwh <-
       color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
       shape = "Treatment Effects"
     ) +
-    plot.options
+    plot.options +
+    guides(shape = guide_legend(order = 1))
+
+# # 2.2. Non-temperature-control only
+plot_predicted.kwh_non.temp.only <-
+  ggplot() +
+    geom_hline(
+      yintercept = 0,
+      linetype = "dashed", alpha = 0.3
+    ) +
+    geom_vline(
+      xintercept = KNOT,
+      linetype = "dotdash", alpha = 0.3
+    ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Non-Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change),
+      color = "black", alpha = 0.3, lwd = 1
+    ) +
+    # geom_line(
+    #   data = dt_for.plot_melted[
+    #     category == "Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, group = rate.change),
+    #   color = "black", alpha = 0.3, lwd = 1
+    # ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change),
+      color = "black", alpha = 0.3, lwd = 1
+    ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Non-Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    ) +
+    # geom_line(
+    #   data = dt_for.plot_melted[
+    #     category == "Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    # ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Non-Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, shape = category),
+      color = "black", alpha = 0.3, size = 2.5
+    ) +
+    # geom_point(
+    #   data = dt_for.plot_melted[
+    #     category == "Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, shape = category),
+    #   color = "black", alpha = 0.3, size = 2.5
+    # ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, shape = category),
+      color = "black", alpha = 0.3, size = 2.5
+    ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Non-Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+      size = 2.0
+    ) +
+    # geom_point(
+    #   data = dt_for.plot_melted[
+    #     category == "Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+    #   size = 2.0
+    # ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+      size = 2.0
+    ) +
+    facet_grid(. ~ interval, labeller = labeller(interval = labels_interval)) +
+    scale_x_continuous(breaks = seq(0, 30, by = 5)) +
+    scale_y_continuous(breaks = seq(-0.16, 0.1, by = 0.02)) +
+    scale_color_viridis_d() +
+    scale_shape_manual(values = 15:17) +
+    labs(
+      x = "Heating Degree Days",
+      y = TeX(r'(Treatment Effects ($\Delta$ kWh per Hour))'),
+      color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
+      shape = "Treatment Effects"
+    ) +
+    plot.options +
+    guides(shape = guide_legend(order = 1))
+
+# # 2.3. Temperature-control only
+plot_predicted.kwh_temp.only <-
+  ggplot() +
+    geom_hline(
+      yintercept = 0,
+      linetype = "dashed", alpha = 0.3
+    ) +
+    geom_vline(
+      xintercept = KNOT,
+      linetype = "dotdash", alpha = 0.3
+    ) +
+    # geom_line(
+    #   data = dt_for.plot_melted[
+    #     category == "Non-Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, group = rate.change),
+    #   color = "black", alpha = 0.3, lwd = 1
+    # ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change),
+      color = "black", alpha = 0.3, lwd = 1
+    ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change),
+      color = "black", alpha = 0.3, lwd = 1
+    ) +
+    # geom_line(
+    #   data = dt_for.plot_melted[
+    #     category == "Non-Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    # ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    ) +
+    geom_line(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, group = rate.change, color = rate.change)
+    ) +
+    # geom_point(
+    #   data = dt_for.plot_melted[
+    #     category == "Non-Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, shape = category),
+    #   color = "black", alpha = 0.3, size = 2.5
+    # ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, shape = category),
+      color = "black", alpha = 0.3, size = 2.5
+    ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, shape = category),
+      color = "black", alpha = 0.3, size = 2.5
+    ) +
+    # geom_point(
+    #   data = dt_for.plot_melted[
+    #     category == "Non-Temperature-Control" & group == "Treatment Effects"
+    #   ],
+    #   aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+    #   size = 2.0
+    # ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Temperature-Control" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+      size = 2.0
+    ) +
+    geom_point(
+      data = dt_for.plot_melted[
+        category == "Total" & group == "Treatment Effects"
+      ],
+      aes(x = hdd, y = predicted.kwh, color = rate.change, shape = category),
+      size = 2.0
+    ) +
+    facet_grid(. ~ interval, labeller = labeller(interval = labels_interval)) +
+    scale_x_continuous(breaks = seq(0, 30, by = 5)) +
+    scale_y_continuous(breaks = seq(-0.16, 0.1, by = 0.02)) +
+    scale_color_viridis_d() +
+    scale_shape_manual(values = 15:17) +
+    labs(
+      x = "Heating Degree Days",
+      y = TeX(r'(Treatment Effects ($\Delta$ kWh per Hour))'),
+      color = TeX(r'(Rate Changes in the Peak Rate Period  ($\Delta$ Cents per kWh))'),
+      shape = "Treatment Effects"
+    ) +
+    plot.options +
+    guides(shape = guide_legend(order = 1))
 
 
 # ------- Export ggplot object(s) in PNG format -------
@@ -777,8 +997,10 @@ export_figure.in.png(
   ),
   width_numeric = 30, height_numeric = 15
 )
+
+
 export_figure.in.png(
-  plot_predicted.kwh,
+  plot_predicted.kwh_both,
   filename_str = paste(
     PATH_TO.SAVE_FIGURE,
     paste0(
@@ -791,12 +1013,39 @@ export_figure.in.png(
   width_numeric = 33, height_numeric = 17
 )
 export_figure.in.png(
-  plot_predicted.kwh,
+  plot_predicted.kwh_both,
   filename_str = paste(
     PATH_TO.SAVE_FIGURE_FOR.DISSERTATION,
     paste0(
       "Figure_Breakdown-of-Hourly-ATEs_",
       "For-Different-Intervals_By-Tariff-Group_All_Knot-",
+      KNOT, ".png"
+    ),
+    sep = "/"
+  ),
+  width_numeric = 33, height_numeric = 17
+)
+
+export_figure.in.png(
+  plot_predicted.kwh_non.temp.only,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE,
+    paste0(
+      "Figure_Breakdown-of-Hourly-ATEs_",
+      "For-Different-Intervals_By-Tariff-Group_Non-Temperature-Control-only_Knot-",
+      KNOT, ".png"
+    ),
+    sep = "/"
+  ),
+  width_numeric = 33, height_numeric = 17
+)
+export_figure.in.png(
+  plot_predicted.kwh_temp.only,
+  filename_str = paste(
+    PATH_TO.SAVE_FIGURE,
+    paste0(
+      "Figure_Breakdown-of-Hourly-ATEs_",
+      "For-Different-Intervals_By-Tariff-Group_Temperature-Control-only_Knot-",
       KNOT, ".png"
     ),
     sep = "/"
