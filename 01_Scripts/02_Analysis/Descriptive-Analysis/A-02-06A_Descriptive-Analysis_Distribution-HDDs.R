@@ -156,7 +156,7 @@ plot_dist.of.hdds <-
     scale_color_manual(values = col.pal_custom) +
     scale_fill_manual(values = col.pal_custom) +
     labs(
-      x = "Heating Degree Days",
+      x = "Daily Heating Degree Days",
       y = "Frequency",
       color = "Period", fill = "Period",
       linetype = "Value"
