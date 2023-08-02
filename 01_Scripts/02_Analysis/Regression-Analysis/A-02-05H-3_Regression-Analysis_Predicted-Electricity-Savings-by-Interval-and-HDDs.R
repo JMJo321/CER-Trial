@@ -473,7 +473,8 @@ plot_additional.savings <-
       breaks = seq(-0.20, 0.15, by = 0.05),
       sec.axis = sec_axis(
         trans = ~ . * 200,
-        breaks = c(seq(-40, 30, by = 10), seq(6, 24, by = 6)),
+        breaks = c(0, seq(6, 24, by = 6), 30),
+        # breaks = c(seq(-40, 30, by = 10), seq(6, 24, by = 6)),
         name = "Rates (Cents per kWh)"
       )
     ) +
