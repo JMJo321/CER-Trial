@@ -700,6 +700,28 @@ model_breakdown.of.ate_hourly.in.peak_spline_dw <- get_formula_felm(
     indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
 )
 
+# # 2.4. Simplified Model
+model_breakdown.of.ate_hourly.in.peak_spline_simplified <- get_formula_felm(
+  dep.var =
+    dep.var_breakdown.of.ate_hourly.in.peak,
+  indep.vars_covariates = paste(
+    "is_treatment.and.post",
+    "treatment.and.post_times_hdd", "treatment.and.post_times_hdd.knot",
+    sep = " + "
+  ),
+  indep.vars_fes = paste(
+    "id.and.30min.interval_in.factor",
+    # "day.of.week.and.30min.interval_in.factor",
+    "day_in.factor",
+    "month_in.factor",
+    sep = " + "
+  ),
+  indep.vars_ivs =
+    indep.vars_ivs_breakdown.of.ate_hourly.in.peak,
+  indep.vars_clustered.ses =
+    indep.vars_clustered.ses_breakdown.of.ate_hourly.in.peak
+)
+
 
 # ------- Define econometric models:                                     -------
 # ------- Breakdown of Hourly ATEs in the peak rate period as a function -------
