@@ -1,0 +1,49 @@
+\afterpage{
+    \begin{table}[t!]
+        \centering
+        \caption{The Relationship between Household Elec. Consumption and Daily Heating Degree Days}
+        \label{Table:Relationship-between-Household-Electricity-Consumption-and-Daily-HDDs}
+        \vspace{0.3cm}
+        \small
+        \begin{adjustbox}{scale = 0.75}
+            \begin{threeparttable}
+                \begin{tabular}{@{\extracolsep{10pt}}lccccccc}
+                    \\[-5.5ex]
+                    \hline \hline
+                    \\[-3.0ex]
+%                    & \multicolumn{15}{c}{Dependent Variable} \\
+%                    \\[-3.0ex]
+%                    \cline{2-100}
+%                    \\[-3.0ex]
+                    & \multicolumn{6}{c}{Hourly Electricity Consumption  (kWh/Hour)} \\
+                    \\[-3.0ex]
+                    & (1) & (2) & (3) & (4) & (5) & (6) \\
+                    \\[-3.0ex]
+                    \hline
+                    \\[-2.0ex]
+                    HDDs & 0.013$^{***}$ & 0.013$^{***}$ & 0.003$^{***}$ & 0.013$^{***}$ & 0.013$^{***}$ & 0.003$^{***}$ \\
+                    & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+                    & & & & & & \\
+                    (Constant) & 0.808$^{***}$ &  &  &  &  &  \\ 
+                    & (0.013) &  &  &  &  &  \\
+                    & & & & & & \\
+                    \hline
+                    \\[-2.0ex]
+                    FEs: Household & No & Yes & Yes & No & No & No \\ 
+                    FEs: Month of Year & No & No & Yes & No & No & Yes \\ 
+                    FEs: Household by Half-Hourly Time Time Window & No & No & No & Yes & Yes & Yes \\ 
+                    FEs: Day of Week by Half-Hourly Time Window & No & No & No & No & Yes & Yes \\ 
+                    Observations & 12,074,400 & 12,074,400 & 12,074,400 & 12,074,400 & 12,074,400 & 12,074,400 \\ 
+                    Adjusted R$^{2}$ & 0.008 & 0.168 & 0.169 & 0.411 & 0.411 & 0.413 \\
+                    \\[-2.0ex]
+                    \hline \hline
+                    \\[-4.5ex]
+                \end{tabular}
+                \begin{tablenotes}[flushleft]
+                    \footnotesize
+                    \item \textit{Note}: * $p < 0.1$, ** $p < 0.05$, and *** $p < 0.01$.
+                \end{tablenotes}
+            \end{threeparttable}
+        \end{adjustbox}
+    \end{table}
+}
