@@ -19,6 +19,7 @@ library(gridExtra)
 library(latex2exp)
 library(stringr)
 library(data.table)
+library(unikn)
 
 
 # ------------------------------------------------------------------------------
@@ -196,10 +197,10 @@ help_create.ggplot.obj <- function (
       ) +
       labs(
         x = TeX(r'(Temperature $ (\degree F)$)'),
-        y = "Average Daily Consumption\n(kWh/Day)",
-        color = "Period",
-        shape = "Period",
-        subtitle = "Panel A: Household Average Daily Electricity Consumption"
+        y = "Average Daily Household Elec. Consumption\n(kWh/Day)",
+        color = "Periods",
+        shape = "Periods",
+        subtitle = "Panel A: Average Daily Household Electricity Consumption"
       ) +
       plot.options
   # ## Create a ggplot object incl. plot for differences in household average
@@ -223,22 +224,22 @@ help_create.ggplot.obj <- function (
       ) +
       geom_line(
         aes(x = range_mid.point, y = percentage.change),
-        color = col.pal_signal[3], lwd = 0.5
+        color = col.pal_signal[2], lwd = 0.5
       ) +
       geom_point(
         aes(x = range_mid.point, y = percentage.change),
-        color = col.pal_signal[3], size = 1.4, shape = 15
+        color = col.pal_signal[2], size = 1.4, shape = 15
       ) +
       facet_grid(. ~ group, labeller = labeller(group = label_group)) +
       scale_y_continuous(labels = scales::percent) +
       labs(
         x = TeX(r'(Temperature $ (\degree F)$)'),
         y =
-          "Percentage Changes in Household Average Daily Consumption\n(kWh/Day)",
+          "Percentage Changes in Avg. Daily Household Elec. Consumption\n(kWh/Day)",
         color = "",
         shape = "",
         subtitle =
-          "Panel B: Percentage Changes in Household Average Daily Consumption"
+          "Panel B: Percentage Changes in Average Daily Household Electricity Consumption"
       ) +
       plot.options
   # ## Combine the two ggplot objects
