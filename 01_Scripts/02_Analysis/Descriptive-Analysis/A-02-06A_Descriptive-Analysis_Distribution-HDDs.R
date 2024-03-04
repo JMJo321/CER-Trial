@@ -148,7 +148,7 @@ plot_dist.of.hdds <-
     geom_histogram(
       data = dt_for.plot_hdds,
       aes(
-        x = hdd_all_60f, y = ..density..,
+        x = hdd_all_60f, y = after_stat(density),
         fill = period
       ),
       binwidth = 2, alpha = 0.5, position = "dodge"
@@ -158,8 +158,8 @@ plot_dist.of.hdds <-
     labs(
       x = "Daily Heating Degree Days",
       y = "Frequency",
-      color = "Period", fill = "Period",
-      linetype = "Value"
+      color = "Periods", fill = "Periods",
+      linetype = "Values"
     ) +
     plot.options
 
