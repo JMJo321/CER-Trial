@@ -213,10 +213,10 @@ plot_avg.kwh_within.day <-
     scale_color_manual(values = col.pal_custom[c(1, 2)]) +
     scale_shape_manual(values = 15:16) +
     labs(
-      x = "Hour of Day",
-      y = "Average Hourly Consumption  (kWh/Hour)",
-      color = "Group ",
-      shape = "Group "
+      x = "Hour of the Day",
+      y = "Average Hourly Household Elec. Consumption  (kWh/Hour)",
+      color = "Groups ",
+      shape = "Groups "
     ) +
     plot.options
 
@@ -267,9 +267,9 @@ plot_avg.kwh_by.date <-
     scale_fill_manual(values = col.pal_custom[c(1, 2)]) +
     labs(
       x = "Date",
-      y = "Average Daily Consumption  (kWh/Day)",
-      color = "Group ",
-      fill = "Group "
+      y = "Average Daily Household Elec. Consumption  (kWh/Day)",
+      color = "Groups ",
+      fill = "Groups "
     ) +
     plot.options
 
@@ -305,7 +305,7 @@ export_figure.in.png(
 
 
 # # 2. Figure for average daily electricity consumption
-export_figure.in.png(
+ export_figure.in.png(
   plot_avg.kwh_by.date,
   filename_str = paste(
     PATH_TO.SAVE_FIGURE,
