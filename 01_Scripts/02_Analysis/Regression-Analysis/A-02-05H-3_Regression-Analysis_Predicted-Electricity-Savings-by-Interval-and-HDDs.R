@@ -392,16 +392,25 @@ plot_predicted.kwh <-
       linetype = "dotdash", alpha = 0.3
     ) +
     geom_line(
-      data = dt_for.plot_melted[rate.change != "+30"],
+      data = dt_for.plot_melted[
+        rate.change != "+30" &
+          !(interval %in% labels_interval[4])
+      ],
       aes(x = hdd, y = predicted.kwh, group = rate.change),
       color = "black", alpha = 0.3, lwd = 1
     ) +
     geom_line(
-      data = dt_for.plot_melted[rate.change != "+30"],
+      data = dt_for.plot_melted[
+        rate.change != "+30" &
+          !(interval %in% labels_interval[4])
+      ],
       aes(x = hdd, y = predicted.kwh, color = rate.change, group = rate.change)
     ) +
     geom_point(
-      data = dt_for.plot_melted[rate.change != "+30"],
+      data = dt_for.plot_melted[
+        rate.change != "+30" &
+          !(interval %in% labels_interval[4])
+      ],
       aes(x = hdd, y = predicted.kwh, color = rate.change)
     ) +
     facet_grid(
@@ -419,7 +428,7 @@ plot_predicted.kwh <-
     labs(
       x = "Heating Degree Days",
       y = TeX(r'(Treatment Effects ($\Delta$ kWh per Hour))'),
-      color = "Price Change in the Peak Rate Period"
+      color = "Price Changes in the Peak Rate Period"
     ) +
     plot.options
 
@@ -484,9 +493,9 @@ plot_additional.savings <-
     labs(
       x = "Heating Degree Days",
       y = TeX(r'(Treatment Effects ($\Delta$ kWh per Hour))'),
-      color = "Price Change in the Peak Rate Period",
+      color = "Price Changes in the Peak Rate Period",
       fill = "Additional Changes in Electricity Consumption",
-      linetype = "Price Scheme"
+      linetype = "Price Schemes"
     ) +
     plot.options
 
@@ -503,7 +512,7 @@ export_figure.in.png(
     ),
     sep = "/"
   ),
-  width_numeric = 35, height_numeric = 26
+  width_numeric = 33, height_numeric = 26
 )
 export_figure.in.png(
   plot_predicted.kwh,
@@ -515,7 +524,7 @@ export_figure.in.png(
     ),
     sep = "/"
   ),
-  width_numeric = 35, height_numeric = 26
+  width_numeric = 33, height_numeric = 26
 )
 
 
